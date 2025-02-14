@@ -1,51 +1,41 @@
 import { NextRequest, NextResponse } from 'next/server';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
+import { ScoreManager } from '@/score/ScoreManager';
 
-const extractNumber = (text: string) => {
-   return parseFloat(text.replace(/[^\d,]/g, '').replace(',', '.'));
-};
 
-function calculateScore(listing: any, prefs: any) {
-    let score = 0;
-
-    // Preisbewertung
-    if (listing.price >= prefs.minPrice && listing.price <= prefs.maxPrice) score += 3;
-
-    // Zimmerbewertung
-    if (listing.rooms >= prefs.minRooms && listing.rooms <= prefs.maxRooms) score += 3;
-
-    // Größenbewertung
-    if (listing.size >= prefs.minSize && listing.size <= prefs.maxSize) score += 4;
-
-    // ÖPNV-Simulation: Wenn die Adresse "Berlin" enthält, gib Bonuspunkte
-    if (listing.address.includes('Berlin')) score += 2;
-
-    return Math.min(score, 10);
+export interface Listing {
+    title: string;
+    price: number;
+    rooms: number;
+    size: number;
+    address: string;
+    imgUrl: string;
+    url: string;
+    publicTransportStops: number;
+    score: number;
 }
 
-// Hauptcrawler-Funktion
+// Hilfsfunktion zum Parsen von Zahlen
+const extractNumber = (text: string) => {
+    return parseFloat(text.replace(/[^\d,]/g, '').replace(',', '.'));
+};
+
 export async function POST(req: NextRequest) {
     const prefs = await req.json();
     const city = prefs.city.toLowerCase();
-
     const url = `https://www.immowelt.de/liste/${city}/wohnungen/mieten`;
-    const listings: any[] = [];
+    const listings: Listing[] = [];
+    const scoreManager = new ScoreManager();
 
     try {
-        // Abruf der Website
-        const response = await axios.get(url, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            }
-        });
-
-        // HTML mit Cheerio parsen
+        // Website abrufen
+        const response = await axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
         const $ = cheerio.load(response.data);
 
-        // Durchsuche jedes Inserat, max. 3 Ergebnisse
+        // Durchsuche Inserate
         $('div[data-testid="serp-core-classified-card-testid"]').each((index, el) => {
-            if (index >= 3) return false; // Stop nach 3 Inseraten
+            if (index >= 10) return false;
 
             const link = $(el).find('a[data-testid="card-mfe-covering-link-testid"]').attr('href')?.trim() || '';
             const fullLink = link.startsWith('http') ? link : `https://www.immowelt.de${link}`;
@@ -61,7 +51,7 @@ export async function POST(req: NextRequest) {
             const address = $(el).find('div[data-testid="cardmfe-description-box-address"]').text().trim();
             const imgUrl = $(el).find('img.css-hc6pk4').attr('src') || '';
 
-            const listing = {
+            const listing: Listing = {
                 title: `Wohnung in ${address.split(',')[0]}`,
                 price,
                 rooms,
@@ -69,20 +59,28 @@ export async function POST(req: NextRequest) {
                 address,
                 imgUrl,
                 url: fullLink,
-                score: calculateScore({ price, rooms, size, address }, prefs)
+                publicTransportStops: Math.floor(Math.random() * 10),
+                score: 0
             };
 
-            if (listing.price && listing.size && listing.rooms) {
+            let calculatedScore = scoreManager.calculateTotalScore(listing, prefs);
+            if (isNaN(calculatedScore) || calculatedScore === undefined) {
+                calculatedScore = 0;
+            }
+
+            listing.score = calculatedScore;
+
+            console.log(`🏡 ${listing.title} → Score: ${listing.score}`);
+
+            if (listing.score >= 5) {
                 listings.push(listing);
             }
         });
 
-        // Sortiere nach Score absteigend
         listings.sort((a, b) => b.score - a.score);
-
         return NextResponse.json(listings);
     } catch (error) {
-        console.error('Fehler beim Scraping:', error);
+        console.error('❌ Fehler beim Scraping:', error);
         return NextResponse.json({ error: 'Fehler beim Abrufen der Daten' }, { status: 500 });
     }
 }
