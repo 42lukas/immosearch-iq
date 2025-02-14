@@ -1,6 +1,7 @@
 ## Immosearch-IQ
 
 Ein Next.js-Projekt, im Rahmen eines Uni-Projektes, zur automatisierten Wohnungssuche, das basierend auf deinen Präferenzen passende Wohnungsangebote analysiert, bewertet und Bewerbungen generiert.
+
 🏙️ Ziel: Die mühsame Wohnungssuche durch automatisierte Suche, Scoring und Benachrichtigungen erleichtern.
 
 ## Funktionen
@@ -29,7 +30,8 @@ Ein Next.js-Projekt, im Rahmen eines Uni-Projektes, zur automatisierten Wohnungs
 ## Installation
 
 1. Projekt klonen
-2. [Node.js](https://nodejs.org/en) und npm installieren
+2. [Node.js](https://nodejs.org/en) installieren
+
 überprüfen ob die installation geklappt hat:
 ```bash
 node -v
@@ -66,8 +68,8 @@ npm start
 
 ## 🐞 Fehlerbehebung
 
-1. Bei bestimmten Browser-Erweiterungen kann es zu Fehlern kommen.
-Ein Beispiel wäre der Fehler **Hydration failed**
+Bei bestimmten Browser-Erweiterungen kann es zu Fehlern kommen.
+Ein Beispiel wäre der Fehler "**Hydration failed**".
 - Ursache: Grammarly/LanguageTool-Erweiterung im Browser.
 - Lösung: Deaktiviere die Grammatik-Erweiterung für localhost.
 
@@ -76,8 +78,7 @@ Ein Beispiel wäre der Fehler **Hydration failed**
 Das Projekt darf nur für private Zwecke genutzt werden. 
 Das Scraping öffentlicher Websites kann gegen deren Nutzungsbedingungen verstoßen und rechtliche Folgen haben bei Kommerzialisierung.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
 ## 🛠️ Credtis
 Nasser
+
 Lukas
