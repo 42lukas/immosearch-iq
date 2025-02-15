@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { ScoreManager } from '@/score/ScoreManager';
+import { LocationScore } from '@/score/components/LocationScore';
 
 
 export interface Listing {
@@ -9,6 +10,7 @@ export interface Listing {
     price: number;
     rooms: number;
     size: number;
+    city: string;
     address: string;
     imgUrl: string;
     url: string;
@@ -49,14 +51,16 @@ export async function POST(req: NextRequest) {
             const size = extractNumber(sizeText);
 
             const address = $(el).find('div[data-testid="cardmfe-description-box-address"]').text().trim();
+            const city = address.split(',')[2].split(' ')[1];
             const imgUrl = $(el).find('img.css-hc6pk4').attr('src') || '';
-
+            
             const listing: Listing = {
                 title: `Wohnung in ${address.split(',')[0]}`,
                 price,
                 rooms,
                 size,
                 address,
+                city,
                 imgUrl,
                 url: fullLink,
                 publicTransportStops: Math.floor(Math.random() * 10),
@@ -69,6 +73,7 @@ export async function POST(req: NextRequest) {
             }
 
             listing.score = calculatedScore;
+            
 
             console.log(`🏡 ${listing.title} → Score: ${listing.score}`);
 

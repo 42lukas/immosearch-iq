@@ -18,7 +18,6 @@ export class ScoreManager {
         ];
     }
 
-    // 🛠️ Hier muss die Methode existieren
     calculateTotalScore(listing: any, preferences: any): number {
         let totalScore = 0;
         for (const component of this.components) {

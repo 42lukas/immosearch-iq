@@ -1,0 +1,81 @@
+[
+  {
+    "address": "Friedenauer Höhe 19A, Friedenau, Berlin (12159)",
+    "city": "berlin",
+    "lat": 52.4769821,
+    "lon": 13.3370458,
+    "fullAddress": "19A, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
+    "timestamp": "2025-02-15T21:24:16.084Z"
+  },
+  {
+    "address": "Grünauer Straße 20, Altglienicke, Berlin (12524)",
+    "city": "berlin",
+    "lat": 52.419096,
+    "lon": 13.543449,
+    "fullAddress": "20, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
+    "timestamp": "2025-02-15T21:24:54.891Z"
+  },
+  {
+    "address": "Friedenauer Höhe 17, Friedenau, Berlin (12159)",
+    "city": "berlin",
+    "lat": 52.4772558,
+    "lon": 13.3375332,
+    "fullAddress": "17, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
+    "timestamp": "2025-02-15T21:26:25.065Z"
+  },
+  {
+    "address": "Beusselstraße 65, Moabit, Berlin (10553)",
+    "city": "berlin",
+    "lat": 52.5291617,
+    "lon": 13.3284433,
+    "fullAddress": "65, Beusselstraße, Moabit, Mitte, Berlin, 10553, Deutschland",
+    "timestamp": "2025-02-15T21:35:17.028Z"
+  },
+  {
+    "address": "Grünauer Straße 16, Altglienicke, Berlin (12524)",
+    "lat": 52.4192279,
+    "lon": 13.5423798,
+    "fullAddress": "16, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
+    "timestamp": "2025-02-15T21:47:14.584Z"
+  },
+  {
+    "address": "Friedenauer Höhe 17, Friedenau, Berlin (12159)",
+    "city": " Berlin (12159)",
+    "lat": 52.4772558,
+    "lon": 13.3375332,
+    "fullAddress": "17, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
+    "timestamp": "2025-02-15T21:58:21.615Z"
+  },
+  {
+    "address": "Erich-Weinert-Straße 16, Prenzlauer Berg, Berlin (10439)",
+    "city": "",
+    "lat": 52.551539,
+    "lon": 13.4166711,
+    "fullAddress": "16, Erich-Weinert-Straße, Arnimkiez, Prenzlauer Berg, Pankow, Berlin, 10439, Deutschland",
+    "timestamp": "2025-02-15T21:59:18.021Z"
+  },
+  {
+    "address": "Beusselstraße 65, Moabit, Berlin (10553)",
+    "city": "Berlin",
+    "lat": 52.5291617,
+    "lon": 13.3284433,
+    "fullAddress": "65, Beusselstraße, Moabit, Mitte, Berlin, 10553, Deutschland",
+    "timestamp": "2025-02-15T21:59:54.681Z"
+  },
+  {
+    "address": "Manfred-von-Richthofen-Str. 28, Tempelhof, Berlin (12101)",
+    "city": "Berlin",
+    "lat": 52.4821314,
+    "lon": 13.38020303119739,
+    "fullAddress": "28, Manfred-von-Richthofen-Straße, Gartenstadt Neu-Tempelhof, Tempelhof, Tempelhof-Schöneberg, Berlin, 12101, Deutschland",
+    "timestamp": "2025-02-15T22:02:10.405Z"
+  },
+  {
+    "address": "Grünauer Straße 16, Altglienicke, Berlin (12524)",
+    "city": "Berlin",
+    "lat": 52.4192279,
+    "lon": 13.5423798,
+    "fullAddress": "16, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
+    "timestamp": "2025-02-15T22:03:08.486Z"
+  }
+]

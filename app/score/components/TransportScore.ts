@@ -4,7 +4,7 @@ export class TransportScore implements ScoreComponent {
     calculateScore(listing: any, preferences: any): number {
         const stopsNearby = listing.publicTransportStops || 0;
         if (stopsNearby > 5) {
-            return 2; // Bonus für gute ÖPNV-Anbindung
+            return 2;
         } else if (stopsNearby > 2) {
             return 1;
         }
