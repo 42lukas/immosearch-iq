@@ -77,5 +77,13 @@
     "lon": 13.5423798,
     "fullAddress": "16, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
     "timestamp": "2025-02-15T22:03:08.486Z"
+  },
+  {
+    "address": "Grünauer Straße 16, Altglienicke, Berlin (12524)",
+    "city": "Altglienicke",
+    "lat": 52.4192279,
+    "lon": 13.5423798,
+    "fullAddress": "16, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
+    "timestamp": "2025-02-17T12:04:13.213Z"
   }
 ]

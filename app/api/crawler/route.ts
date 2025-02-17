@@ -51,7 +51,17 @@ export async function POST(req: NextRequest) {
             const size = extractNumber(sizeText);
 
             const address = $(el).find('div[data-testid="cardmfe-description-box-address"]').text().trim();
-            const city = address.split(',')[2].split(' ')[1];
+
+            let city = "";
+            const parts = address.split(',');
+            if (parts.length >= 2) {
+                const cityPart = parts[1].trim();
+                const cityMatch = cityPart.match(/([A-Za-zäöüßÄÖÜ]+)/);
+                if (cityMatch) {
+                    city = cityMatch[0];
+                }
+            }
+
             const imgUrl = $(el).find('img.css-hc6pk4').attr('src') || '';
             
             const listing: Listing = {
