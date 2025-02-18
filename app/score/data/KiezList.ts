@@ -86,5 +86,93 @@ export const kiezListe = [
             lat: 51.2365,
             lng: 6.8080
         }
+    },
+    {
+        name: "Nollendorfkiez",
+        stadt: "Berlin",
+        koordinaten: {
+            lat: 52.4976,
+            lng: 13.3536
+        }
+    },
+    {
+        name: "Akazienkiez",
+        stadt: "Berlin",
+        koordinaten: {
+            lat: 52.4854,
+            lng: 13.3496
+        }
+    },
+    {
+        name: "Scheunenviertel",
+        stadt: "Berlin",
+        koordinaten: {
+            lat: 52.5246,
+            lng: 13.4025
+        }
+    },
+    {
+        name: "Spandauer Vorstadt",
+        stadt: "Berlin",
+        koordinaten: {
+            lat: 52.5250,
+            lng: 13.4014
+        }
+    },
+    {
+        name: "Alexanderplatz-Kiez",
+        stadt: "Berlin",
+        koordinaten: {
+            lat: 52.5217,
+            lng: 13.4115
+        }
+    },
+    {
+        name: "Kollwitzkiez",
+        stadt: "Berlin",
+        koordinaten: {
+            lat: 52.5386,
+            lng: 13.4197
+        }
+    },
+    {
+        name: "Helmholtzplatz-Kiez",
+        stadt: "Berlin",
+        koordinaten: {
+            lat: 52.5426,
+            lng: 13.4235
+        }
+    },
+    {
+        name: "Bötzowviertel",
+        stadt: "Berlin",
+        koordinaten: {
+            lat: 52.5294,
+            lng: 13.4383
+        }
+    },
+    {
+        name: "Reuterkiez (Kreuzkölln)",
+        stadt: "Berlin",
+        koordinaten: {
+            lat: 52.4924,
+            lng: 13.4284
+        }
+    },
+    {
+        name: "Schillerkiez",
+        stadt: "Berlin",
+        koordinaten: {
+            lat: 52.4795,
+            lng: 13.4234
+        }
+    },
+    {
+        name: "Richardkiez",
+        stadt: "Berlin",
+        koordinaten: {
+            lat: 52.4836,
+            lng: 13.4313
+        }
     }
 ];

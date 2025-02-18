@@ -4,7 +4,6 @@ import * as cheerio from 'cheerio';
 import { ScoreManager } from '@/score/ScoreManager';
 import { LocationScore } from '@/score/components/LocationScore';
 
-
 export interface Listing {
     title: string;
     price: number;
@@ -19,8 +18,9 @@ export interface Listing {
 }
 
 // Hilfsfunktion zum Parsen von Zahlen
-const extractNumber = (text: string) => {
-    return parseFloat(text.replace(/[^\d,]/g, '').replace(',', '.'));
+const extractNumber = (text: string | undefined) => {
+    if (!text) return 0;
+    return parseFloat(text.replace(/[^\d,]/g, '').replace(',', '.')) || 0;
 };
 
 export async function POST(req: NextRequest) {
@@ -31,39 +31,39 @@ export async function POST(req: NextRequest) {
     const scoreManager = new ScoreManager();
 
     try {
-        // Website abrufen
         const response = await axios.get(url, { headers: { 'User-Agent': 'Mozilla/5.0' } });
         const $ = cheerio.load(response.data);
 
-        // Durchsuche Inserate
         $('div[data-testid="serp-core-classified-card-testid"]').each((index, el) => {
-            if (index >= 10) return false;
+            // Entferne die Limitierung, damit alle Inserate verarbeitet werden.
+            // if (index >= 10) return false;
 
-            const link = $(el).find('a[data-testid="card-mfe-covering-link-testid"]').attr('href')?.trim() || '';
+            const link = $(el)
+                .find('a[data-testid="card-mfe-covering-link-testid"]')
+                .attr('href')?.trim() || '';
             const fullLink = link.startsWith('http') ? link : `https://www.immowelt.de${link}`;
 
-            const priceText = $(el).find('div[data-testid="cardmfe-price-testid"]').text().trim();
+            const priceText = $(el)
+                .find('div[data-testid="cardmfe-price-testid"]')
+                .text()?.trim() || '';
             const price = extractNumber(priceText);
+            
+            // Filter: Überspringe Inserate, die teurer sind als der max. angegebene Preis
+            if (prefs.maxPrice && price > prefs.maxPrice) return;
 
-            const keyFacts = $(el).find('div[data-testid="cardmfe-keyfacts-testid"]').text();
-            const [roomsText, , sizeText] = keyFacts.split('·').map((t) => t.trim());
-            const rooms = extractNumber(roomsText);
-            const size = extractNumber(sizeText);
+            const keyFacts = $(el).find('div[data-testid="cardmfe-keyfacts-testid"]').text() || '';
+            const keyFactsArray = keyFacts.split('·').map((t) => t.trim());
+            const rooms = extractNumber(keyFactsArray[0]);
+            const size = extractNumber(keyFactsArray[2]);
 
-            const address = $(el).find('div[data-testid="cardmfe-description-box-address"]').text().trim();
-
-            let city = "";
-            const parts = address.split(',');
-            if (parts.length >= 2) {
-                const cityPart = parts[1].trim();
-                const cityMatch = cityPart.match(/([A-Za-zäöüßÄÖÜ]+)/);
-                if (cityMatch) {
-                    city = cityMatch[0];
-                }
-            }
+            const address = $(el)
+                .find('div[data-testid="cardmfe-description-box-address"]')
+                .text()?.trim() || 'Adresse unbekannt';
+            const city = address.split(',')[1]?.trim() || prefs.city;
 
             const imgUrl = $(el).find('img.css-hc6pk4').attr('src') || '';
-            
+
+            // Listing erstellen
             const listing: Listing = {
                 title: `Wohnung in ${address.split(',')[0]}`,
                 price,
@@ -77,13 +77,9 @@ export async function POST(req: NextRequest) {
                 score: 0
             };
 
+            // Score berechnen
             let calculatedScore = scoreManager.calculateTotalScore(listing, prefs);
-            if (isNaN(calculatedScore) || calculatedScore === undefined) {
-                calculatedScore = 0;
-            }
-
-            listing.score = calculatedScore;
-            
+            listing.score = isNaN(calculatedScore) ? 0 : calculatedScore;
 
             console.log(`🏡 ${listing.title} → Score: ${listing.score}`);
 

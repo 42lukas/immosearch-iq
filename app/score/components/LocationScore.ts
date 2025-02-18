@@ -24,7 +24,7 @@ export class LocationScore implements ScoreComponent {
             if (!coordinates) return score;
     
             kiezListe.forEach(kiez => {
-                if (listing.city.toLowerCase().trim() === kiez.stadt.toLowerCase().trim()) {
+                if (listing.city === kiez.stadt.toLowerCase().trim()) {
                     const distance = this.coordinatesDistance(
                         coordinates.lat,
                         coordinates.lon,

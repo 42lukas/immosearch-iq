@@ -85,5 +85,122 @@
     "lon": 13.5423798,
     "fullAddress": "16, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
     "timestamp": "2025-02-17T12:04:13.213Z"
+  },
+  {
+    "address": "HafenCity, Hamburg (20457)",
+    "city": "Hamburg",
+    "lat": 53.5429127,
+    "lon": 9.9958346,
+    "fullAddress": "HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
+    "timestamp": "2025-02-18T09:58:59.715Z"
+  },
+  {
+    "address": "HafenCity, Hamburg (20457)",
+    "lat": 53.5429127,
+    "lon": 9.9958346,
+    "fullAddress": "HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
+    "timestamp": "2025-02-18T10:05:46.384Z"
+  },
+  {
+    "address": "Harburg, Hamburg (21073)",
+    "lat": 53.4562216,
+    "lon": 9.9872112,
+    "fullAddress": "Harburg, Hamburg, 21073, Deutschland",
+    "timestamp": "2025-02-18T10:06:18.684Z"
+  },
+  {
+    "address": "Walderseestraße, Othmarschen, Hamburg (22605)",
+    "lat": 53.55557554594315,
+    "lon": 9.887023711045595,
+    "fullAddress": "Walderseestraße, Othmarschen, Altona, Hamburg, 22605, Deutschland",
+    "timestamp": "2025-02-18T10:06:29.880Z"
+  },
+  {
+    "address": "San Francisco Straße 1, HafenCity, Hamburg, HafenCity (20457)",
+    "city": "HafenCity",
+    "lat": 53.54090435,
+    "lon": 9.996434447005939,
+    "fullAddress": "Gut vernetzt, 1, San-Francisco-Straße, Quartier Überseequartier, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
+    "timestamp": "2025-02-18T10:10:52.140Z"
+  },
+  {
+    "address": "Harburg, Hamburg (21073)",
+    "city": "Hamburg (21073)",
+    "lat": 53.4562216,
+    "lon": 9.9872112,
+    "fullAddress": "Harburg, Hamburg, 21073, Deutschland",
+    "timestamp": "2025-02-18T10:12:00.007Z"
+  },
+  {
+    "address": "HafenCity, HafenCity, Hamburg (20457)",
+    "city": "HafenCity",
+    "lat": 53.54028945,
+    "lon": 10.00488951198924,
+    "fullAddress": "HafenCity Universität Hamburg, 1, Überseeallee, Quartier Elbtorquartier, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
+    "timestamp": "2025-02-18T10:12:58.548Z"
+  },
+  {
+    "address": "HafenCity, Hamburg (20457)",
+    "city": "Hamburg (20457)",
+    "lat": 53.5429127,
+    "lon": 9.9958346,
+    "fullAddress": "HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
+    "timestamp": "2025-02-18T10:37:36.033Z"
+  },
+  {
+    "address": "Walderseestraße, Othmarschen, Hamburg (22605)",
+    "city": "Othmarschen",
+    "lat": 53.55557554594315,
+    "lon": 9.887023711045595,
+    "fullAddress": "Walderseestraße, Othmarschen, Altona, Hamburg, 22605, Deutschland",
+    "timestamp": "2025-02-18T10:42:53.182Z"
+  },
+  {
+    "address": "Beusselstraße 65, Moabit, Berlin (10553)",
+    "city": "Moabit",
+    "lat": 52.5291617,
+    "lon": 13.3284433,
+    "fullAddress": "65, Beusselstraße, Moabit, Mitte, Berlin, 10553, Deutschland",
+    "timestamp": "2025-02-18T10:43:04.109Z"
+  },
+  {
+    "address": "Friedenauer Höhe 17, Friedenau, Berlin (12159)",
+    "city": "Friedenau",
+    "lat": 52.4772558,
+    "lon": 13.3375332,
+    "fullAddress": "17, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
+    "timestamp": "2025-02-18T10:44:06.061Z"
+  },
+  {
+    "address": "Prinzessinnenstraße, Kreuzberg, Berlin (10969)",
+    "city": "Kreuzberg",
+    "lat": 52.502570068131405,
+    "lon": 13.41291006765458,
+    "fullAddress": "Prinzessinnenstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Deutschland",
+    "timestamp": "2025-02-18T10:55:42.888Z"
+  },
+  {
+    "address": "Bellevuestraße, Tiergarten, Berlin (10785)",
+    "city": "Tiergarten",
+    "lat": 52.51068437184778,
+    "lon": 13.373205023223427,
+    "fullAddress": "Bellevuestraße, Tiergarten, Mitte, Berlin, 10785, Deutschland",
+    "timestamp": "2025-02-18T10:56:06.326Z"
+  },
+  {
+    "address": "Erich-Weinert-Straße 16, Prenzlauer Berg, Berlin (10439)",
+    "city": "Prenzlauer Berg",
+    "lat": 52.551539,
+    "lon": 13.4166711,
+    "fullAddress": "16, Erich-Weinert-Straße, Arnimkiez, Prenzlauer Berg, Pankow, Berlin, 10439, Deutschland",
+    "timestamp": "2025-02-18T11:04:51.363Z"
+  },
+  {
+    "address": "Stromstraße 36, Moabit, Berlin (10551)",
+    "city": "Moabit",
+    "lat": 52.531307999999996,
+    "lon": 13.342456296063677,
+    "fullAddress": "Habyt Co-Living Berlin, 36, Stromstraße, Moabit, Mitte, Berlin, 10551, Deutschland",
+    "timestamp": "2025-02-18T11:14:44.360Z"
   }
 ]
