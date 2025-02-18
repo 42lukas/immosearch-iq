@@ -202,5 +202,21 @@
     "lon": 13.342456296063677,
     "fullAddress": "Habyt Co-Living Berlin, 36, Stromstraße, Moabit, Mitte, Berlin, 10551, Deutschland",
     "timestamp": "2025-02-18T11:14:44.360Z"
+  },
+  {
+    "address": "Friedenauer Höhe 19A, Friedenau, Berlin (12159)",
+    "city": "Friedenau",
+    "lat": 52.4769821,
+    "lon": 13.3370458,
+    "fullAddress": "19A, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
+    "timestamp": "2025-02-18T21:41:02.592Z"
+  },
+  {
+    "address": "GREIFSWALDER STR, Prenzlauer Berg, Berlin (10405)",
+    "city": "Prenzlauer Berg",
+    "lat": 52.5402462,
+    "lon": 13.4389887,
+    "fullAddress": "Greifswalder Straße, Fußgängertunnel Greifswalder Straße, Grüne Stadt, Prenzlauer Berg, Pankow, Berlin, Pankow, 10409, Deutschland",
+    "timestamp": "2025-02-18T22:15:47.271Z"
   }
 ]
