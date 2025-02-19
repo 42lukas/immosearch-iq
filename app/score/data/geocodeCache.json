@@ -218,5 +218,21 @@
     "lon": 13.4389887,
     "fullAddress": "Greifswalder Straße, Fußgängertunnel Greifswalder Straße, Grüne Stadt, Prenzlauer Berg, Pankow, Berlin, Pankow, 10409, Deutschland",
     "timestamp": "2025-02-18T22:15:47.271Z"
+  },
+  {
+    "address": "Stresemannstraße, Kreuzberg, Berlin (10963)",
+    "city": "Kreuzberg",
+    "lat": 52.50278850062645,
+    "lon": 13.384396334589495,
+    "fullAddress": "Stresemannstraße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Deutschland",
+    "timestamp": "2025-02-19T12:49:00.587Z"
+  },
+  {
+    "address": "Bornholmer Str., Prenzlauer Berg, Berlin (10439)",
+    "city": "Prenzlauer Berg",
+    "lat": 52.5547713,
+    "lon": 13.3978451,
+    "fullAddress": "Bornholmer Straße, Arnimkiez, Prenzlauer Berg, Pankow, Berlin, Pankow, 10439, Deutschland",
+    "timestamp": "2025-02-19T13:04:33.770Z"
   }
 ]
