@@ -73,6 +73,8 @@ Ein Beispiel wäre der Fehler "**Hydration failed**".
 - Ursache: Grammarly/LanguageTool-Erweiterung im Browser.
 - Lösung: Deaktiviere die Grammatik-Erweiterung für localhost.
 
+Bei der Verwendug von einem anderen Browser außer Chrome kann es außerdem zu verschiedenste Fehler durch den Webcrawler kommen, da die Webseiten-Struktur teilweise minimal abweicht. Für ein ideales Benutzererlebnis empfehlen wird deswegen ausdrücklich die Verwendung des Chrome-Browsers!
+
 ## 🛡️ Wichtige Hinweise
 
 Das Projekt darf nur für private Zwecke genutzt werden. 
