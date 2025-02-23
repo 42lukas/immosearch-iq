@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   FiUser,
   FiMail,
@@ -8,30 +8,38 @@ import {
   FiCalendar,
   FiMapPin,
   FiBriefcase,
+  FiDollarSign,
+  FiHeart,
+  FiCheck,
+  FiUpload,
 } from "react-icons/fi";
-import { MdEuroSymbol } from "react-icons/md";
-import Link from 'next/link';
+import { 
+  MdOutlineWork,
+  MdEuroSymbol
+ } from "react-icons/md";
 
+ import Link from 'next/link';
+
+
+// Beispiel-Navigation
 function NavBar() {
   return (
-    <nav className="w-full flex justify-between items-center bg-white shadow p-4">
-      <div className="text-xl font-bold text-blue-600">
-        Meine persönlichen Daten
-      </div>
-      <Link href={"/home"} className="text-xl font-bold text-blue-600">
-        immosearch-IQ
+    <nav className="w-full flex justify-between items-center bg-white shadow p-2">
+      <Link href="/home">
+        <div className="flex items-center">
+          <img src="favicon.ico" className="w-20 h-20"/>
+          <p className="m-5 text-blue-950 font-bold text-2xl">immosearch-IQ</p>
+        </div>
       </Link>
+      <div>
+        <a
+          href="#formSection"
+          className="text-blue-950 font-bold text-xl transition"
+        >
+          Zum Formular
+        </a>
+      </div>
     </nav>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="w-full bg-gray-100 text-center py-4 mt-auto">
-      <p className="text-gray-500">
-        © {new Date().getFullYear()} - immosearch-IQ
-      </p>
-    </footer>
   );
 }
 
@@ -43,11 +51,21 @@ export default function UserPage() {
     birthDate: "",
     address: "",
     occupation: "",
+    employer: "",
     monthlyIncome: "",
     hobbies: [] as string[],
     additionalInfo: "",
   });
 
+  const [resume, setResume] = useState<File | null>(null);       // Lebenslauf
+  const [salaryProofs, setSalaryProofs] = useState<File[]>([]);  // Gehaltsnachweise
+  const [otherFiles, setOtherFiles] = useState<File[]>([]);      // Sonstige Dokumente
+
+  const resumeInputRef = useRef<HTMLInputElement>(null);
+  const salaryProofsInputRef = useRef<HTMLInputElement>(null);
+  const otherFilesInputRef = useRef<HTMLInputElement>(null);
+
+  // Angebotene Hobbies
   const hobbyOptions = ["Sport", "Kochen", "Lesen", "Reisen", "Musik", "Gaming"];
 
   const handleChange = (
@@ -71,9 +89,41 @@ export default function UserPage() {
     });
   };
 
+  const handleResumeClick = () => {
+    resumeInputRef.current?.click();
+  };
+  const handleResumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setResume(e.target.files[0]);
+    }
+  };
+
+  const handleSalaryProofsClick = () => {
+    salaryProofsInputRef.current?.click();
+  };
+  const handleSalaryProofChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files.length > 0) {
+      setSalaryProofs(Array.from(e.target.files));
+    }
+  };
+
+  const handleOtherFilesClick = () => {
+    otherFilesInputRef.current?.click();
+  };
+  const handleOtherFilesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files.length > 0) {
+      setOtherFiles(Array.from(e.target.files));
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    // Hier Daten und Dateien an eine API senden:
+    // z.B. mit FormData oder fetch
     console.log("Formulardaten:", formData);
+    console.log("Lebenslauf:", resume);
+    console.log("Gehaltsnachweise:", salaryProofs);
+    console.log("Sonstige Dateien:", otherFiles);
     alert("Formular erfolgreich abgeschickt! Siehe Console für Details.");
   };
 
@@ -82,12 +132,14 @@ export default function UserPage() {
       <NavBar />
 
       <header className="text-white flex flex-col items-center justify-center text-center py-20 px-4">
-        <h1 className="text-4xl font-bold mb-4">Willkommen!</h1>
+        <h1 className="text-4xl font-bold mb-4">Persönliche Infomrationen</h1>
         <p className="max-w-2xl mb-6">
-          Fülle einfach das folgende Formular aus, um dich für deine Wunschwohnung
-          zu bewerben. Je mehr Informationen du bereitstellst, desto besser sind
-          deine Chancen auf eine Zusage! Basierend auf diesen Daten wird immosearch-IQ
-          eine passende Bewerbung zu den besten Inseraten fomrulieren. 
+          Fülle das folgende Formular aus, um dich für deine Wunschwohnung zu
+          bewerben. Je mehr Informationen du bereitstellst, desto so höher die Wahrscheinlichkeit auf eine Zusage!
+          <br />
+          <br />
+          Basierend auf diesen Daten wird schließlich eine Bewerbung zugeschnitten auf passende Wohnungen generiert und mit 
+          anderen beigelegten Dateien an die Anbieter/innen der Wohnungen gesendet.
         </p>
         <a
           href="#formSection"
@@ -97,6 +149,7 @@ export default function UserPage() {
         </a>
       </header>
 
+      {/* Hauptbereich mit Formular */}
       <main
         id="formSection"
         className="bg-white rounded-t-3xl shadow-2xl -mt-8 p-8 md:p-12 max-w-4xl mx-auto w-full"
@@ -105,9 +158,16 @@ export default function UserPage() {
           Persönliche Daten
         </h2>
 
-        <form onSubmit={handleSubmit} className="space-y-6">
+        {/* multipart/form-data nicht vergessen, wenn du Dateien hochlädst */}
+        <form
+          onSubmit={handleSubmit}
+          className="space-y-6"
+          encType="multipart/form-data"
+        >
+          {/* Grid für klassische Felder */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="relative">
+            {/* Vollständiger Name */}
+            <div>
               <label className="text-gray-700 font-semibold mb-1 block">
                 Vollständiger Name
               </label>
@@ -119,13 +179,14 @@ export default function UserPage() {
                   value={formData.fullName}
                   onChange={handleChange}
                   placeholder="Max Mustermann"
-                  className="w-full focus:outline-none"
+                  className="w-full focus:outline-none text-black"
                   required
                 />
               </div>
             </div>
 
-            <div className="relative">
+            {/* E-Mail-Adresse */}
+            <div>
               <label className="text-gray-700 font-semibold mb-1 block">
                 Email-Adresse
               </label>
@@ -137,13 +198,14 @@ export default function UserPage() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="max@mustermann.de"
-                  className="w-full focus:outline-none"
+                  className="w-full focus:outline-none text-black"
                   required
                 />
               </div>
             </div>
 
-            <div className="relative">
+            {/* Telefonnummer */}
+            <div>
               <label className="text-gray-700 font-semibold mb-1 block">
                 Telefonnummer
               </label>
@@ -155,14 +217,15 @@ export default function UserPage() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="+49 123 456789"
-                  className="w-full focus:outline-none"
+                  className="w-full focus:outline-none text-black"
                   required
                 />
               </div>
             </div>
 
-            <div className="relative">
-              <label className="text-gray-700 font-semibold mb-1 block">
+            {/* Geburtsdatum */}
+            <div>
+              <label className="text-black font-semibold mb-1 block">
                 Geburtsdatum
               </label>
               <div className="flex items-center border border-gray-300 rounded-md p-2">
@@ -172,13 +235,14 @@ export default function UserPage() {
                   name="birthDate"
                   value={formData.birthDate}
                   onChange={handleChange}
-                  className="w-full focus:outline-none"
+                  className="w-full focus:outline-none text-black"
                   required
                 />
               </div>
             </div>
 
-            <div className="relative md:col-span-2">
+            {/* Adresse */}
+            <div className="md:col-span-2">
               <label className="text-gray-700 font-semibold mb-1 block">
                 Aktuelle Adresse
               </label>
@@ -190,13 +254,14 @@ export default function UserPage() {
                   value={formData.address}
                   onChange={handleChange}
                   placeholder="Musterstraße 1, 12345 Musterstadt"
-                  className="w-full focus:outline-none"
+                  className="w-full focus:outline-none text-black"
                   required
                 />
               </div>
             </div>
 
-            <div className="relative">
+            {/* Beruf / Beschäftigung */}
+            <div>
               <label className="text-gray-700 font-semibold mb-1 block">
                 Beruf / Beschäftigungsstatus
               </label>
@@ -208,13 +273,33 @@ export default function UserPage() {
                   value={formData.occupation}
                   onChange={handleChange}
                   placeholder="Softwareentwickler/in, Student/in, etc."
-                  className="w-full focus:outline-none"
+                  className="w-full focus:outline-none text-black"
                   required
                 />
               </div>
             </div>
 
-            <div className="relative">
+            {/* Arbeitgeber */}
+            <div>
+              <label className="text-gray-700 font-semibold mb-1 block">
+                Arbeitgeber
+              </label>
+              <div className="flex items-center border border-gray-300 rounded-md p-2">
+                <FiBriefcase className="text-gray-400 mr-2" />
+                <input
+                  type="text"
+                  name="employer"
+                  value={formData.employer}
+                  onChange={handleChange}
+                  placeholder="Musterarbeitgeber"
+                  className="w-full focus:outline-none text-black"
+                  required
+                />
+              </div>
+            </div>
+
+            {/* Monatliches Einkommen */}
+            <div className="md:col-span-2">
               <label className="text-gray-700 font-semibold mb-1 block">
                 Monatliches Einkommen
               </label>
@@ -226,15 +311,16 @@ export default function UserPage() {
                   value={formData.monthlyIncome}
                   onChange={handleChange}
                   placeholder="2500"
-                  className="w-full focus:outline-none"
+                  className="w-full focus:outline-none text-black"
                   required
                 />
               </div>
             </div>
           </div>
 
+          {/* Hobbies */}
           <div>
-            <label className="text-gray-700 font-bold mb-2 block">
+            <label className="text-gray-700 font-semibold mb-2 block">
               Hobbies / Freizeitaktivitäten
             </label>
             <div className="flex flex-wrap gap-4">
@@ -253,30 +339,116 @@ export default function UserPage() {
             </div>
           </div>
 
+          {/* Notwendige Dateien */}
           <div>
-            <label className="text-gray-700 font-semibold mb-1 block">
-              Weitere Informationen (optional)
-            </label>
-            <textarea
-              name="additionalInfo"
-              value={formData.additionalInfo}
-              onChange={handleChange}
-              rows={4}
-              placeholder="Hier kannst du weitere Details, Interessen oder persönliche Anliegen erwähnen."
-              className="w-full border border-gray-300 rounded-md p-2 focus:outline-none"
-            />
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Notwendige Dateien</h2>
+
+            {/* Lebenslauf (eine Datei) */}
+            <div className="mb-4">
+              <label className="text-gray-700 font-semibold mb-2 block">
+                Lebenslauf
+              </label>
+              <button
+                type="button"
+                onClick={handleResumeClick}
+                className="inline-flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-200 transition"
+              >
+                <FiUpload className="mr-2" />
+                Lebenslauf hochladen
+              </button>
+              <input
+                type="file"
+                accept=".pdf,.doc,.docx"
+                ref={resumeInputRef}
+                onChange={handleResumeChange}
+                className="hidden"
+              />
+              {resume && (
+                <div className="flex items-center text-green-600 mt-2">
+                  <FiCheck className="mr-1" />
+                  <span>{resume.name}</span>
+                </div>
+              )}
+            </div>
+
+            {/* Gehaltsnachweise (mehrere Dateien) */}
+            <div className="mb-4">
+              <label className="text-gray-700 font-semibold mb-2 block">
+                Gehaltsnachweise (mehrere Dateien)
+              </label>
+              <button
+                type="button"
+                onClick={handleSalaryProofsClick}
+                className="inline-flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-200 transition"
+              >
+                <FiUpload className="mr-2" />
+                Gehaltsnachweise hochladen
+              </button>
+              <input
+                type="file"
+                accept=".pdf,.doc,.docx"
+                multiple
+                ref={salaryProofsInputRef}
+                onChange={handleSalaryProofChange}
+                className="hidden"
+              />
+              {salaryProofs.length > 0 && (
+                <div className="mt-2 space-y-1">
+                  {salaryProofs.map((file, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center text-green-600"
+                    >
+                      <FiCheck className="mr-1" />
+                      <span>{file.name}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Sonstige Dokumente (mehrere Dateien) */}
+            <div className="mb-4">
+              <label className="text-gray-700 font-semibold mb-2 block">
+                Sonstige Dokumente (optional, mehrere Dateien)
+              </label>
+              <button
+                type="button"
+                onClick={handleOtherFilesClick}
+                className="inline-flex items-center bg-gray-100 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-200 transition"
+              >
+                <FiUpload className="mr-2" />
+                Sonstige Dokumente hochladen
+              </button>
+              <input
+                type="file"
+                multiple
+                ref={otherFilesInputRef}
+                onChange={handleOtherFilesChange}
+                className="hidden"
+              />
+              {otherFiles.length > 0 && (
+                <div className="mt-2 space-y-1">
+                  {otherFiles.map((file, index) => (
+                    <div key={index} className="flex items-center text-green-600">
+                      <FiCheck className="mr-1" />
+                      <span>{file.name}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
+          {/* Absenden */}
           <button
             type="submit"
             className="inline-flex items-center bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
           >
-            Speichern
+            Absenden
           </button>
         </form>
       </main>
-
-      <Footer />
     </div>
   );
 }

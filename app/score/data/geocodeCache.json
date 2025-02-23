@@ -234,5 +234,13 @@
     "lon": 13.3978451,
     "fullAddress": "Bornholmer Straße, Arnimkiez, Prenzlauer Berg, Pankow, Berlin, Pankow, 10439, Deutschland",
     "timestamp": "2025-02-19T13:04:33.770Z"
+  },
+  {
+    "address": "Ludwigkirchstrasse 8, Wilmersdorf, berlin (10719)",
+    "city": "Wilmersdorf",
+    "lat": 52.4979375,
+    "lon": 13.3234484,
+    "fullAddress": "8, Ludwigkirchstraße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10719, Deutschland",
+    "timestamp": "2025-02-20T16:36:22.911Z"
   }
 ]
