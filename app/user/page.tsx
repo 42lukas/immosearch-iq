@@ -21,13 +21,12 @@ import {
  import Link from 'next/link';
 
 
-// Beispiel-Navigation
 function NavBar() {
   return (
     <nav className="w-full flex justify-between items-center bg-white shadow p-2">
       <Link href="/home">
         <div className="flex items-center">
-          <img src="favicon.ico" className="w-20 h-20"/>
+          <img src="favicon.ico" className="w-14 h-14"/>
           <p className="m-5 text-blue-950 font-bold text-2xl">immosearch-IQ</p>
         </div>
       </Link>
@@ -116,15 +115,28 @@ export default function UserPage() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Hier Daten und Dateien an eine API senden:
-    // z.B. mit FormData oder fetch
-    console.log("Formulardaten:", formData);
-    console.log("Lebenslauf:", resume);
-    console.log("Gehaltsnachweise:", salaryProofs);
-    console.log("Sonstige Dateien:", otherFiles);
-    alert("Formular erfolgreich abgeschickt! Siehe Console für Details.");
+
+    // JSON-Daten speichern
+    await fetch('/api/user', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+    });
+
+    // Dateien hochladen
+    const formDataFiles = new FormData();
+    if (resume) formDataFiles.append("files", resume);
+    salaryProofs.forEach(file => formDataFiles.append("files", file));
+    otherFiles.forEach(file => formDataFiles.append("files", file));
+
+    await fetch('/api/upload', {
+        method: 'POST',
+        body: formDataFiles
+    });
+
+    alert("✅ Daten und Dokumente gespeichert!");
   };
 
   return (
@@ -149,7 +161,6 @@ export default function UserPage() {
         </a>
       </header>
 
-      {/* Hauptbereich mit Formular */}
       <main
         id="formSection"
         className="bg-white rounded-t-3xl shadow-2xl -mt-8 p-8 md:p-12 max-w-4xl mx-auto w-full"
@@ -158,15 +169,12 @@ export default function UserPage() {
           Persönliche Daten
         </h2>
 
-        {/* multipart/form-data nicht vergessen, wenn du Dateien hochlädst */}
         <form
           onSubmit={handleSubmit}
           className="space-y-6"
           encType="multipart/form-data"
         >
-          {/* Grid für klassische Felder */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Vollständiger Name */}
             <div>
               <label className="text-gray-700 font-semibold mb-1 block">
                 Vollständiger Name
@@ -185,7 +193,6 @@ export default function UserPage() {
               </div>
             </div>
 
-            {/* E-Mail-Adresse */}
             <div>
               <label className="text-gray-700 font-semibold mb-1 block">
                 Email-Adresse
@@ -204,7 +211,6 @@ export default function UserPage() {
               </div>
             </div>
 
-            {/* Telefonnummer */}
             <div>
               <label className="text-gray-700 font-semibold mb-1 block">
                 Telefonnummer
@@ -223,7 +229,6 @@ export default function UserPage() {
               </div>
             </div>
 
-            {/* Geburtsdatum */}
             <div>
               <label className="text-black font-semibold mb-1 block">
                 Geburtsdatum
@@ -241,7 +246,6 @@ export default function UserPage() {
               </div>
             </div>
 
-            {/* Adresse */}
             <div className="md:col-span-2">
               <label className="text-gray-700 font-semibold mb-1 block">
                 Aktuelle Adresse
@@ -260,7 +264,6 @@ export default function UserPage() {
               </div>
             </div>
 
-            {/* Beruf / Beschäftigung */}
             <div>
               <label className="text-gray-700 font-semibold mb-1 block">
                 Beruf / Beschäftigungsstatus
@@ -279,7 +282,6 @@ export default function UserPage() {
               </div>
             </div>
 
-            {/* Arbeitgeber */}
             <div>
               <label className="text-gray-700 font-semibold mb-1 block">
                 Arbeitgeber
@@ -298,7 +300,6 @@ export default function UserPage() {
               </div>
             </div>
 
-            {/* Monatliches Einkommen */}
             <div className="md:col-span-2">
               <label className="text-gray-700 font-semibold mb-1 block">
                 Monatliches Einkommen
@@ -318,7 +319,6 @@ export default function UserPage() {
             </div>
           </div>
 
-          {/* Hobbies */}
           <div>
             <label className="text-gray-700 font-semibold mb-2 block">
               Hobbies / Freizeitaktivitäten
@@ -339,11 +339,9 @@ export default function UserPage() {
             </div>
           </div>
 
-          {/* Notwendige Dateien */}
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Notwendige Dateien</h2>
 
-            {/* Lebenslauf (eine Datei) */}
             <div className="mb-4">
               <label className="text-gray-700 font-semibold mb-2 block">
                 Lebenslauf
@@ -371,7 +369,6 @@ export default function UserPage() {
               )}
             </div>
 
-            {/* Gehaltsnachweise (mehrere Dateien) */}
             <div className="mb-4">
               <label className="text-gray-700 font-semibold mb-2 block">
                 Gehaltsnachweise (mehrere Dateien)
@@ -407,7 +404,6 @@ export default function UserPage() {
               )}
             </div>
 
-            {/* Sonstige Dokumente (mehrere Dateien) */}
             <div className="mb-4">
               <label className="text-gray-700 font-semibold mb-2 block">
                 Sonstige Dokumente (optional, mehrere Dateien)
@@ -440,7 +436,6 @@ export default function UserPage() {
             </div>
           </div>
 
-          {/* Absenden */}
           <button
             type="submit"
             className="inline-flex items-center bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
