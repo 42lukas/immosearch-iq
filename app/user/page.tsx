@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
+import Cookies from "js-cookie";                   
 import {
   FiUser,
   FiMail,
@@ -8,26 +9,21 @@ import {
   FiCalendar,
   FiMapPin,
   FiBriefcase,
-  FiDollarSign,
-  FiHeart,
   FiCheck,
   FiUpload,
 } from "react-icons/fi";
-import { 
-  MdOutlineWork,
-  MdEuroSymbol
- } from "react-icons/md";
-
- import Link from 'next/link';
-
+import { MdEuroSymbol } from "react-icons/md";
+import Link from "next/link";
 
 function NavBar() {
   return (
     <nav className="w-full flex justify-between items-center bg-white shadow p-2">
       <Link href="/home">
         <div className="flex items-center">
-          <img src="favicon.ico" className="w-14 h-14"/>
-          <p className="m-5 text-blue-950 font-bold text-2xl">immosearch-IQ</p>
+          <img src="favicon.ico" className="w-14 h-14" />
+          <p className="m-5 text-blue-950 font-bold text-2xl">
+            immosearch-IQ
+          </p>
         </div>
       </Link>
       <div>
@@ -43,6 +39,8 @@ function NavBar() {
 }
 
 export default function UserPage() {
+  const [userId, setUserId] = useState<string | null>(null);
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -56,16 +54,54 @@ export default function UserPage() {
     additionalInfo: "",
   });
 
-  const [resume, setResume] = useState<File | null>(null);       // Lebenslauf
-  const [salaryProofs, setSalaryProofs] = useState<File[]>([]);  // Gehaltsnachweise
-  const [otherFiles, setOtherFiles] = useState<File[]>([]);      // Sonstige Dokumente
+  // Bereits hochgeladene Dateien vom Server
+  const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
 
+  // Refs für File-Inputs
   const resumeInputRef = useRef<HTMLInputElement>(null);
   const salaryProofsInputRef = useRef<HTMLInputElement>(null);
   const otherFilesInputRef = useRef<HTMLInputElement>(null);
 
-  // Angebotene Hobbies
+  // State für neu hochzuladende Dateien
+  const [resume, setResume] = useState<File | null>(null); 
+  const [salaryProofs, setSalaryProofs] = useState<File[]>([]);
+  const [otherFiles, setOtherFiles] = useState<File[]>([]);
+
+  // Hobbies
   const hobbyOptions = ["Sport", "Kochen", "Lesen", "Reisen", "Musik", "Gaming"];
+
+  useEffect(() => {
+    // 1) userID aus Cookie laden
+    const userIdFromCookie = Cookies.get("userID");
+    if (!userIdFromCookie) {
+      return;
+    }
+    setUserId(userIdFromCookie);
+
+    // 2) Vorhandene User-Daten laden (GET /api/user?userId=...)
+    fetch(`/api/user?userId=${userIdFromCookie}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success && data.userData) {
+          setFormData((prev) => ({ ...prev, ...data.userData }));
+        }
+      })
+      .catch((err) => {
+        console.error("Fehler beim Laden der User-Daten:", err);
+      });
+
+    // 3) Bereits hochgeladene Dateien abrufen (GET /api/user/files?userId=...)
+    fetch(`/api/user/files?userId=${userIdFromCookie}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data.files)) {
+          setUploadedFiles(data.files);
+        }
+      })
+      .catch((err) => {
+        console.error("Fehler beim Laden der Dateiliste:", err);
+      });
+  }, []);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -118,23 +154,38 @@ export default function UserPage() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // JSON-Daten speichern
-    await fetch('/api/user', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
+    if (!userId) {
+      alert("❌ Keine userID im Cookie gefunden!");
+      return;
+    }
+
+    // (1) JSON-Daten speichern
+    await fetch("/api/user", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        userId: userId,       
+        userData: formData,
+      }),
     });
 
-    // Dateien hochladen
+    // (2) Dateien hochladen
     const formDataFiles = new FormData();
     if (resume) formDataFiles.append("files", resume);
-    salaryProofs.forEach(file => formDataFiles.append("files", file));
-    otherFiles.forEach(file => formDataFiles.append("files", file));
+    salaryProofs.forEach((file) => formDataFiles.append("files", file));
+    otherFiles.forEach((file) => formDataFiles.append("files", file));
 
-    await fetch('/api/upload', {
-        method: 'POST',
-        body: formDataFiles
+    await fetch("/api/upload", {
+      method: "POST",
+      body: formDataFiles,
     });
+
+    // (3) Dateien-Liste neu laden
+    const res = await fetch(`/api/user/files?userId=${userId}`);
+    const data = await res.json();
+    if (Array.isArray(data.files)) {
+      setUploadedFiles(data.files);
+    }
 
     alert("✅ Daten und Dokumente gespeichert!");
   };
@@ -144,14 +195,16 @@ export default function UserPage() {
       <NavBar />
 
       <header className="text-white flex flex-col items-center justify-center text-center py-20 px-4">
-        <h1 className="text-4xl font-bold mb-4">Persönliche Infomrationen</h1>
+        <h1 className="text-4xl font-bold mb-4">Persönliche Informationen</h1>
         <p className="max-w-2xl mb-6">
           Fülle das folgende Formular aus, um dich für deine Wunschwohnung zu
-          bewerben. Je mehr Informationen du bereitstellst, desto so höher die Wahrscheinlichkeit auf eine Zusage!
+          bewerben. Je mehr Informationen du bereitstellst, desto höher die
+          Wahrscheinlichkeit auf eine Zusage!
           <br />
           <br />
-          Basierend auf diesen Daten wird schließlich eine Bewerbung zugeschnitten auf passende Wohnungen generiert und mit 
-          anderen beigelegten Dateien an die Anbieter/innen der Wohnungen gesendet.
+          Basierend auf diesen Daten wird schließlich eine Bewerbung
+          zugeschnitten auf passende Wohnungen generiert und mit anderen
+          beigelegten Dateien an die Anbieter/innen der Wohnungen gesendet.
         </p>
         <a
           href="#formSection"
@@ -340,7 +393,9 @@ export default function UserPage() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Notwendige Dateien</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+              Notwendige Dateien
+            </h2>
 
             <div className="mb-4">
               <label className="text-gray-700 font-semibold mb-2 block">
@@ -392,10 +447,7 @@ export default function UserPage() {
               {salaryProofs.length > 0 && (
                 <div className="mt-2 space-y-1">
                   {salaryProofs.map((file, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center text-green-600"
-                    >
+                    <div key={index} className="flex items-center text-green-600">
                       <FiCheck className="mr-1" />
                       <span>{file.name}</span>
                     </div>
@@ -426,7 +478,10 @@ export default function UserPage() {
               {otherFiles.length > 0 && (
                 <div className="mt-2 space-y-1">
                   {otherFiles.map((file, index) => (
-                    <div key={index} className="flex items-center text-green-600">
+                    <div
+                      key={index}
+                      className="flex items-center text-green-600"
+                    >
                       <FiCheck className="mr-1" />
                       <span>{file.name}</span>
                     </div>
@@ -434,13 +489,35 @@ export default function UserPage() {
                 </div>
               )}
             </div>
+
+            {uploadedFiles.length > 0 && (
+              <div className="mb-4">
+                <h2 className="text-xl font-bold text-gray-800 mb-2">
+                  Bereits hochgeladene Dateien
+                </h2>
+                <ul className="list-disc list-inside">
+                  {uploadedFiles.map((filename) => (
+                    <li key={filename} className="my-1">
+                      <a
+                        href={`/uploads/${userId}/${filename}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 underline"
+                      >
+                        {filename}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
 
           <button
             type="submit"
             className="inline-flex items-center bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
           >
-            Absenden
+            Speichern
           </button>
         </form>
       </main>

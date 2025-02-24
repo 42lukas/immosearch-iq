@@ -2,25 +2,34 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
-const uploadDir = path.resolve(process.cwd(), 'public/uploads');
+const uploadBasePath = path.resolve(process.cwd(), 'public/uploads');
 
-if (!fs.existsSync(uploadDir)) {
-    fs.mkdirSync(uploadDir, { recursive: true });
+if (!fs.existsSync(uploadBasePath)) {
+    fs.mkdirSync(uploadBasePath, { recursive: true });
 }
 
 export async function POST(req: NextRequest) {
+    const userId = req.cookies.get('userID')?.value;
+    if (!userId) {
+        return NextResponse.json({ error: "Keine Nutzer-ID gefunden" }, { status: 400 });
+    }
+
+    const userUploadPath = path.join(uploadBasePath, userId);
+    if (!fs.existsSync(userUploadPath)) {
+        fs.mkdirSync(userUploadPath, { recursive: true });
+    }
+
     try {
         const formData = await req.formData();
         const files = formData.getAll("files");
-
         const savedFiles: string[] = [];
 
         for (const file of files) {
             if (file instanceof File) {
                 const buffer = await file.arrayBuffer();
-                const filePath = path.join(uploadDir, file.name);
+                const filePath = path.join(userUploadPath, file.name);
                 fs.writeFileSync(filePath, Buffer.from(buffer));
-                savedFiles.push(`/uploads/${file.name}`);
+                savedFiles.push(`/uploads/${userId}/${file.name}`);
             }
         }
 
