@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from 'react';
 
-// 🏡 Interface für Inserate
 interface Listing {
     title: string;
     price: number;
@@ -17,7 +16,6 @@ export default function ResultsPage() {
     const [listings, setListings] = useState<Listing[]>([]);
     const [loading, setLoading] = useState(false);
 
-    // Lade die Inserate beim Mounten
     useEffect(() => {
         const savedResults = localStorage.getItem('results');
         if (savedResults) {

@@ -1,7 +1,7 @@
 [
   {
     "address": "Friedenauer Höhe 19A, Friedenau, Berlin (12159)",
-    "city": "berlin",
+    "city": "Berlin",
     "lat": 52.4769821,
     "lon": 13.3370458,
     "fullAddress": "19A, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
@@ -9,7 +9,7 @@
   },
   {
     "address": "Grünauer Straße 20, Altglienicke, Berlin (12524)",
-    "city": "berlin",
+    "city": "Berlin",
     "lat": 52.419096,
     "lon": 13.543449,
     "fullAddress": "20, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
@@ -17,7 +17,7 @@
   },
   {
     "address": "Friedenauer Höhe 17, Friedenau, Berlin (12159)",
-    "city": "berlin",
+    "city": "Berlin",
     "lat": 52.4772558,
     "lon": 13.3375332,
     "fullAddress": "17, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
@@ -25,7 +25,7 @@
   },
   {
     "address": "Beusselstraße 65, Moabit, Berlin (10553)",
-    "city": "berlin",
+    "city": "Berlin",
     "lat": 52.5291617,
     "lon": 13.3284433,
     "fullAddress": "65, Beusselstraße, Moabit, Mitte, Berlin, 10553, Deutschland",
@@ -33,6 +33,7 @@
   },
   {
     "address": "Grünauer Straße 16, Altglienicke, Berlin (12524)",
+    "city": "Berlin",
     "lat": 52.4192279,
     "lon": 13.5423798,
     "fullAddress": "16, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
@@ -40,7 +41,7 @@
   },
   {
     "address": "Friedenauer Höhe 17, Friedenau, Berlin (12159)",
-    "city": " Berlin (12159)",
+    "city": "Berlin",
     "lat": 52.4772558,
     "lon": 13.3375332,
     "fullAddress": "17, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
@@ -48,7 +49,7 @@
   },
   {
     "address": "Erich-Weinert-Straße 16, Prenzlauer Berg, Berlin (10439)",
-    "city": "",
+    "city": "Berlin",
     "lat": 52.551539,
     "lon": 13.4166711,
     "fullAddress": "16, Erich-Weinert-Straße, Arnimkiez, Prenzlauer Berg, Pankow, Berlin, 10439, Deutschland",
@@ -80,7 +81,7 @@
   },
   {
     "address": "Grünauer Straße 16, Altglienicke, Berlin (12524)",
-    "city": "Altglienicke",
+    "city": "Berlin",
     "lat": 52.4192279,
     "lon": 13.5423798,
     "fullAddress": "16, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
@@ -96,6 +97,7 @@
   },
   {
     "address": "HafenCity, Hamburg (20457)",
+    "city": "Hamburg",
     "lat": 53.5429127,
     "lon": 9.9958346,
     "fullAddress": "HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
@@ -103,6 +105,7 @@
   },
   {
     "address": "Harburg, Hamburg (21073)",
+    "city": "Hamburg",
     "lat": 53.4562216,
     "lon": 9.9872112,
     "fullAddress": "Harburg, Hamburg, 21073, Deutschland",
@@ -110,6 +113,7 @@
   },
   {
     "address": "Walderseestraße, Othmarschen, Hamburg (22605)",
+    "city": "Hamburg",
     "lat": 53.55557554594315,
     "lon": 9.887023711045595,
     "fullAddress": "Walderseestraße, Othmarschen, Altona, Hamburg, 22605, Deutschland",
@@ -117,7 +121,7 @@
   },
   {
     "address": "San Francisco Straße 1, HafenCity, Hamburg, HafenCity (20457)",
-    "city": "HafenCity",
+    "city": "Hamburg",
     "lat": 53.54090435,
     "lon": 9.996434447005939,
     "fullAddress": "Gut vernetzt, 1, San-Francisco-Straße, Quartier Überseequartier, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
@@ -125,7 +129,7 @@
   },
   {
     "address": "Harburg, Hamburg (21073)",
-    "city": "Hamburg (21073)",
+    "city": "Hamburg",
     "lat": 53.4562216,
     "lon": 9.9872112,
     "fullAddress": "Harburg, Hamburg, 21073, Deutschland",
@@ -133,7 +137,7 @@
   },
   {
     "address": "HafenCity, HafenCity, Hamburg (20457)",
-    "city": "HafenCity",
+    "city": "Hamburg",
     "lat": 53.54028945,
     "lon": 10.00488951198924,
     "fullAddress": "HafenCity Universität Hamburg, 1, Überseeallee, Quartier Elbtorquartier, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
@@ -141,7 +145,7 @@
   },
   {
     "address": "HafenCity, Hamburg (20457)",
-    "city": "Hamburg (20457)",
+    "city": "Hamburg",
     "lat": 53.5429127,
     "lon": 9.9958346,
     "fullAddress": "HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
@@ -149,7 +153,7 @@
   },
   {
     "address": "Walderseestraße, Othmarschen, Hamburg (22605)",
-    "city": "Othmarschen",
+    "city": "Hamburg",
     "lat": 53.55557554594315,
     "lon": 9.887023711045595,
     "fullAddress": "Walderseestraße, Othmarschen, Altona, Hamburg, 22605, Deutschland",
@@ -157,7 +161,7 @@
   },
   {
     "address": "Beusselstraße 65, Moabit, Berlin (10553)",
-    "city": "Moabit",
+    "city": "Berlin",
     "lat": 52.5291617,
     "lon": 13.3284433,
     "fullAddress": "65, Beusselstraße, Moabit, Mitte, Berlin, 10553, Deutschland",
@@ -165,7 +169,7 @@
   },
   {
     "address": "Friedenauer Höhe 17, Friedenau, Berlin (12159)",
-    "city": "Friedenau",
+    "city": "Berlin",
     "lat": 52.4772558,
     "lon": 13.3375332,
     "fullAddress": "17, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
@@ -173,7 +177,7 @@
   },
   {
     "address": "Prinzessinnenstraße, Kreuzberg, Berlin (10969)",
-    "city": "Kreuzberg",
+    "city": "Berlin",
     "lat": 52.502570068131405,
     "lon": 13.41291006765458,
     "fullAddress": "Prinzessinnenstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Deutschland",
@@ -181,7 +185,7 @@
   },
   {
     "address": "Bellevuestraße, Tiergarten, Berlin (10785)",
-    "city": "Tiergarten",
+    "city": "Berlin",
     "lat": 52.51068437184778,
     "lon": 13.373205023223427,
     "fullAddress": "Bellevuestraße, Tiergarten, Mitte, Berlin, 10785, Deutschland",
@@ -189,7 +193,7 @@
   },
   {
     "address": "Erich-Weinert-Straße 16, Prenzlauer Berg, Berlin (10439)",
-    "city": "Prenzlauer Berg",
+    "city": "Berlin",
     "lat": 52.551539,
     "lon": 13.4166711,
     "fullAddress": "16, Erich-Weinert-Straße, Arnimkiez, Prenzlauer Berg, Pankow, Berlin, 10439, Deutschland",
@@ -197,7 +201,7 @@
   },
   {
     "address": "Stromstraße 36, Moabit, Berlin (10551)",
-    "city": "Moabit",
+    "city": "Berlin",
     "lat": 52.531307999999996,
     "lon": 13.342456296063677,
     "fullAddress": "Habyt Co-Living Berlin, 36, Stromstraße, Moabit, Mitte, Berlin, 10551, Deutschland",
@@ -205,7 +209,7 @@
   },
   {
     "address": "Friedenauer Höhe 19A, Friedenau, Berlin (12159)",
-    "city": "Friedenau",
+    "city": "Berlin",
     "lat": 52.4769821,
     "lon": 13.3370458,
     "fullAddress": "19A, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
@@ -213,7 +217,7 @@
   },
   {
     "address": "GREIFSWALDER STR, Prenzlauer Berg, Berlin (10405)",
-    "city": "Prenzlauer Berg",
+    "city": "Berlin",
     "lat": 52.5402462,
     "lon": 13.4389887,
     "fullAddress": "Greifswalder Straße, Fußgängertunnel Greifswalder Straße, Grüne Stadt, Prenzlauer Berg, Pankow, Berlin, Pankow, 10409, Deutschland",
@@ -221,7 +225,7 @@
   },
   {
     "address": "Stresemannstraße, Kreuzberg, Berlin (10963)",
-    "city": "Kreuzberg",
+    "city": "Berlin",
     "lat": 52.50278850062645,
     "lon": 13.384396334589495,
     "fullAddress": "Stresemannstraße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Deutschland",
@@ -229,7 +233,7 @@
   },
   {
     "address": "Bornholmer Str., Prenzlauer Berg, Berlin (10439)",
-    "city": "Prenzlauer Berg",
+    "city": "Berlin",
     "lat": 52.5547713,
     "lon": 13.3978451,
     "fullAddress": "Bornholmer Straße, Arnimkiez, Prenzlauer Berg, Pankow, Berlin, Pankow, 10439, Deutschland",
@@ -237,7 +241,7 @@
   },
   {
     "address": "Ludwigkirchstrasse 8, Wilmersdorf, berlin (10719)",
-    "city": "Wilmersdorf",
+    "city": "Berlin",
     "lat": 52.4979375,
     "lon": 13.3234484,
     "fullAddress": "8, Ludwigkirchstraße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10719, Deutschland",
@@ -245,10 +249,154 @@
   },
   {
     "address": "Elisabethkirchstraße, Mitte, Berlin (10115)",
-    "city": "Mitte",
+    "city": "Berlin",
     "lat": 52.53342943488537,
     "lon": 13.395943019437565,
     "fullAddress": "Elisabethkirchstraße, Mitte, Berlin, 10115, Deutschland",
     "timestamp": "2025-02-25T10:33:54.988Z"
+  },
+  {
+    "address": "Stephanstraße, Moabit, Berlin (10559)",
+    "city": "Berlin",
+    "lat": 52.5337224,
+    "lon": 13.3472692,
+    "fullAddress": "Stephanstraße, Moabit, Mitte, Berlin, 10559, Deutschland",
+    "timestamp": "2025-02-25T19:37:31.545Z"
+  },
+  {
+    "address": "Klara-Franke-Straße 24-28, Moabit, Berlin (10557)",
+    "city": "Berlin",
+    "lat": 52.5307503,
+    "lon": 13.3636623,
+    "fullAddress": "Klara-Franke-Straße, Europacity, Moabit, Mitte, Berlin, 10557, Deutschland",
+    "timestamp": "2025-02-25T19:40:57.769Z"
+  },
+  {
+    "address": "David-Friedländer-Weg 150, Falkenberg, Berlin (13057)",
+    "city": "Berlin",
+    "lat": 52.574562650000004,
+    "lon": 13.562422903941307,
+    "fullAddress": "150, David-Friedländer-Weg, Falkenberg, Lichtenberg, Berlin, Pankow, 13057, Deutschland",
+    "timestamp": "2025-02-25T20:08:38.297Z"
+  },
+  {
+    "address": "Karl-Kunger-Straße, Alt-Treptow, Berlin (12435)",
+    "city": "Berlin",
+    "lat": 52.49222303340682,
+    "lon": 13.445728728393934,
+    "fullAddress": "Karl-Kunger-Straße, Kungerkiez, Alt-Treptow, Treptow-Köpenick, Berlin, 12435, Deutschland",
+    "timestamp": "2025-02-25T20:10:39.498Z"
+  },
+  {
+    "address": "Rosenthaler Straße 45, Mitte, Berlin (10178)",
+    "city": "Berlin",
+    "lat": 52.5241273,
+    "lon": 13.4030396,
+    "fullAddress": "45, Rosenthaler Straße, Spandauer Vorstadt, Mitte, Berlin, 10178, Deutschland",
+    "timestamp": "2025-02-25T20:12:12.705Z"
+  },
+  {
+    "address": "Max-Steinke-Straße, Weißensee, Berlin (13086)",
+    "city": "Berlin",
+    "lat": 52.54988875780381,
+    "lon": 13.450537469766175,
+    "fullAddress": "Max-Steinke-Straße, Weißensee, Pankow, Berlin, 13086, Deutschland",
+    "timestamp": "2025-02-25T20:15:05.585Z"
+  },
+  {
+    "address": "Bredowstraße, Moabit, Berlin (10551)",
+    "city": "Berlin",
+    "lat": 52.52819450445111,
+    "lon": 13.339963803034225,
+    "fullAddress": "Bredowstraße, Moabit, Mitte, Berlin, 10551, Deutschland",
+    "timestamp": "2025-02-25T20:21:02.228Z"
+  },
+  {
+    "address": "Einbecker Straße 27, Lichtenberg, Berlin (10317)",
+    "city": "Berlin",
+    "lat": 52.5101242,
+    "lon": 13.5024811,
+    "fullAddress": "27, Einbecker Straße, Weitlingkiez, Rummelsburg, Lichtenberg, Berlin, Pankow, 10317, Deutschland",
+    "timestamp": "2025-02-25T20:22:40.681Z"
+  },
+  {
+    "address": "Manfred-von-Richthofen-Str. 28, Tempelhof, Berlin (12101)",
+    "city": "Berlin",
+    "lat": 52.4821314,
+    "lon": 13.38020303119739,
+    "fullAddress": "28, Manfred-von-Richthofen-Straße, Gartenstadt Neu-Tempelhof, Tempelhof, Tempelhof-Schöneberg, Berlin, 12101, Deutschland",
+    "timestamp": "2025-02-25T20:23:40.296Z"
+  },
+  {
+    "address": "Eylauerstraße 13, Kreuzberg, Berlin (10965)",
+    "city": "Berlin",
+    "lat": 52.4855482,
+    "lon": 13.37434103404447,
+    "fullAddress": "13, Eylauer Straße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10965, Deutschland",
+    "timestamp": "2025-02-25T20:57:07.159Z"
+  },
+  {
+    "address": "Templiner-See-Str. 6, Haselhorst, Berlin (13599)",
+    "city": "Berlin",
+    "lat": 52.5561358,
+    "lon": 13.2250047,
+    "fullAddress": "6, Templiner-See-Straße, Haselhorst, Spandau, Berlin, 13599, Deutschland",
+    "timestamp": "2025-02-25T20:57:08.169Z"
+  },
+  {
+    "address": "Boxhagener Straße 76, Friedrichshain, Berlin (10245)",
+    "city": "Berlin",
+    "lat": 52.50754,
+    "lon": 13.4690345,
+    "fullAddress": "76, Boxhagener Straße, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Deutschland",
+    "timestamp": "2025-02-25T20:57:09.172Z"
+  },
+  {
+    "address": "Güntzelstr 32, Wilmersdorf, Berlin (10717)",
+    "city": "Berlin",
+    "lat": 52.49205125,
+    "lon": 13.320604103639585,
+    "fullAddress": "32, Güntzelstraße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10717, Deutschland",
+    "timestamp": "2025-02-25T20:57:10.156Z"
+  },
+  {
+    "address": "Gesundbrunnen, Berlin (10439)",
+    "city": "Berlin",
+    "lat": 52.5491748,
+    "lon": 13.3900758,
+    "fullAddress": "Gesundbrunnen, Hanne-Sobek-Platz, Gartenstadt Atlantic, Gesundbrunnen, Mitte, Berlin, 13357, Deutschland",
+    "timestamp": "2025-02-25T20:57:11.181Z"
+  },
+  {
+    "address": "Genthiner Strasse 49, Tiergarten, Berlin (10785)",
+    "city": "Berlin",
+    "lat": 52.5014452,
+    "lon": 13.3586291,
+    "fullAddress": "49, Genthiner Straße, Botschaftsviertel, Tiergarten, Mitte, Berlin, 10785, Deutschland",
+    "timestamp": "2025-02-25T21:11:33.610Z"
+  },
+  {
+    "address": "Am Köllnischen Park 11, Mitte, Berlin (10179)",
+    "city": "Berlin",
+    "lat": 52.5120026,
+    "lon": 13.4151284,
+    "fullAddress": "11, Am Köllnischen Park, Luisenstadt, Mitte, Berlin, 10179, Deutschland",
+    "timestamp": "2025-02-25T21:11:34.604Z"
+  },
+  {
+    "address": "Pufendorfstraße 4, Friedrichshain, Berlin (10249)",
+    "city": "Berlin",
+    "lat": 52.5224094,
+    "lon": 13.4384357,
+    "fullAddress": "4, Pufendorfstraße, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10249, Deutschland",
+    "timestamp": "2025-02-25T21:11:35.750Z"
+  },
+  {
+    "address": "Woelckpromenade 7, Weißensee, Berlin (13086)",
+    "city": "Berlin",
+    "lat": 52.552943,
+    "lon": 13.4540515,
+    "fullAddress": "7, Woelckpromenade, Weißensee, Pankow, Berlin, 13086, Deutschland",
+    "timestamp": "2025-02-25T21:11:36.588Z"
   }
 ]

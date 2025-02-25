@@ -7,119 +7,133 @@ import path from 'path';
 const cacheFilePath = path.resolve(process.cwd(), 'app/score/data/geocodeCache.json');
 
 type CacheEntry = {
-    address: string;
-    city: string;
-    lat: number;
-    lon: number;
-    fullAddress: string;
-    timestamp: string;
+  address: string;
+  city: string;
+  lat: number;
+  lon: number;
+  fullAddress: string;
+  timestamp: string;
 };
 
 export class LocationScore implements ScoreComponent {
 
-    calculateScore(listing: any, preferences: any): number {
-        let score = 0;
+  async calculateScore(listing: any, preferences: any): Promise<number> {
+    let score = 0;
     
-        this.getCoordinatesByAddress(listing.address, listing.city).then(coordinates => {
-            if (!coordinates) return score;
+    const coordinates = await this.getCoordinatesByAddress(listing.address, listing.city);
     
-            kiezListe.forEach(kiez => {
-                if (listing.city === kiez.stadt.toLowerCase().trim()) {
-                    const distance = this.coordinatesDistance(
-                        coordinates.lat,
-                        coordinates.lon,
-                        kiez.koordinaten.lat,
-                        kiez.koordinaten.lng
-                    );
-    
-                    if (distance <= 1.5) {
-                        score += 1;
-                    }
-                }
-            });
-        }).catch(error => {
-            console.error("Fehler beim Abrufen der Koordinaten:", error);
-        });
-    
-        return score;
+    if (!coordinates) {
+      console.log(`Keine Koordinaten gefunden für ${listing.address}`);
+      return score;
     }
-    
 
-    async getCoordinatesByAddress(address: string, city: string) {
-        let cache: CacheEntry[] = this.loadCache();
+    const listingCityNormalized = listing.city.toLowerCase().trim();
 
-        const cachedEntry = cache.find((entry: CacheEntry) => entry.address === address && entry.city === city);
-        if (cachedEntry) {
-            console.log(`📍 Cache-Treffer für Adresse: ${address}`);
-            return { lat: cachedEntry.lat, lon: cachedEntry.lon };
+    for (const kiez of kiezListe) {
+      const kiezCityNormalized = kiez.stadt.toLowerCase().trim();
+
+      if (listingCityNormalized.includes(kiezCityNormalized)) {
+
+        const distance = this.coordinatesDistance(
+          coordinates.lat,
+          coordinates.lon,
+          kiez.koordinaten.lat,
+          kiez.koordinaten.lng
+        );
+
+        if (distance <= 1.5) {
+          score += 1;
         }
-
-        try {
-            const encodedAddress = encodeURIComponent(address);
-            const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodedAddress}`;
-            const response = await axios.get(url, {
-                headers: { 'User-Agent': 'WohnungssuchApp/1.0' }
-            });
-
-            if (response.data.length > 0) {
-                const { lat, lon, display_name } = response.data[0];
-                const newEntry: CacheEntry = {
-                    address,
-                    city,
-                    lat: parseFloat(lat),
-                    lon: parseFloat(lon),
-                    fullAddress: display_name,
-                    timestamp: new Date().toISOString()
-                };
-
-                cache.push(newEntry);
-                this.saveCache(cache);
-
-                return { lat: newEntry.lat, lon: newEntry.lon };
-            } else {
-                console.warn('⚠️ Keine Koordinaten gefunden für:', address);
-                return null;
-            }
-        } catch (error) {
-            console.error('❌ Fehler beim Geocoding:', error);
-            return null;
-        }
+      }
     }
 
-    coordinatesDistance(lat1: number, lon1: number, lat2: number, lon2: number) {
-        const R = 6371;
-        const dLat = (lat2 - lat1) * Math.PI / 180;
-        const dLon = (lon2 - lon1) * Math.PI / 180;
+    console.log(score + " für " + listing.address);
+    return score;
+  }
 
-        const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-                  Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-                  Math.sin(dLon/2) * Math.sin(dLon/2);
+  private async getCoordinatesByAddress(address: string, city: string) {
+    let cache: CacheEntry[] = this.loadCache();
 
-        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-        const distance = R * c;
+    const addressNormalized = address.toLowerCase().trim();
+    const cityNormalized = city.toLowerCase().trim();
 
-        return distance;
+    const cachedEntry = cache.find(
+      (entry: CacheEntry) => 
+        entry.address.toLowerCase().trim() === addressNormalized &&
+        entry.city.toLowerCase().trim() === cityNormalized
+    );
+
+    if (cachedEntry) {
+      console.log(`📍 Cache-Treffer für Adresse: ${address}`);
+      return { lat: cachedEntry.lat, lon: cachedEntry.lon };
     }
 
-    loadCache(): CacheEntry[] {
-        try {
-            if (!fs.existsSync(cacheFilePath)) {
-                fs.writeFileSync(cacheFilePath, '[]', 'utf-8');
-            }
-            const data = fs.readFileSync(cacheFilePath, 'utf-8');
-            return JSON.parse(data);
-        } catch (error) {
-            console.error('⚠️ Fehler beim Laden des Caches:', error);
-            return [];
-        }
-    }
+    try {
+      const encodedAddress = encodeURIComponent(address);
+      const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodedAddress}`;
+      const response = await axios.get(url, {
+        headers: { 'User-Agent': 'WohnungssuchApp/1.0' }
+      });
 
-    saveCache(cache: CacheEntry[]) {
-        try {
-            fs.writeFileSync(cacheFilePath, JSON.stringify(cache, null, 2), 'utf-8');
-            console.log('✅ Cache aktualisiert:', cacheFilePath);
-        } catch (error) {
-            console.error('⚠️ Fehler beim Speichern des Caches:', error);
-        }
+      if (response.data.length > 0) {
+        const { lat, lon, display_name } = response.data[0];
+        const newEntry: CacheEntry = {
+          address,
+          city,
+          lat: parseFloat(lat),
+          lon: parseFloat(lon),
+          fullAddress: display_name,
+          timestamp: new Date().toISOString()
+        };
+
+        cache.push(newEntry);
+        this.saveCache(cache);
+
+        return { lat: newEntry.lat, lon: newEntry.lon };
+      } else {
+        console.warn('⚠️ Keine Koordinaten gefunden für:', address);
+        return null;
+      }
+    } catch (error) {
+      console.error('❌ Fehler beim Geocoding:', error);
+      return null;
     }
+  }
+
+  private coordinatesDistance(lat1: number, lon1: number, lat2: number, lon2: number) {
+    const R = 6371; // Erdradius
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLon/2) * Math.sin(dLon/2);
+
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    const distance = R * c;
+
+    return distance;
+  }
+
+  private loadCache(): CacheEntry[] {
+    try {
+      if (!fs.existsSync(cacheFilePath)) {
+        fs.writeFileSync(cacheFilePath, '[]', 'utf-8');
+      }
+      const data = fs.readFileSync(cacheFilePath, 'utf-8');
+      return JSON.parse(data);
+    } catch (error) {
+      console.error('⚠️ Fehler beim Laden des Caches:', error);
+      return [];
+    }
+  }
+
+  private saveCache(cache: CacheEntry[]) {
+    try {
+      fs.writeFileSync(cacheFilePath, JSON.stringify(cache, null, 2), 'utf-8');
+      console.log('✅ Cache aktualisiert:', cacheFilePath);
+    } catch (error) {
+      console.error('⚠️ Fehler beim Speichern des Caches:', error);
+    }
+  }
 }

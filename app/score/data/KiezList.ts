@@ -11,8 +11,8 @@ export const kiezListe = [
         name: "test",
         stadt: "Berlin",
         koordinaten: {
-            lat: 52.47703500517776,
-            lng: 13.337114660808158
+            lat: 52.4769821,
+            lng: 13.3370458,
         }
     },
     {

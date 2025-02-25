@@ -1,7 +1,7 @@
 import { ScoreComponent } from '@/types/ScoreComponent';
 
 export class RoomScore implements ScoreComponent {
-    calculateScore(listing: any, preferences: any): number {
+    async calculateScore(listing: any, preferences: any): Promise<number> {
         const { rooms } = listing;
         if (rooms >= preferences.minRooms && rooms <= preferences.maxRooms) {
             return 3;

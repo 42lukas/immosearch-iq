@@ -1,7 +1,7 @@
 import { ScoreComponent } from '@/types/ScoreComponent';
 
 export class TransportScore implements ScoreComponent {
-    calculateScore(listing: any, preferences: any): number {
+    async calculateScore(listing: any, preferences: any): Promise<number> {
         const stopsNearby = listing.publicTransportStops || 0;
         if (stopsNearby > 5) {
             return 2;
