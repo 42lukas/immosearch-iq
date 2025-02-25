@@ -11,6 +11,7 @@ import {
   FiBriefcase,
   FiCheck,
   FiUpload,
+  FiTrash
 } from "react-icons/fi";
 import { MdEuroSymbol } from "react-icons/md";
 import Link from "next/link";
@@ -54,15 +55,12 @@ export default function UserPage() {
     additionalInfo: "",
   });
 
-  // Bereits hochgeladene Dateien vom Server
   const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
 
-  // Refs für File-Inputs
   const resumeInputRef = useRef<HTMLInputElement>(null);
   const salaryProofsInputRef = useRef<HTMLInputElement>(null);
   const otherFilesInputRef = useRef<HTMLInputElement>(null);
 
-  // State für neu hochzuladende Dateien
   const [resume, setResume] = useState<File | null>(null); 
   const [salaryProofs, setSalaryProofs] = useState<File[]>([]);
   const [otherFiles, setOtherFiles] = useState<File[]>([]);
@@ -71,14 +69,12 @@ export default function UserPage() {
   const hobbyOptions = ["Sport", "Kochen", "Lesen", "Reisen", "Musik", "Gaming"];
 
   useEffect(() => {
-    // 1) userID aus Cookie laden
     const userIdFromCookie = Cookies.get("userID");
     if (!userIdFromCookie) {
       return;
     }
     setUserId(userIdFromCookie);
 
-    // 2) Vorhandene User-Daten laden (GET /api/user?userId=...)
     fetch(`/api/user?userId=${userIdFromCookie}`)
       .then((res) => res.json())
       .then((data) => {
@@ -90,7 +86,6 @@ export default function UserPage() {
         console.error("Fehler beim Laden der User-Daten:", err);
       });
 
-    // 3) Bereits hochgeladene Dateien abrufen (GET /api/user/files?userId=...)
     fetch(`/api/user/files?userId=${userIdFromCookie}`)
       .then((res) => res.json())
       .then((data) => {
@@ -150,6 +145,30 @@ export default function UserPage() {
       setOtherFiles(Array.from(e.target.files));
     }
   };
+  const handleDeleteFile = async (filename: string) => {
+    if (!userId) {
+      alert("❌ Keine userID im Cookie gefunden!");
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/user/delete-files", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId, filename }),
+      });
+
+      const data = await response.json();
+      if (data.success) {
+        setUploadedFiles((prev) => prev.filter((file) => file !== filename));
+      } else {
+        alert("Fehler beim Löschen der Datei.");
+      }
+    } catch (error) {
+      console.error("Fehler beim Löschen der Datei:", error);
+    }
+  };
+
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -497,7 +516,7 @@ export default function UserPage() {
                 </h2>
                 <ul className="list-disc list-inside">
                   {uploadedFiles.map((filename) => (
-                    <li key={filename} className="my-1">
+                    <li key={filename} className="my-1 flex items-center gap-2">
                       <a
                         href={`/uploads/${userId}/${filename}`}
                         target="_blank"
@@ -506,6 +525,13 @@ export default function UserPage() {
                       >
                         {filename}
                       </a>
+                      <button
+                        type="button"
+                        onClick={() => handleDeleteFile(filename)}
+                        className="text-red-500 hover:text-red-700 transition"
+                      >
+                        <FiTrash />
+                      </button>
                     </li>
                   ))}
                 </ul>

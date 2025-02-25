@@ -242,5 +242,13 @@
     "lon": 13.3234484,
     "fullAddress": "8, Ludwigkirchstraße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10719, Deutschland",
     "timestamp": "2025-02-20T16:36:22.911Z"
+  },
+  {
+    "address": "Elisabethkirchstraße, Mitte, Berlin (10115)",
+    "city": "Mitte",
+    "lat": 52.53342943488537,
+    "lon": 13.395943019437565,
+    "fullAddress": "Elisabethkirchstraße, Mitte, Berlin, 10115, Deutschland",
+    "timestamp": "2025-02-25T10:33:54.988Z"
   }
 ]
