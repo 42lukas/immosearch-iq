@@ -1,6 +1,6 @@
 export const kiezListe = [
     {
-        name: "Bergmankiez",
+        name: "Bergmannkiez",
         stadt: "Berlin",
         koordinaten: {
             lat: 52.4886,
@@ -8,83 +8,67 @@ export const kiezListe = [
         }
     },
     {
-        name: "test",
+        name: "Wrangelkiez",
         stadt: "Berlin",
         koordinaten: {
-            lat: 52.4769821,
-            lng: 13.3370458,
+            lat: 52.4994,
+            lng: 13.4464
         }
     },
     {
-        name: "Schanzenviertel",
-        stadt: "Hamburg",
+        name: "Graefekiez",
+        stadt: "Berlin",
         koordinaten: {
-            lat: 53.5648,
-            lng: 9.9632
+            lat: 52.4947,
+            lng: 13.4195
         }
     },
     {
-        name: "Belgisches Viertel",
-        stadt: "Köln",
+        name: "Reuterkiez (Kreuzkölln)",
+        stadt: "Berlin",
         koordinaten: {
-            lat: 50.9359,
-            lng: 6.9370
+            lat: 52.4924,
+            lng: 13.4284
         }
     },
     {
-        name: "Glockenbachviertel",
-        stadt: "München",
+        name: "Schillerkiez",
+        stadt: "Berlin",
         koordinaten: {
-            lat: 48.1314,
-            lng: 11.5706
+            lat: 52.4795,
+            lng: 13.4234
         }
     },
     {
-        name: "Sachsenhausen",
-        stadt: "Frankfurt am Main",
+        name: "Richardkiez",
+        stadt: "Berlin",
         koordinaten: {
-            lat: 50.1004,
-            lng: 8.6868
+            lat: 52.4836,
+            lng: 13.4313
         }
     },
     {
-        name: "Dresdner Neustadt",
-        stadt: "Dresden",
+        name: "Helmholtzplatz-Kiez",
+        stadt: "Berlin",
         koordinaten: {
-            lat: 51.0654,
-            lng: 13.7412
+            lat: 52.5426,
+            lng: 13.4235
         }
     },
     {
-        name: "Südvorstadt",
-        stadt: "Leipzig",
+        name: "Kollwitzkiez",
+        stadt: "Berlin",
         koordinaten: {
-            lat: 51.3223,
-            lng: 12.3731
+            lat: 52.5386,
+            lng: 13.4197
         }
     },
     {
-        name: "Gostenhof",
-        stadt: "Nürnberg",
+        name: "Bötzowviertel",
+        stadt: "Berlin",
         koordinaten: {
-            lat: 49.4518,
-            lng: 11.0573
-        }
-    },
-    {
-        name: "Jungbusch",
-        stadt: "Mannheim",
-        koordinaten: {
-            lat: 49.4882,
-            lng: 8.4607
-        }
-    },
-    {
-        name: "Flingern",
-        stadt: "Düsseldorf",
-        koordinaten: {
-            lat: 51.2365,
-            lng: 6.8080
+            lat: 52.5294,
+            lng: 13.4383
         }
     },
     {
@@ -128,51 +112,27 @@ export const kiezListe = [
         }
     },
     {
-        name: "Kollwitzkiez",
+        name: "Simon-Dach-Kiez",
         stadt: "Berlin",
         koordinaten: {
-            lat: 52.5386,
-            lng: 13.4197
+            lat: 52.5153,
+            lng: 13.4549
         }
     },
     {
-        name: "Helmholtzplatz-Kiez",
+        name: "Boxhagener Kiez",
         stadt: "Berlin",
         koordinaten: {
-            lat: 52.5426,
-            lng: 13.4235
+            lat: 52.5148,
+            lng: 13.4583
         }
     },
     {
-        name: "Bötzowviertel",
-        stadt: "Berlin",
+        name: "Schanzenviertel",
+        stadt: "Hamburg",
         koordinaten: {
-            lat: 52.5294,
-            lng: 13.4383
-        }
-    },
-    {
-        name: "Reuterkiez (Kreuzkölln)",
-        stadt: "Berlin",
-        koordinaten: {
-            lat: 52.4924,
-            lng: 13.4284
-        }
-    },
-    {
-        name: "Schillerkiez",
-        stadt: "Berlin",
-        koordinaten: {
-            lat: 52.4795,
-            lng: 13.4234
-        }
-    },
-    {
-        name: "Richardkiez",
-        stadt: "Berlin",
-        koordinaten: {
-            lat: 52.4836,
-            lng: 13.4313
+            lat: 53.5648,
+            lng: 9.9632
         }
     }
 ];

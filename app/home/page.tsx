@@ -49,7 +49,7 @@ export default function Home() {
 
         if (response.ok) {
             const data = await response.json();
-            localStorage.setItem('results', JSON.stringify(data)); // Ergebnisse lokal speichern
+            localStorage.setItem('results', JSON.stringify(data));
             router.push('/results');
         } else {
             console.log('Fehler beim Starten des Crawlers!');
