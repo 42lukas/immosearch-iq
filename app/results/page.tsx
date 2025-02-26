@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from 'react';
+import Cookies from "js-cookie";
 
 interface Listing {
     title: string;
@@ -12,8 +13,21 @@ interface Listing {
     score: number;
 }
 
+interface UserData {
+    fullName: string;
+    email: string;
+    phone: string;
+    birthDate: string;
+    currentAddress: string;
+    occupation: string;
+    employer: string;
+    monthlyIncome: string;
+    hobbies: string[];
+}
+
 export default function ResultsPage() {
     const [listings, setListings] = useState<Listing[]>([]);
+    const [userData, setUserData] = useState<UserData | null>(null);
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
@@ -21,20 +35,32 @@ export default function ResultsPage() {
         if (savedResults) {
             setListings(JSON.parse(savedResults));
         }
-    }, []);
 
-    // Funktion zum Generieren der Bewerbung
-    const generateApplication = async (listing: Listing) => {
-        setLoading(true);
-        const userData = {
-            name: "Max Mustermann",
-            alter: 20,
-            arbeitgeber: "Robert Koch-Institut",
-            beruf: "Softwareentwickler",
-            einkommen: "5000",
-            einzugsdatum: "01.04.2025"
+        const fetchUserData = async () => {
+            const userId = Cookies.get('userID');
+            if (!userId) return;
+
+            try {
+                const response = await fetch(`/api/user?userId=${userId}`);
+                const data = await response.json();
+                if (data.success) {
+                    setUserData(data.userData);
+                }
+            } catch (error) {
+                console.error("Fehler beim Abrufen der Benutzerinformationen", error);
+            }
         };
 
+        fetchUserData();
+    }, []);
+
+    const generateApplication = async (listing: Listing) => {
+        if (!userData) {
+            alert("⚠️ Keine Benutzerdaten verfügbar.");
+            return;
+        }
+
+        setLoading(true);
         const response = await fetch('/api/documents', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },

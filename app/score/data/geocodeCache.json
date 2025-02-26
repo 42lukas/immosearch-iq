@@ -398,5 +398,93 @@
     "lon": 13.4540515,
     "fullAddress": "7, Woelckpromenade, Weißensee, Pankow, Berlin, 13086, Deutschland",
     "timestamp": "2025-02-25T21:11:36.588Z"
+  },
+  {
+    "address": "Wickeder Str. 4A, Tegel, Berlin (13507)",
+    "city": "Berlin",
+    "lat": 52.5763188,
+    "lon": 13.2918624,
+    "fullAddress": "4a, Wickeder Straße, Tegel, Reinickendorf, Berlin, Pankow, 13507, Deutschland",
+    "timestamp": "2025-02-26T13:14:22.319Z"
+  },
+  {
+    "address": "Heckerdamm 241, Charlottenburg, Berlin (13627)",
+    "city": "Berlin",
+    "lat": 52.5394957,
+    "lon": 13.2939431,
+    "fullAddress": "241, Heckerdamm, Charlottenburg-Nord, Charlottenburg-Wilmersdorf, Berlin, 13627, Deutschland",
+    "timestamp": "2025-02-26T13:14:23.465Z"
+  },
+  {
+    "address": "Schwielowseestr. 37, Haselhorst, Berlin (13599)",
+    "city": "Berlin",
+    "lat": 52.5580223,
+    "lon": 13.2251285,
+    "fullAddress": "37, Schwielowseestraße, Haselhorst, Spandau, Berlin, 13599, Deutschland",
+    "timestamp": "2025-02-26T13:14:24.334Z"
+  },
+  {
+    "address": "Georg-Klingenberg-Straße, Karlshorst, Berlin (10318)",
+    "city": "Berlin",
+    "lat": 52.48258464412001,
+    "lon": 13.51123770774474,
+    "fullAddress": "Georg-Klingenberg-Straße, Parkstadt Karlshorst, Karlshorst, Lichtenberg, Berlin, 10318, Deutschland",
+    "timestamp": "2025-02-26T13:14:25.320Z"
+  },
+  {
+    "address": "Am Köllnischen Park, Mitte, Berlin (10179)",
+    "city": "Berlin",
+    "lat": 52.5119138,
+    "lon": 13.41527875,
+    "fullAddress": "Am Köllnischen Park, Luisenstadt, Mitte, Berlin, 10179, Deutschland",
+    "timestamp": "2025-02-26T13:14:26.322Z"
+  },
+  {
+    "address": "Rathenaustraße, Oberschöneweide, Berlin (12459)",
+    "city": "Berlin",
+    "lat": 52.4591434333952,
+    "lon": 13.527933063814604,
+    "fullAddress": "Rathenaustraße, Oberschöneweide, Treptow-Köpenick, Berlin, 12459, Deutschland",
+    "timestamp": "2025-02-26T13:14:27.323Z"
+  },
+  {
+    "address": "Carl-Spindler-Straße 19, Köpenick, Berlin (12555)",
+    "city": "Berlin",
+    "lat": 52.4504554,
+    "lon": 13.5637577,
+    "fullAddress": "19, Carl-Spindler-Straße, Wasserstadt Spindlersfeld, Köpenick, Treptow-Köpenick, Berlin, 12555, Deutschland",
+    "timestamp": "2025-02-26T13:14:28.330Z"
+  },
+  {
+    "address": "Adlershofer Straße 6, Köpenick, Berlin (12557)",
+    "city": "Berlin",
+    "lat": 52.4427394,
+    "lon": 13.5671227,
+    "fullAddress": "6, Adlershofer Straße, Spindlersfeld, Köpenick, Treptow-Köpenick, Berlin, 12557, Deutschland",
+    "timestamp": "2025-02-26T13:14:29.315Z"
+  },
+  {
+    "address": "Platz der Vereinten Nationen 22 A, Friedrichshain, Berlin (10249)",
+    "city": "Berlin",
+    "lat": 52.5233658,
+    "lon": 13.4267884,
+    "fullAddress": "22A, Platz der Vereinten Nationen, Barnimkiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10249, Deutschland",
+    "timestamp": "2025-02-26T13:14:30.410Z"
+  },
+  {
+    "address": "Neptunstr. 23, Reinickendorf, Berlin (13409)",
+    "city": "Berlin",
+    "lat": 52.5625857,
+    "lon": 13.3756657,
+    "fullAddress": "23, Neptunstraße, Reinickendorf, Berlin, Pankow, 13409, Deutschland",
+    "timestamp": "2025-02-26T14:25:53.867Z"
+  },
+  {
+    "address": "Wittenau, Berlin (13469)",
+    "city": "Berlin",
+    "lat": 52.597052,
+    "lon": 13.3342591,
+    "fullAddress": "Wittenau, Ilbeshäuser Weg, Wittenau, Reinickendorf, Berlin, 13435, Deutschland",
+    "timestamp": "2025-02-26T14:25:54.916Z"
   }
 ]

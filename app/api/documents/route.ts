@@ -22,17 +22,20 @@ export async function POST(req: NextRequest) {
     // Erstelle das Bewerbungsschreiben
     const application = fillTemplate(template, {
         kontaktperson: 'Vermieter/in',
-        adresse: listing.address,
-        stadt: listing.city,
-        preis: listing.price.toString(),
-        zimmer: listing.rooms.toString(),
-        groesse: listing.size.toString(),
-        alter: userData.alter,
-        arbeitgeber: userData.arbeitgeber,
-        name: userData.name,
-        beruf: userData.beruf,
-        einkommen: userData.einkommen,
-        einzugsdatum: userData.einzugsdatum,
+        adress: listing.address,
+        city: listing.city,
+        price: listing.price.toString(),
+        rooms: listing.rooms.toString(),
+        size: listing.size.toString(),
+        age: userData.birthDate,
+        employer: userData.employer,
+        fullName: userData.fullName,
+        currentAddress: userData.currentAddress,
+        occupation: userData.occupation,
+        monthlyIncome: userData.monthlyIncome,
+        phone: userData.phone,
+        email: userData.email,
+        hobbies: userData.hobbies ? userData.hobbies.join(", ") : ""
     });
 
     return NextResponse.json({ application });

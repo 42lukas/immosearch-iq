@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Cookies from "js-cookie";                   
+import Cookies from "js-cookie";
 import {
   FiUser,
   FiMail,
@@ -47,12 +47,11 @@ export default function UserPage() {
     email: "",
     phone: "",
     birthDate: "",
-    address: "",
+    currentAddress: "",
     occupation: "",
     employer: "",
     monthlyIncome: "",
-    hobbies: [] as string[],
-    additionalInfo: "",
+    hobbies: [] as string[]
   });
 
   const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
@@ -327,7 +326,7 @@ export default function UserPage() {
                 <input
                   type="text"
                   name="address"
-                  value={formData.address}
+                  value={formData.currentAddress}
                   onChange={handleChange}
                   placeholder="Musterstraße 1, 12345 Musterstadt"
                   className="w-full focus:outline-none text-black"
