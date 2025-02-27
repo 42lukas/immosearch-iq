@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import Cookies from "js-cookie";
+import { v4 as uuidv4 } from "uuid";
 import {
   FiUser,
   FiMail,
@@ -68,9 +69,12 @@ export default function UserPage() {
   const hobbyOptions = ["Sport", "Kochen", "Lesen", "Reisen", "Musik", "Gaming"];
 
   useEffect(() => {
-    const userIdFromCookie = Cookies.get("userID");
+    let userIdFromCookie = Cookies.get("userId");
+
     if (!userIdFromCookie) {
-      return;
+      userIdFromCookie = uuidv4();
+      Cookies.set("userId", userIdFromCookie, { path: "/", expires: 365 });
+      console.log("Neue UUID gesetzt:", userIdFromCookie);
     }
     setUserId(userIdFromCookie);
 
@@ -325,7 +329,7 @@ export default function UserPage() {
                 <FiMapPin className="text-gray-400 mr-2" />
                 <input
                   type="text"
-                  name="address"
+                  name="currentAddress"
                   value={formData.currentAddress}
                   onChange={handleChange}
                   placeholder="Musterstraße 1, 12345 Musterstadt"

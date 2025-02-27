@@ -38,7 +38,7 @@ export default function ResultsPage() {
         }
 
         const fetchUserData = async () => {
-            const userId = Cookies.get('userID');
+            const userId = Cookies.get('userId');
             if (!userId) return;
 
             try {

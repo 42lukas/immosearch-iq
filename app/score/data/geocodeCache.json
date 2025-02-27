@@ -486,5 +486,61 @@
     "lon": 13.3342591,
     "fullAddress": "Wittenau, Ilbeshäuser Weg, Wittenau, Reinickendorf, Berlin, 13435, Deutschland",
     "timestamp": "2025-02-26T14:25:54.916Z"
+  },
+  {
+    "address": "Hohenzollerndamm, Schmargendorf, Berlin (14199)",
+    "city": "Berlin",
+    "lat": 52.47807220168768,
+    "lon": 13.283002896229995,
+    "fullAddress": "Hohenzollerndamm, Schmargendorf, Charlottenburg-Wilmersdorf, Berlin, 14199, Deutschland",
+    "timestamp": "2025-02-27T16:16:58.216Z"
+  },
+  {
+    "address": "Soldiner Straße, Gesundbrunnen, Berlin (13359)",
+    "city": "Berlin",
+    "lat": 52.55793858862297,
+    "lon": 13.388973679686803,
+    "fullAddress": "Soldiner Straße, Soldiner Kiez, Gesundbrunnen, Mitte, Berlin, 13359, Deutschland",
+    "timestamp": "2025-02-27T16:16:59.202Z"
+  },
+  {
+    "address": "Windscheidstraße, Charlottenburg, Berlin (10627)",
+    "city": "Berlin",
+    "lat": 52.509053132069766,
+    "lon": 13.298365054939428,
+    "fullAddress": "Windscheidstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10627, Deutschland",
+    "timestamp": "2025-02-27T16:17:00.191Z"
+  },
+  {
+    "address": "Pettenkoferstraße, Friedrichshain, Berlin (10247)",
+    "city": "Berlin",
+    "lat": 52.51908652619648,
+    "lon": 13.470445724207673,
+    "fullAddress": "Pettenkoferstraße, Samariterviertel, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, Pankow, 10247, Deutschland",
+    "timestamp": "2025-02-27T16:17:01.202Z"
+  },
+  {
+    "address": "Jahnstraße, Britz, Berlin (10967)",
+    "city": "Berlin",
+    "lat": 52.46022566375837,
+    "lon": 13.435652198465792,
+    "fullAddress": "Jahnstraße, Britz, Neukölln, Berlin, 12347, Deutschland",
+    "timestamp": "2025-02-27T16:17:02.247Z"
+  },
+  {
+    "address": "Rudower Chaussee, Adlershof, Berlin (12489)",
+    "city": "Berlin",
+    "lat": 52.43089644695859,
+    "lon": 13.533183224080735,
+    "fullAddress": "Rudower Chaussee, Adlershof, Treptow-Köpenick, Berlin, 12489, Deutschland",
+    "timestamp": "2025-02-27T16:17:03.201Z"
+  },
+  {
+    "address": "Ratiborstraße, Kreuzberg, Berlin (10999)",
+    "city": "Berlin",
+    "lat": 52.49213084579522,
+    "lon": 13.438432404260018,
+    "fullAddress": "Ratiborstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Deutschland",
+    "timestamp": "2025-02-27T16:17:04.189Z"
   }
 ]

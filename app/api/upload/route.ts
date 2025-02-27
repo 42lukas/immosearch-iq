@@ -9,7 +9,7 @@ if (!fs.existsSync(uploadBasePath)) {
 }
 
 export async function POST(req: NextRequest) {
-    const userId = req.cookies.get('userID')?.value;
+    const userId = req.cookies.get('userId')?.value;
     if (!userId) {
         return NextResponse.json({ error: "Keine Nutzer-ID gefunden" }, { status: 400 });
     }

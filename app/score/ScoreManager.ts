@@ -18,10 +18,9 @@ export class ScoreManager {
       ];
     }
   
-    // ScoreManager wird auch asynchron
     async calculateTotalScore(listing: any, preferences: any): Promise<number> {
       let totalScore = 0;
-      // for-of-Schleife + await
+
       for (const component of this.components) {
         const partialScore = await component.calculateScore(listing, preferences);
         totalScore += partialScore;
