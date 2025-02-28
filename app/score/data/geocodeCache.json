@@ -542,5 +542,285 @@
     "lon": 13.438432404260018,
     "fullAddress": "Ratiborstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Deutschland",
     "timestamp": "2025-02-27T16:17:04.189Z"
+  },
+  {
+    "address": "Hausburgstraße, Friedrichshain, Berlin (10249)",
+    "city": "Berlin",
+    "lat": 52.5267673,
+    "lon": 13.4528051,
+    "fullAddress": "Hausburgstraße, Hausburgviertel, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10249, Deutschland",
+    "timestamp": "2025-02-28T13:00:24.940Z"
+  },
+  {
+    "address": "Gneisenaustraße, Kreuzberg, Berlin (10961)",
+    "city": "Berlin",
+    "lat": 52.4912895,
+    "lon": 13.3958247,
+    "fullAddress": "Gneisenaustraße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10961, Deutschland",
+    "timestamp": "2025-02-28T13:00:26.018Z"
+  },
+  {
+    "address": "Reuterstraße, Neukölln, Berlin (12047)",
+    "city": "Berlin",
+    "lat": 52.4894355,
+    "lon": 13.4290032,
+    "fullAddress": "Reuterstraße, Reuterkiez, Neukölln, Berlin, 12047, Deutschland",
+    "timestamp": "2025-02-28T13:00:28.033Z"
+  },
+  {
+    "address": "Estedeich, Cranz, Hamburg (21129)",
+    "city": "Hamburg",
+    "lat": 53.53493307971133,
+    "lon": 9.777884440663378,
+    "fullAddress": "Estedeich, Cranz, Harburg, Hamburg, 21129, Deutschland",
+    "timestamp": "2025-02-28T13:19:11.850Z"
+  },
+  {
+    "address": "Am Lohsepark, HafenCity, Hamburg (20457)",
+    "city": "Hamburg",
+    "lat": 53.54157754764029,
+    "lon": 10.005061913058183,
+    "fullAddress": "Am Lohsepark, Quartier Am Lohsepark, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
+    "timestamp": "2025-02-28T13:19:12.869Z"
+  },
+  {
+    "address": "Poppenbüttel, Hamburg (22399)",
+    "city": "Hamburg",
+    "lat": 53.6564,
+    "lon": 10.0742,
+    "fullAddress": "Poppenbüttel, Wandsbek, Hamburg, 22399, Deutschland",
+    "timestamp": "2025-02-28T13:19:13.842Z"
+  },
+  {
+    "address": "Hammerbrook, Hamburg (20095)",
+    "city": "Hamburg",
+    "lat": 53.5468152,
+    "lon": 10.0265586,
+    "fullAddress": "Hammerbrook, Hamburg-Mitte, Hamburg, 20097, Deutschland",
+    "timestamp": "2025-02-28T13:19:14.834Z"
+  },
+  {
+    "address": "St. Georg, Hamburg (20099)",
+    "city": "Hamburg",
+    "lat": 53.5571491,
+    "lon": 10.0142558,
+    "fullAddress": "St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland",
+    "timestamp": "2025-02-28T13:19:16.904Z"
+  },
+  {
+    "address": "Haldesdorferstraße 113a, Bramfeld, Hamburg (22179)",
+    "city": "Hamburg",
+    "lat": 53.59910131803703,
+    "lon": 10.076359323354088,
+    "fullAddress": "Haldesdorfer Straße, Bramfeld, Wandsbek, Hamburg, 22179, Deutschland",
+    "timestamp": "2025-02-28T13:19:17.984Z"
+  },
+  {
+    "address": "Alsterdorf, Hamburg (22297)",
+    "city": "Hamburg",
+    "lat": 53.6105412,
+    "lon": 10.0038889,
+    "fullAddress": "Alsterdorf, Hamburg-Nord, Hamburg, 22297, Deutschland",
+    "timestamp": "2025-02-28T13:19:18.839Z"
+  },
+  {
+    "address": "Foßredder 31, Volksdorf, Hamburg (22359)",
+    "city": "Hamburg",
+    "lat": 53.645146499999996,
+    "lon": 10.17286565211728,
+    "fullAddress": "31, Foßredder, Volksdorf, Wandsbek, Hamburg, 22359, Deutschland",
+    "timestamp": "2025-02-28T13:19:19.845Z"
+  },
+  {
+    "address": "Kottwitzstraße, Hoheluft-West, Hamburg (20253)",
+    "city": "Hamburg",
+    "lat": 53.578643784291806,
+    "lon": 9.96924324349873,
+    "fullAddress": "Kottwitzstraße, Hoheluft-West, Eimsbüttel, Hamburg, 20253, Deutschland",
+    "timestamp": "2025-02-28T13:19:20.864Z"
+  },
+  {
+    "address": "Rotherbaum, Hamburg (20148)",
+    "city": "Hamburg",
+    "lat": 53.5684065,
+    "lon": 9.9874317,
+    "fullAddress": "Rotherbaum, Eimsbüttel, Hamburg, Deutschland",
+    "timestamp": "2025-02-28T13:19:21.825Z"
+  },
+  {
+    "address": "Pfeilshofer Weg, Wellingsbüttel, Hamburg (22391)",
+    "city": "Hamburg",
+    "lat": 53.642488237325885,
+    "lon": 10.090211676749039,
+    "fullAddress": "Pfeilshofer Weg, Wellingsbüttel, Wandsbek, Hamburg, 22391, Deutschland",
+    "timestamp": "2025-02-28T13:19:22.839Z"
+  },
+  {
+    "address": "Grundstraße, Eimsbüttel, Eimsbuttel (20257)",
+    "city": "Eimsbuttel",
+    "lat": 53.5763425479333,
+    "lon": 9.941658296617277,
+    "fullAddress": "Grundstraße, Eimsbüttel, Hamburg, 20257, Deutschland",
+    "timestamp": "2025-02-28T13:19:23.850Z"
+  },
+  {
+    "address": "Grillparzerstraße, Uhlenhorst, Hamburg (22085)",
+    "city": "Hamburg",
+    "lat": 53.579319979904625,
+    "lon": 10.016406445037493,
+    "fullAddress": "Grillparzerstraße, Uhlenhorst, Hamburg-Nord, Hamburg, 22085, Deutschland",
+    "timestamp": "2025-02-28T13:19:24.850Z"
+  },
+  {
+    "address": "Mitte, Berlin (10117)",
+    "city": "Berlin",
+    "lat": 52.517012,
+    "lon": 13.3888222,
+    "fullAddress": "Mitte, Berlin, Deutschland",
+    "timestamp": "2025-02-28T14:08:03.196Z"
+  },
+  {
+    "address": "Am Deich 55, Alte Neustadt, Bremen (28199)",
+    "city": "Bremen",
+    "lat": 53.0751539,
+    "lon": 8.7966288,
+    "fullAddress": "55, Am Deich, Alte Neustadt, Neustadt, Bremen-Süd, Bremen, 28199, Deutschland",
+    "timestamp": "2025-02-28T14:52:03.784Z"
+  },
+  {
+    "address": "Am Tabakquartier 52, Woltmershausen, Bremen (28197)",
+    "city": "Bremen",
+    "lat": 53.0744285,
+    "lon": 8.7690866,
+    "fullAddress": "52, Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
+    "timestamp": "2025-02-28T14:52:04.775Z"
+  },
+  {
+    "address": "Am Tabakquartier 25, Woltmershausen, Bremen (28197)",
+    "city": "Bremen",
+    "lat": 53.07629519675505,
+    "lon": 8.768210245791979,
+    "fullAddress": "Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
+    "timestamp": "2025-02-28T14:52:05.868Z"
+  },
+  {
+    "address": "Am Tabakquartier 20-22, Woltmershausen, Bremen (28197)",
+    "city": "Bremen",
+    "lat": 53.07629519675505,
+    "lon": 8.768210245791979,
+    "fullAddress": "Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
+    "timestamp": "2025-02-28T14:52:06.914Z"
+  },
+  {
+    "address": "Am Tabakquartier 54, Woltmershausen, Bremen (28197)",
+    "city": "Bremen",
+    "lat": 53.0748477,
+    "lon": 8.7679677,
+    "fullAddress": "54, Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
+    "timestamp": "2025-02-28T14:52:07.787Z"
+  },
+  {
+    "address": "Am Tabakquartier 24-26, Woltmershausen, Bremen (28197)",
+    "city": "Bremen",
+    "lat": 53.07629519675505,
+    "lon": 8.768210245791979,
+    "fullAddress": "Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
+    "timestamp": "2025-02-28T14:52:08.903Z"
+  },
+  {
+    "address": "Heinkenstraße, Altstadt, Bremen (28195)",
+    "city": "Bremen",
+    "lat": 53.08031189713865,
+    "lon": 8.797438546792957,
+    "fullAddress": "Heinkenstraße, Faulenquartier, Altstadt, Mitte, Bremen-Mitte, Bremen, 28195, Deutschland",
+    "timestamp": "2025-02-28T14:52:09.746Z"
+  },
+  {
+    "address": "Geeststraße, Lindenhof, Bremen (28237)",
+    "city": "Bremen",
+    "lat": 53.110836629897825,
+    "lon": 8.759218170946427,
+    "fullAddress": "Geeststraße, Lindenhof, Gröpelingen, Bremen-West, Bremen, 28237, Deutschland",
+    "timestamp": "2025-02-28T14:52:10.766Z"
+  },
+  {
+    "address": "Bismarckstraße, Fesenfeld, Bremen (28203)",
+    "city": "Bremen",
+    "lat": 53.078064385824646,
+    "lon": 8.828772550682665,
+    "fullAddress": "Bismarckstraße, Fesenfeld, Östliche Vorstadt, Bremen-Ost, Bremen, 28203, Deutschland",
+    "timestamp": "2025-02-28T14:52:11.805Z"
+  },
+  {
+    "address": "Langenstraße, Altstadt, Bremen (28195)",
+    "city": "Bremen",
+    "lat": 53.076214407125285,
+    "lon": 8.805568032505658,
+    "fullAddress": "Langenstraße, Ansgari-Viertel, Altstadt, Mitte, Bremen-Mitte, Stadtgebiet Bremen, Bremen, 28195, Deutschland",
+    "timestamp": "2025-02-28T14:52:12.778Z"
+  },
+  {
+    "address": "Am Tabakquartier 27, Woltmershausen, Bremen (28197)",
+    "city": "Bremen",
+    "lat": 53.07629519675505,
+    "lon": 8.768210245791979,
+    "fullAddress": "Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
+    "timestamp": "2025-02-28T14:52:13.867Z"
+  },
+  {
+    "address": "Meyerstraße - Buntentor, Gartenstadt Süd, Bremen (28201)",
+    "city": "Bremen",
+    "lat": 53.06307859522873,
+    "lon": 8.794187207965804,
+    "fullAddress": "Meyerstraße, Südervorstadt, Neustadt, Bremen-Süd, Bremen, 28201, Deutschland",
+    "timestamp": "2025-02-28T14:52:14.826Z"
+  },
+  {
+    "address": "Am Hulsberg, Peterswerder, Bremen (28205)",
+    "city": "Bremen",
+    "lat": 53.0717064,
+    "lon": 8.8443265,
+    "fullAddress": "Am Hulsberg 23, 28205 Bremen, Bückeburger Straße, Peterswerder, Östliche Vorstadt, Bremen-Ost, Bremen, 28205, Deutschland",
+    "timestamp": "2025-02-28T14:52:15.917Z"
+  },
+  {
+    "address": "Auf der Düne 13, Ohlenhof, Bremen (28239)",
+    "city": "Bremen",
+    "lat": 53.1259939,
+    "lon": 8.7547897325,
+    "fullAddress": "13, Auf der Düne, Ohlenhof, Gröpelingen, Bremen-West, Bremen, 28239, Deutschland",
+    "timestamp": "2025-02-28T14:52:16.785Z"
+  },
+  {
+    "address": "Brebacher 27, Sebaldsbrück, Bremen-Sebaldsbrück (28309)",
+    "city": "Bremen-Sebaldsbrück",
+    "lat": 53.0529825,
+    "lon": 8.9102606,
+    "fullAddress": "27, Brebacher Straße, Sebaldsbrück, Hemelingen, Bremen-Ost, Bremen, 28309, Deutschland",
+    "timestamp": "2025-02-28T14:52:17.869Z"
+  },
+  {
+    "address": "Westerdeich, Woltmershausen, Bremen (28197)",
+    "city": "Bremen",
+    "lat": 53.08939661293317,
+    "lon": 8.762916300297402,
+    "fullAddress": "Westerdeich, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
+    "timestamp": "2025-02-28T14:52:18.748Z"
+  },
+  {
+    "address": "Oberneuland, Bremen (28355)",
+    "city": "Bremen",
+    "lat": 53.0898563,
+    "lon": 8.9369073,
+    "fullAddress": "Oberneuland, Bremen-Ost, Bremen, 28355, Deutschland",
+    "timestamp": "2025-02-28T14:52:19.745Z"
+  },
+  {
+    "address": "Mittelshuchting, Bremen (28259)",
+    "city": "Bremen",
+    "lat": 53.0569337,
+    "lon": 8.7265255,
+    "fullAddress": "Mittelshuchting, Huchting, Bremen-Süd, Bremen, 28259, Deutschland",
+    "timestamp": "2025-02-28T14:52:20.754Z"
   }
 ]

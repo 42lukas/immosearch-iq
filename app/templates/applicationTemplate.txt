@@ -1,16 +1,16 @@
 Sehr geehrte/r Frau/Herr {{kontaktperson}},
 
-mit großer Freude habe ich Ihr Wohnungsinserat für die Wohnung in der {{adress}} in {{city}} entdeckt und möchte mich hiermit als Mieter bewerben.
+mit großem Interesse habe ich Ihr Wohnungsinserat für die Wohnung in der {{adress}}, {{city}} gelesen und möchte mich hiermit als Mieter/in bewerben.
 
-Ich bin {{age}} Jahre alt, arbeite als {{occupation}} bei {{employer}} und verfüge über ein geregeltes Einkommen von {{monthlyIncome}}€ monatlich. In meiner Freizeit beschäftige ich mich gerne mit {{hobbies}}. Besonders an der angebotenen Wohnung gefallen mir [z.B. die ruhige Lage, der große Balkon, die gute Verkehrsanbindung o.ä.].
+Ich bin {{age}} Jahre alt und arbeite als {{occupation}} {{employer}}. Mein monatliches Einkommen beträgt {{monthlyIncome}}€, sodass die Mietzahlungen stets gesichert sind. Derzeit wohne ich in {{currentAddress}}, jedoch bin ich auf der Suche nach einer neuen Wohnung, da {{relocationReason}}.
 
-Derzeit wohne ich in {{currentAddress}} und bin auf der Suche nach einer neuen Wohnung, da [kurze Begründung, z.B. beruflicher Wechsel, Familienzuwachs, Wunsch nach Veränderung].
+In meiner Freizeit beschäftige ich mich gerne mit {{hobbies}}. 
 
-Ich bin ein ruhiger, verantwortungsbewusster und zuverlässiger Mieter. Ein sorgfältiger Umgang mit der Wohnung sowie ein freundliches und respektvolles Miteinander mit den Nachbarn sind für mich selbstverständlich.
+Besonders an der angebotenen Wohnung gefallen mir [z.B. die ruhige Lage, der große Balkon, die gute Verkehrsanbindung o.ä.]. Ich lege großen Wert auf ein harmonisches Wohnumfeld und einen respektvollen Umgang mit meinen Nachbarn.
 
-Falls gewünscht, kann ich Ihnen gerne weitere Unterlagen wie eine Mietschuldenfreiheitsbescheinigung, Einkommensnachweise oder eine Schufa-Auskunft zukommen lassen.
+Sollten Sie weitere Unterlagen wie eine Mietschuldenfreiheitsbescheinigung, Einkommensnachweise oder eine Schufa-Auskunft benötigen, stelle ich Ihnen diese gerne zur Verfügung.
 
-Ich würde mich sehr freuen, die Wohnung im Rahmen einer Besichtigung kennenlernen zu dürfen und stehe Ihnen für Rückfragen gerne unter {{phone}} oder per E-Mail unter {{email}} zur Verfügung.
+Ich würde mich sehr freuen, die Wohnung im Rahmen einer Besichtigung persönlich kennenzulernen. Für Rückfragen stehe ich Ihnen gerne telefonisch unter {{phone}} oder per E-Mail unter {{email}} zur Verfügung.
 
 Mit freundlichen Grüßen  
 {{fullName}}

@@ -1,13 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import Cookies from "js-cookie";
-
-// Icons
-import { 
-    FaStar,
-    FaRegStar,
-    FaDownload 
-} from "react-icons/fa";
+import { FaStar, FaRegStar, FaDownload } from "react-icons/fa";
 
 interface Listing {
     title: string;
@@ -101,6 +95,36 @@ export default function ResultsPage() {
         }
     };
 
+    const downloadApplication = async (listing: Listing) => {
+        if (!userData) {
+            alert("Benutzerdaten fehlen!");
+            return;
+        }
+        setLoading(true);
+        try {
+            const response = await fetch('/api/documents', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ listing, userData })
+            });
+            const data = await response.json();
+            
+            const blob = new Blob([data.application], { type: 'text/plain' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `Bewerbung_${listing.title}.txt`;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            window.URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error("Fehler beim Erstellen des Dokuments", error);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <div className="p-6 bg-gray-800">
             <h1 className="flex justify-center text-2xl font-bold mb-6 text-white">🏡 Wohnungsangebote</h1>
@@ -136,7 +160,7 @@ export default function ResultsPage() {
                                 <p className="text-black font-bold text-center text-xl">{listing.score}</p>
                                 <button 
                                     className={`px-1 py-1 text-white rounded ${loading ? 'opacity-50 cursor-not-allowed' : ''} hover:scale-125 transition-transform duration-300 ease-in-out`}
-                                    onClick={() => toggleFavorite(index, listing)}
+                                    onClick={() => downloadApplication(listing)}
                                     disabled={loading}
                                 >
                                     <FaDownload className='w-5 h-5 text-black'/>
