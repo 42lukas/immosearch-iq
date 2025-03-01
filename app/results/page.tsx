@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Cookies from "js-cookie";
 import { FaStar, FaRegStar, FaDownload } from "react-icons/fa";
+import Link from 'next/link';
 
 interface Listing {
     title: string;
@@ -128,6 +129,15 @@ export default function ResultsPage() {
     return (
         <div className="p-6 bg-gray-800">
             <h1 className="flex justify-center text-2xl font-bold mb-6 text-white">🏡 Wohnungsangebote</h1>
+
+            {/* Button, um zur MapPage zu navigieren */}
+            <div className="flex justify-center mb-4">
+                <Link href="/map">
+                    <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                        Auf Karte anzeigen
+                    </button>
+                </Link>
+            </div>
 
             <div className="grid gap-4 justify-center">
                 {listings.map((listing, index) => (

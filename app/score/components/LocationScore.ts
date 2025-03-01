@@ -4,7 +4,7 @@ import axios from 'axios';
 import fs from 'fs';
 import path from 'path';
 
-const cacheFilePath = path.resolve(process.cwd(), 'app/score/data/geocodeCache.json');
+const cacheFilePath = path.resolve(process.cwd(), 'public/data/geocodeCache.json');
 
 type CacheEntry = {
   address: string;
