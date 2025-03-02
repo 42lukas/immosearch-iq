@@ -72,28 +72,36 @@ export default function FavoritesPage() {
             ) : (
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {favorites.map((listing, index) => (
-                        <div key={index} className="bg-gray-800 rounded-xl shadow-lg overflow-hidden">
-                            <img src={listing.imgUrl} alt={listing.title} className="w-full h-40 object-cover" />
+                        <div key={index} className="bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col">
+                            <img 
+                                src={listing.imgUrl} 
+                                alt={listing.title} 
+                                className="w-full h-40 object-cover" 
+                            />
 
-                            <div className="p-4">
+                            <div className="p-4 flex-grow">
                                 <h2 className="text-xl font-semibold">{listing.title}</h2>
                                 <p className="text-gray-400">💶 {listing.price} €</p>
                                 <p className="text-gray-400">📍 {listing.address}</p>
                                 <p className="text-gray-400">🛏️ {listing.rooms} Zimmer • 📐 {listing.size}m²</p>
+                            </div>
 
-                                <div className="flex justify-between items-center mt-4">
-                                    <a href={listing.url} target="_blank" rel="noopener noreferrer"
-                                       className="text-blue-400 hover:underline">
-                                        🔗 Zum Inserat
-                                    </a>
-
-                                    <button 
-                                        onClick={() => removeFavorite(listing)}
-                                        className="text-red-400 hover:text-red-600 transition"
-                                    >
-                                        <FaTrash className="w-5 h-5"/>
-                                    </button>
-                                </div>
+                            {/* Unterer Bereich unten fixieren */}
+                            <div className="p-4 mt-auto flex justify-between items-center">
+                                <a
+                                    href={listing.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-400 hover:underline"
+                                >
+                                    🔗 Zum Inserat
+                                </a>
+                                <button 
+                                    onClick={() => removeFavorite(listing)}
+                                    className="text-red-400 hover:text-red-600 transition"
+                                >
+                                    <FaTrash className="w-5 h-5"/>
+                                </button>
                             </div>
                         </div>
                     ))}
