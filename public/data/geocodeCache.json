@@ -830,5 +830,573 @@
     "lon": 13.3028128,
     "fullAddress": "2, Gloedenpfad, Charlottenburg-Nord, Charlottenburg-Wilmersdorf, Berlin, 13627, Deutschland",
     "timestamp": "2025-03-02T20:33:20.370Z"
+  },
+  {
+    "address": "Osterbronnstraße, Rohr, Stuttgart (70565)",
+    "city": "Stuttgart",
+    "lat": 48.718246451776196,
+    "lon": 9.109772816010008,
+    "fullAddress": "Osterbronnstraße, Rohr, Vaihingen, Stuttgart, Baden-Württemberg, 70565, Deutschland",
+    "timestamp": "2025-03-05T18:39:18.173Z"
+  },
+  {
+    "address": "Sonnenberg, Stuttgart (70597)",
+    "city": "Stuttgart",
+    "lat": 48.7415827,
+    "lon": 9.1525726,
+    "fullAddress": "Sonnenberg, Möhringen, Stuttgart, Baden-Württemberg, 70597, Deutschland",
+    "timestamp": "2025-03-05T18:39:19.192Z"
+  },
+  {
+    "address": "Nord, Stuttgart (70192)",
+    "city": "Stuttgart",
+    "lat": 48.79749425,
+    "lon": 9.165901426538618,
+    "fullAddress": "70192, Killesberg, Stuttgart-Nord, Stuttgart, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-05T18:39:20.171Z"
+  },
+  {
+    "address": "Rohr, Stuttgart (70565)",
+    "city": "Stuttgart",
+    "lat": 48.7172,
+    "lon": 9.106,
+    "fullAddress": "Rohr, Vaihingen, Stuttgart, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-05T18:39:21.205Z"
+  },
+  {
+    "address": "Zuffenhausen, Stuttgart (70435)",
+    "city": "Stuttgart",
+    "lat": 48.8312987,
+    "lon": 9.1674403,
+    "fullAddress": "Zuffenhausen, Stuttgart, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-05T18:39:22.160Z"
+  },
+  {
+    "address": "Wolframstraße 35, Nord, Stuttgart-Mitte (70191)",
+    "city": "Stuttgart-Mitte",
+    "lat": 48.791076073882394,
+    "lon": 9.185501073243854,
+    "fullAddress": "Wolframstraße, Europaviertel, Stuttgart-Mitte, Stuttgart-Nord, Stuttgart, Baden-Württemberg, 70191, Deutschland",
+    "timestamp": "2025-03-05T18:39:23.212Z"
+  },
+  {
+    "address": "Mailänder Platz 19, Mitte, Stuttgart-Mitte (70173)",
+    "city": "Stuttgart-Mitte",
+    "lat": 48.7908439,
+    "lon": 9.1836786,
+    "fullAddress": "19, Mailänder Platz, Europaviertel, Stuttgart-Mitte, Stuttgart, Baden-Württemberg, 70173, Deutschland",
+    "timestamp": "2025-03-05T18:39:24.239Z"
+  },
+  {
+    "address": "Weilimdorf, Stuttgart (70469)",
+    "city": "Stuttgart",
+    "lat": 48.815276,
+    "lon": 9.112444,
+    "fullAddress": "Weilimdorf, Stuttgart, Baden-Württemberg, 70499, Deutschland",
+    "timestamp": "2025-03-05T18:39:25.174Z"
+  },
+  {
+    "address": "Botnang, Stuttgart (70195)",
+    "city": "Stuttgart",
+    "lat": 48.778495,
+    "lon": 9.1295324,
+    "fullAddress": "Botnang, Stuttgart, Baden-Württemberg, 70195, Deutschland",
+    "timestamp": "2025-03-05T18:39:27.178Z"
+  },
+  {
+    "address": "Plieningen, Stuttgart (70599)",
+    "city": "Stuttgart",
+    "lat": 48.7113947,
+    "lon": 9.198865088043112,
+    "fullAddress": "Plieningen, Stuttgart, Baden-Württemberg, 70599, Deutschland",
+    "timestamp": "2025-03-05T18:39:28.173Z"
+  },
+  {
+    "address": "Nord, Stuttgart (70191)",
+    "city": "Stuttgart",
+    "lat": 48.798732650000005,
+    "lon": 9.189108225718751,
+    "fullAddress": "70191, Nordbahnhof, Stuttgart-Nord, Stuttgart, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-05T18:39:29.211Z"
+  },
+  {
+    "address": "West, Stuttgart (70197)",
+    "city": "Stuttgart",
+    "lat": 48.7743488,
+    "lon": 9.102470792720416,
+    "fullAddress": "70197, Wildpark, Stuttgart-West, Stuttgart, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-05T18:39:30.233Z"
+  },
+  {
+    "address": "West, Stuttgart (70178)",
+    "city": "Stuttgart",
+    "lat": 48.7694751,
+    "lon": 9.1634415,
+    "fullAddress": "Deutsche Post, Reinsburgstraße, Stuttgart-West, Feuersee, Stuttgart-West, Stuttgart, Baden-Württemberg, 70178, Deutschland",
+    "timestamp": "2025-03-05T18:39:31.179Z"
+  },
+  {
+    "address": "West, Stuttgart (70193)",
+    "city": "Stuttgart",
+    "lat": 48.782837349999994,
+    "lon": 9.14671770338926,
+    "fullAddress": "70193, Kräherwald, Stuttgart-West, Stuttgart, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-05T18:39:32.168Z"
+  },
+  {
+    "address": "Pfefferstraße 8, Heumaden, Stuttgart (70619)",
+    "city": "Stuttgart",
+    "lat": 48.746161150000006,
+    "lon": 9.235497999999998,
+    "fullAddress": "8, Pfefferstraße, Heumaden, Sillenbuch, Stuttgart, Baden-Württemberg, 70619, Deutschland",
+    "timestamp": "2025-03-05T18:39:33.166Z"
+  },
+  {
+    "address": "Plieninger Straße 100, Möhringen, Stuttgart Möhringen (70567)",
+    "city": "Stuttgart Möhringen",
+    "lat": 48.7223718,
+    "lon": 9.1608617,
+    "fullAddress": "SchwabenQuellen, 100, Plieninger Straße, Sternhäule, Möhringen, Stuttgart, Baden-Württemberg, 70567, Deutschland",
+    "timestamp": "2025-03-05T18:39:34.203Z"
+  },
+  {
+    "address": "Sandbuckel 27C, Giebel, Stuttgart (70499)",
+    "city": "Stuttgart",
+    "lat": 48.807438149999996,
+    "lon": 9.087895167421355,
+    "fullAddress": "27c, Sandbuckel, Giebel, Weilimdorf, Stuttgart, Baden-Württemberg, 70499, Deutschland",
+    "timestamp": "2025-03-05T18:39:35.210Z"
+  },
+  {
+    "address": "Kernerstraße, Mitte, Stuttgart (70182)",
+    "city": "Stuttgart",
+    "lat": 48.77914338116308,
+    "lon": 9.190347594182477,
+    "fullAddress": "Kernerstraße, Diemershalde, Stuttgart-Mitte, Stuttgart, Baden-Württemberg, 70182, Deutschland",
+    "timestamp": "2025-03-05T18:39:36.187Z"
+  },
+  {
+    "address": "Lindenstraße, Vaihingen, Stuttgart (70563)",
+    "city": "Stuttgart",
+    "lat": 48.72944735,
+    "lon": 9.10437215,
+    "fullAddress": "Lindenstraße, Vaihingen, Vaihingen-Mitte, Vaihingen, Stuttgart, Baden-Württemberg, 70563, Deutschland",
+    "timestamp": "2025-03-05T18:39:37.259Z"
+  },
+  {
+    "address": "Werastraße, Mitte, Stuttgart (70190)",
+    "city": "Stuttgart",
+    "lat": 48.78717368305104,
+    "lon": 9.194892308639046,
+    "fullAddress": "Werastraße, Kernerviertel, Stuttgart-Mitte, Stuttgart-Ost, Stuttgart, Baden-Württemberg, 70190, Deutschland",
+    "timestamp": "2025-03-05T18:39:38.173Z"
+  },
+  {
+    "address": "Fraubronnstraße, Plieningen, Stuttgart (70599)",
+    "city": "Stuttgart",
+    "lat": 48.70366819561291,
+    "lon": 9.203696266249269,
+    "fullAddress": "Fraubronnstraße, Plieningen, Stuttgart, Baden-Württemberg, 70599, Deutschland",
+    "timestamp": "2025-03-05T18:39:39.174Z"
+  },
+  {
+    "address": "Löwenstraße, Degerloch, Stuttgart (70597)",
+    "city": "Stuttgart",
+    "lat": 48.74869407745659,
+    "lon": 9.179416895597447,
+    "fullAddress": "Löwenstraße, Waldau, Degerloch, Stuttgart, Baden-Württemberg, 70597, Deutschland",
+    "timestamp": "2025-03-05T18:39:40.184Z"
+  },
+  {
+    "address": "Talstr. 66, Ost, Stuttgart (70188)",
+    "city": "Stuttgart",
+    "lat": 48.7848298,
+    "lon": 9.214980259602186,
+    "fullAddress": "66, Talstraße, Gaisburg, Stuttgart-Ost, Stuttgart, Baden-Württemberg, 70188, Deutschland",
+    "timestamp": "2025-03-05T18:39:41.958Z"
+  },
+  {
+    "address": "König-Karl-Straße 84, Bad Cannstatt, Stuttgart (70372)",
+    "city": "Stuttgart",
+    "lat": 48.801021500000004,
+    "lon": 9.213052077408056,
+    "fullAddress": "84, König-Karl-Straße, Veielbrunnen, Bad Cannstatt, Stuttgart, Baden-Württemberg, 70372, Deutschland",
+    "timestamp": "2025-03-05T18:39:42.203Z"
+  },
+  {
+    "address": "Sasstraße 25, Gohlis-Mitte, Leipzig (04155)",
+    "city": "Leipzig",
+    "lat": 51.36623405,
+    "lon": 12.369820079198039,
+    "fullAddress": "25, Sasstraße, Gohlis, Gohlis-Mitte, Nord, Leipzig, Sachsen, 04157, Deutschland",
+    "timestamp": "2025-03-05T18:40:13.801Z"
+  },
+  {
+    "address": "Neulichtenhofstraße 16, Hummelstein, Nürnberg (90461)",
+    "city": "Nürnberg",
+    "lat": 49.4302038,
+    "lon": 11.0880379,
+    "fullAddress": "16, Neulichtenhofstraße, Hummelstein, Nürnberg, Bayern, 90461, Deutschland",
+    "timestamp": "2025-03-05T18:40:14.805Z"
+  },
+  {
+    "address": "Rodacher Straße 51, Holzhausen, Bad Colberg-Heldburg (98663)",
+    "city": "Bad Colberg-Heldburg",
+    "lat": 50.301520213619995,
+    "lon": 10.747488827425997,
+    "fullAddress": "Rodacher Straße, Bad Colberg-Heldburg, Heldburg, Heldburger Unterland, Landkreis Hildburghausen, Thüringen, 98663, Deutschland",
+    "timestamp": "2025-03-05T18:40:15.822Z"
+  },
+  {
+    "address": "Tribseer Damm 4a, Altstadt, Stralsund (18439)",
+    "city": "Stralsund",
+    "lat": 54.309245342663914,
+    "lon": 13.082386952470959,
+    "fullAddress": "Tribseer Damm, Bastionengürtel, Altstadt, Stralsund, Vorpommern-Rügen, Mecklenburg-Vorpommern, 18439, Deutschland",
+    "timestamp": "2025-03-05T18:40:16.864Z"
+  },
+  {
+    "address": "Crailsheim, Crailsheim (74564)",
+    "city": "Crailsheim",
+    "lat": 49.1385945,
+    "lon": 10.0649528,
+    "fullAddress": "Crailsheim, zum Bahnhof, Schießberg, Crailsheim, Verwaltungsverband Crailsheim, Landkreis Schwäbisch Hall, Baden-Württemberg, 74564, Deutschland",
+    "timestamp": "2025-03-05T18:40:17.802Z"
+  },
+  {
+    "address": "Wildeshausen (27793)",
+    "city": "Wildeshausen",
+    "lat": 52.897103,
+    "lon": 8.4364342,
+    "fullAddress": "Wildeshausen, Landkreis Oldenburg, Niedersachsen, 27793, Deutschland",
+    "timestamp": "2025-03-05T18:40:18.801Z"
+  },
+  {
+    "address": "Landgrabenstr., Steinbühl, Nürnberg (90459)",
+    "city": "Nürnberg",
+    "lat": 49.4396638512461,
+    "lon": 11.075946644980064,
+    "fullAddress": "Landgrabenstraße, Steinbühl, Nürnberg, Bayern, 90443, Deutschland",
+    "timestamp": "2025-03-05T18:40:19.824Z"
+  },
+  {
+    "address": "Lilienthalring 2, Eisenhüttenstadt, Eisenhüttenstadt (15890)",
+    "city": "Eisenhüttenstadt",
+    "lat": 52.1398655,
+    "lon": 14.6530409,
+    "fullAddress": "2, Lilienthalring, WK VI, Eisenhüttenstadt, Oder-Spree, Brandenburg, 15890, Deutschland",
+    "timestamp": "2025-03-05T18:40:20.884Z"
+  },
+  {
+    "address": "Beeskower Straße 111, Eisenhüttenstadt, Eisenhüttenstadt (15890)",
+    "city": "Eisenhüttenstadt",
+    "lat": 52.1522638,
+    "lon": 14.627876,
+    "fullAddress": "111, Beeskower Straße, Schönfließ, Eisenhüttenstadt, Oder-Spree, Brandenburg, 15890, Deutschland",
+    "timestamp": "2025-03-05T18:40:21.815Z"
+  },
+  {
+    "address": "Beethovenstraße 27, Engelsby, Flensburg (24943)",
+    "city": "Flensburg",
+    "lat": 54.7919107,
+    "lon": 9.469870858396366,
+    "fullAddress": "27, Beethovenstraße, Engelsby-Süd, Engelsby, Flensburg, Schleswig-Holstein, 24943, Deutschland",
+    "timestamp": "2025-03-05T18:40:22.864Z"
+  },
+  {
+    "address": "Am Hohen Graben 34, Prohn, Prohn (18445)",
+    "city": "Prohn",
+    "lat": 54.367003499999996,
+    "lon": 13.031393331364836,
+    "fullAddress": "34, Am Hohen Graben, Prohn, Altenpleen, Vorpommern-Rügen, Mecklenburg-Vorpommern, 18445, Deutschland",
+    "timestamp": "2025-03-05T18:40:23.807Z"
+  },
+  {
+    "address": "Offenbach am Main, Offenbach am Main (63067)",
+    "city": "Offenbach am Main",
+    "lat": 50.1070092,
+    "lon": 8.7422839625886,
+    "fullAddress": "63067, Kaiserlei, Offenbach am Main, Hessen, Deutschland",
+    "timestamp": "2025-03-05T18:40:24.819Z"
+  },
+  {
+    "address": "Opladen, Leverkusen (51379)",
+    "city": "Leverkusen",
+    "lat": 51.0657432,
+    "lon": 7.0088448,
+    "fullAddress": "Opladen, Europa-Allee, Opladen, Stadtbezirk II, Leverkusen, Nordrhein-Westfalen, 51379, Deutschland",
+    "timestamp": "2025-03-05T18:40:25.821Z"
+  },
+  {
+    "address": "Friesische Straße 96, Friesischer Berg, Flensburg (24937)",
+    "city": "Flensburg",
+    "lat": 54.7802334,
+    "lon": 9.42288364280417,
+    "fullAddress": "96, Friesische Straße, Friedhofshügel, Friesischer Berg, Flensburg, Schleswig-Holstein, 24937, Deutschland",
+    "timestamp": "2025-03-05T18:40:26.807Z"
+  },
+  {
+    "address": "Richard-Wagner-Str. 61, City, Bayreuth (95444)",
+    "city": "Bayreuth",
+    "lat": 49.9409641,
+    "lon": 11.584983144529604,
+    "fullAddress": "61, Richard-Wagner-Straße, Südöstliche Innenstadt, City, Bayreuth, Bayern, 95444, Deutschland",
+    "timestamp": "2025-03-05T18:40:27.898Z"
+  },
+  {
+    "address": "Hopfenbergstraße 16, Wahren, Leipzig (04159)",
+    "city": "Leipzig",
+    "lat": 51.3756394,
+    "lon": 12.325463054298169,
+    "fullAddress": "16, Hopfenbergstraße, Wahren, Nordwest, Leipzig, Sachsen, 04159, Deutschland",
+    "timestamp": "2025-03-05T18:40:28.799Z"
+  },
+  {
+    "address": "Rosa-Luxemburg-Straße 49b, Velten (16727)",
+    "city": "Velten",
+    "lat": 52.67957575,
+    "lon": 13.171787101478916,
+    "fullAddress": "49B, Rosa-Luxemburg-Straße, An der Marwitzer Trift, Velten, Oberhavel, Brandenburg, 16727, Deutschland",
+    "timestamp": "2025-03-05T18:40:29.871Z"
+  },
+  {
+    "address": "Rudolf-Breitscheid-Straße 82f, Baruth, Baruth/Mark (15837)",
+    "city": "Baruth/Mark",
+    "lat": 52.041179,
+    "lon": 13.513118,
+    "fullAddress": "82f, Rudolf-Breitscheid-Straße, Baruth/Mark, Teltow-Fläming, Brandenburg, 15837, Deutschland",
+    "timestamp": "2025-03-05T18:40:30.996Z"
+  },
+  {
+    "address": "Rosa-Kempf-Straße 11, Aubing-Lochhausen-Langwied, München (81249)",
+    "city": "München",
+    "lat": 48.14146,
+    "lon": 11.410956,
+    "fullAddress": "11, Rosa-Kempf-Straße, Freiham-Nord, Freiham, Aubing-Lochhausen-Langwied, München, Bayern, 81248, Deutschland",
+    "timestamp": "2025-03-05T18:40:31.810Z"
+  },
+  {
+    "address": "Pomonaring 8, Ahrensburg (22926)",
+    "city": "Ahrensburg",
+    "lat": 53.6862161,
+    "lon": 10.2388329,
+    "fullAddress": "8, Pomonaring, Erlenhof, Ahrensburg, Kreis Stormarn, Schleswig-Holstein, 22926, Deutschland",
+    "timestamp": "2025-03-05T18:40:32.857Z"
+  },
+  {
+    "address": "Immermannstr. 8, Stadtfeld Ost, Magdeburg (39108)",
+    "city": "Magdeburg",
+    "lat": 52.1344381,
+    "lon": 11.60926830336907,
+    "fullAddress": "8, Immermannstraße, Stadtfeld Ost, Magdeburg, Sachsen-Anhalt, 39108, Deutschland",
+    "timestamp": "2025-03-05T18:40:34.819Z"
+  },
+  {
+    "address": "Straße Usti nad Labem 169, Kappel, Chemnitz (09119)",
+    "city": "Chemnitz",
+    "lat": 50.806739300000004,
+    "lon": 12.886589213965625,
+    "fullAddress": "169, Straße Usti nad Labem, Wohngebiet Fritz Heckert, Kappel, Chemnitz, Sachsen, 09119, Deutschland",
+    "timestamp": "2025-03-05T18:40:35.835Z"
+  },
+  {
+    "address": "Rosa-Kempf-Straße 17, Aubing-Lochhausen-Langwied, München (81249)",
+    "city": "München",
+    "lat": 48.1413589,
+    "lon": 11.4102519,
+    "fullAddress": "17, Rosa-Kempf-Straße, Freiham-Nord, Freiham, Aubing-Lochhausen-Langwied, München, Bayern, 81248, Deutschland",
+    "timestamp": "2025-03-05T18:40:36.812Z"
+  },
+  {
+    "address": "Moselstr. 20, Wandlitz, Wandlitz (16348)",
+    "city": "Wandlitz",
+    "lat": 52.763519099999996,
+    "lon": 13.47309099582628,
+    "fullAddress": "20, Moselstraße, Wandlitz, Barnim, Brandenburg, 16348, Deutschland",
+    "timestamp": "2025-03-05T18:40:37.800Z"
+  },
+  {
+    "address": "Arnikaweg 3, Steimker Berg, Wolfsburg (38446)",
+    "city": "Wolfsburg",
+    "lat": 52.41474223725302,
+    "lon": 10.8162910119956,
+    "fullAddress": "Arnikaweg, Steimker Gärten, Wolfsburg, Niedersachsen, 38446, Deutschland",
+    "timestamp": "2025-03-05T18:40:38.842Z"
+  },
+  {
+    "address": "Auf der Insel 27, Letmathe, Iserlohn (58642)",
+    "city": "Iserlohn",
+    "lat": 51.358272,
+    "lon": 7.603894891770616,
+    "fullAddress": "27, Auf der Insel, Ahm, Iserlohn, Märkischer Kreis, Nordrhein-Westfalen, 58642, Deutschland",
+    "timestamp": "2025-03-05T18:40:39.823Z"
+  },
+  {
+    "address": "Am Sandberg 16, Hohenburg, Hohenburg (92277)",
+    "city": "Hohenburg",
+    "lat": 49.29745175689919,
+    "lon": 11.804485583404466,
+    "fullAddress": "Am Sandberg, Oberlammerthal, Allertshofen, Hohenburg, Landkreis Amberg-Sulzbach, Bayern, 92277, Deutschland",
+    "timestamp": "2025-03-05T18:40:40.940Z"
+  },
+  {
+    "address": "Goethestraße 32, Ludwigsvorstadt-Isarvorstadt, München (80336)",
+    "city": "München",
+    "lat": 48.1357635,
+    "lon": 11.5582855,
+    "fullAddress": "32, Goethestraße, Klinikviertel, Ludwigsvorstadt-Kliniken, Ludwigsvorstadt-Isarvorstadt, München, Bayern, 80336, Deutschland",
+    "timestamp": "2025-03-05T19:03:57.149Z"
+  },
+  {
+    "address": "Clarita-Bernhard-Straße, Aubing-Lochhausen-Langwied, München (81249)",
+    "city": "München",
+    "lat": 48.138449231770565,
+    "lon": 11.41010224189877,
+    "fullAddress": "Clarita-Bernhard-Straße, Gut Freiham, Freiham, Aubing-Lochhausen-Langwied, München, Bayern, 81249, Deutschland",
+    "timestamp": "2025-03-05T19:03:58.073Z"
+  },
+  {
+    "address": "Maxvorstadt, München (80333)",
+    "city": "München",
+    "lat": 48.1510916,
+    "lon": 11.5624179,
+    "fullAddress": "Maxvorstadt, München, Bayern, Deutschland",
+    "timestamp": "2025-03-05T19:03:59.003Z"
+  },
+  {
+    "address": "Pasing-Obermenzing, München (81241)",
+    "city": "München",
+    "lat": 48.15236275,
+    "lon": 11.468434085049713,
+    "fullAddress": "Pasing-Obermenzing, München, Bayern, Deutschland",
+    "timestamp": "2025-03-05T19:04:00.011Z"
+  },
+  {
+    "address": "Goethestraße 30, Ludwigsvorstadt-Isarvorstadt, München (80336)",
+    "city": "München",
+    "lat": 48.1358232,
+    "lon": 11.5584528,
+    "fullAddress": "Sultan, 30, Goethestraße, Klinikviertel, Ludwigsvorstadt-Kliniken, Ludwigsvorstadt-Isarvorstadt, München, Bayern, 80336, Deutschland",
+    "timestamp": "2025-03-05T19:04:01.166Z"
+  },
+  {
+    "address": "Trudering-Riem, München (81825)",
+    "city": "München",
+    "lat": 48.1388379,
+    "lon": 11.674056534096552,
+    "fullAddress": "Trudering - Riem, Trudering-Riem, München, Bayern, 81829, Deutschland",
+    "timestamp": "2025-03-05T19:04:02.019Z"
+  },
+  {
+    "address": "Bogenhausen, München (81679)",
+    "city": "München",
+    "lat": 48.1452222,
+    "lon": 11.6149771,
+    "fullAddress": "Bogenhausen, Altbogenhausen, Bogenhausen, München, Bayern, 81679, Deutschland",
+    "timestamp": "2025-03-05T19:04:04.038Z"
+  },
+  {
+    "address": "Allach-Untermenzing, München (80997)",
+    "city": "München",
+    "lat": 48.1951989,
+    "lon": 11.462922159964123,
+    "fullAddress": "Allach-Untermenzing, München, Bayern, Deutschland",
+    "timestamp": "2025-03-05T19:04:05.028Z"
+  },
+  {
+    "address": "Schwabing-Freimann, München (80939)",
+    "city": "München",
+    "lat": 48.1892784,
+    "lon": 11.60858258301819,
+    "fullAddress": "Schwabing-Freimann, München, Bayern, Deutschland",
+    "timestamp": "2025-03-05T19:04:06.016Z"
+  },
+  {
+    "address": "Tattenbachstraße 18, Altstadt-Lehel, München (80538)",
+    "city": "München",
+    "lat": 48.1404979,
+    "lon": 11.590562049903294,
+    "fullAddress": "18, Tattenbachstraße, Lehel, Altstadt-Lehel, München, Bayern, 80538, Deutschland",
+    "timestamp": "2025-03-05T19:04:07.041Z"
+  },
+  {
+    "address": "Valleystraße 19, Sendling, München (81371)",
+    "city": "München",
+    "lat": 48.1174644,
+    "lon": 11.5486217,
+    "fullAddress": "19, Valleystraße, Sendlinger Feld, Sendling, München, Bayern, 81371, Deutschland",
+    "timestamp": "2025-03-05T19:04:08.056Z"
+  },
+  {
+    "address": "Moosach, München (80992)",
+    "city": "München",
+    "lat": 48.1800399,
+    "lon": 11.5060222,
+    "fullAddress": "Moosach, Bunzlauer Platz, Moosach-Bahnhof, Moosach, München, Bayern, 80992, Deutschland",
+    "timestamp": "2025-03-05T19:04:09.049Z"
+  },
+  {
+    "address": "Schorerstraße 3, Untergiesing-Harlaching, München (81547)",
+    "city": "München",
+    "lat": 48.1074111,
+    "lon": 11.571707,
+    "fullAddress": "3, Schorerstraße, Giesing, Untergiesing-Harlaching, München, Bayern, 81547, Deutschland",
+    "timestamp": "2025-03-05T19:04:10.079Z"
+  },
+  {
+    "address": "Rosa-Kempf-Straße 27, Aubing-Lochhausen-Langwied, München (81249)",
+    "city": "München",
+    "lat": 48.1415386,
+    "lon": 11.4100864,
+    "fullAddress": "27, Rosa-Kempf-Straße, Freiham-Nord, Freiham, Aubing-Lochhausen-Langwied, München, Bayern, 81248, Deutschland",
+    "timestamp": "2025-03-05T19:04:11.051Z"
+  },
+  {
+    "address": "Cosimastraße 296, Bogenhausen, München (81927)",
+    "city": "München",
+    "lat": 48.1768275,
+    "lon": 11.6332889,
+    "fullAddress": "296, Cosimastraße, Sankt Emmeram, Oberföhring, Bogenhausen, München, Bayern, 81927, Deutschland",
+    "timestamp": "2025-03-05T19:04:12.109Z"
+  },
+  {
+    "address": "Carl-Wery-Str. 35, Ramersdorf-Perlach, München (81739)",
+    "city": "München",
+    "lat": 48.087457799999996,
+    "lon": 11.646201657213714,
+    "fullAddress": "35, Carl-Wery-Straße, Neuperlach, Ramersdorf-Perlach, München, Bayern, 81739, Deutschland",
+    "timestamp": "2025-03-05T19:04:13.122Z"
+  },
+  {
+    "address": "Carl-Wery-Straße 35, Ramersdorf-Perlach, München (81739)",
+    "city": "München",
+    "lat": 48.087457799999996,
+    "lon": 11.646201657213714,
+    "fullAddress": "35, Carl-Wery-Straße, Neuperlach, Ramersdorf-Perlach, München, Bayern, 81739, Deutschland",
+    "timestamp": "2025-03-05T19:04:14.171Z"
+  },
+  {
+    "address": "Au-Haidhausen, München (81667)",
+    "city": "München",
+    "lat": 48.130273849999995,
+    "lon": 11.59833361534854,
+    "fullAddress": "Au-Haidhausen, München, Bayern, Deutschland",
+    "timestamp": "2025-03-05T19:04:15.003Z"
+  },
+  {
+    "address": "Pasing-Obermenzing, München (81243)",
+    "city": "München",
+    "lat": 48.15236275,
+    "lon": 11.468434085049713,
+    "fullAddress": "Pasing-Obermenzing, München, Bayern, Deutschland",
+    "timestamp": "2025-03-05T19:04:16.025Z"
+  },
+  {
+    "address": "Ramersdorf-Perlach, München (81735)",
+    "city": "München",
+    "lat": 48.100894249999996,
+    "lon": 11.633344759703725,
+    "fullAddress": "Ramersdorf-Perlach, München, Bayern, Deutschland",
+    "timestamp": "2025-03-05T19:04:17.015Z"
   }
 ]

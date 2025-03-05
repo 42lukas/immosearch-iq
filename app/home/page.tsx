@@ -1,8 +1,11 @@
-"use client";
+'use client';
+
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
+import LoadingAnimation from '@/components/LoadingAnimation';
 
 export default function Home() {
+    const [loading, setLoading] = useState(false);
     const [preferences, setPreferences] = useState({
         city: "",
         minPrice: "",
@@ -17,7 +20,6 @@ export default function Home() {
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
-        // Für Felder, die Zahlen enthalten sollen, nur numerische Eingaben erlauben
         if (["minPrice", "maxPrice", "minRooms", "maxRooms", "minSize", "maxSize"].includes(name)) {
             if (value === "" || /^\d*$/.test(value)) {
                 setPreferences({ ...preferences, [name]: value });
@@ -29,8 +31,8 @@ export default function Home() {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+        setLoading(true);
         
-        // Werte konvertieren, bevor sie gesendet werden
         const formattedPreferences = {
             city: preferences.city,
             minPrice: preferences.minPrice === "" ? 0 : parseInt(preferences.minPrice, 10),
@@ -47,6 +49,8 @@ export default function Home() {
             body: JSON.stringify(formattedPreferences)
         });
 
+        setLoading(false);
+        
         if (response.ok) {
             const data = await response.json();
             localStorage.setItem('results', JSON.stringify(data));
@@ -58,21 +62,29 @@ export default function Home() {
 
     return (
         <div className="p-6 bg-gray-800 text-white">
-            <h1 className="text-xl font-bold mb-4">🏡 Wohnungssuche starten</h1>
-            <form onSubmit={handleSubmit} className="flex flex-col gap-2">
-                {Object.entries(preferences).map(([key, value]) => (
-                    <input
-                        key={key}
-                        name={key}
-                        type={key === "city" ? "text" : "number"}
-                        placeholder={key}
-                        value={value}
-                        onChange={handleChange}
-                        className="p-2 border rounded text-black"
-                    />
-                ))}
-                <button className="mt-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600">🔍 Suche starten</button>
-            </form>
+            {loading ? (
+                <LoadingAnimation />
+            ) : (
+                <>
+                    <h1 className="text-xl font-bold mb-4">🏡 Wohnungssuche starten</h1>
+                    <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+                        {Object.entries(preferences).map(([key, value]) => (
+                            <input
+                                key={key}
+                                name={key}
+                                type={key === "city" ? "text" : "number"}
+                                placeholder={key}
+                                value={value}
+                                onChange={handleChange}
+                                className="p-2 border rounded text-black"
+                            />
+                        ))}
+                        <button className="mt-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                            🔍 Suche starten
+                        </button>
+                    </form>
+                </>
+            )}
         </div>
     );
 }

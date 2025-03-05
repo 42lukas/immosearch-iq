@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Cookies from "js-cookie";
-import { FaStar, FaRegStar, FaDownload, FaHome, FaInfoCircle, FaMapMarkedAlt, FaChevronDown } from "react-icons/fa";
+import { FaStar, FaRegStar, FaDownload, FaHome, FaInfoCircle, FaMapMarkedAlt, FaEdit } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -144,7 +144,7 @@ export default function ResultsPage() {
         </Link>
         
         <Link href="/about" className="flex items-center gap-2 font-bold hover:scale-110 transition-transform">
-            <FaInfoCircle /> About
+          <FaInfoCircle /> About
         </Link>
       </motion.div>
 
@@ -163,7 +163,15 @@ export default function ResultsPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
               >
-                <img src={listing.imgUrl} alt={listing.title} className="rounded-lg w-full h-40 object-cover" />
+                <img
+                  src={
+                    listing.imgUrl && listing.imgUrl.trim() !== ""
+                      ? listing.imgUrl
+                      : "/placeholder.png"
+                  }
+                  alt={listing.title}
+                  className="rounded-lg w-full h-40 object-cover"
+                />
                 <div className="flex-grow">
                   <h2 className="text-lg font-semibold text-black dark:text-white">{listing.title}</h2>
                   <p className="text-gray-700 dark:text-gray-300">💶 {listing.price} €</p>
@@ -182,6 +190,7 @@ export default function ResultsPage() {
                 <div className="mt-auto flex justify-between items-center">
                   <p className="text-black dark:text-white font-bold">{listing.score}</p>
                   <div className="flex items-center gap-2">
+                    {/* Favoriten-Button */}
                     <button onClick={() => toggleFavorite(listing)}>
                       {favorites[listing.title] ? (
                         <FaStar className="w-5 h-5 text-yellow-500" />
@@ -189,12 +198,33 @@ export default function ResultsPage() {
                         <FaRegStar className="w-5 h-5 text-yellow-500" />
                       )}
                     </button>
+
+                    {/* Download-Button */}
                     <button
                       className="px-3 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
                       onClick={() => downloadApplication(listing)}
                     >
                       <FaDownload className="w-5 h-5" />
                     </button>
+
+                    {/* NEU: Edit-Button -> navigiert zur /edit-application Seite */}
+                    <Link
+                      href={{
+                        pathname: "/edit-application",
+                        query: {
+                          title: listing.title,
+                          address: listing.address,
+                          price: listing.price,
+                          rooms: listing.rooms,
+                          size: listing.size,
+                          city: listing.city,
+                        },
+                      }}
+                      className="px-3 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition flex items-center"
+                    >
+                      <FaEdit className="w-5 h-5 mr-1" />
+                      Bearbeiten
+                    </Link>
                   </div>
                 </div>
               </motion.div>
