@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
-import Cookies from "js-cookie";
 import { FaStar, FaRegStar, FaDownload, FaHome, FaInfoCircle, FaMapMarkedAlt, FaEdit } from "react-icons/fa";
-import Link from "next/link";
 import { motion } from "framer-motion";
+import { getUserId } from "@/utils/auth";
+import Link from "next/link";
 
 interface Listing {
   title: string;
@@ -36,15 +36,13 @@ export default function ResultsPage() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    const userId = getUserId();
     const savedResults = localStorage.getItem("results");
     if (savedResults) {
       setListings(JSON.parse(savedResults));
     }
 
     const fetchUserData = async () => {
-      const userId = Cookies.get("userId");
-      if (!userId) return;
-
       try {
         const response = await fetch(`/api/user?userId=${userId}`);
         const data = await response.json();
@@ -57,9 +55,6 @@ export default function ResultsPage() {
     };
 
     const fetchFavorites = async () => {
-      const userId = Cookies.get("userId");
-      if (!userId) return;
-
       try {
         const response = await fetch(`/api/favorites?userId=${userId}`);
         const data = await response.json();
@@ -80,8 +75,7 @@ export default function ResultsPage() {
   }, []);
 
   const toggleFavorite = async (listing: Listing) => {
-    const userId = Cookies.get("userId");
-    if (!userId) return;
+    const userId = getUserId();
 
     const newFavorites = { ...favorites, [listing.title]: !favorites[listing.title] };
     setFavorites(newFavorites);

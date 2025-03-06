@@ -9,17 +9,19 @@ if (!fs.existsSync(uploadBasePath)) {
 }
 
 export async function POST(req: NextRequest) {
-    const userId = req.cookies.get('userId')?.value;
-    if (!userId) {
-        return NextResponse.json({ error: "Keine Nutzer-ID gefunden" }, { status: 400 });
-    }
-
-    const userUploadPath = path.join(uploadBasePath, userId);
-    if (!fs.existsSync(userUploadPath)) {
-        fs.mkdirSync(userUploadPath, { recursive: true });
-    }
-
     try {
+        const { searchParams } = new URL(req.url);
+        const userId = searchParams.get("userId"); // userId aus Query-Parametern holen
+
+        if (!userId) {
+            return NextResponse.json({ error: "❌ Keine Nutzer-ID gefunden" }, { status: 400 });
+        }
+
+        const userUploadPath = path.join(uploadBasePath, userId);
+        if (!fs.existsSync(userUploadPath)) {
+            fs.mkdirSync(userUploadPath, { recursive: true });
+        }
+
         const formData = await req.formData();
         const files = formData.getAll("files");
         const savedFiles: string[] = [];

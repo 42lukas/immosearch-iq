@@ -1398,5 +1398,109 @@
     "lon": 11.633344759703725,
     "fullAddress": "Ramersdorf-Perlach, München, Bayern, Deutschland",
     "timestamp": "2025-03-05T19:04:17.015Z"
+  },
+  {
+    "address": "Eschengraben 1, Pankow, Berlin (13189)",
+    "city": "Berlin",
+    "lat": 52.5562517,
+    "lon": 13.4154149,
+    "fullAddress": "1, Eschengraben, Tiroler Viertel, Pankow, Berlin, 13189, Deutschland",
+    "timestamp": "2025-03-06T07:46:05.583Z"
+  },
+  {
+    "address": "Klara-Franke-Straße 20, Moabit, Berlin (10557)",
+    "city": "Berlin",
+    "lat": 52.5311131,
+    "lon": 13.363008455168337,
+    "fullAddress": "E3, 20, Klara-Franke-Straße, Europacity, Moabit, Mitte, Berlin, 10557, Deutschland",
+    "timestamp": "2025-03-06T07:46:06.587Z"
+  },
+  {
+    "address": "Adolfstraße 24, Wedding, Berlin (13347)",
+    "city": "Berlin",
+    "lat": 52.5474161,
+    "lon": 13.3666502,
+    "fullAddress": "24, Adolfstraße, Maxgärten, Wedding, Mitte, Berlin, Pankow, 13347, Deutschland",
+    "timestamp": "2025-03-06T07:46:07.587Z"
+  },
+  {
+    "address": "Hauptstraße 2-3, Lichtenberg, Berlin (10317)",
+    "city": "Berlin",
+    "lat": 52.50136685,
+    "lon": 13.474469372274429,
+    "fullAddress": "Habyt - The Waterfront, 2-3, Hauptstraße, Rummelsburg, Lichtenberg, Berlin, 10317, Deutschland",
+    "timestamp": "2025-03-06T07:46:08.618Z"
+  },
+  {
+    "address": "Lottumstraße 25, 10119 Berlin, Mitte, Berlin (10119)",
+    "city": "Berlin",
+    "lat": 52.53077008340521,
+    "lon": 13.40704435455185,
+    "fullAddress": "Lottumstraße, Prenzlauer Berg, Pankow, Berlin, 10119, Deutschland",
+    "timestamp": "2025-03-06T07:46:09.622Z"
+  },
+  {
+    "address": "Kaiser-Friedrich Straße, Charlottenburg, Berlin (10585)",
+    "city": "Berlin",
+    "lat": 52.51488575704536,
+    "lon": 13.30087016906772,
+    "fullAddress": "Kaiser-Friedrich-Straße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10585, Deutschland",
+    "timestamp": "2025-03-06T07:46:10.636Z"
+  },
+  {
+    "address": "Relingstraße, Grünau, Berlin (12527)",
+    "city": "Berlin",
+    "lat": 52.42571748905158,
+    "lon": 13.575807992554882,
+    "fullAddress": "Relingstraße, Grünau, Treptow-Köpenick, Berlin, 12527, Deutschland",
+    "timestamp": "2025-03-06T07:46:11.569Z"
+  },
+  {
+    "address": "Paul-Lincke-Ufer, Kreuzberg, Berlin (10999)",
+    "city": "Berlin",
+    "lat": 52.495195206929274,
+    "lon": 13.424710902291105,
+    "fullAddress": "Paul-Lincke-Ufer, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Deutschland",
+    "timestamp": "2025-03-06T07:46:12.614Z"
+  },
+  {
+    "address": "Invalidenstraße, Mitte, Berlin (10115)",
+    "city": "Berlin",
+    "lat": 52.53200925122066,
+    "lon": 13.392263252035464,
+    "fullAddress": "Invalidenstraße, Spandauer Vorstadt, Mitte, Berlin, 10115, Deutschland",
+    "timestamp": "2025-03-06T07:46:13.593Z"
+  },
+  {
+    "address": "Motzstraße, Schöneberg, Berlin (10777)",
+    "city": "Berlin",
+    "lat": 52.498703745020975,
+    "lon": 13.350974565096502,
+    "fullAddress": "Motzstraße, Schöneberg, Tempelhof-Schöneberg, Berlin, 10777, Deutschland",
+    "timestamp": "2025-03-06T07:46:14.590Z"
+  },
+  {
+    "address": "Haubachstraße, Charlottenburg, Berlin (10585)",
+    "city": "Berlin",
+    "lat": 52.51555833804933,
+    "lon": 13.303768774528095,
+    "fullAddress": "Haubachstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10585, Deutschland",
+    "timestamp": "2025-03-06T07:46:15.587Z"
+  },
+  {
+    "address": "Seelingstraße, Charlottenburg, Berlin (14059)",
+    "city": "Berlin",
+    "lat": 52.515468125340654,
+    "lon": 13.292795262750436,
+    "fullAddress": "Seelingstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 14059, Deutschland",
+    "timestamp": "2025-03-06T07:46:16.585Z"
+  },
+  {
+    "address": "Karl-Marx-Allee, Friedrichshain, Berlin (10243)",
+    "city": "Berlin",
+    "lat": 52.516676159195846,
+    "lon": 13.446066437649515,
+    "fullAddress": "Karl-Marx-Allee, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Deutschland",
+    "timestamp": "2025-03-06T07:46:17.630Z"
   }
 ]

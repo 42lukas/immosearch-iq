@@ -1,20 +1,9 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import Cookies from "js-cookie";
-import { v4 as uuidv4 } from "uuid";
-import {
-  FiUser,
-  FiMail,
-  FiPhone,
-  FiCalendar,
-  FiMapPin,
-  FiBriefcase,
-  FiCheck,
-  FiUpload,
-  FiTrash
-} from "react-icons/fi";
+import { FiUser, FiMail, FiPhone, FiCalendar, FiMapPin, FiBriefcase, FiCheck, FiUpload, FiTrash } from "react-icons/fi";
 import { MdEuroSymbol } from "react-icons/md";
+import { getUserId } from "@/utils/auth";
 import Link from "next/link";
 
 function NavBar() {
@@ -69,16 +58,10 @@ export default function UserPage() {
   const hobbyOptions = ["Sport", "Kochen", "Lesen", "Reisen", "Musik", "Gaming"];
 
   useEffect(() => {
-    let userIdFromCookie = Cookies.get("userId");
+    let userId = getUserId();
+    console.log("UserId: " + userId);
 
-    if (!userIdFromCookie) {
-      userIdFromCookie = uuidv4();
-      Cookies.set("userId", userIdFromCookie, { path: "/", expires: 365 });
-      console.log("Neue UUID gesetzt:", userIdFromCookie);
-    }
-    setUserId(userIdFromCookie);
-
-    fetch(`/api/user?userId=${userIdFromCookie}`)
+    fetch(`/api/user?userId=${userId}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success && data.userData) {
@@ -89,7 +72,7 @@ export default function UserPage() {
         console.error("Fehler beim Laden der User-Daten:", err);
       });
 
-    fetch(`/api/user/files?userId=${userIdFromCookie}`)
+    fetch(`/api/user/files?userId=${userId}`)
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data.files)) {
@@ -149,11 +132,6 @@ export default function UserPage() {
     }
   };
   const handleDeleteFile = async (filename: string) => {
-    if (!userId) {
-      alert("❌ Keine userID im Cookie gefunden!");
-      return;
-    }
-
     try {
       const response = await fetch("/api/user/delete-files", {
         method: "POST",
@@ -175,42 +153,48 @@ export default function UserPage() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    if (!userId) {
-      alert("❌ Keine userID im Cookie gefunden!");
+  
+    let currentUserId = userId || getUserId(); // Falls `userId` nicht gesetzt ist, hole sie erneut
+    console.log("🛠️ userId beim Speichern:", currentUserId);
+  
+    if (!currentUserId) {
+      alert("❌ Keine userId gefunden!");
       return;
     }
-
+  
     // (1) JSON-Daten speichern
     await fetch("/api/user", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        userId: userId,       
+        userId: currentUserId,       
         userData: formData,
       }),
     });
-
+  
     // (2) Dateien hochladen
     const formDataFiles = new FormData();
     if (resume) formDataFiles.append("files", resume);
     salaryProofs.forEach((file) => formDataFiles.append("files", file));
     otherFiles.forEach((file) => formDataFiles.append("files", file));
-
-    await fetch("/api/upload", {
+  
+    // **Hier wird die userId als Query-Parameter angehängt**
+    await fetch(`/api/upload?userId=${currentUserId}`, {
       method: "POST",
       body: formDataFiles,
     });
-
+  
     // (3) Dateien-Liste neu laden
-    const res = await fetch(`/api/user/files?userId=${userId}`);
+    const res = await fetch(`/api/user/files?userId=${currentUserId}`);
     const data = await res.json();
     if (Array.isArray(data.files)) {
       setUploadedFiles(data.files);
     }
-
+  
     alert("✅ Daten und Dokumente gespeichert!");
   };
+  
+  
 
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-r from-blue-500 to-blue-700">

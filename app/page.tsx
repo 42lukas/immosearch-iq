@@ -1,6 +1,14 @@
+"use client";
 import Link from 'next/link';
+import { useEffect } from 'react';
+import { getUserId } from "@/utils/auth";
 
 export default function Home() {
+
+  useEffect(() => {
+    getUserId();
+  }, []);
+
   return (
     <div className="relative h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/redHouses.png')" }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>

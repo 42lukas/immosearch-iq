@@ -7,14 +7,14 @@ const dataFilePath = path.resolve(process.cwd(), "app/data/userData.json");
 const loadUserData = () => {
   try {
     if (!fs.existsSync(dataFilePath)) {
-      fs.writeFileSync(dataFilePath, JSON.stringify({}), "utf-8"); 
+      fs.writeFileSync(dataFilePath, JSON.stringify({}), "utf-8");
     }
 
     const rawData = fs.readFileSync(dataFilePath, "utf-8");
-    return rawData.trim() ? JSON.parse(rawData) : {}; 
+    return rawData.trim() ? JSON.parse(rawData) : {};
   } catch (error) {
     console.error("❌ Fehler beim Laden der Nutzerdaten:", error);
-    return {}; 
+    return {};
   }
 };
 
@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
     }
 
     const users = loadUserData();
-    users[userId] = userData; // Speichert die Daten des Users unter seiner UUID
+    users[userId] = userData;
 
     fs.writeFileSync(dataFilePath, JSON.stringify(users, null, 2), "utf-8");
 

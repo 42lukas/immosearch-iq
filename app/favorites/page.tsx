@@ -1,11 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
-import Cookies from "js-cookie";
-
-// Icons
-import { 
-    FaTrash 
-} from "react-icons/fa";
+import { getUserId } from "@/utils/auth";
+import { FaTrash } from "react-icons/fa";
 
 interface Listing {
     title: string;
@@ -24,10 +20,8 @@ export default function FavoritesPage() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        const userId = getUserId();
         const fetchFavorites = async () => {
-            const userId = Cookies.get('userId');
-            if (!userId) return;
-
             try {
                 const response = await fetch(`/api/favorites?userId=${userId}`);
                 const data = await response.json();
@@ -45,8 +39,7 @@ export default function FavoritesPage() {
     }, []);
 
     const removeFavorite = async (listing: Listing) => {
-        const userId = Cookies.get('userId');
-        if (!userId) return;
+        const userId = getUserId();
 
         try {
             await fetch('/api/favorites', {

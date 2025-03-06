@@ -1,9 +1,11 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
-import Cookies from "js-cookie";
 import { motion } from "framer-motion";
+import { getUserId } from "@/utils/auth";
 import Link from "next/link";
+
+
 
 interface Listing {
   title: string;
@@ -36,8 +38,7 @@ export default function EditApplicationPage() {
 
   useEffect(() => {
     const fetchUserData = async () => {
-      const userId = Cookies.get("userId");
-      if (!userId) return;
+      const userId = getUserId();
 
       try {
         const response = await fetch(`/api/user?userId=${userId}`);

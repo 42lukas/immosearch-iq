@@ -7,13 +7,10 @@ const uploadBasePath = path.resolve(process.cwd(), "public/uploads");
 export async function GET(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
-    const userId = searchParams.get("userId");
+    const userId = searchParams.get("userId"); // Hole userId aus Query-Params
 
     if (!userId) {
-      return NextResponse.json(
-        { error: "❌ Keine userId übergeben" },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: "❌ Keine User-ID angegeben" }, { status: 400 });
     }
 
     const userDir = path.join(uploadBasePath, userId);
