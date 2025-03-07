@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { getUserId } from "@/utils/auth";
-import { FaTrash } from "react-icons/fa";
+import { FaHeart, FaInfoCircle, FaMapMarkedAlt, FaTrash, FaUserEdit } from "react-icons/fa";
+import Navbar, { NavLink } from '@/components/Navbar';
 
 interface Listing {
     title: string;
@@ -54,16 +55,30 @@ export default function FavoritesPage() {
         }
     };
 
+    const navLinks: NavLink[] = [
+        {
+        href: "/about",
+        label: "About",
+        icon: FaInfoCircle,
+        },
+        {
+        href: "/user",
+        label: "User",
+        icon: FaUserEdit,
+        },
+    ];
+
     return (
-        <div className="min-h-screen p-6 bg-gray-900 text-white">
-            <h1 className="text-3xl font-bold text-center mb-6">⭐ Meine Favoriten</h1>
+        <div className="min-h-screen bg-gray-900 text-white">
+            <Navbar navLinks={navLinks} />
+            <h1 className="text-3xl font-bold text-center mt-4 mb-6">⭐ Meine Favoriten</h1>
 
             {loading ? (
                 <p className="text-center">⏳ Favoriten werden geladen...</p>
             ) : favorites.length === 0 ? (
                 <p className="text-center text-gray-400">🚫 Keine Favoriten gespeichert.</p>
             ) : (
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
                     {favorites.map((listing, index) => (
                         <div key={index} className="bg-gray-800 rounded-xl shadow-lg overflow-hidden flex flex-col">
                             <img 

@@ -54,7 +54,7 @@ export default function Home() {
         if (response.ok) {
             const data = await response.json();
             localStorage.setItem('results', JSON.stringify(data));
-            router.push('/results');
+            router.push(`/results?city=${preferences.city}`);
         } else {
             console.log('Fehler beim Starten des Crawlers!');
         }

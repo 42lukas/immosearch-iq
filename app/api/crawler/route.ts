@@ -22,10 +22,21 @@ const extractNumber = (text: string | undefined) => {
     return parseFloat(text.replace(/[^\d,]/g, '').replace(',', '.')) || 0;
 };
 
+const convertCityToUrlFormat = (city: string): string => {
+  return city
+      .toLowerCase()
+      .replace(/ä/g, 'ae')
+      .replace(/ö/g, 'oe')
+      .replace(/ü/g, 'ue')
+      .replace(/ß/g, 'ss')
+      .replace(/\s+/g, '-');
+};
+
+
 export async function POST(req: NextRequest) {
     const prefs = await req.json();
-    const cityLower = prefs.city.toLowerCase();
-    const url = `https://www.immowelt.de/liste/${cityLower}/wohnungen/mieten`;
+    const convertedCity = convertCityToUrlFormat(prefs.city);
+    const url = `https://www.immowelt.de/liste/${convertedCity}/wohnungen/mieten`;
 
     const scoreManager = new ScoreManager();
 

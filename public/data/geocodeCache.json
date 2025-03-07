@@ -1502,5 +1502,285 @@
     "lon": 13.446066437649515,
     "fullAddress": "Karl-Marx-Allee, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Deutschland",
     "timestamp": "2025-03-06T07:46:17.630Z"
+  },
+  {
+    "address": "Immenhofer Straße, Süd, Stuttgart (70180)",
+    "city": "Stuttgart",
+    "lat": 48.76720816760281,
+    "lon": 9.17543058060322,
+    "fullAddress": "Immenhofer Straße, Lehen, Stuttgart-Süd, Stuttgart, Baden-Württemberg, 70180, Deutschland",
+    "timestamp": "2025-03-07T09:21:14.729Z"
+  },
+  {
+    "address": "Olgastraße, Süd, Stuttgart (70180)",
+    "city": "Stuttgart",
+    "lat": 48.766011250000005,
+    "lon": 9.17734645,
+    "fullAddress": "Olgastraße, Lehen, Stuttgart-Süd, Stuttgart, Baden-Württemberg, 70180, Deutschland",
+    "timestamp": "2025-03-07T09:21:15.742Z"
+  },
+  {
+    "address": "Ludwigstraße, West, Stuttgart (70197)",
+    "city": "Stuttgart",
+    "lat": 48.7737658,
+    "lon": 9.1611123,
+    "fullAddress": "Tageseinrichtung für Kinder Ludwigstraße, 41, Ludwigstraße, Stuttgart-West, Feuersee, Stuttgart-West, Stuttgart, Baden-Württemberg, 70176, Deutschland",
+    "timestamp": "2025-03-07T09:21:16.797Z"
+  },
+  {
+    "address": "Degerloch, Stuttgart (70597)",
+    "city": "Stuttgart",
+    "lat": 48.749597,
+    "lon": 9.1703452,
+    "fullAddress": "Degerloch, Stuttgart, Baden-Württemberg, 70597, Deutschland",
+    "timestamp": "2025-03-07T09:21:17.727Z"
+  },
+  {
+    "address": "Spiegelfabrik 1, Waldhof, Mannheim (68305)",
+    "city": "Mannheim",
+    "lat": 49.5203406,
+    "lon": 8.47776174218955,
+    "fullAddress": "1, Spiegelfabrik, Luzenberg, Waldhof, Mannheim, Baden-Württemberg, 68305, Deutschland",
+    "timestamp": "2025-03-07T09:21:38.827Z"
+  },
+  {
+    "address": "Bad Dürrheim, Bad Dürrheim (78073)",
+    "city": "Bad Dürrheim",
+    "lat": 48.0222311,
+    "lon": 8.5299837,
+    "fullAddress": "Bad Dürrheim, Schwarzwald-Baar-Kreis, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-07T09:21:39.808Z"
+  },
+  {
+    "address": "Hetzdorfer Straße 13, Gorbitz-Ost, Dresden (01169)",
+    "city": "Dresden",
+    "lat": 51.0470177,
+    "lon": 13.6750598,
+    "fullAddress": "13, Hetzdorfer Straße, An der Kirche, Gorbitz-Ost, Gorbitz, Cotta, Dresden, Sachsen, 01169, Deutschland",
+    "timestamp": "2025-03-07T09:21:42.850Z"
+  },
+  {
+    "address": "Lisa-Fittko-Straße 11, Moabit, Berlin (10557)",
+    "city": "Berlin",
+    "lat": 52.5312341,
+    "lon": 13.3657505,
+    "fullAddress": "11, Lisa-Fittko-Straße, Europacity, Moabit, Mitte, Berlin, 10557, Deutschland",
+    "timestamp": "2025-03-07T09:34:10.794Z"
+  },
+  {
+    "address": "Grünhofer Weg 44, Spandau, Berlin (13581)",
+    "city": "Berlin",
+    "lat": 52.5305978,
+    "lon": 13.1872192,
+    "fullAddress": "44, Grünhofer Weg, Spandau, Berlin, 13581, Deutschland",
+    "timestamp": "2025-03-07T09:34:11.783Z"
+  },
+  {
+    "address": "Langer-See-Str. 10, Haselhorst, Berlin (13599)",
+    "city": "Berlin",
+    "lat": 52.5586763,
+    "lon": 13.2253242,
+    "fullAddress": "10, Langer-See-Straße, Haselhorst, Spandau, Berlin, 13599, Deutschland",
+    "timestamp": "2025-03-07T09:34:12.825Z"
+  },
+  {
+    "address": "Weidenweg 75, Friedrichshain, Berlin (10247)",
+    "city": "Berlin",
+    "lat": 52.51973445,
+    "lon": 13.457057913305613,
+    "fullAddress": "75, Weidenweg, Hausburgviertel, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10247, Deutschland",
+    "timestamp": "2025-03-07T09:34:13.826Z"
+  },
+  {
+    "address": "Neue Weyer Straße 5, Altstadt-Süd, Köln (50676)",
+    "city": "Köln",
+    "lat": 50.9293998,
+    "lon": 6.944485051108538,
+    "fullAddress": "5, Neue Weyerstraße, Mauritiusviertel, Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50676, Deutschland",
+    "timestamp": "2025-03-07T10:00:09.780Z"
+  },
+  {
+    "address": "Nippes, Köln (50733)",
+    "city": "Köln",
+    "lat": 50.9640936,
+    "lon": 6.9539356,
+    "fullAddress": "Nippes, Köln, Nordrhein-Westfalen, 50733, Deutschland",
+    "timestamp": "2025-03-07T10:00:10.735Z"
+  },
+  {
+    "address": "Hartwichstraße 115, Nippes, Köln-Nippes (50733)",
+    "city": "Köln-Nippes",
+    "lat": 50.958185799999995,
+    "lon": 6.942784917455215,
+    "fullAddress": "115, Hartwichstraße, Sechzigviertel, Nippes, Köln, Nordrhein-Westfalen, 50733, Deutschland",
+    "timestamp": "2025-03-07T10:00:11.785Z"
+  },
+  {
+    "address": "Junkersdorf, Köln (50858)",
+    "city": "Köln",
+    "lat": 50.9317526,
+    "lon": 6.8551691,
+    "fullAddress": "Junkersdorf, Lindenthal, Köln, Nordrhein-Westfalen, 50858, Deutschland",
+    "timestamp": "2025-03-07T10:00:12.763Z"
+  },
+  {
+    "address": "Hauptstrasse 293-299, Porz, Köln (51143)",
+    "city": "Köln",
+    "lat": 50.8797716,
+    "lon": 7.054108092391876,
+    "fullAddress": "Lindenhof, 293-299, Hauptstraße, Porz, Köln, Nordrhein-Westfalen, 51143, Deutschland",
+    "timestamp": "2025-03-07T10:00:13.776Z"
+  },
+  {
+    "address": "Kronstädter Straße 6, Weiden, Köln (50858)",
+    "city": "Köln",
+    "lat": 50.93165465,
+    "lon": 6.8449826548672625,
+    "fullAddress": "6, Kronstädter Straße, Weiden, Lindenthal, Köln, Nordrhein-Westfalen, 50858, Deutschland",
+    "timestamp": "2025-03-07T10:00:14.741Z"
+  },
+  {
+    "address": "Aachener Straße, Junkersdorf, Köln (50858)",
+    "city": "Köln",
+    "lat": 50.93769229046219,
+    "lon": 6.864877544421389,
+    "fullAddress": "Aachener Straße, Stadtwaldviertel, Junkersdorf, Lindenthal, Köln, Nordrhein-Westfalen, 50858, Deutschland",
+    "timestamp": "2025-03-07T10:00:15.792Z"
+  },
+  {
+    "address": "Luxemburger Straße, Sülz, Köln (50939)",
+    "city": "Köln",
+    "lat": 50.918487295965505,
+    "lon": 6.930567177719743,
+    "fullAddress": "Luxemburger Straße, Sülz, Lindenthal, Köln, Nordrhein-Westfalen, 50939, Deutschland",
+    "timestamp": "2025-03-07T10:00:16.807Z"
+  },
+  {
+    "address": "Stolberger Straße, Ehrenfeld, Köln (50933)",
+    "city": "Köln",
+    "lat": 50.941843218516546,
+    "lon": 6.90678956535944,
+    "fullAddress": "Stolberger Straße, Braunsfeld, Lindenthal, Köln, Nordrhein-Westfalen, 50933, Deutschland",
+    "timestamp": "2025-03-07T10:00:17.759Z"
+  },
+  {
+    "address": "Hartwichstraße, Nippes, Köln (50733)",
+    "city": "Köln",
+    "lat": 50.95816875881621,
+    "lon": 6.94406128824444,
+    "fullAddress": "Hartwichstraße, Sechzigviertel, Nippes, Köln, Nordrhein-Westfalen, 50733, Deutschland",
+    "timestamp": "2025-03-07T10:00:18.730Z"
+  },
+  {
+    "address": "Neusser Straße, Nippes, Köln (50733)",
+    "city": "Köln",
+    "lat": 50.95853122609801,
+    "lon": 6.955006383366282,
+    "fullAddress": "Neusser Straße, Sechzigviertel, Nippes, Köln, Nordrhein-Westfalen, 50733, Deutschland",
+    "timestamp": "2025-03-07T10:00:19.795Z"
+  },
+  {
+    "address": "Vogelsangerstr., Vogelsang, Köln (50829)",
+    "city": "Köln",
+    "lat": 50.95582630923669,
+    "lon": 6.879909773688425,
+    "fullAddress": "Vogelsanger Straße, Alt-Vogelsang, Vogelsang, Ehrenfeld, Köln, Nordrhein-Westfalen, 50829, Deutschland",
+    "timestamp": "2025-03-07T10:00:20.744Z"
+  },
+  {
+    "address": "Dohlenweg, Vogelsang, Köln (50829)",
+    "city": "Köln",
+    "lat": 50.95343976260332,
+    "lon": 6.88239231437034,
+    "fullAddress": "Dohlenweg, Alt-Vogelsang, Vogelsang, Ehrenfeld, Köln, Nordrhein-Westfalen, 50829, Deutschland",
+    "timestamp": "2025-03-07T10:00:21.729Z"
+  },
+  {
+    "address": "Werderstraße, Neustadt-Nord, Köln (50672)",
+    "city": "Köln",
+    "lat": 50.942899032647105,
+    "lon": 6.938602454256084,
+    "fullAddress": "Werderstraße, Belgisches Viertel, Neustadt/Nord, Innenstadt, Köln, Nordrhein-Westfalen, 50672, Deutschland",
+    "timestamp": "2025-03-07T10:00:22.737Z"
+  },
+  {
+    "address": "Usinger Straße, Humboldt-Gremberg, Köln (51105)",
+    "city": "Köln",
+    "lat": 50.932040087597244,
+    "lon": 6.9987520111613435,
+    "fullAddress": "Usingerstraße, Humboldt, Humboldt/Gremberg, Kalk, Köln, Nordrhein-Westfalen, 51105, Deutschland",
+    "timestamp": "2025-03-07T10:00:23.733Z"
+  },
+  {
+    "address": "Dünnwald, Köln (51069)",
+    "city": "Köln",
+    "lat": 51,
+    "lon": 7.038611,
+    "fullAddress": "Dünnwald, Mülheim, Köln, Nordrhein-Westfalen, Deutschland",
+    "timestamp": "2025-03-07T10:00:24.723Z"
+  },
+  {
+    "address": "Neustadt-Nord, Köln (50672)",
+    "city": "Köln",
+    "lat": 50.9479231,
+    "lon": 6.941060750330894,
+    "fullAddress": "Neustadt/Nord, Innenstadt, Köln, Nordrhein-Westfalen, Deutschland",
+    "timestamp": "2025-03-07T10:00:25.726Z"
+  },
+  {
+    "address": "Altstadt-Süd, Köln (50676)",
+    "city": "Köln",
+    "lat": 50.929181150000005,
+    "lon": 6.955329090575393,
+    "fullAddress": "Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, Deutschland",
+    "timestamp": "2025-03-07T10:00:26.760Z"
+  },
+  {
+    "address": "Marienburg, Köln (50968)",
+    "city": "Köln",
+    "lat": 50.9014892,
+    "lon": 6.9774565,
+    "fullAddress": "Marienburg, Rodenkirchen, Köln, Nordrhein-Westfalen, 50968, Deutschland",
+    "timestamp": "2025-03-07T10:00:27.748Z"
+  },
+  {
+    "address": "Sülz, Köln (50935)",
+    "city": "Köln",
+    "lat": 50.9189277,
+    "lon": 6.9240929,
+    "fullAddress": "Sülz, Lindenthal, Köln, Nordrhein-Westfalen, 50937, Deutschland",
+    "timestamp": "2025-03-07T10:00:28.745Z"
+  },
+  {
+    "address": "Neustadt-Süd, Köln (50674)",
+    "city": "Köln",
+    "lat": 50.92655975,
+    "lon": 6.9404063381425605,
+    "fullAddress": "Neustadt/Süd, Innenstadt, Köln, Nordrhein-Westfalen, Deutschland",
+    "timestamp": "2025-03-07T10:00:29.721Z"
+  },
+  {
+    "address": "Herkulesstraße, Neuehrenfeld, Köln (50823)",
+    "city": "Köln",
+    "lat": 50.954049655373375,
+    "lon": 6.931192277949348,
+    "fullAddress": "Herkulesstraße, Neuehrenfeld, Ehrenfeld, Köln, Nordrhein-Westfalen, 50823, Deutschland",
+    "timestamp": "2025-03-07T10:00:30.774Z"
+  },
+  {
+    "address": "Deutz-Kalker Straße, Deutz, Köln (50679)",
+    "city": "Köln",
+    "lat": 50.93706598906254,
+    "lon": 6.984174416654277,
+    "fullAddress": "Deutz-Kalker Straße, Deutz, Innenstadt, Köln, Nordrhein-Westfalen, 50679, Deutschland",
+    "timestamp": "2025-03-07T10:00:31.776Z"
+  },
+  {
+    "address": "Niehl, Köln (50735)",
+    "city": "Köln",
+    "lat": 50.9898292,
+    "lon": 6.9627066,
+    "fullAddress": "Niehl, Nippes, Köln, Nordrhein-Westfalen, 50735, Deutschland",
+    "timestamp": "2025-03-07T10:00:32.726Z"
   }
 ]

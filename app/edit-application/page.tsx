@@ -3,9 +3,8 @@ import { useState, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { getUserId } from "@/utils/auth";
-import Link from "next/link";
-
-
+import Navbar, { NavLink } from "@/components/Navbar";
+import { FaMapMarkedAlt, FaHeart, FaInfoCircle, FaUserEdit } from "react-icons/fa";
 
 interface Listing {
   title: string;
@@ -104,10 +103,35 @@ E-Mail: ${userData.email}
     window.URL.revokeObjectURL(url);
   };
 
+  const navLinks: NavLink[] = [
+    {
+      href: "/map",
+      label: "Map",
+      icon: FaMapMarkedAlt,
+    },
+    {
+      href: "/favorites",
+      label: "Favorites",
+      icon: FaHeart,
+    },
+    {
+      href: "/about",
+      label: "About",
+      icon: FaInfoCircle,
+    },
+    {
+      href: "/user",
+      label: "User",
+      icon: FaUserEdit,
+    },
+  ];
+
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 min-h-screen p-6">
+    <div className="bg-gray-100 dark:bg-gray-900 min-h-screen">
+      <Navbar navLinks={navLinks} />
+
       <motion.div
-        className="mx-auto w-full max-w-5xl bg-white dark:bg-gray-800 shadow-md rounded-lg p-6"
+        className="mx-auto w-full max-w-5xl bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 mt-10"
         initial={{ y: 30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -116,12 +140,13 @@ E-Mail: ${userData.email}
           <h1 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-white">
             Bewerbung bearbeiten
           </h1>
-          <Link
-            href="/home"
+          {/* Zurück zur Liste mit router.back() */}
+          <button
+            onClick={() => router.back()}
             className="text-blue-600 dark:text-blue-400 hover:underline"
           >
-            Zurück zur Startseite
-          </Link>
+            Zurück zur Liste
+          </button>
         </div>
 
         {listingData && (
@@ -169,7 +194,7 @@ E-Mail: ${userData.email}
               dark:text-gray-100
               p-4
               resize-vertical
-              min-h-[600px]  /* Setze eine Mindesthöhe von 600px */
+              min-h-[600px]
             "
             value={applicationText}
             onChange={(e) => setApplicationText(e.target.value)}
@@ -183,9 +208,10 @@ E-Mail: ${userData.email}
           >
             Bewerbung herunterladen
           </button>
+          {/* Abbrechen mit router.back() */}
           <button
             className="bg-gray-300 hover:bg-gray-400 text-gray-700 px-4 py-2 rounded transition"
-            onClick={() => router.push("/home")}
+            onClick={() => router.back()}
           >
             Abbrechen
           </button>

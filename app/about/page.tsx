@@ -1,26 +1,31 @@
+"use client";
+import Navbar, { NavLink } from '@/components/Navbar';
 import Link from 'next/link';
+import { FaMapMarkedAlt, FaHeart, FaInfoCircle, FaUserEdit } from 'react-icons/fa';
 
 export default function About() {
+
+    const navLinks: NavLink[] = [
+    {
+      href: "/favorites",
+      label: "Favorites",
+      icon: FaHeart,
+    },
+    {
+      href: "/user",
+      label: "User",
+      icon: FaUserEdit,
+    },
+  ];
+
   return (
     <div className="relative h-screen">
-      <div className="absolute top-0 left-0 w-full z-10 p-5">
-        <div className="w-full flex justify-between items-center rounded-md px-10 py-3 bg-white shadow-md">
-          <Link href="/" className="text-black text-lg">
-            <button className="hover:bg-gray-100 rounded-md font-bold p-2">wohnungen</button>
-          </Link>
-          <Link href="/home" className="text-black text-2xl font-bold">
-            <button className="font-bold p-2">Immosearch-iq</button>
-          </Link>
-          <Link href="/" className="text-black text-lg">
-            <button className="hover:bg-gray-200 rounded-md font-bold p-2">dokumente</button>
-          </Link>
-        </div>
-      </div>
+      <Navbar navLinks={navLinks} />
 
       <div className="flex h-full relative">
-        <div className="flex-1 bg-[#fef4e8] flex flex-col justify-center px-16">
-          <h1 className="text-6xl font-bold mb-6 text-black">About Us</h1>
-          <p className="text-lg text-gray-700">
+        <div className="flex-1 bg-gray-900 flex flex-col justify-center px-16">
+          <h1 className="text-6xl font-bold mb-6 text-white">About Us</h1>
+          <p className="text-lg text-gray-300">
             Wir sind Nasser und Lukas, zwei Informatik Studenten vom RKI. 
             Diese Website ist aus einem Projekt in der Uni entstanden.
           </p>
@@ -36,7 +41,7 @@ export default function About() {
       </div>
 
 
-      <div className="bg-[#fef4e8] flex">
+      <div className="bg-gray-900 flex">
         <div className='justify-start items-top p-20'>
           <img
             src="/code_img.png"
@@ -46,12 +51,12 @@ export default function About() {
         </div>
         
         <div className='justify-center items-top pt-28'>
-          <h1 className="text-6xl font-bold mb-6 text-black">GitHub und Code</h1>
-          <p className='ps-3 text-gray-700 w-4/6'>Dieses Projekt ist ein OpenSource-Projekt. 
+          <h1 className="text-6xl font-bold mb-6 text-white">GitHub und Code</h1>
+          <p className='ps-3 text-gray-300 w-4/6'>Dieses Projekt ist ein OpenSource-Projekt. 
           Im folgenden GitHub repository ist eine Anleitung zur Nutzung der Website und installation 
           benötigter Technologien.
           <Link href={"https://github.com/42lukas/immosearch-iq"}>
-            <p className='text-black font-bold'>https://github.com/42lukas/immosearch-iq</p>
+            <p className='text-white font-bold'>https://github.com/42lukas/immosearch-iq</p>
           </Link>
           <br/>
           Für Bugs, anderen technischen Problemen und Fragen melde dich gerne bei:
@@ -75,18 +80,6 @@ export default function About() {
               <img src='/x_icon.png' className='w-16 h-16 mt-6 rounded-2xl' alt='X'/>
             </a>
           </div>
-        </div>
-
-        <div className="mt-28 w-full flex justify-center space-x-60 py-4">
-          <Link href={"/home"}>
-            <p className="hover:underline font-bold">Home</p>
-          </Link>
-          <Link href={"/impressum"}>
-            <p className="hover:underline font-bold">Impressum</p>
-          </Link>
-          <Link href={"/about"}>
-            <p className="hover:underline font-bold">About</p>
-          </Link>
         </div>
       </footer>
 

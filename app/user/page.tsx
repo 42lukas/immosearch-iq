@@ -1,33 +1,21 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { FiUser, FiMail, FiPhone, FiCalendar, FiMapPin, FiBriefcase, FiCheck, FiUpload, FiTrash } from "react-icons/fi";
+import {
+  FiUser,
+  FiMail,
+  FiPhone,
+  FiCalendar,
+  FiMapPin,
+  FiBriefcase,
+  FiCheck,
+  FiUpload,
+  FiTrash,
+} from "react-icons/fi";
 import { MdEuroSymbol } from "react-icons/md";
 import { getUserId } from "@/utils/auth";
-import Link from "next/link";
-
-function NavBar() {
-  return (
-    <nav className="w-full flex justify-between items-center bg-white shadow p-2">
-      <Link href="/home">
-        <div className="flex items-center">
-          <img src="favicon.ico" className="w-14 h-14" />
-          <p className="m-5 text-blue-950 font-bold text-2xl">
-            immosearch-IQ
-          </p>
-        </div>
-      </Link>
-      <div>
-        <a
-          href="#formSection"
-          className="text-blue-950 font-bold text-xl transition"
-        >
-          Zum Formular
-        </a>
-      </div>
-    </nav>
-  );
-}
+import Navbar, { NavLink } from "@/components/Navbar";
+import { FaMapMarkedAlt, FaHeart, FaInfoCircle, FaUserEdit } from "react-icons/fa";
 
 export default function UserPage() {
   const [userId, setUserId] = useState<string | null>(null);
@@ -41,7 +29,7 @@ export default function UserPage() {
     occupation: "",
     employer: "",
     monthlyIncome: "",
-    hobbies: [] as string[]
+    hobbies: [] as string[],
   });
 
   const [uploadedFiles, setUploadedFiles] = useState<string[]>([]);
@@ -50,7 +38,7 @@ export default function UserPage() {
   const salaryProofsInputRef = useRef<HTMLInputElement>(null);
   const otherFilesInputRef = useRef<HTMLInputElement>(null);
 
-  const [resume, setResume] = useState<File | null>(null); 
+  const [resume, setResume] = useState<File | null>(null);
   const [salaryProofs, setSalaryProofs] = useState<File[]>([]);
   const [otherFiles, setOtherFiles] = useState<File[]>([]);
 
@@ -131,6 +119,7 @@ export default function UserPage() {
       setOtherFiles(Array.from(e.target.files));
     }
   };
+
   const handleDeleteFile = async (filename: string) => {
     try {
       const response = await fetch("/api/user/delete-files", {
@@ -150,57 +139,68 @@ export default function UserPage() {
     }
   };
 
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  
+
     let currentUserId = userId || getUserId(); // Falls `userId` nicht gesetzt ist, hole sie erneut
     console.log("🛠️ userId beim Speichern:", currentUserId);
-  
+
     if (!currentUserId) {
       alert("❌ Keine userId gefunden!");
       return;
     }
-  
+
     // (1) JSON-Daten speichern
     await fetch("/api/user", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        userId: currentUserId,       
+        userId: currentUserId,
         userData: formData,
       }),
     });
-  
+
     // (2) Dateien hochladen
     const formDataFiles = new FormData();
     if (resume) formDataFiles.append("files", resume);
     salaryProofs.forEach((file) => formDataFiles.append("files", file));
     otherFiles.forEach((file) => formDataFiles.append("files", file));
-  
+
     // **Hier wird die userId als Query-Parameter angehängt**
     await fetch(`/api/upload?userId=${currentUserId}`, {
       method: "POST",
       body: formDataFiles,
     });
-  
+
     // (3) Dateien-Liste neu laden
     const res = await fetch(`/api/user/files?userId=${currentUserId}`);
     const data = await res.json();
     if (Array.isArray(data.files)) {
       setUploadedFiles(data.files);
     }
-  
+
     alert("✅ Daten und Dokumente gespeichert!");
   };
-  
-  
+
+  const navLinks: NavLink[] = [
+    {
+      href: "/favorites",
+      label: "Favorites",
+      icon: FaHeart,
+    },
+    {
+      href: "/about",
+      label: "About",
+      icon: FaInfoCircle,
+    }
+  ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-r from-blue-500 to-blue-700">
-      <NavBar />
+    // Hintergrundbild statt blauem Farbverlauf:
+    <div className="flex flex-col min-h-screen bg-cover bg-center">
+      <Navbar navLinks={navLinks} />
 
-      <header className="text-white flex flex-col items-center justify-center text-center py-20 px-4">
+      <header className="text-white flex flex-col items-center justify-center text-center py-20 px-4 bg-gray-800 bg-opacity-40">
         <h1 className="text-4xl font-bold mb-4">Persönliche Informationen</h1>
         <p className="max-w-2xl mb-6">
           Fülle das folgende Formular aus, um dich für deine Wunschwohnung zu
@@ -220,6 +220,7 @@ export default function UserPage() {
         </a>
       </header>
 
+      {/* Weißer Container mit dem Formular */}
       <main
         id="formSection"
         className="bg-white rounded-t-3xl shadow-2xl -mt-8 p-8 md:p-12 max-w-4xl mx-auto w-full"
@@ -484,10 +485,7 @@ export default function UserPage() {
               {otherFiles.length > 0 && (
                 <div className="mt-2 space-y-1">
                   {otherFiles.map((file, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center text-green-600"
-                    >
+                    <div key={index} className="flex items-center text-green-600">
                       <FiCheck className="mr-1" />
                       <span>{file.name}</span>
                     </div>

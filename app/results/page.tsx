@@ -1,8 +1,19 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FaStar, FaRegStar, FaDownload, FaHome, FaInfoCircle, FaMapMarkedAlt, FaEdit } from "react-icons/fa";
+import {
+  FaStar,
+  FaRegStar,
+  FaDownload,
+  FaHome,
+  FaInfoCircle,
+  FaMapMarkedAlt,
+  FaEdit,
+  FaUserEdit,
+  FaHeart,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 import { getUserId } from "@/utils/auth";
+import Navbar, { NavLink } from "@/components/Navbar";
 import Link from "next/link";
 
 interface Listing {
@@ -29,17 +40,33 @@ interface UserData {
   hobbies: string[];
 }
 
+const FirstLetterUpperCase = (city: string | null): string => {
+  if (!city) return "";
+  return city.charAt(0).toUpperCase() + city.slice(1);
+};
+
 export default function ResultsPage() {
   const [listings, setListings] = useState<Listing[]>([]);
   const [userData, setUserData] = useState<UserData | null>(null);
   const [favorites, setFavorites] = useState<{ [key: string]: boolean }>({});
   const [loading, setLoading] = useState(false);
+  const [city, setValue] = useState<string | null>(null);
+  const [formattedCity, setFormattedCity] = useState<string>("");
 
   useEffect(() => {
     const userId = getUserId();
     const savedResults = localStorage.getItem("results");
     if (savedResults) {
       setListings(JSON.parse(savedResults));
+    }
+
+    const params = new URLSearchParams(window.location.search);
+    const cityParam = params.get("city");
+    setValue(cityParam);
+
+    if (cityParam) {
+      const formatted = FirstLetterUpperCase(cityParam);
+      setFormattedCity(formatted);
     }
 
     const fetchUserData = async () => {
@@ -77,14 +104,17 @@ export default function ResultsPage() {
   const toggleFavorite = async (listing: Listing) => {
     const userId = getUserId();
 
-    const newFavorites = { ...favorites, [listing.title]: !favorites[listing.title] };
+    const newFavorites = {
+      ...favorites,
+      [listing.title]: !favorites[listing.title],
+    };
     setFavorites(newFavorites);
 
     try {
       await fetch("/api/favorites", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ userId, listing })
+        body: JSON.stringify({ userId, listing }),
       });
     } catch (error) {
       console.error("❌ Fehler beim Speichern des Favoriten:", error);
@@ -101,10 +131,10 @@ export default function ResultsPage() {
       const response = await fetch("/api/documents", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ listing, userData })
+        body: JSON.stringify({ listing, userData }),
       });
       const data = await response.json();
-      
+
       const blob = new Blob([data.application], { type: "text/plain" });
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
@@ -121,38 +151,48 @@ export default function ResultsPage() {
     }
   };
 
+  const navLinks: NavLink[] = [
+    {
+      href: "/map",
+      label: "Map",
+      icon: FaMapMarkedAlt,
+    },
+    {
+      href: "/favorites",
+      label: "Favorites",
+      icon: FaHeart,
+    },
+    {
+      href: "/about",
+      label: "About",
+      icon: FaInfoCircle,
+    },
+    {
+      href: "/user",
+      label: "User",
+      icon: FaUserEdit,
+    },
+  ];
+
   return (
     <div className="bg-gray-100 dark:bg-gray-900 min-h-screen">
-      <motion.div
-        className="flex justify-between items-center p-4 bg-blue-600 text-white shadow-md"
-        initial={{ y: -50, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
-        <Link href="/home" className="flex items-center gap-2 text-lg font-bold hover:scale-110 transition-transform">
-          <FaHome /> Home
-        </Link>
-
-        <Link href="/map" className="flex items-center gap-2 font-bold hover:scale-110 transition-transform">
-          <FaMapMarkedAlt /> Map Ansicht
-        </Link>
-        
-        <Link href="/about" className="flex items-center gap-2 font-bold hover:scale-110 transition-transform">
-          <FaInfoCircle /> About
-        </Link>
-      </motion.div>
+      <Navbar navLinks={navLinks} />
 
       <div className="container mx-auto p-6">
-        <h1 className="text-2xl font-bold text-center text-gray-800 dark:text-white mb-6">🏡 Wohnungsangebote</h1>
+        <h1 className="text-2xl font-bold text-center text-gray-800 dark:text-white mb-6">
+          🏡 Wohnungsangebote für {formattedCity}
+        </h1>
 
         {listings.length === 0 ? (
-          <p className="text-center text-gray-600 dark:text-gray-400">Keine Angebote gefunden.</p>
+          <p className="text-center text-gray-600 dark:text-gray-400">
+            Keine Angebote gefunden.
+          </p>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {listings.map((listing, index) => (
               <motion.div
                 key={index}
-                className="relative border p-4 rounded-lg shadow-lg bg-white dark:bg-gray-800 flex flex-col gap-3 h-full"
+                className="relative border p-4 rounded-lg shadow-lg bg-gray-800 flex flex-col gap-3 h-full"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
@@ -167,11 +207,21 @@ export default function ResultsPage() {
                   className="rounded-lg w-full h-40 object-cover"
                 />
                 <div className="flex-grow">
-                  <h2 className="text-lg font-semibold text-black dark:text-white">{listing.title}</h2>
-                  <p className="text-gray-700 dark:text-gray-300">💶 {listing.price} €</p>
-                  <p className="text-gray-700 dark:text-gray-300">📍 {listing.address}</p>
-                  <p className="text-gray-700 dark:text-gray-300">🛏️ {listing.rooms} Zimmer</p>
-                  <p className="text-gray-700 dark:text-gray-300">📐 {listing.size}m²</p>
+                  <h2 className="text-lg font-semibold text-black dark:text-white">
+                    {listing.title}
+                  </h2>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    💶 {listing.price} €
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    📍 {listing.address}
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    🛏️ {listing.rooms} Zimmer
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    📐 {listing.size}m²
+                  </p>
                   <a
                     href={listing.url}
                     target="_blank"
@@ -182,9 +232,10 @@ export default function ResultsPage() {
                   </a>
                 </div>
                 <div className="mt-auto flex justify-between items-center">
-                  <p className="text-black dark:text-white font-bold">{listing.score}</p>
+                  <p className="text-black dark:text-white font-bold">
+                    {listing.score}
+                  </p>
                   <div className="flex items-center gap-2">
-                    {/* Favoriten-Button */}
                     <button onClick={() => toggleFavorite(listing)}>
                       {favorites[listing.title] ? (
                         <FaStar className="w-5 h-5 text-yellow-500" />
@@ -193,7 +244,6 @@ export default function ResultsPage() {
                       )}
                     </button>
 
-                    {/* Download-Button */}
                     <button
                       className="px-3 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
                       onClick={() => downloadApplication(listing)}
@@ -201,7 +251,6 @@ export default function ResultsPage() {
                       <FaDownload className="w-5 h-5" />
                     </button>
 
-                    {/* NEU: Edit-Button -> navigiert zur /edit-application Seite */}
                     <Link
                       href={{
                         pathname: "/edit-application",

@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { FaMapMarkerAlt, FaArrowLeft } from "react-icons/fa";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 
 interface MarkerData {
@@ -25,6 +25,7 @@ function FitBounds({ markers }: { markers: MarkerData[] }) {
 }
 
 export default function MapPage() {
+  const router = useRouter();
   const [markers, setMarkers] = useState<MarkerData[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -69,21 +70,22 @@ export default function MapPage() {
   }
 
   return (
-    <div className="relative h-screen w-screen g-gray-900 flex justify-center">
-      {/* Header */}
+    <div className="relative h-screen w-screen bg-gray-900 flex justify-center">
       <motion.div 
         className="absolute top-4 z-50"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <Link href="/results" className="flex justify-center items-center bg-gray-800 rounded-lg p-3 hover:scale-110 transition-transform duration-300 ease-in-out">
-          <FaArrowLeft className="me-4 text-xl cursor-pointer hover:scale-110 transition-transform" />
+        <button
+          onClick={() => router.back()}
+          className="flex justify-center items-center bg-gray-800 rounded-lg p-3 hover:scale-110 transition-transform duration-300 ease-in-out"
+        >
+          <FaArrowLeft className="me-4 text-xl" />
           <h1 className="text-lg font-bold">zurück zur Liste</h1>
-        </Link>
+        </button>
       </motion.div>
 
-      {/* Map Container */}
       <div className="relative h-full w-full">
         <MapContainer center={[51.1657, 10.4515]} zoom={6} className="h-full w-full z-0">
           <TileLayer
@@ -103,16 +105,15 @@ export default function MapPage() {
         </MapContainer>
       </div>
 
-      {/* Floating Button */}
       <motion.div
         className="fixed bottom-8 left-8 bg-blue-600 text-white p-4 rounded-full shadow-lg cursor-pointer hover:bg-blue-700 z-50"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.3 }}
       >
-        <Link href="/results">
+        <button onClick={() => router.back()}>
           <FaArrowLeft size={24} />
-        </Link>
+        </button>
       </motion.div>
     </div>
   );
