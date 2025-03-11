@@ -1,20 +1,16 @@
-## Immosearch-IQ
+# Immosearch-IQ
 
 Ein Next.js-Projekt, im Rahmen eines Uni-Projektes, zur automatisierten Wohnungssuche, das basierend auf deinen Präferenzen passende Wohnungsangebote analysiert, bewertet und Bewerbungen generiert.
 
-🏙️ Ziel: Die mühsame Wohnungssuche durch automatisierte Suche, Scoring und Benachrichtigungen erleichtern.
+🏙️ Ziel: Die mühsame Wohnungssuche durch automatisierte Suche, Scoring und Generierung von passenden Bewerbungen erleichtern.
 
 ## Funktionen
 
-🛠️ Web-Crawler: Scraped Immobilien-Webseiten nach passenden Inseraten.
+🛠️ Web-Crawler: Scraped Immobilien-Webseiten (bis jetzt nur immowelt.de) nach passenden Inseraten.
 
-🧠 Scoring-System: Wohnungen werden anhand von Preis, Zimmerzahl, Lage, ÖPNV-Anbindung etc. bewertet.
+🧠 Scoring-System: Wohnungen werden anhand von Preis, Zimmerzahl, Größe und Lage bewertet.
 
 📩 Automatische Bewerbungserstellung: Passende Bewerbungen werden automatisch generiert.
-
-🔔 Push-Benachrichtigungen: Benachrichtigungen für Wohnungen mit einem Score > 8.5.
-
-📍 Stadt-Kiez-Filter: Suche nach Wohnungen in bestimmten Kiezen (z.B. Bergmannkiez Berlin).
 
 🌐 REST-API: Zur Kommunikation zwischen Frontend und Backend.
 
@@ -38,6 +34,7 @@ node -v
 npm -v
 ```
 3. Abhängigkeiten installieren
+Wichtig: Du musst im jeweiligen Projektordner sein! Sonst funktioniert es nicht.
 ```bash
 npm install
 ```
@@ -61,10 +58,11 @@ npm start
 ## Nutzung
 
 1. Öffne die App im Browser: http://localhost:3000
-2. Trage deine Wohnungspräferenzen (Stadt, Preis, Zimmeranzahl, Größe) ein.
-3. Starte die Suche mit dem Button.
-4. Die Top-Wohnungen werden auf der Results-Seite angezeigt.
-5. Lade die generierten Bewerbungen direkt herunter oder sende sie per E-Mail.
+2. Gehe zur /user Page und trage deine Persönlichen Daten ein. Nur so kann eine passende Bewerbung erstellt werden!
+3. Trage deine Wohnungspräferenzen (Stadt, Preis, Zimmeranzahl, Größe) ein.
+4. Starte die Suche mit dem Button.
+5. Die Top-Wohnungen werden auf der Results-Seite angezeigt.
+6. Lade die generierten Bewerbungen direkt herunter oder passe sie gegenbenfalls noch vorher selber an.
 
 ## 🐞 Fehlerbehebung
 
@@ -81,6 +79,4 @@ Das Projekt darf nur für private Zwecke genutzt werden.
 Das Scraping öffentlicher Websites kann gegen deren Nutzungsbedingungen verstoßen und rechtliche Folgen haben bei Kommerzialisierung.
 
 ## 🛠️ Credtis
-Nasser
-
-Lukas
+Lukas & Nasser
