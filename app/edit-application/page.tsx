@@ -4,7 +4,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { getUserId } from "@/utils/auth";
 import Navbar, { NavLink } from "@/components/Navbar";
-import { FaMapMarkedAlt, FaHeart, FaInfoCircle, FaUserEdit } from "react-icons/fa";
+import { FaMapMarkedAlt, FaHeart, FaInfoCircle, FaUserEdit, FaQuestionCircle } from "react-icons/fa";
 
 interface Listing {
   title: string;
@@ -124,6 +124,11 @@ E-Mail: ${userData.email}
       label: "User",
       icon: FaUserEdit,
     },
+    {
+      href: "/faq",
+      label: "FAQ",
+      icon: FaQuestionCircle,
+    }
   ];
 
   return (

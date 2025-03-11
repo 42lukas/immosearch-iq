@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from 'react';
 import { getUserId } from "@/utils/auth";
-import { FaHeart, FaInfoCircle, FaMapMarkedAlt, FaTrash, FaUserEdit } from "react-icons/fa";
+import { FaHeart, FaInfoCircle, FaMapMarkedAlt, FaQuestionCircle, FaTrash, FaUserEdit } from "react-icons/fa";
 import Navbar, { NavLink } from '@/components/Navbar';
 
 interface Listing {
@@ -66,6 +66,11 @@ export default function FavoritesPage() {
         label: "User",
         icon: FaUserEdit,
         },
+        {
+        href: "/faq",
+        label: "FAQ",
+        icon: FaQuestionCircle,
+        }
     ];
 
     return (

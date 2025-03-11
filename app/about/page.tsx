@@ -1,11 +1,11 @@
 "use client";
 import Navbar, { NavLink } from '@/components/Navbar';
 import Link from 'next/link';
-import { FaMapMarkedAlt, FaHeart, FaInfoCircle, FaUserEdit } from 'react-icons/fa';
+import { FaMapMarkedAlt, FaHeart, FaInfoCircle, FaUserEdit, FaQuestionCircle } from 'react-icons/fa';
 
 export default function About() {
 
-    const navLinks: NavLink[] = [
+  const navLinks: NavLink[] = [
     {
       href: "/favorites",
       label: "Favorites",
@@ -16,6 +16,11 @@ export default function About() {
       label: "User",
       icon: FaUserEdit,
     },
+    {
+      href: "/faq",
+      label: "FAQ",
+      icon: FaQuestionCircle,
+    }
   ];
 
   return (
@@ -52,16 +57,19 @@ export default function About() {
         
         <div className='justify-center items-top pt-28'>
           <h1 className="text-6xl font-bold mb-6 text-white">GitHub und Code</h1>
-          <p className='ps-3 text-gray-300 w-4/6'>Dieses Projekt ist ein OpenSource-Projekt. 
-          Im folgenden GitHub repository ist eine Anleitung zur Nutzung der Website und installation 
-          benötigter Technologien.
+          <p className='ps-3 text-gray-300 w-4/6'>
+            Dieses Projekt ist ein OpenSource-Projekt. 
+            Im folgenden GitHub repository ist eine Anleitung zur Nutzung der Website und Installation 
+            benötigter Technologien.
+          </p>
           <Link href={"https://github.com/42lukas/immosearch-iq"}>
-            <p className='text-white font-bold'>https://github.com/42lukas/immosearch-iq</p>
+            <span className='text-white font-bold ps-3 hover:underline'>https://github.com/42lukas/immosearch-iq</span>
           </Link>
           <br/>
-          Für Bugs, anderen technischen Problemen und Fragen melde dich gerne bei:
-          <p className='font-bold'>LukasEmail@gmail.com | NasserEmail@gmail.com</p>
+          <p className='ps-3 text-gray-300 w-4/6'>
+            Für Bugs, andere technische Probleme und Fragen melde dich gerne bei:
           </p>
+          <span className='font-bold ps-3'>LukasEmail@gmail.com | NasserEmail@gmail.com</span>
         </div>
 
       </div>

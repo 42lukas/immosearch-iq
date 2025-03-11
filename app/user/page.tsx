@@ -15,7 +15,7 @@ import {
 import { MdEuroSymbol } from "react-icons/md";
 import { getUserId } from "@/utils/auth";
 import Navbar, { NavLink } from "@/components/Navbar";
-import { FaMapMarkedAlt, FaHeart, FaInfoCircle, FaUserEdit } from "react-icons/fa";
+import { FaMapMarkedAlt, FaHeart, FaInfoCircle, FaUserEdit, FaQuestionCircle } from "react-icons/fa";
 
 export default function UserPage() {
   const [userId, setUserId] = useState<string | null>(null);
@@ -192,11 +192,15 @@ export default function UserPage() {
       href: "/about",
       label: "About",
       icon: FaInfoCircle,
+    },
+    {
+      href: "/faq",
+      label: "FAQ",
+      icon: FaQuestionCircle,
     }
   ];
 
   return (
-    // Hintergrundbild statt blauem Farbverlauf:
     <div className="flex flex-col min-h-screen bg-cover bg-center">
       <Navbar navLinks={navLinks} />
 

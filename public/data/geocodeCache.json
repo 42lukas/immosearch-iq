@@ -1782,5 +1782,45 @@
     "lon": 6.9627066,
     "fullAddress": "Niehl, Nippes, Köln, Nordrhein-Westfalen, 50735, Deutschland",
     "timestamp": "2025-03-07T10:00:32.726Z"
+  },
+  {
+    "address": "Straßburger Straße 7, Prenzlauer Berg, Berlin-Prenzlauer Berg (10405)",
+    "city": "Berlin-Prenzlauer Berg",
+    "lat": 52.5287062,
+    "lon": 13.4141294,
+    "fullAddress": "7, Straßburger Straße, Prenzlauer Berg, Pankow, Berlin, 10405, Deutschland",
+    "timestamp": "2025-03-11T08:02:22.996Z"
+  },
+  {
+    "address": "Saarbrücker Straße 34A, Prenzlauer Berg, Berlin-Prenzlauer Berg (10405)",
+    "city": "Berlin-Prenzlauer Berg",
+    "lat": 52.529091449999996,
+    "lon": 13.415022520668014,
+    "fullAddress": "34a, Saarbrücker Straße, Winsviertel, Prenzlauer Berg, Pankow, Berlin, 10405, Deutschland",
+    "timestamp": "2025-03-11T08:02:24.018Z"
+  },
+  {
+    "address": "Hechelstraße 14, Reinickendorf, Berlin (10997)",
+    "city": "Berlin",
+    "lat": 52.5667826,
+    "lon": 13.3223998,
+    "fullAddress": "14, Hechelstraße, Reinickendorf, Berlin, Pankow, 13403, Deutschland",
+    "timestamp": "2025-03-11T08:02:24.963Z"
+  },
+  {
+    "address": "Neptunstr. 25, Reinickendorf, Berlin (13409)",
+    "city": "Berlin",
+    "lat": 52.5625515,
+    "lon": 13.3750742,
+    "fullAddress": "25, Neptunstraße, Reinickendorf, Berlin, Pankow, 13409, Deutschland",
+    "timestamp": "2025-03-11T08:02:25.960Z"
+  },
+  {
+    "address": "Nassauische Straße 35, Wilmersdorf, Berlin (10717)",
+    "city": "Berlin",
+    "lat": 52.49289126141122,
+    "lon": 13.32641091605624,
+    "fullAddress": "Nassauische Straße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10717, Deutschland",
+    "timestamp": "2025-03-11T08:02:27.098Z"
   }
 ]

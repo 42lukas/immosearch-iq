@@ -10,6 +10,7 @@ import {
   FaEdit,
   FaUserEdit,
   FaHeart,
+  FaQuestionCircle,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { getUserId } from "@/utils/auth";
@@ -172,6 +173,11 @@ export default function ResultsPage() {
       label: "User",
       icon: FaUserEdit,
     },
+    {
+      href: "/faq",
+      label: "FAQ",
+      icon: FaQuestionCircle,
+    }
   ];
 
   return (

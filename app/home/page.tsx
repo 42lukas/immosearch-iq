@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import LoadingAnimation from '@/components/LoadingAnimation';
+import Navbar, { NavLink } from '@/components/Navbar';
+import { FaInfoCircle, FaUserEdit, FaQuestionCircle } from 'react-icons/fa';
 
 export default function Home() {
     const [loading, setLoading] = useState(false);
@@ -60,12 +62,32 @@ export default function Home() {
         }
     };
 
+    const navLinks: NavLink[] = [
+        {
+        href: "/about",
+        label: "About",
+        icon: FaInfoCircle,
+        },
+        {
+        href: "/user",
+        label: "User",
+        icon: FaUserEdit,
+        },
+        {
+        href: "/faq",
+        label: "FAQ",
+        icon: FaQuestionCircle,
+        }
+    ];
+
     return (
-        <div className="p-6 bg-gray-800 text-white">
+        <div className=" bg-gray-800 text-white">
             {loading ? (
                 <LoadingAnimation />
             ) : (
                 <>
+                    <Navbar navLinks={navLinks} />
+                    <div className="p-6">
                     <h1 className="text-xl font-bold mb-4">🏡 Wohnungssuche starten</h1>
                     <form onSubmit={handleSubmit} className="flex flex-col gap-2">
                         {Object.entries(preferences).map(([key, value]) => (
@@ -83,6 +105,8 @@ export default function Home() {
                             🔍 Suche starten
                         </button>
                     </form>
+                    </div>
+                    
                 </>
             )}
         </div>
