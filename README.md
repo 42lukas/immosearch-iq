@@ -34,6 +34,7 @@ node -v
 npm -v
 ```
 3. Abhängigkeiten installieren
+
 Wichtig: Du musst im jeweiligen Projektordner sein! Sonst funktioniert es nicht.
 ```bash
 npm install
