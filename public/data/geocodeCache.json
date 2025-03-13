@@ -1822,5 +1822,69 @@
     "lon": 13.32641091605624,
     "fullAddress": "Nassauische Straße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10717, Deutschland",
     "timestamp": "2025-03-11T08:02:27.098Z"
+  },
+  {
+    "address": "Steinkleeweg 5, Rosenthal, Berlin (13158)",
+    "city": "Berlin",
+    "lat": 52.59773545,
+    "lon": 13.3797142,
+    "fullAddress": "5, Steinkleeweg, Rosenthal, Pankow, Berlin, 13158, Deutschland",
+    "timestamp": "2025-03-13T10:05:25.991Z"
+  },
+  {
+    "address": "David-Friedländer-Weg 98, Falkenberg, Berlin (13057)",
+    "city": "Berlin",
+    "lat": 52.5728706,
+    "lon": 13.560950902935728,
+    "fullAddress": "98, David-Friedländer-Weg, Falkenberg, Lichtenberg, Berlin, 13057, Deutschland",
+    "timestamp": "2025-03-13T10:05:27.004Z"
+  },
+  {
+    "address": "Moosstraße 72, Niederschöneweide, Berlin (12439)",
+    "city": "Berlin",
+    "lat": 52.4498887,
+    "lon": 13.5272048,
+    "fullAddress": "72, Moosstraße, Niederschöneweide, Treptow-Köpenick, Berlin, 12439, Deutschland",
+    "timestamp": "2025-03-13T10:05:28.012Z"
+  },
+  {
+    "address": "Langer-See-Str. 5, Haselhorst, Berlin (13599)",
+    "city": "Berlin",
+    "lat": 52.5582615,
+    "lon": 13.2261593,
+    "fullAddress": "5, Langer-See-Straße, Haselhorst, Spandau, Berlin, 13599, Deutschland",
+    "timestamp": "2025-03-13T10:05:29.031Z"
+  },
+  {
+    "address": "Schönhauser Allee 44, Prenzlauer Berg, Berlin (10435)",
+    "city": "Berlin",
+    "lat": 52.540385,
+    "lon": 13.4125645,
+    "fullAddress": "mmaah Korean BBQ express, 44, Schönhauser Allee, Bremer Höhe, Prenzlauer Berg, Pankow, Berlin, 10435, Deutschland",
+    "timestamp": "2025-03-13T16:03:11.962Z"
+  },
+  {
+    "address": "Am Eichenquast 58, Buckow, Berlin (12353)",
+    "city": "Berlin",
+    "lat": 52.4187279,
+    "lon": 13.4484267,
+    "fullAddress": "58, Am Eichenquast, Buckow, Neukölln, Berlin, 12353, Deutschland",
+    "timestamp": "2025-03-13T16:03:12.968Z"
+  },
+  {
+    "address": "Dolgenseestr. 8c, Friedrichsfelde, Berlin (10319)",
+    "city": "Berlin",
+    "lat": 52.4943304,
+    "lon": 13.5069969,
+    "fullAddress": "8c, Dolgenseestraße, Sewan-Viertel, Friedrichsfelde, Lichtenberg, Berlin, 10319, Deutschland",
+    "timestamp": "2025-03-13T16:03:13.951Z"
+  },
+  {
+    "address": "Dolgenseestr. 8a, Friedrichsfelde, Berlin (10319)",
+    "city": "Berlin",
+    "lat": 52.4938077,
+    "lon": 13.5073306,
+    "fullAddress": "Dolgensee-Apotheke, 8a, Dolgenseestraße, Sewan-Viertel, Friedrichsfelde, Lichtenberg, Berlin, 10319, Deutschland",
+    "timestamp": "2025-03-13T16:03:14.990Z"
   }
 ]
