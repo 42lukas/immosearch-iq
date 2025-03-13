@@ -40,6 +40,13 @@ Wichtig: Du musst im jeweiligen Projektordner sein! Sonst funktioniert es nicht.
 npm install
 ```
 
+4. framer-motion Modul installieren
+
+Dieses Modul muss leider seperat installiert werden!
+```bash
+npm install framer-motion
+```
+
 ## Projekt starten 🚀
 **Entwicklungsmodus**
 ```bash
