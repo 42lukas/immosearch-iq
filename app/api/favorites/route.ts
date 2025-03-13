@@ -2,13 +2,25 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
-const dataFilePath = path.resolve(process.cwd(), "app/data/favorites.json");
+const dataDir = path.resolve(process.cwd(), "app/data");
+const dataFilePath = path.join(dataDir, "favorites.json");
 
-const loadFavorites = () => {
+const ensureFavoritesFileExists = () => {
     try {
+        if (!fs.existsSync(dataDir)) {
+            fs.mkdirSync(dataDir, { recursive: true });
+        }
         if (!fs.existsSync(dataFilePath)) {
             fs.writeFileSync(dataFilePath, JSON.stringify({}), "utf-8");
         }
+    } catch (error) {
+        console.error("❌ Fehler beim Sicherstellen der Favoriten-Datei:", error);
+    }
+};
+
+const loadFavorites = () => {
+    try {
+        ensureFavoritesFileExists();
         const rawData = fs.readFileSync(dataFilePath, "utf-8");
         return rawData.trim() ? JSON.parse(rawData) : {}; 
     } catch (error) {
