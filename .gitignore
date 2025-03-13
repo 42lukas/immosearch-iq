@@ -43,3 +43,4 @@ next-env.d.ts
 # user Data
 public/uploads
 app/data/
+data/
