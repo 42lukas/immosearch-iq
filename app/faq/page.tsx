@@ -1,7 +1,7 @@
 "use client";
 import Navbar, { NavLink } from '@/components/Navbar';
 import { useState } from 'react';
-import { FaHeart, FaUserEdit } from 'react-icons/fa';
+import { FaHeart, FaUserEdit, FaInfoCircle } from 'react-icons/fa';
 
 const faqs = [
   {
@@ -56,6 +56,11 @@ export default function FAQPage() {
       label: "User",
       icon: FaUserEdit,
     },
+    {
+      href: "/about",
+      label: "About",
+      icon: FaInfoCircle,
+    }
   ];
 
   return (

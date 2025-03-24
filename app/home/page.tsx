@@ -86,25 +86,27 @@ export default function Home() {
             {loading ? (
                 <LoadingAnimation />
             ) : (
-                <div className='p-6'>
+                <div >
                     <Navbar navLinks={navLinks}/>
-                    <h1 className="text-xl font-bold mb-4">🏡 Wohnungssuche starten</h1>
-                    <form onSubmit={handleSubmit} className="flex flex-col gap-2">
-                        {Object.entries(preferences).map(([key, value]) => (
-                            <input
-                                key={key}
-                                name={key}
-                                type={key === "city" ? "text" : "number"}
-                                placeholder={key}
-                                value={value}
-                                onChange={handleChange}
-                                className="p-2 border rounded text-black"
-                            />
-                        ))}
-                        <button className="mt-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                            🔍 Suche starten
-                        </button>
-                    </form>
+                    <div className='p-6'>
+                        <h1 className="text-xl font-bold mb-4">🏡 Wohnungssuche starten</h1>
+                        <form onSubmit={handleSubmit} className="flex flex-col gap-2">
+                            {Object.entries(preferences).map(([key, value]) => (
+                                <input
+                                    key={key}
+                                    name={key}
+                                    type={key === "city" ? "text" : "number"}
+                                    placeholder={key}
+                                    value={value}
+                                    onChange={handleChange}
+                                    className="p-2 border rounded text-black"
+                                />
+                            ))}
+                            <button className="mt-4 p-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                                🔍 Suche starten
+                            </button>
+                        </form>
+                    </div>
                 </div>
             )}
         </div>

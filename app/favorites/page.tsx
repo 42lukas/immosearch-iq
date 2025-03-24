@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { getUserId } from "@/utils/auth";
-import { FaHeart, FaInfoCircle, FaMapMarkedAlt, FaTrash, FaUserEdit } from "react-icons/fa";
+import { FaQuestionCircle, FaInfoCircle, FaTrash, FaUserEdit } from "react-icons/fa";
 import Navbar, { NavLink } from '@/components/Navbar';
 
 /**
@@ -90,7 +90,14 @@ export default function FavoritesPage() {
             href: "/user",
             label: "User",
             icon: FaUserEdit,
+            
         },
+        {
+            href: "/faq",
+            label: "FAQ",
+            icon: FaQuestionCircle,
+        },
+        
     ];
 
     return (

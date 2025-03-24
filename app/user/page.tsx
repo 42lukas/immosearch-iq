@@ -5,7 +5,7 @@ import { FiUser, FiMail, FiPhone, FiCalendar, FiMapPin, FiBriefcase, FiCheck, Fi
 import { MdEuroSymbol } from "react-icons/md";
 import { getUserId } from "@/utils/auth";
 import Navbar, { NavLink } from "@/components/Navbar";
-import { FaHeart, FaInfoCircle } from "react-icons/fa";
+import { FaQuestionCircle, FaHeart, FaInfoCircle } from "react-icons/fa";
 
 export default function UserPage() {
   const [userId, setUserId] = useState<string | null>(null);
@@ -187,6 +187,11 @@ export default function UserPage() {
       label: "About",
       icon: FaInfoCircle,
     },
+    {
+      href: "/faq",
+      label: "FAQ",
+      icon: FaQuestionCircle,
+    }
   ];
 
   return (

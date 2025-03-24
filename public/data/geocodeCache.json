@@ -1,395 +1,11 @@
 [
   {
-    "address": "Friedenauer Höhe 19A, Friedenau, Berlin (12159)",
+    "address": "Friedenauer Höhe 10, Friedenau, Berlin (12159)",
     "city": "Berlin",
-    "lat": 52.4769821,
-    "lon": 13.3370458,
-    "fullAddress": "19A, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
-    "timestamp": "2025-02-15T21:24:16.084Z"
-  },
-  {
-    "address": "Grünauer Straße 20, Altglienicke, Berlin (12524)",
-    "city": "Berlin",
-    "lat": 52.419096,
-    "lon": 13.543449,
-    "fullAddress": "20, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
-    "timestamp": "2025-02-15T21:24:54.891Z"
-  },
-  {
-    "address": "Friedenauer Höhe 17, Friedenau, Berlin (12159)",
-    "city": "Berlin",
-    "lat": 52.4772558,
-    "lon": 13.3375332,
-    "fullAddress": "17, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
-    "timestamp": "2025-02-15T21:26:25.065Z"
-  },
-  {
-    "address": "Beusselstraße 65, Moabit, Berlin (10553)",
-    "city": "Berlin",
-    "lat": 52.5291617,
-    "lon": 13.3284433,
-    "fullAddress": "65, Beusselstraße, Moabit, Mitte, Berlin, 10553, Deutschland",
-    "timestamp": "2025-02-15T21:35:17.028Z"
-  },
-  {
-    "address": "Grünauer Straße 16, Altglienicke, Berlin (12524)",
-    "city": "Berlin",
-    "lat": 52.4192279,
-    "lon": 13.5423798,
-    "fullAddress": "16, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
-    "timestamp": "2025-02-15T21:47:14.584Z"
-  },
-  {
-    "address": "Friedenauer Höhe 17, Friedenau, Berlin (12159)",
-    "city": "Berlin",
-    "lat": 52.4772558,
-    "lon": 13.3375332,
-    "fullAddress": "17, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
-    "timestamp": "2025-02-15T21:58:21.615Z"
-  },
-  {
-    "address": "Erich-Weinert-Straße 16, Prenzlauer Berg, Berlin (10439)",
-    "city": "Berlin",
-    "lat": 52.551539,
-    "lon": 13.4166711,
-    "fullAddress": "16, Erich-Weinert-Straße, Arnimkiez, Prenzlauer Berg, Pankow, Berlin, 10439, Deutschland",
-    "timestamp": "2025-02-15T21:59:18.021Z"
-  },
-  {
-    "address": "Beusselstraße 65, Moabit, Berlin (10553)",
-    "city": "Berlin",
-    "lat": 52.5291617,
-    "lon": 13.3284433,
-    "fullAddress": "65, Beusselstraße, Moabit, Mitte, Berlin, 10553, Deutschland",
-    "timestamp": "2025-02-15T21:59:54.681Z"
-  },
-  {
-    "address": "Manfred-von-Richthofen-Str. 28, Tempelhof, Berlin (12101)",
-    "city": "Berlin",
-    "lat": 52.4821314,
-    "lon": 13.38020303119739,
-    "fullAddress": "28, Manfred-von-Richthofen-Straße, Gartenstadt Neu-Tempelhof, Tempelhof, Tempelhof-Schöneberg, Berlin, 12101, Deutschland",
-    "timestamp": "2025-02-15T22:02:10.405Z"
-  },
-  {
-    "address": "Grünauer Straße 16, Altglienicke, Berlin (12524)",
-    "city": "Berlin",
-    "lat": 52.4192279,
-    "lon": 13.5423798,
-    "fullAddress": "16, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
-    "timestamp": "2025-02-15T22:03:08.486Z"
-  },
-  {
-    "address": "Grünauer Straße 16, Altglienicke, Berlin (12524)",
-    "city": "Berlin",
-    "lat": 52.4192279,
-    "lon": 13.5423798,
-    "fullAddress": "16, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
-    "timestamp": "2025-02-17T12:04:13.213Z"
-  },
-  {
-    "address": "HafenCity, Hamburg (20457)",
-    "city": "Hamburg",
-    "lat": 53.5429127,
-    "lon": 9.9958346,
-    "fullAddress": "HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
-    "timestamp": "2025-02-18T09:58:59.715Z"
-  },
-  {
-    "address": "HafenCity, Hamburg (20457)",
-    "city": "Hamburg",
-    "lat": 53.5429127,
-    "lon": 9.9958346,
-    "fullAddress": "HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
-    "timestamp": "2025-02-18T10:05:46.384Z"
-  },
-  {
-    "address": "Harburg, Hamburg (21073)",
-    "city": "Hamburg",
-    "lat": 53.4562216,
-    "lon": 9.9872112,
-    "fullAddress": "Harburg, Hamburg, 21073, Deutschland",
-    "timestamp": "2025-02-18T10:06:18.684Z"
-  },
-  {
-    "address": "Walderseestraße, Othmarschen, Hamburg (22605)",
-    "city": "Hamburg",
-    "lat": 53.55557554594315,
-    "lon": 9.887023711045595,
-    "fullAddress": "Walderseestraße, Othmarschen, Altona, Hamburg, 22605, Deutschland",
-    "timestamp": "2025-02-18T10:06:29.880Z"
-  },
-  {
-    "address": "San Francisco Straße 1, HafenCity, Hamburg, HafenCity (20457)",
-    "city": "Hamburg",
-    "lat": 53.54090435,
-    "lon": 9.996434447005939,
-    "fullAddress": "Gut vernetzt, 1, San-Francisco-Straße, Quartier Überseequartier, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
-    "timestamp": "2025-02-18T10:10:52.140Z"
-  },
-  {
-    "address": "Harburg, Hamburg (21073)",
-    "city": "Hamburg",
-    "lat": 53.4562216,
-    "lon": 9.9872112,
-    "fullAddress": "Harburg, Hamburg, 21073, Deutschland",
-    "timestamp": "2025-02-18T10:12:00.007Z"
-  },
-  {
-    "address": "HafenCity, HafenCity, Hamburg (20457)",
-    "city": "Hamburg",
-    "lat": 53.54028945,
-    "lon": 10.00488951198924,
-    "fullAddress": "HafenCity Universität Hamburg, 1, Überseeallee, Quartier Elbtorquartier, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
-    "timestamp": "2025-02-18T10:12:58.548Z"
-  },
-  {
-    "address": "HafenCity, Hamburg (20457)",
-    "city": "Hamburg",
-    "lat": 53.5429127,
-    "lon": 9.9958346,
-    "fullAddress": "HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
-    "timestamp": "2025-02-18T10:37:36.033Z"
-  },
-  {
-    "address": "Walderseestraße, Othmarschen, Hamburg (22605)",
-    "city": "Hamburg",
-    "lat": 53.55557554594315,
-    "lon": 9.887023711045595,
-    "fullAddress": "Walderseestraße, Othmarschen, Altona, Hamburg, 22605, Deutschland",
-    "timestamp": "2025-02-18T10:42:53.182Z"
-  },
-  {
-    "address": "Beusselstraße 65, Moabit, Berlin (10553)",
-    "city": "Berlin",
-    "lat": 52.5291617,
-    "lon": 13.3284433,
-    "fullAddress": "65, Beusselstraße, Moabit, Mitte, Berlin, 10553, Deutschland",
-    "timestamp": "2025-02-18T10:43:04.109Z"
-  },
-  {
-    "address": "Friedenauer Höhe 17, Friedenau, Berlin (12159)",
-    "city": "Berlin",
-    "lat": 52.4772558,
-    "lon": 13.3375332,
-    "fullAddress": "17, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
-    "timestamp": "2025-02-18T10:44:06.061Z"
-  },
-  {
-    "address": "Prinzessinnenstraße, Kreuzberg, Berlin (10969)",
-    "city": "Berlin",
-    "lat": 52.502570068131405,
-    "lon": 13.41291006765458,
-    "fullAddress": "Prinzessinnenstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Deutschland",
-    "timestamp": "2025-02-18T10:55:42.888Z"
-  },
-  {
-    "address": "Bellevuestraße, Tiergarten, Berlin (10785)",
-    "city": "Berlin",
-    "lat": 52.51068437184778,
-    "lon": 13.373205023223427,
-    "fullAddress": "Bellevuestraße, Tiergarten, Mitte, Berlin, 10785, Deutschland",
-    "timestamp": "2025-02-18T10:56:06.326Z"
-  },
-  {
-    "address": "Erich-Weinert-Straße 16, Prenzlauer Berg, Berlin (10439)",
-    "city": "Berlin",
-    "lat": 52.551539,
-    "lon": 13.4166711,
-    "fullAddress": "16, Erich-Weinert-Straße, Arnimkiez, Prenzlauer Berg, Pankow, Berlin, 10439, Deutschland",
-    "timestamp": "2025-02-18T11:04:51.363Z"
-  },
-  {
-    "address": "Stromstraße 36, Moabit, Berlin (10551)",
-    "city": "Berlin",
-    "lat": 52.531307999999996,
-    "lon": 13.342456296063677,
-    "fullAddress": "Habyt Co-Living Berlin, 36, Stromstraße, Moabit, Mitte, Berlin, 10551, Deutschland",
-    "timestamp": "2025-02-18T11:14:44.360Z"
-  },
-  {
-    "address": "Friedenauer Höhe 19A, Friedenau, Berlin (12159)",
-    "city": "Berlin",
-    "lat": 52.4769821,
-    "lon": 13.3370458,
-    "fullAddress": "19A, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
-    "timestamp": "2025-02-18T21:41:02.592Z"
-  },
-  {
-    "address": "GREIFSWALDER STR, Prenzlauer Berg, Berlin (10405)",
-    "city": "Berlin",
-    "lat": 52.5402462,
-    "lon": 13.4389887,
-    "fullAddress": "Greifswalder Straße, Fußgängertunnel Greifswalder Straße, Grüne Stadt, Prenzlauer Berg, Pankow, Berlin, Pankow, 10409, Deutschland",
-    "timestamp": "2025-02-18T22:15:47.271Z"
-  },
-  {
-    "address": "Stresemannstraße, Kreuzberg, Berlin (10963)",
-    "city": "Berlin",
-    "lat": 52.50278850062645,
-    "lon": 13.384396334589495,
-    "fullAddress": "Stresemannstraße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Deutschland",
-    "timestamp": "2025-02-19T12:49:00.587Z"
-  },
-  {
-    "address": "Bornholmer Str., Prenzlauer Berg, Berlin (10439)",
-    "city": "Berlin",
-    "lat": 52.5547713,
-    "lon": 13.3978451,
-    "fullAddress": "Bornholmer Straße, Arnimkiez, Prenzlauer Berg, Pankow, Berlin, Pankow, 10439, Deutschland",
-    "timestamp": "2025-02-19T13:04:33.770Z"
-  },
-  {
-    "address": "Ludwigkirchstrasse 8, Wilmersdorf, berlin (10719)",
-    "city": "Berlin",
-    "lat": 52.4979375,
-    "lon": 13.3234484,
-    "fullAddress": "8, Ludwigkirchstraße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10719, Deutschland",
-    "timestamp": "2025-02-20T16:36:22.911Z"
-  },
-  {
-    "address": "Elisabethkirchstraße, Mitte, Berlin (10115)",
-    "city": "Berlin",
-    "lat": 52.53342943488537,
-    "lon": 13.395943019437565,
-    "fullAddress": "Elisabethkirchstraße, Mitte, Berlin, 10115, Deutschland",
-    "timestamp": "2025-02-25T10:33:54.988Z"
-  },
-  {
-    "address": "Stephanstraße, Moabit, Berlin (10559)",
-    "city": "Berlin",
-    "lat": 52.5337224,
-    "lon": 13.3472692,
-    "fullAddress": "Stephanstraße, Moabit, Mitte, Berlin, 10559, Deutschland",
-    "timestamp": "2025-02-25T19:37:31.545Z"
-  },
-  {
-    "address": "Klara-Franke-Straße 24-28, Moabit, Berlin (10557)",
-    "city": "Berlin",
-    "lat": 52.5307503,
-    "lon": 13.3636623,
-    "fullAddress": "Klara-Franke-Straße, Europacity, Moabit, Mitte, Berlin, 10557, Deutschland",
-    "timestamp": "2025-02-25T19:40:57.769Z"
-  },
-  {
-    "address": "David-Friedländer-Weg 150, Falkenberg, Berlin (13057)",
-    "city": "Berlin",
-    "lat": 52.574562650000004,
-    "lon": 13.562422903941307,
-    "fullAddress": "150, David-Friedländer-Weg, Falkenberg, Lichtenberg, Berlin, Pankow, 13057, Deutschland",
-    "timestamp": "2025-02-25T20:08:38.297Z"
-  },
-  {
-    "address": "Karl-Kunger-Straße, Alt-Treptow, Berlin (12435)",
-    "city": "Berlin",
-    "lat": 52.49222303340682,
-    "lon": 13.445728728393934,
-    "fullAddress": "Karl-Kunger-Straße, Kungerkiez, Alt-Treptow, Treptow-Köpenick, Berlin, 12435, Deutschland",
-    "timestamp": "2025-02-25T20:10:39.498Z"
-  },
-  {
-    "address": "Rosenthaler Straße 45, Mitte, Berlin (10178)",
-    "city": "Berlin",
-    "lat": 52.5241273,
-    "lon": 13.4030396,
-    "fullAddress": "45, Rosenthaler Straße, Spandauer Vorstadt, Mitte, Berlin, 10178, Deutschland",
-    "timestamp": "2025-02-25T20:12:12.705Z"
-  },
-  {
-    "address": "Max-Steinke-Straße, Weißensee, Berlin (13086)",
-    "city": "Berlin",
-    "lat": 52.54988875780381,
-    "lon": 13.450537469766175,
-    "fullAddress": "Max-Steinke-Straße, Weißensee, Pankow, Berlin, 13086, Deutschland",
-    "timestamp": "2025-02-25T20:15:05.585Z"
-  },
-  {
-    "address": "Bredowstraße, Moabit, Berlin (10551)",
-    "city": "Berlin",
-    "lat": 52.52819450445111,
-    "lon": 13.339963803034225,
-    "fullAddress": "Bredowstraße, Moabit, Mitte, Berlin, 10551, Deutschland",
-    "timestamp": "2025-02-25T20:21:02.228Z"
-  },
-  {
-    "address": "Einbecker Straße 27, Lichtenberg, Berlin (10317)",
-    "city": "Berlin",
-    "lat": 52.5101242,
-    "lon": 13.5024811,
-    "fullAddress": "27, Einbecker Straße, Weitlingkiez, Rummelsburg, Lichtenberg, Berlin, Pankow, 10317, Deutschland",
-    "timestamp": "2025-02-25T20:22:40.681Z"
-  },
-  {
-    "address": "Manfred-von-Richthofen-Str. 28, Tempelhof, Berlin (12101)",
-    "city": "Berlin",
-    "lat": 52.4821314,
-    "lon": 13.38020303119739,
-    "fullAddress": "28, Manfred-von-Richthofen-Straße, Gartenstadt Neu-Tempelhof, Tempelhof, Tempelhof-Schöneberg, Berlin, 12101, Deutschland",
-    "timestamp": "2025-02-25T20:23:40.296Z"
-  },
-  {
-    "address": "Eylauerstraße 13, Kreuzberg, Berlin (10965)",
-    "city": "Berlin",
-    "lat": 52.4855482,
-    "lon": 13.37434103404447,
-    "fullAddress": "13, Eylauer Straße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10965, Deutschland",
-    "timestamp": "2025-02-25T20:57:07.159Z"
-  },
-  {
-    "address": "Templiner-See-Str. 6, Haselhorst, Berlin (13599)",
-    "city": "Berlin",
-    "lat": 52.5561358,
-    "lon": 13.2250047,
-    "fullAddress": "6, Templiner-See-Straße, Haselhorst, Spandau, Berlin, 13599, Deutschland",
-    "timestamp": "2025-02-25T20:57:08.169Z"
-  },
-  {
-    "address": "Boxhagener Straße 76, Friedrichshain, Berlin (10245)",
-    "city": "Berlin",
-    "lat": 52.50754,
-    "lon": 13.4690345,
-    "fullAddress": "76, Boxhagener Straße, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Deutschland",
-    "timestamp": "2025-02-25T20:57:09.172Z"
-  },
-  {
-    "address": "Güntzelstr 32, Wilmersdorf, Berlin (10717)",
-    "city": "Berlin",
-    "lat": 52.49205125,
-    "lon": 13.320604103639585,
-    "fullAddress": "32, Güntzelstraße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10717, Deutschland",
-    "timestamp": "2025-02-25T20:57:10.156Z"
-  },
-  {
-    "address": "Gesundbrunnen, Berlin (10439)",
-    "city": "Berlin",
-    "lat": 52.5491748,
-    "lon": 13.3900758,
-    "fullAddress": "Gesundbrunnen, Hanne-Sobek-Platz, Gartenstadt Atlantic, Gesundbrunnen, Mitte, Berlin, 13357, Deutschland",
-    "timestamp": "2025-02-25T20:57:11.181Z"
-  },
-  {
-    "address": "Genthiner Strasse 49, Tiergarten, Berlin (10785)",
-    "city": "Berlin",
-    "lat": 52.5014452,
-    "lon": 13.3586291,
-    "fullAddress": "49, Genthiner Straße, Botschaftsviertel, Tiergarten, Mitte, Berlin, 10785, Deutschland",
-    "timestamp": "2025-02-25T21:11:33.610Z"
-  },
-  {
-    "address": "Am Köllnischen Park 11, Mitte, Berlin (10179)",
-    "city": "Berlin",
-    "lat": 52.5120026,
-    "lon": 13.4151284,
-    "fullAddress": "11, Am Köllnischen Park, Luisenstadt, Mitte, Berlin, 10179, Deutschland",
-    "timestamp": "2025-02-25T21:11:34.604Z"
-  },
-  {
-    "address": "Pufendorfstraße 4, Friedrichshain, Berlin (10249)",
-    "city": "Berlin",
-    "lat": 52.5224094,
-    "lon": 13.4384357,
-    "fullAddress": "4, Pufendorfstraße, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10249, Deutschland",
-    "timestamp": "2025-02-25T21:11:35.750Z"
+    "lat": 52.4777779,
+    "lon": 13.3393098,
+    "fullAddress": "10, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
+    "timestamp": "2025-03-24T20:59:03.558Z"
   },
   {
     "address": "Woelckpromenade 7, Weißensee, Berlin (13086)",
@@ -397,1873 +13,7 @@
     "lat": 52.552943,
     "lon": 13.4540515,
     "fullAddress": "7, Woelckpromenade, Weißensee, Pankow, Berlin, 13086, Deutschland",
-    "timestamp": "2025-02-25T21:11:36.588Z"
-  },
-  {
-    "address": "Wickeder Str. 4A, Tegel, Berlin (13507)",
-    "city": "Berlin",
-    "lat": 52.5763188,
-    "lon": 13.2918624,
-    "fullAddress": "4a, Wickeder Straße, Tegel, Reinickendorf, Berlin, Pankow, 13507, Deutschland",
-    "timestamp": "2025-02-26T13:14:22.319Z"
-  },
-  {
-    "address": "Heckerdamm 241, Charlottenburg, Berlin (13627)",
-    "city": "Berlin",
-    "lat": 52.5394957,
-    "lon": 13.2939431,
-    "fullAddress": "241, Heckerdamm, Charlottenburg-Nord, Charlottenburg-Wilmersdorf, Berlin, 13627, Deutschland",
-    "timestamp": "2025-02-26T13:14:23.465Z"
-  },
-  {
-    "address": "Schwielowseestr. 37, Haselhorst, Berlin (13599)",
-    "city": "Berlin",
-    "lat": 52.5580223,
-    "lon": 13.2251285,
-    "fullAddress": "37, Schwielowseestraße, Haselhorst, Spandau, Berlin, 13599, Deutschland",
-    "timestamp": "2025-02-26T13:14:24.334Z"
-  },
-  {
-    "address": "Georg-Klingenberg-Straße, Karlshorst, Berlin (10318)",
-    "city": "Berlin",
-    "lat": 52.48258464412001,
-    "lon": 13.51123770774474,
-    "fullAddress": "Georg-Klingenberg-Straße, Parkstadt Karlshorst, Karlshorst, Lichtenberg, Berlin, 10318, Deutschland",
-    "timestamp": "2025-02-26T13:14:25.320Z"
-  },
-  {
-    "address": "Am Köllnischen Park, Mitte, Berlin (10179)",
-    "city": "Berlin",
-    "lat": 52.5119138,
-    "lon": 13.41527875,
-    "fullAddress": "Am Köllnischen Park, Luisenstadt, Mitte, Berlin, 10179, Deutschland",
-    "timestamp": "2025-02-26T13:14:26.322Z"
-  },
-  {
-    "address": "Rathenaustraße, Oberschöneweide, Berlin (12459)",
-    "city": "Berlin",
-    "lat": 52.4591434333952,
-    "lon": 13.527933063814604,
-    "fullAddress": "Rathenaustraße, Oberschöneweide, Treptow-Köpenick, Berlin, 12459, Deutschland",
-    "timestamp": "2025-02-26T13:14:27.323Z"
-  },
-  {
-    "address": "Carl-Spindler-Straße 19, Köpenick, Berlin (12555)",
-    "city": "Berlin",
-    "lat": 52.4504554,
-    "lon": 13.5637577,
-    "fullAddress": "19, Carl-Spindler-Straße, Wasserstadt Spindlersfeld, Köpenick, Treptow-Köpenick, Berlin, 12555, Deutschland",
-    "timestamp": "2025-02-26T13:14:28.330Z"
-  },
-  {
-    "address": "Adlershofer Straße 6, Köpenick, Berlin (12557)",
-    "city": "Berlin",
-    "lat": 52.4427394,
-    "lon": 13.5671227,
-    "fullAddress": "6, Adlershofer Straße, Spindlersfeld, Köpenick, Treptow-Köpenick, Berlin, 12557, Deutschland",
-    "timestamp": "2025-02-26T13:14:29.315Z"
-  },
-  {
-    "address": "Platz der Vereinten Nationen 22 A, Friedrichshain, Berlin (10249)",
-    "city": "Berlin",
-    "lat": 52.5233658,
-    "lon": 13.4267884,
-    "fullAddress": "22A, Platz der Vereinten Nationen, Barnimkiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10249, Deutschland",
-    "timestamp": "2025-02-26T13:14:30.410Z"
-  },
-  {
-    "address": "Neptunstr. 23, Reinickendorf, Berlin (13409)",
-    "city": "Berlin",
-    "lat": 52.5625857,
-    "lon": 13.3756657,
-    "fullAddress": "23, Neptunstraße, Reinickendorf, Berlin, Pankow, 13409, Deutschland",
-    "timestamp": "2025-02-26T14:25:53.867Z"
-  },
-  {
-    "address": "Wittenau, Berlin (13469)",
-    "city": "Berlin",
-    "lat": 52.597052,
-    "lon": 13.3342591,
-    "fullAddress": "Wittenau, Ilbeshäuser Weg, Wittenau, Reinickendorf, Berlin, 13435, Deutschland",
-    "timestamp": "2025-02-26T14:25:54.916Z"
-  },
-  {
-    "address": "Hohenzollerndamm, Schmargendorf, Berlin (14199)",
-    "city": "Berlin",
-    "lat": 52.47807220168768,
-    "lon": 13.283002896229995,
-    "fullAddress": "Hohenzollerndamm, Schmargendorf, Charlottenburg-Wilmersdorf, Berlin, 14199, Deutschland",
-    "timestamp": "2025-02-27T16:16:58.216Z"
-  },
-  {
-    "address": "Soldiner Straße, Gesundbrunnen, Berlin (13359)",
-    "city": "Berlin",
-    "lat": 52.55793858862297,
-    "lon": 13.388973679686803,
-    "fullAddress": "Soldiner Straße, Soldiner Kiez, Gesundbrunnen, Mitte, Berlin, 13359, Deutschland",
-    "timestamp": "2025-02-27T16:16:59.202Z"
-  },
-  {
-    "address": "Windscheidstraße, Charlottenburg, Berlin (10627)",
-    "city": "Berlin",
-    "lat": 52.509053132069766,
-    "lon": 13.298365054939428,
-    "fullAddress": "Windscheidstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10627, Deutschland",
-    "timestamp": "2025-02-27T16:17:00.191Z"
-  },
-  {
-    "address": "Pettenkoferstraße, Friedrichshain, Berlin (10247)",
-    "city": "Berlin",
-    "lat": 52.51908652619648,
-    "lon": 13.470445724207673,
-    "fullAddress": "Pettenkoferstraße, Samariterviertel, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, Pankow, 10247, Deutschland",
-    "timestamp": "2025-02-27T16:17:01.202Z"
-  },
-  {
-    "address": "Jahnstraße, Britz, Berlin (10967)",
-    "city": "Berlin",
-    "lat": 52.46022566375837,
-    "lon": 13.435652198465792,
-    "fullAddress": "Jahnstraße, Britz, Neukölln, Berlin, 12347, Deutschland",
-    "timestamp": "2025-02-27T16:17:02.247Z"
-  },
-  {
-    "address": "Rudower Chaussee, Adlershof, Berlin (12489)",
-    "city": "Berlin",
-    "lat": 52.43089644695859,
-    "lon": 13.533183224080735,
-    "fullAddress": "Rudower Chaussee, Adlershof, Treptow-Köpenick, Berlin, 12489, Deutschland",
-    "timestamp": "2025-02-27T16:17:03.201Z"
-  },
-  {
-    "address": "Ratiborstraße, Kreuzberg, Berlin (10999)",
-    "city": "Berlin",
-    "lat": 52.49213084579522,
-    "lon": 13.438432404260018,
-    "fullAddress": "Ratiborstraße, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Deutschland",
-    "timestamp": "2025-02-27T16:17:04.189Z"
-  },
-  {
-    "address": "Hausburgstraße, Friedrichshain, Berlin (10249)",
-    "city": "Berlin",
-    "lat": 52.5267673,
-    "lon": 13.4528051,
-    "fullAddress": "Hausburgstraße, Hausburgviertel, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10249, Deutschland",
-    "timestamp": "2025-02-28T13:00:24.940Z"
-  },
-  {
-    "address": "Gneisenaustraße, Kreuzberg, Berlin (10961)",
-    "city": "Berlin",
-    "lat": 52.4912895,
-    "lon": 13.3958247,
-    "fullAddress": "Gneisenaustraße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10961, Deutschland",
-    "timestamp": "2025-02-28T13:00:26.018Z"
-  },
-  {
-    "address": "Reuterstraße, Neukölln, Berlin (12047)",
-    "city": "Berlin",
-    "lat": 52.4894355,
-    "lon": 13.4290032,
-    "fullAddress": "Reuterstraße, Reuterkiez, Neukölln, Berlin, 12047, Deutschland",
-    "timestamp": "2025-02-28T13:00:28.033Z"
-  },
-  {
-    "address": "Estedeich, Cranz, Hamburg (21129)",
-    "city": "Hamburg",
-    "lat": 53.53493307971133,
-    "lon": 9.777884440663378,
-    "fullAddress": "Estedeich, Cranz, Harburg, Hamburg, 21129, Deutschland",
-    "timestamp": "2025-02-28T13:19:11.850Z"
-  },
-  {
-    "address": "Am Lohsepark, HafenCity, Hamburg (20457)",
-    "city": "Hamburg",
-    "lat": 53.54157754764029,
-    "lon": 10.005061913058183,
-    "fullAddress": "Am Lohsepark, Quartier Am Lohsepark, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
-    "timestamp": "2025-02-28T13:19:12.869Z"
-  },
-  {
-    "address": "Poppenbüttel, Hamburg (22399)",
-    "city": "Hamburg",
-    "lat": 53.6564,
-    "lon": 10.0742,
-    "fullAddress": "Poppenbüttel, Wandsbek, Hamburg, 22399, Deutschland",
-    "timestamp": "2025-02-28T13:19:13.842Z"
-  },
-  {
-    "address": "Hammerbrook, Hamburg (20095)",
-    "city": "Hamburg",
-    "lat": 53.5468152,
-    "lon": 10.0265586,
-    "fullAddress": "Hammerbrook, Hamburg-Mitte, Hamburg, 20097, Deutschland",
-    "timestamp": "2025-02-28T13:19:14.834Z"
-  },
-  {
-    "address": "St. Georg, Hamburg (20099)",
-    "city": "Hamburg",
-    "lat": 53.5571491,
-    "lon": 10.0142558,
-    "fullAddress": "St. Georg, Hamburg-Mitte, Hamburg, 20099, Deutschland",
-    "timestamp": "2025-02-28T13:19:16.904Z"
-  },
-  {
-    "address": "Haldesdorferstraße 113a, Bramfeld, Hamburg (22179)",
-    "city": "Hamburg",
-    "lat": 53.59910131803703,
-    "lon": 10.076359323354088,
-    "fullAddress": "Haldesdorfer Straße, Bramfeld, Wandsbek, Hamburg, 22179, Deutschland",
-    "timestamp": "2025-02-28T13:19:17.984Z"
-  },
-  {
-    "address": "Alsterdorf, Hamburg (22297)",
-    "city": "Hamburg",
-    "lat": 53.6105412,
-    "lon": 10.0038889,
-    "fullAddress": "Alsterdorf, Hamburg-Nord, Hamburg, 22297, Deutschland",
-    "timestamp": "2025-02-28T13:19:18.839Z"
-  },
-  {
-    "address": "Foßredder 31, Volksdorf, Hamburg (22359)",
-    "city": "Hamburg",
-    "lat": 53.645146499999996,
-    "lon": 10.17286565211728,
-    "fullAddress": "31, Foßredder, Volksdorf, Wandsbek, Hamburg, 22359, Deutschland",
-    "timestamp": "2025-02-28T13:19:19.845Z"
-  },
-  {
-    "address": "Kottwitzstraße, Hoheluft-West, Hamburg (20253)",
-    "city": "Hamburg",
-    "lat": 53.578643784291806,
-    "lon": 9.96924324349873,
-    "fullAddress": "Kottwitzstraße, Hoheluft-West, Eimsbüttel, Hamburg, 20253, Deutschland",
-    "timestamp": "2025-02-28T13:19:20.864Z"
-  },
-  {
-    "address": "Rotherbaum, Hamburg (20148)",
-    "city": "Hamburg",
-    "lat": 53.5684065,
-    "lon": 9.9874317,
-    "fullAddress": "Rotherbaum, Eimsbüttel, Hamburg, Deutschland",
-    "timestamp": "2025-02-28T13:19:21.825Z"
-  },
-  {
-    "address": "Pfeilshofer Weg, Wellingsbüttel, Hamburg (22391)",
-    "city": "Hamburg",
-    "lat": 53.642488237325885,
-    "lon": 10.090211676749039,
-    "fullAddress": "Pfeilshofer Weg, Wellingsbüttel, Wandsbek, Hamburg, 22391, Deutschland",
-    "timestamp": "2025-02-28T13:19:22.839Z"
-  },
-  {
-    "address": "Grundstraße, Eimsbüttel, Eimsbuttel (20257)",
-    "city": "Eimsbuttel",
-    "lat": 53.5763425479333,
-    "lon": 9.941658296617277,
-    "fullAddress": "Grundstraße, Eimsbüttel, Hamburg, 20257, Deutschland",
-    "timestamp": "2025-02-28T13:19:23.850Z"
-  },
-  {
-    "address": "Grillparzerstraße, Uhlenhorst, Hamburg (22085)",
-    "city": "Hamburg",
-    "lat": 53.579319979904625,
-    "lon": 10.016406445037493,
-    "fullAddress": "Grillparzerstraße, Uhlenhorst, Hamburg-Nord, Hamburg, 22085, Deutschland",
-    "timestamp": "2025-02-28T13:19:24.850Z"
-  },
-  {
-    "address": "Mitte, Berlin (10117)",
-    "city": "Berlin",
-    "lat": 52.517012,
-    "lon": 13.3888222,
-    "fullAddress": "Mitte, Berlin, Deutschland",
-    "timestamp": "2025-02-28T14:08:03.196Z"
-  },
-  {
-    "address": "Am Deich 55, Alte Neustadt, Bremen (28199)",
-    "city": "Bremen",
-    "lat": 53.0751539,
-    "lon": 8.7966288,
-    "fullAddress": "55, Am Deich, Alte Neustadt, Neustadt, Bremen-Süd, Bremen, 28199, Deutschland",
-    "timestamp": "2025-02-28T14:52:03.784Z"
-  },
-  {
-    "address": "Am Tabakquartier 52, Woltmershausen, Bremen (28197)",
-    "city": "Bremen",
-    "lat": 53.0744285,
-    "lon": 8.7690866,
-    "fullAddress": "52, Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
-    "timestamp": "2025-02-28T14:52:04.775Z"
-  },
-  {
-    "address": "Am Tabakquartier 25, Woltmershausen, Bremen (28197)",
-    "city": "Bremen",
-    "lat": 53.07629519675505,
-    "lon": 8.768210245791979,
-    "fullAddress": "Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
-    "timestamp": "2025-02-28T14:52:05.868Z"
-  },
-  {
-    "address": "Am Tabakquartier 20-22, Woltmershausen, Bremen (28197)",
-    "city": "Bremen",
-    "lat": 53.07629519675505,
-    "lon": 8.768210245791979,
-    "fullAddress": "Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
-    "timestamp": "2025-02-28T14:52:06.914Z"
-  },
-  {
-    "address": "Am Tabakquartier 54, Woltmershausen, Bremen (28197)",
-    "city": "Bremen",
-    "lat": 53.0748477,
-    "lon": 8.7679677,
-    "fullAddress": "54, Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
-    "timestamp": "2025-02-28T14:52:07.787Z"
-  },
-  {
-    "address": "Am Tabakquartier 24-26, Woltmershausen, Bremen (28197)",
-    "city": "Bremen",
-    "lat": 53.07629519675505,
-    "lon": 8.768210245791979,
-    "fullAddress": "Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
-    "timestamp": "2025-02-28T14:52:08.903Z"
-  },
-  {
-    "address": "Heinkenstraße, Altstadt, Bremen (28195)",
-    "city": "Bremen",
-    "lat": 53.08031189713865,
-    "lon": 8.797438546792957,
-    "fullAddress": "Heinkenstraße, Faulenquartier, Altstadt, Mitte, Bremen-Mitte, Bremen, 28195, Deutschland",
-    "timestamp": "2025-02-28T14:52:09.746Z"
-  },
-  {
-    "address": "Geeststraße, Lindenhof, Bremen (28237)",
-    "city": "Bremen",
-    "lat": 53.110836629897825,
-    "lon": 8.759218170946427,
-    "fullAddress": "Geeststraße, Lindenhof, Gröpelingen, Bremen-West, Bremen, 28237, Deutschland",
-    "timestamp": "2025-02-28T14:52:10.766Z"
-  },
-  {
-    "address": "Bismarckstraße, Fesenfeld, Bremen (28203)",
-    "city": "Bremen",
-    "lat": 53.078064385824646,
-    "lon": 8.828772550682665,
-    "fullAddress": "Bismarckstraße, Fesenfeld, Östliche Vorstadt, Bremen-Ost, Bremen, 28203, Deutschland",
-    "timestamp": "2025-02-28T14:52:11.805Z"
-  },
-  {
-    "address": "Langenstraße, Altstadt, Bremen (28195)",
-    "city": "Bremen",
-    "lat": 53.076214407125285,
-    "lon": 8.805568032505658,
-    "fullAddress": "Langenstraße, Ansgari-Viertel, Altstadt, Mitte, Bremen-Mitte, Stadtgebiet Bremen, Bremen, 28195, Deutschland",
-    "timestamp": "2025-02-28T14:52:12.778Z"
-  },
-  {
-    "address": "Am Tabakquartier 27, Woltmershausen, Bremen (28197)",
-    "city": "Bremen",
-    "lat": 53.07629519675505,
-    "lon": 8.768210245791979,
-    "fullAddress": "Am Tabakquartier, Tabakquartier, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
-    "timestamp": "2025-02-28T14:52:13.867Z"
-  },
-  {
-    "address": "Meyerstraße - Buntentor, Gartenstadt Süd, Bremen (28201)",
-    "city": "Bremen",
-    "lat": 53.06307859522873,
-    "lon": 8.794187207965804,
-    "fullAddress": "Meyerstraße, Südervorstadt, Neustadt, Bremen-Süd, Bremen, 28201, Deutschland",
-    "timestamp": "2025-02-28T14:52:14.826Z"
-  },
-  {
-    "address": "Am Hulsberg, Peterswerder, Bremen (28205)",
-    "city": "Bremen",
-    "lat": 53.0717064,
-    "lon": 8.8443265,
-    "fullAddress": "Am Hulsberg 23, 28205 Bremen, Bückeburger Straße, Peterswerder, Östliche Vorstadt, Bremen-Ost, Bremen, 28205, Deutschland",
-    "timestamp": "2025-02-28T14:52:15.917Z"
-  },
-  {
-    "address": "Auf der Düne 13, Ohlenhof, Bremen (28239)",
-    "city": "Bremen",
-    "lat": 53.1259939,
-    "lon": 8.7547897325,
-    "fullAddress": "13, Auf der Düne, Ohlenhof, Gröpelingen, Bremen-West, Bremen, 28239, Deutschland",
-    "timestamp": "2025-02-28T14:52:16.785Z"
-  },
-  {
-    "address": "Brebacher 27, Sebaldsbrück, Bremen-Sebaldsbrück (28309)",
-    "city": "Bremen-Sebaldsbrück",
-    "lat": 53.0529825,
-    "lon": 8.9102606,
-    "fullAddress": "27, Brebacher Straße, Sebaldsbrück, Hemelingen, Bremen-Ost, Bremen, 28309, Deutschland",
-    "timestamp": "2025-02-28T14:52:17.869Z"
-  },
-  {
-    "address": "Westerdeich, Woltmershausen, Bremen (28197)",
-    "city": "Bremen",
-    "lat": 53.08939661293317,
-    "lon": 8.762916300297402,
-    "fullAddress": "Westerdeich, Woltmershausen, Bremen-Süd, Bremen, 28197, Deutschland",
-    "timestamp": "2025-02-28T14:52:18.748Z"
-  },
-  {
-    "address": "Oberneuland, Bremen (28355)",
-    "city": "Bremen",
-    "lat": 53.0898563,
-    "lon": 8.9369073,
-    "fullAddress": "Oberneuland, Bremen-Ost, Bremen, 28355, Deutschland",
-    "timestamp": "2025-02-28T14:52:19.745Z"
-  },
-  {
-    "address": "Mittelshuchting, Bremen (28259)",
-    "city": "Bremen",
-    "lat": 53.0569337,
-    "lon": 8.7265255,
-    "fullAddress": "Mittelshuchting, Huchting, Bremen-Süd, Bremen, 28259, Deutschland",
-    "timestamp": "2025-02-28T14:52:20.754Z"
-  },
-  {
-    "address": "Gloedenpfad 2, Charlottenburg, Berlin (13627)",
-    "city": "Berlin",
-    "lat": 52.5385064,
-    "lon": 13.3028128,
-    "fullAddress": "2, Gloedenpfad, Charlottenburg-Nord, Charlottenburg-Wilmersdorf, Berlin, 13627, Deutschland",
-    "timestamp": "2025-03-02T20:33:20.370Z"
-  },
-  {
-    "address": "Osterbronnstraße, Rohr, Stuttgart (70565)",
-    "city": "Stuttgart",
-    "lat": 48.718246451776196,
-    "lon": 9.109772816010008,
-    "fullAddress": "Osterbronnstraße, Rohr, Vaihingen, Stuttgart, Baden-Württemberg, 70565, Deutschland",
-    "timestamp": "2025-03-05T18:39:18.173Z"
-  },
-  {
-    "address": "Sonnenberg, Stuttgart (70597)",
-    "city": "Stuttgart",
-    "lat": 48.7415827,
-    "lon": 9.1525726,
-    "fullAddress": "Sonnenberg, Möhringen, Stuttgart, Baden-Württemberg, 70597, Deutschland",
-    "timestamp": "2025-03-05T18:39:19.192Z"
-  },
-  {
-    "address": "Nord, Stuttgart (70192)",
-    "city": "Stuttgart",
-    "lat": 48.79749425,
-    "lon": 9.165901426538618,
-    "fullAddress": "70192, Killesberg, Stuttgart-Nord, Stuttgart, Baden-Württemberg, Deutschland",
-    "timestamp": "2025-03-05T18:39:20.171Z"
-  },
-  {
-    "address": "Rohr, Stuttgart (70565)",
-    "city": "Stuttgart",
-    "lat": 48.7172,
-    "lon": 9.106,
-    "fullAddress": "Rohr, Vaihingen, Stuttgart, Baden-Württemberg, Deutschland",
-    "timestamp": "2025-03-05T18:39:21.205Z"
-  },
-  {
-    "address": "Zuffenhausen, Stuttgart (70435)",
-    "city": "Stuttgart",
-    "lat": 48.8312987,
-    "lon": 9.1674403,
-    "fullAddress": "Zuffenhausen, Stuttgart, Baden-Württemberg, Deutschland",
-    "timestamp": "2025-03-05T18:39:22.160Z"
-  },
-  {
-    "address": "Wolframstraße 35, Nord, Stuttgart-Mitte (70191)",
-    "city": "Stuttgart-Mitte",
-    "lat": 48.791076073882394,
-    "lon": 9.185501073243854,
-    "fullAddress": "Wolframstraße, Europaviertel, Stuttgart-Mitte, Stuttgart-Nord, Stuttgart, Baden-Württemberg, 70191, Deutschland",
-    "timestamp": "2025-03-05T18:39:23.212Z"
-  },
-  {
-    "address": "Mailänder Platz 19, Mitte, Stuttgart-Mitte (70173)",
-    "city": "Stuttgart-Mitte",
-    "lat": 48.7908439,
-    "lon": 9.1836786,
-    "fullAddress": "19, Mailänder Platz, Europaviertel, Stuttgart-Mitte, Stuttgart, Baden-Württemberg, 70173, Deutschland",
-    "timestamp": "2025-03-05T18:39:24.239Z"
-  },
-  {
-    "address": "Weilimdorf, Stuttgart (70469)",
-    "city": "Stuttgart",
-    "lat": 48.815276,
-    "lon": 9.112444,
-    "fullAddress": "Weilimdorf, Stuttgart, Baden-Württemberg, 70499, Deutschland",
-    "timestamp": "2025-03-05T18:39:25.174Z"
-  },
-  {
-    "address": "Botnang, Stuttgart (70195)",
-    "city": "Stuttgart",
-    "lat": 48.778495,
-    "lon": 9.1295324,
-    "fullAddress": "Botnang, Stuttgart, Baden-Württemberg, 70195, Deutschland",
-    "timestamp": "2025-03-05T18:39:27.178Z"
-  },
-  {
-    "address": "Plieningen, Stuttgart (70599)",
-    "city": "Stuttgart",
-    "lat": 48.7113947,
-    "lon": 9.198865088043112,
-    "fullAddress": "Plieningen, Stuttgart, Baden-Württemberg, 70599, Deutschland",
-    "timestamp": "2025-03-05T18:39:28.173Z"
-  },
-  {
-    "address": "Nord, Stuttgart (70191)",
-    "city": "Stuttgart",
-    "lat": 48.798732650000005,
-    "lon": 9.189108225718751,
-    "fullAddress": "70191, Nordbahnhof, Stuttgart-Nord, Stuttgart, Baden-Württemberg, Deutschland",
-    "timestamp": "2025-03-05T18:39:29.211Z"
-  },
-  {
-    "address": "West, Stuttgart (70197)",
-    "city": "Stuttgart",
-    "lat": 48.7743488,
-    "lon": 9.102470792720416,
-    "fullAddress": "70197, Wildpark, Stuttgart-West, Stuttgart, Baden-Württemberg, Deutschland",
-    "timestamp": "2025-03-05T18:39:30.233Z"
-  },
-  {
-    "address": "West, Stuttgart (70178)",
-    "city": "Stuttgart",
-    "lat": 48.7694751,
-    "lon": 9.1634415,
-    "fullAddress": "Deutsche Post, Reinsburgstraße, Stuttgart-West, Feuersee, Stuttgart-West, Stuttgart, Baden-Württemberg, 70178, Deutschland",
-    "timestamp": "2025-03-05T18:39:31.179Z"
-  },
-  {
-    "address": "West, Stuttgart (70193)",
-    "city": "Stuttgart",
-    "lat": 48.782837349999994,
-    "lon": 9.14671770338926,
-    "fullAddress": "70193, Kräherwald, Stuttgart-West, Stuttgart, Baden-Württemberg, Deutschland",
-    "timestamp": "2025-03-05T18:39:32.168Z"
-  },
-  {
-    "address": "Pfefferstraße 8, Heumaden, Stuttgart (70619)",
-    "city": "Stuttgart",
-    "lat": 48.746161150000006,
-    "lon": 9.235497999999998,
-    "fullAddress": "8, Pfefferstraße, Heumaden, Sillenbuch, Stuttgart, Baden-Württemberg, 70619, Deutschland",
-    "timestamp": "2025-03-05T18:39:33.166Z"
-  },
-  {
-    "address": "Plieninger Straße 100, Möhringen, Stuttgart Möhringen (70567)",
-    "city": "Stuttgart Möhringen",
-    "lat": 48.7223718,
-    "lon": 9.1608617,
-    "fullAddress": "SchwabenQuellen, 100, Plieninger Straße, Sternhäule, Möhringen, Stuttgart, Baden-Württemberg, 70567, Deutschland",
-    "timestamp": "2025-03-05T18:39:34.203Z"
-  },
-  {
-    "address": "Sandbuckel 27C, Giebel, Stuttgart (70499)",
-    "city": "Stuttgart",
-    "lat": 48.807438149999996,
-    "lon": 9.087895167421355,
-    "fullAddress": "27c, Sandbuckel, Giebel, Weilimdorf, Stuttgart, Baden-Württemberg, 70499, Deutschland",
-    "timestamp": "2025-03-05T18:39:35.210Z"
-  },
-  {
-    "address": "Kernerstraße, Mitte, Stuttgart (70182)",
-    "city": "Stuttgart",
-    "lat": 48.77914338116308,
-    "lon": 9.190347594182477,
-    "fullAddress": "Kernerstraße, Diemershalde, Stuttgart-Mitte, Stuttgart, Baden-Württemberg, 70182, Deutschland",
-    "timestamp": "2025-03-05T18:39:36.187Z"
-  },
-  {
-    "address": "Lindenstraße, Vaihingen, Stuttgart (70563)",
-    "city": "Stuttgart",
-    "lat": 48.72944735,
-    "lon": 9.10437215,
-    "fullAddress": "Lindenstraße, Vaihingen, Vaihingen-Mitte, Vaihingen, Stuttgart, Baden-Württemberg, 70563, Deutschland",
-    "timestamp": "2025-03-05T18:39:37.259Z"
-  },
-  {
-    "address": "Werastraße, Mitte, Stuttgart (70190)",
-    "city": "Stuttgart",
-    "lat": 48.78717368305104,
-    "lon": 9.194892308639046,
-    "fullAddress": "Werastraße, Kernerviertel, Stuttgart-Mitte, Stuttgart-Ost, Stuttgart, Baden-Württemberg, 70190, Deutschland",
-    "timestamp": "2025-03-05T18:39:38.173Z"
-  },
-  {
-    "address": "Fraubronnstraße, Plieningen, Stuttgart (70599)",
-    "city": "Stuttgart",
-    "lat": 48.70366819561291,
-    "lon": 9.203696266249269,
-    "fullAddress": "Fraubronnstraße, Plieningen, Stuttgart, Baden-Württemberg, 70599, Deutschland",
-    "timestamp": "2025-03-05T18:39:39.174Z"
-  },
-  {
-    "address": "Löwenstraße, Degerloch, Stuttgart (70597)",
-    "city": "Stuttgart",
-    "lat": 48.74869407745659,
-    "lon": 9.179416895597447,
-    "fullAddress": "Löwenstraße, Waldau, Degerloch, Stuttgart, Baden-Württemberg, 70597, Deutschland",
-    "timestamp": "2025-03-05T18:39:40.184Z"
-  },
-  {
-    "address": "Talstr. 66, Ost, Stuttgart (70188)",
-    "city": "Stuttgart",
-    "lat": 48.7848298,
-    "lon": 9.214980259602186,
-    "fullAddress": "66, Talstraße, Gaisburg, Stuttgart-Ost, Stuttgart, Baden-Württemberg, 70188, Deutschland",
-    "timestamp": "2025-03-05T18:39:41.958Z"
-  },
-  {
-    "address": "König-Karl-Straße 84, Bad Cannstatt, Stuttgart (70372)",
-    "city": "Stuttgart",
-    "lat": 48.801021500000004,
-    "lon": 9.213052077408056,
-    "fullAddress": "84, König-Karl-Straße, Veielbrunnen, Bad Cannstatt, Stuttgart, Baden-Württemberg, 70372, Deutschland",
-    "timestamp": "2025-03-05T18:39:42.203Z"
-  },
-  {
-    "address": "Sasstraße 25, Gohlis-Mitte, Leipzig (04155)",
-    "city": "Leipzig",
-    "lat": 51.36623405,
-    "lon": 12.369820079198039,
-    "fullAddress": "25, Sasstraße, Gohlis, Gohlis-Mitte, Nord, Leipzig, Sachsen, 04157, Deutschland",
-    "timestamp": "2025-03-05T18:40:13.801Z"
-  },
-  {
-    "address": "Neulichtenhofstraße 16, Hummelstein, Nürnberg (90461)",
-    "city": "Nürnberg",
-    "lat": 49.4302038,
-    "lon": 11.0880379,
-    "fullAddress": "16, Neulichtenhofstraße, Hummelstein, Nürnberg, Bayern, 90461, Deutschland",
-    "timestamp": "2025-03-05T18:40:14.805Z"
-  },
-  {
-    "address": "Rodacher Straße 51, Holzhausen, Bad Colberg-Heldburg (98663)",
-    "city": "Bad Colberg-Heldburg",
-    "lat": 50.301520213619995,
-    "lon": 10.747488827425997,
-    "fullAddress": "Rodacher Straße, Bad Colberg-Heldburg, Heldburg, Heldburger Unterland, Landkreis Hildburghausen, Thüringen, 98663, Deutschland",
-    "timestamp": "2025-03-05T18:40:15.822Z"
-  },
-  {
-    "address": "Tribseer Damm 4a, Altstadt, Stralsund (18439)",
-    "city": "Stralsund",
-    "lat": 54.309245342663914,
-    "lon": 13.082386952470959,
-    "fullAddress": "Tribseer Damm, Bastionengürtel, Altstadt, Stralsund, Vorpommern-Rügen, Mecklenburg-Vorpommern, 18439, Deutschland",
-    "timestamp": "2025-03-05T18:40:16.864Z"
-  },
-  {
-    "address": "Crailsheim, Crailsheim (74564)",
-    "city": "Crailsheim",
-    "lat": 49.1385945,
-    "lon": 10.0649528,
-    "fullAddress": "Crailsheim, zum Bahnhof, Schießberg, Crailsheim, Verwaltungsverband Crailsheim, Landkreis Schwäbisch Hall, Baden-Württemberg, 74564, Deutschland",
-    "timestamp": "2025-03-05T18:40:17.802Z"
-  },
-  {
-    "address": "Wildeshausen (27793)",
-    "city": "Wildeshausen",
-    "lat": 52.897103,
-    "lon": 8.4364342,
-    "fullAddress": "Wildeshausen, Landkreis Oldenburg, Niedersachsen, 27793, Deutschland",
-    "timestamp": "2025-03-05T18:40:18.801Z"
-  },
-  {
-    "address": "Landgrabenstr., Steinbühl, Nürnberg (90459)",
-    "city": "Nürnberg",
-    "lat": 49.4396638512461,
-    "lon": 11.075946644980064,
-    "fullAddress": "Landgrabenstraße, Steinbühl, Nürnberg, Bayern, 90443, Deutschland",
-    "timestamp": "2025-03-05T18:40:19.824Z"
-  },
-  {
-    "address": "Lilienthalring 2, Eisenhüttenstadt, Eisenhüttenstadt (15890)",
-    "city": "Eisenhüttenstadt",
-    "lat": 52.1398655,
-    "lon": 14.6530409,
-    "fullAddress": "2, Lilienthalring, WK VI, Eisenhüttenstadt, Oder-Spree, Brandenburg, 15890, Deutschland",
-    "timestamp": "2025-03-05T18:40:20.884Z"
-  },
-  {
-    "address": "Beeskower Straße 111, Eisenhüttenstadt, Eisenhüttenstadt (15890)",
-    "city": "Eisenhüttenstadt",
-    "lat": 52.1522638,
-    "lon": 14.627876,
-    "fullAddress": "111, Beeskower Straße, Schönfließ, Eisenhüttenstadt, Oder-Spree, Brandenburg, 15890, Deutschland",
-    "timestamp": "2025-03-05T18:40:21.815Z"
-  },
-  {
-    "address": "Beethovenstraße 27, Engelsby, Flensburg (24943)",
-    "city": "Flensburg",
-    "lat": 54.7919107,
-    "lon": 9.469870858396366,
-    "fullAddress": "27, Beethovenstraße, Engelsby-Süd, Engelsby, Flensburg, Schleswig-Holstein, 24943, Deutschland",
-    "timestamp": "2025-03-05T18:40:22.864Z"
-  },
-  {
-    "address": "Am Hohen Graben 34, Prohn, Prohn (18445)",
-    "city": "Prohn",
-    "lat": 54.367003499999996,
-    "lon": 13.031393331364836,
-    "fullAddress": "34, Am Hohen Graben, Prohn, Altenpleen, Vorpommern-Rügen, Mecklenburg-Vorpommern, 18445, Deutschland",
-    "timestamp": "2025-03-05T18:40:23.807Z"
-  },
-  {
-    "address": "Offenbach am Main, Offenbach am Main (63067)",
-    "city": "Offenbach am Main",
-    "lat": 50.1070092,
-    "lon": 8.7422839625886,
-    "fullAddress": "63067, Kaiserlei, Offenbach am Main, Hessen, Deutschland",
-    "timestamp": "2025-03-05T18:40:24.819Z"
-  },
-  {
-    "address": "Opladen, Leverkusen (51379)",
-    "city": "Leverkusen",
-    "lat": 51.0657432,
-    "lon": 7.0088448,
-    "fullAddress": "Opladen, Europa-Allee, Opladen, Stadtbezirk II, Leverkusen, Nordrhein-Westfalen, 51379, Deutschland",
-    "timestamp": "2025-03-05T18:40:25.821Z"
-  },
-  {
-    "address": "Friesische Straße 96, Friesischer Berg, Flensburg (24937)",
-    "city": "Flensburg",
-    "lat": 54.7802334,
-    "lon": 9.42288364280417,
-    "fullAddress": "96, Friesische Straße, Friedhofshügel, Friesischer Berg, Flensburg, Schleswig-Holstein, 24937, Deutschland",
-    "timestamp": "2025-03-05T18:40:26.807Z"
-  },
-  {
-    "address": "Richard-Wagner-Str. 61, City, Bayreuth (95444)",
-    "city": "Bayreuth",
-    "lat": 49.9409641,
-    "lon": 11.584983144529604,
-    "fullAddress": "61, Richard-Wagner-Straße, Südöstliche Innenstadt, City, Bayreuth, Bayern, 95444, Deutschland",
-    "timestamp": "2025-03-05T18:40:27.898Z"
-  },
-  {
-    "address": "Hopfenbergstraße 16, Wahren, Leipzig (04159)",
-    "city": "Leipzig",
-    "lat": 51.3756394,
-    "lon": 12.325463054298169,
-    "fullAddress": "16, Hopfenbergstraße, Wahren, Nordwest, Leipzig, Sachsen, 04159, Deutschland",
-    "timestamp": "2025-03-05T18:40:28.799Z"
-  },
-  {
-    "address": "Rosa-Luxemburg-Straße 49b, Velten (16727)",
-    "city": "Velten",
-    "lat": 52.67957575,
-    "lon": 13.171787101478916,
-    "fullAddress": "49B, Rosa-Luxemburg-Straße, An der Marwitzer Trift, Velten, Oberhavel, Brandenburg, 16727, Deutschland",
-    "timestamp": "2025-03-05T18:40:29.871Z"
-  },
-  {
-    "address": "Rudolf-Breitscheid-Straße 82f, Baruth, Baruth/Mark (15837)",
-    "city": "Baruth/Mark",
-    "lat": 52.041179,
-    "lon": 13.513118,
-    "fullAddress": "82f, Rudolf-Breitscheid-Straße, Baruth/Mark, Teltow-Fläming, Brandenburg, 15837, Deutschland",
-    "timestamp": "2025-03-05T18:40:30.996Z"
-  },
-  {
-    "address": "Rosa-Kempf-Straße 11, Aubing-Lochhausen-Langwied, München (81249)",
-    "city": "München",
-    "lat": 48.14146,
-    "lon": 11.410956,
-    "fullAddress": "11, Rosa-Kempf-Straße, Freiham-Nord, Freiham, Aubing-Lochhausen-Langwied, München, Bayern, 81248, Deutschland",
-    "timestamp": "2025-03-05T18:40:31.810Z"
-  },
-  {
-    "address": "Pomonaring 8, Ahrensburg (22926)",
-    "city": "Ahrensburg",
-    "lat": 53.6862161,
-    "lon": 10.2388329,
-    "fullAddress": "8, Pomonaring, Erlenhof, Ahrensburg, Kreis Stormarn, Schleswig-Holstein, 22926, Deutschland",
-    "timestamp": "2025-03-05T18:40:32.857Z"
-  },
-  {
-    "address": "Immermannstr. 8, Stadtfeld Ost, Magdeburg (39108)",
-    "city": "Magdeburg",
-    "lat": 52.1344381,
-    "lon": 11.60926830336907,
-    "fullAddress": "8, Immermannstraße, Stadtfeld Ost, Magdeburg, Sachsen-Anhalt, 39108, Deutschland",
-    "timestamp": "2025-03-05T18:40:34.819Z"
-  },
-  {
-    "address": "Straße Usti nad Labem 169, Kappel, Chemnitz (09119)",
-    "city": "Chemnitz",
-    "lat": 50.806739300000004,
-    "lon": 12.886589213965625,
-    "fullAddress": "169, Straße Usti nad Labem, Wohngebiet Fritz Heckert, Kappel, Chemnitz, Sachsen, 09119, Deutschland",
-    "timestamp": "2025-03-05T18:40:35.835Z"
-  },
-  {
-    "address": "Rosa-Kempf-Straße 17, Aubing-Lochhausen-Langwied, München (81249)",
-    "city": "München",
-    "lat": 48.1413589,
-    "lon": 11.4102519,
-    "fullAddress": "17, Rosa-Kempf-Straße, Freiham-Nord, Freiham, Aubing-Lochhausen-Langwied, München, Bayern, 81248, Deutschland",
-    "timestamp": "2025-03-05T18:40:36.812Z"
-  },
-  {
-    "address": "Moselstr. 20, Wandlitz, Wandlitz (16348)",
-    "city": "Wandlitz",
-    "lat": 52.763519099999996,
-    "lon": 13.47309099582628,
-    "fullAddress": "20, Moselstraße, Wandlitz, Barnim, Brandenburg, 16348, Deutschland",
-    "timestamp": "2025-03-05T18:40:37.800Z"
-  },
-  {
-    "address": "Arnikaweg 3, Steimker Berg, Wolfsburg (38446)",
-    "city": "Wolfsburg",
-    "lat": 52.41474223725302,
-    "lon": 10.8162910119956,
-    "fullAddress": "Arnikaweg, Steimker Gärten, Wolfsburg, Niedersachsen, 38446, Deutschland",
-    "timestamp": "2025-03-05T18:40:38.842Z"
-  },
-  {
-    "address": "Auf der Insel 27, Letmathe, Iserlohn (58642)",
-    "city": "Iserlohn",
-    "lat": 51.358272,
-    "lon": 7.603894891770616,
-    "fullAddress": "27, Auf der Insel, Ahm, Iserlohn, Märkischer Kreis, Nordrhein-Westfalen, 58642, Deutschland",
-    "timestamp": "2025-03-05T18:40:39.823Z"
-  },
-  {
-    "address": "Am Sandberg 16, Hohenburg, Hohenburg (92277)",
-    "city": "Hohenburg",
-    "lat": 49.29745175689919,
-    "lon": 11.804485583404466,
-    "fullAddress": "Am Sandberg, Oberlammerthal, Allertshofen, Hohenburg, Landkreis Amberg-Sulzbach, Bayern, 92277, Deutschland",
-    "timestamp": "2025-03-05T18:40:40.940Z"
-  },
-  {
-    "address": "Goethestraße 32, Ludwigsvorstadt-Isarvorstadt, München (80336)",
-    "city": "München",
-    "lat": 48.1357635,
-    "lon": 11.5582855,
-    "fullAddress": "32, Goethestraße, Klinikviertel, Ludwigsvorstadt-Kliniken, Ludwigsvorstadt-Isarvorstadt, München, Bayern, 80336, Deutschland",
-    "timestamp": "2025-03-05T19:03:57.149Z"
-  },
-  {
-    "address": "Clarita-Bernhard-Straße, Aubing-Lochhausen-Langwied, München (81249)",
-    "city": "München",
-    "lat": 48.138449231770565,
-    "lon": 11.41010224189877,
-    "fullAddress": "Clarita-Bernhard-Straße, Gut Freiham, Freiham, Aubing-Lochhausen-Langwied, München, Bayern, 81249, Deutschland",
-    "timestamp": "2025-03-05T19:03:58.073Z"
-  },
-  {
-    "address": "Maxvorstadt, München (80333)",
-    "city": "München",
-    "lat": 48.1510916,
-    "lon": 11.5624179,
-    "fullAddress": "Maxvorstadt, München, Bayern, Deutschland",
-    "timestamp": "2025-03-05T19:03:59.003Z"
-  },
-  {
-    "address": "Pasing-Obermenzing, München (81241)",
-    "city": "München",
-    "lat": 48.15236275,
-    "lon": 11.468434085049713,
-    "fullAddress": "Pasing-Obermenzing, München, Bayern, Deutschland",
-    "timestamp": "2025-03-05T19:04:00.011Z"
-  },
-  {
-    "address": "Goethestraße 30, Ludwigsvorstadt-Isarvorstadt, München (80336)",
-    "city": "München",
-    "lat": 48.1358232,
-    "lon": 11.5584528,
-    "fullAddress": "Sultan, 30, Goethestraße, Klinikviertel, Ludwigsvorstadt-Kliniken, Ludwigsvorstadt-Isarvorstadt, München, Bayern, 80336, Deutschland",
-    "timestamp": "2025-03-05T19:04:01.166Z"
-  },
-  {
-    "address": "Trudering-Riem, München (81825)",
-    "city": "München",
-    "lat": 48.1388379,
-    "lon": 11.674056534096552,
-    "fullAddress": "Trudering - Riem, Trudering-Riem, München, Bayern, 81829, Deutschland",
-    "timestamp": "2025-03-05T19:04:02.019Z"
-  },
-  {
-    "address": "Bogenhausen, München (81679)",
-    "city": "München",
-    "lat": 48.1452222,
-    "lon": 11.6149771,
-    "fullAddress": "Bogenhausen, Altbogenhausen, Bogenhausen, München, Bayern, 81679, Deutschland",
-    "timestamp": "2025-03-05T19:04:04.038Z"
-  },
-  {
-    "address": "Allach-Untermenzing, München (80997)",
-    "city": "München",
-    "lat": 48.1951989,
-    "lon": 11.462922159964123,
-    "fullAddress": "Allach-Untermenzing, München, Bayern, Deutschland",
-    "timestamp": "2025-03-05T19:04:05.028Z"
-  },
-  {
-    "address": "Schwabing-Freimann, München (80939)",
-    "city": "München",
-    "lat": 48.1892784,
-    "lon": 11.60858258301819,
-    "fullAddress": "Schwabing-Freimann, München, Bayern, Deutschland",
-    "timestamp": "2025-03-05T19:04:06.016Z"
-  },
-  {
-    "address": "Tattenbachstraße 18, Altstadt-Lehel, München (80538)",
-    "city": "München",
-    "lat": 48.1404979,
-    "lon": 11.590562049903294,
-    "fullAddress": "18, Tattenbachstraße, Lehel, Altstadt-Lehel, München, Bayern, 80538, Deutschland",
-    "timestamp": "2025-03-05T19:04:07.041Z"
-  },
-  {
-    "address": "Valleystraße 19, Sendling, München (81371)",
-    "city": "München",
-    "lat": 48.1174644,
-    "lon": 11.5486217,
-    "fullAddress": "19, Valleystraße, Sendlinger Feld, Sendling, München, Bayern, 81371, Deutschland",
-    "timestamp": "2025-03-05T19:04:08.056Z"
-  },
-  {
-    "address": "Moosach, München (80992)",
-    "city": "München",
-    "lat": 48.1800399,
-    "lon": 11.5060222,
-    "fullAddress": "Moosach, Bunzlauer Platz, Moosach-Bahnhof, Moosach, München, Bayern, 80992, Deutschland",
-    "timestamp": "2025-03-05T19:04:09.049Z"
-  },
-  {
-    "address": "Schorerstraße 3, Untergiesing-Harlaching, München (81547)",
-    "city": "München",
-    "lat": 48.1074111,
-    "lon": 11.571707,
-    "fullAddress": "3, Schorerstraße, Giesing, Untergiesing-Harlaching, München, Bayern, 81547, Deutschland",
-    "timestamp": "2025-03-05T19:04:10.079Z"
-  },
-  {
-    "address": "Rosa-Kempf-Straße 27, Aubing-Lochhausen-Langwied, München (81249)",
-    "city": "München",
-    "lat": 48.1415386,
-    "lon": 11.4100864,
-    "fullAddress": "27, Rosa-Kempf-Straße, Freiham-Nord, Freiham, Aubing-Lochhausen-Langwied, München, Bayern, 81248, Deutschland",
-    "timestamp": "2025-03-05T19:04:11.051Z"
-  },
-  {
-    "address": "Cosimastraße 296, Bogenhausen, München (81927)",
-    "city": "München",
-    "lat": 48.1768275,
-    "lon": 11.6332889,
-    "fullAddress": "296, Cosimastraße, Sankt Emmeram, Oberföhring, Bogenhausen, München, Bayern, 81927, Deutschland",
-    "timestamp": "2025-03-05T19:04:12.109Z"
-  },
-  {
-    "address": "Carl-Wery-Str. 35, Ramersdorf-Perlach, München (81739)",
-    "city": "München",
-    "lat": 48.087457799999996,
-    "lon": 11.646201657213714,
-    "fullAddress": "35, Carl-Wery-Straße, Neuperlach, Ramersdorf-Perlach, München, Bayern, 81739, Deutschland",
-    "timestamp": "2025-03-05T19:04:13.122Z"
-  },
-  {
-    "address": "Carl-Wery-Straße 35, Ramersdorf-Perlach, München (81739)",
-    "city": "München",
-    "lat": 48.087457799999996,
-    "lon": 11.646201657213714,
-    "fullAddress": "35, Carl-Wery-Straße, Neuperlach, Ramersdorf-Perlach, München, Bayern, 81739, Deutschland",
-    "timestamp": "2025-03-05T19:04:14.171Z"
-  },
-  {
-    "address": "Au-Haidhausen, München (81667)",
-    "city": "München",
-    "lat": 48.130273849999995,
-    "lon": 11.59833361534854,
-    "fullAddress": "Au-Haidhausen, München, Bayern, Deutschland",
-    "timestamp": "2025-03-05T19:04:15.003Z"
-  },
-  {
-    "address": "Pasing-Obermenzing, München (81243)",
-    "city": "München",
-    "lat": 48.15236275,
-    "lon": 11.468434085049713,
-    "fullAddress": "Pasing-Obermenzing, München, Bayern, Deutschland",
-    "timestamp": "2025-03-05T19:04:16.025Z"
-  },
-  {
-    "address": "Ramersdorf-Perlach, München (81735)",
-    "city": "München",
-    "lat": 48.100894249999996,
-    "lon": 11.633344759703725,
-    "fullAddress": "Ramersdorf-Perlach, München, Bayern, Deutschland",
-    "timestamp": "2025-03-05T19:04:17.015Z"
-  },
-  {
-    "address": "Eschengraben 1, Pankow, Berlin (13189)",
-    "city": "Berlin",
-    "lat": 52.5562517,
-    "lon": 13.4154149,
-    "fullAddress": "1, Eschengraben, Tiroler Viertel, Pankow, Berlin, 13189, Deutschland",
-    "timestamp": "2025-03-06T07:46:05.583Z"
-  },
-  {
-    "address": "Klara-Franke-Straße 20, Moabit, Berlin (10557)",
-    "city": "Berlin",
-    "lat": 52.5311131,
-    "lon": 13.363008455168337,
-    "fullAddress": "E3, 20, Klara-Franke-Straße, Europacity, Moabit, Mitte, Berlin, 10557, Deutschland",
-    "timestamp": "2025-03-06T07:46:06.587Z"
-  },
-  {
-    "address": "Adolfstraße 24, Wedding, Berlin (13347)",
-    "city": "Berlin",
-    "lat": 52.5474161,
-    "lon": 13.3666502,
-    "fullAddress": "24, Adolfstraße, Maxgärten, Wedding, Mitte, Berlin, Pankow, 13347, Deutschland",
-    "timestamp": "2025-03-06T07:46:07.587Z"
-  },
-  {
-    "address": "Hauptstraße 2-3, Lichtenberg, Berlin (10317)",
-    "city": "Berlin",
-    "lat": 52.50136685,
-    "lon": 13.474469372274429,
-    "fullAddress": "Habyt - The Waterfront, 2-3, Hauptstraße, Rummelsburg, Lichtenberg, Berlin, 10317, Deutschland",
-    "timestamp": "2025-03-06T07:46:08.618Z"
-  },
-  {
-    "address": "Lottumstraße 25, 10119 Berlin, Mitte, Berlin (10119)",
-    "city": "Berlin",
-    "lat": 52.53077008340521,
-    "lon": 13.40704435455185,
-    "fullAddress": "Lottumstraße, Prenzlauer Berg, Pankow, Berlin, 10119, Deutschland",
-    "timestamp": "2025-03-06T07:46:09.622Z"
-  },
-  {
-    "address": "Kaiser-Friedrich Straße, Charlottenburg, Berlin (10585)",
-    "city": "Berlin",
-    "lat": 52.51488575704536,
-    "lon": 13.30087016906772,
-    "fullAddress": "Kaiser-Friedrich-Straße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10585, Deutschland",
-    "timestamp": "2025-03-06T07:46:10.636Z"
-  },
-  {
-    "address": "Relingstraße, Grünau, Berlin (12527)",
-    "city": "Berlin",
-    "lat": 52.42571748905158,
-    "lon": 13.575807992554882,
-    "fullAddress": "Relingstraße, Grünau, Treptow-Köpenick, Berlin, 12527, Deutschland",
-    "timestamp": "2025-03-06T07:46:11.569Z"
-  },
-  {
-    "address": "Paul-Lincke-Ufer, Kreuzberg, Berlin (10999)",
-    "city": "Berlin",
-    "lat": 52.495195206929274,
-    "lon": 13.424710902291105,
-    "fullAddress": "Paul-Lincke-Ufer, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10999, Deutschland",
-    "timestamp": "2025-03-06T07:46:12.614Z"
-  },
-  {
-    "address": "Invalidenstraße, Mitte, Berlin (10115)",
-    "city": "Berlin",
-    "lat": 52.53200925122066,
-    "lon": 13.392263252035464,
-    "fullAddress": "Invalidenstraße, Spandauer Vorstadt, Mitte, Berlin, 10115, Deutschland",
-    "timestamp": "2025-03-06T07:46:13.593Z"
-  },
-  {
-    "address": "Motzstraße, Schöneberg, Berlin (10777)",
-    "city": "Berlin",
-    "lat": 52.498703745020975,
-    "lon": 13.350974565096502,
-    "fullAddress": "Motzstraße, Schöneberg, Tempelhof-Schöneberg, Berlin, 10777, Deutschland",
-    "timestamp": "2025-03-06T07:46:14.590Z"
-  },
-  {
-    "address": "Haubachstraße, Charlottenburg, Berlin (10585)",
-    "city": "Berlin",
-    "lat": 52.51555833804933,
-    "lon": 13.303768774528095,
-    "fullAddress": "Haubachstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10585, Deutschland",
-    "timestamp": "2025-03-06T07:46:15.587Z"
-  },
-  {
-    "address": "Seelingstraße, Charlottenburg, Berlin (14059)",
-    "city": "Berlin",
-    "lat": 52.515468125340654,
-    "lon": 13.292795262750436,
-    "fullAddress": "Seelingstraße, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 14059, Deutschland",
-    "timestamp": "2025-03-06T07:46:16.585Z"
-  },
-  {
-    "address": "Karl-Marx-Allee, Friedrichshain, Berlin (10243)",
-    "city": "Berlin",
-    "lat": 52.516676159195846,
-    "lon": 13.446066437649515,
-    "fullAddress": "Karl-Marx-Allee, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Deutschland",
-    "timestamp": "2025-03-06T07:46:17.630Z"
-  },
-  {
-    "address": "Immenhofer Straße, Süd, Stuttgart (70180)",
-    "city": "Stuttgart",
-    "lat": 48.76720816760281,
-    "lon": 9.17543058060322,
-    "fullAddress": "Immenhofer Straße, Lehen, Stuttgart-Süd, Stuttgart, Baden-Württemberg, 70180, Deutschland",
-    "timestamp": "2025-03-07T09:21:14.729Z"
-  },
-  {
-    "address": "Olgastraße, Süd, Stuttgart (70180)",
-    "city": "Stuttgart",
-    "lat": 48.766011250000005,
-    "lon": 9.17734645,
-    "fullAddress": "Olgastraße, Lehen, Stuttgart-Süd, Stuttgart, Baden-Württemberg, 70180, Deutschland",
-    "timestamp": "2025-03-07T09:21:15.742Z"
-  },
-  {
-    "address": "Ludwigstraße, West, Stuttgart (70197)",
-    "city": "Stuttgart",
-    "lat": 48.7737658,
-    "lon": 9.1611123,
-    "fullAddress": "Tageseinrichtung für Kinder Ludwigstraße, 41, Ludwigstraße, Stuttgart-West, Feuersee, Stuttgart-West, Stuttgart, Baden-Württemberg, 70176, Deutschland",
-    "timestamp": "2025-03-07T09:21:16.797Z"
-  },
-  {
-    "address": "Degerloch, Stuttgart (70597)",
-    "city": "Stuttgart",
-    "lat": 48.749597,
-    "lon": 9.1703452,
-    "fullAddress": "Degerloch, Stuttgart, Baden-Württemberg, 70597, Deutschland",
-    "timestamp": "2025-03-07T09:21:17.727Z"
-  },
-  {
-    "address": "Spiegelfabrik 1, Waldhof, Mannheim (68305)",
-    "city": "Mannheim",
-    "lat": 49.5203406,
-    "lon": 8.47776174218955,
-    "fullAddress": "1, Spiegelfabrik, Luzenberg, Waldhof, Mannheim, Baden-Württemberg, 68305, Deutschland",
-    "timestamp": "2025-03-07T09:21:38.827Z"
-  },
-  {
-    "address": "Bad Dürrheim, Bad Dürrheim (78073)",
-    "city": "Bad Dürrheim",
-    "lat": 48.0222311,
-    "lon": 8.5299837,
-    "fullAddress": "Bad Dürrheim, Schwarzwald-Baar-Kreis, Baden-Württemberg, Deutschland",
-    "timestamp": "2025-03-07T09:21:39.808Z"
-  },
-  {
-    "address": "Hetzdorfer Straße 13, Gorbitz-Ost, Dresden (01169)",
-    "city": "Dresden",
-    "lat": 51.0470177,
-    "lon": 13.6750598,
-    "fullAddress": "13, Hetzdorfer Straße, An der Kirche, Gorbitz-Ost, Gorbitz, Cotta, Dresden, Sachsen, 01169, Deutschland",
-    "timestamp": "2025-03-07T09:21:42.850Z"
-  },
-  {
-    "address": "Lisa-Fittko-Straße 11, Moabit, Berlin (10557)",
-    "city": "Berlin",
-    "lat": 52.5312341,
-    "lon": 13.3657505,
-    "fullAddress": "11, Lisa-Fittko-Straße, Europacity, Moabit, Mitte, Berlin, 10557, Deutschland",
-    "timestamp": "2025-03-07T09:34:10.794Z"
-  },
-  {
-    "address": "Grünhofer Weg 44, Spandau, Berlin (13581)",
-    "city": "Berlin",
-    "lat": 52.5305978,
-    "lon": 13.1872192,
-    "fullAddress": "44, Grünhofer Weg, Spandau, Berlin, 13581, Deutschland",
-    "timestamp": "2025-03-07T09:34:11.783Z"
-  },
-  {
-    "address": "Langer-See-Str. 10, Haselhorst, Berlin (13599)",
-    "city": "Berlin",
-    "lat": 52.5586763,
-    "lon": 13.2253242,
-    "fullAddress": "10, Langer-See-Straße, Haselhorst, Spandau, Berlin, 13599, Deutschland",
-    "timestamp": "2025-03-07T09:34:12.825Z"
-  },
-  {
-    "address": "Weidenweg 75, Friedrichshain, Berlin (10247)",
-    "city": "Berlin",
-    "lat": 52.51973445,
-    "lon": 13.457057913305613,
-    "fullAddress": "75, Weidenweg, Hausburgviertel, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10247, Deutschland",
-    "timestamp": "2025-03-07T09:34:13.826Z"
-  },
-  {
-    "address": "Neue Weyer Straße 5, Altstadt-Süd, Köln (50676)",
-    "city": "Köln",
-    "lat": 50.9293998,
-    "lon": 6.944485051108538,
-    "fullAddress": "5, Neue Weyerstraße, Mauritiusviertel, Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50676, Deutschland",
-    "timestamp": "2025-03-07T10:00:09.780Z"
-  },
-  {
-    "address": "Nippes, Köln (50733)",
-    "city": "Köln",
-    "lat": 50.9640936,
-    "lon": 6.9539356,
-    "fullAddress": "Nippes, Köln, Nordrhein-Westfalen, 50733, Deutschland",
-    "timestamp": "2025-03-07T10:00:10.735Z"
-  },
-  {
-    "address": "Hartwichstraße 115, Nippes, Köln-Nippes (50733)",
-    "city": "Köln-Nippes",
-    "lat": 50.958185799999995,
-    "lon": 6.942784917455215,
-    "fullAddress": "115, Hartwichstraße, Sechzigviertel, Nippes, Köln, Nordrhein-Westfalen, 50733, Deutschland",
-    "timestamp": "2025-03-07T10:00:11.785Z"
-  },
-  {
-    "address": "Junkersdorf, Köln (50858)",
-    "city": "Köln",
-    "lat": 50.9317526,
-    "lon": 6.8551691,
-    "fullAddress": "Junkersdorf, Lindenthal, Köln, Nordrhein-Westfalen, 50858, Deutschland",
-    "timestamp": "2025-03-07T10:00:12.763Z"
-  },
-  {
-    "address": "Hauptstrasse 293-299, Porz, Köln (51143)",
-    "city": "Köln",
-    "lat": 50.8797716,
-    "lon": 7.054108092391876,
-    "fullAddress": "Lindenhof, 293-299, Hauptstraße, Porz, Köln, Nordrhein-Westfalen, 51143, Deutschland",
-    "timestamp": "2025-03-07T10:00:13.776Z"
-  },
-  {
-    "address": "Kronstädter Straße 6, Weiden, Köln (50858)",
-    "city": "Köln",
-    "lat": 50.93165465,
-    "lon": 6.8449826548672625,
-    "fullAddress": "6, Kronstädter Straße, Weiden, Lindenthal, Köln, Nordrhein-Westfalen, 50858, Deutschland",
-    "timestamp": "2025-03-07T10:00:14.741Z"
-  },
-  {
-    "address": "Aachener Straße, Junkersdorf, Köln (50858)",
-    "city": "Köln",
-    "lat": 50.93769229046219,
-    "lon": 6.864877544421389,
-    "fullAddress": "Aachener Straße, Stadtwaldviertel, Junkersdorf, Lindenthal, Köln, Nordrhein-Westfalen, 50858, Deutschland",
-    "timestamp": "2025-03-07T10:00:15.792Z"
-  },
-  {
-    "address": "Luxemburger Straße, Sülz, Köln (50939)",
-    "city": "Köln",
-    "lat": 50.918487295965505,
-    "lon": 6.930567177719743,
-    "fullAddress": "Luxemburger Straße, Sülz, Lindenthal, Köln, Nordrhein-Westfalen, 50939, Deutschland",
-    "timestamp": "2025-03-07T10:00:16.807Z"
-  },
-  {
-    "address": "Stolberger Straße, Ehrenfeld, Köln (50933)",
-    "city": "Köln",
-    "lat": 50.941843218516546,
-    "lon": 6.90678956535944,
-    "fullAddress": "Stolberger Straße, Braunsfeld, Lindenthal, Köln, Nordrhein-Westfalen, 50933, Deutschland",
-    "timestamp": "2025-03-07T10:00:17.759Z"
-  },
-  {
-    "address": "Hartwichstraße, Nippes, Köln (50733)",
-    "city": "Köln",
-    "lat": 50.95816875881621,
-    "lon": 6.94406128824444,
-    "fullAddress": "Hartwichstraße, Sechzigviertel, Nippes, Köln, Nordrhein-Westfalen, 50733, Deutschland",
-    "timestamp": "2025-03-07T10:00:18.730Z"
-  },
-  {
-    "address": "Neusser Straße, Nippes, Köln (50733)",
-    "city": "Köln",
-    "lat": 50.95853122609801,
-    "lon": 6.955006383366282,
-    "fullAddress": "Neusser Straße, Sechzigviertel, Nippes, Köln, Nordrhein-Westfalen, 50733, Deutschland",
-    "timestamp": "2025-03-07T10:00:19.795Z"
-  },
-  {
-    "address": "Vogelsangerstr., Vogelsang, Köln (50829)",
-    "city": "Köln",
-    "lat": 50.95582630923669,
-    "lon": 6.879909773688425,
-    "fullAddress": "Vogelsanger Straße, Alt-Vogelsang, Vogelsang, Ehrenfeld, Köln, Nordrhein-Westfalen, 50829, Deutschland",
-    "timestamp": "2025-03-07T10:00:20.744Z"
-  },
-  {
-    "address": "Dohlenweg, Vogelsang, Köln (50829)",
-    "city": "Köln",
-    "lat": 50.95343976260332,
-    "lon": 6.88239231437034,
-    "fullAddress": "Dohlenweg, Alt-Vogelsang, Vogelsang, Ehrenfeld, Köln, Nordrhein-Westfalen, 50829, Deutschland",
-    "timestamp": "2025-03-07T10:00:21.729Z"
-  },
-  {
-    "address": "Werderstraße, Neustadt-Nord, Köln (50672)",
-    "city": "Köln",
-    "lat": 50.942899032647105,
-    "lon": 6.938602454256084,
-    "fullAddress": "Werderstraße, Belgisches Viertel, Neustadt/Nord, Innenstadt, Köln, Nordrhein-Westfalen, 50672, Deutschland",
-    "timestamp": "2025-03-07T10:00:22.737Z"
-  },
-  {
-    "address": "Usinger Straße, Humboldt-Gremberg, Köln (51105)",
-    "city": "Köln",
-    "lat": 50.932040087597244,
-    "lon": 6.9987520111613435,
-    "fullAddress": "Usingerstraße, Humboldt, Humboldt/Gremberg, Kalk, Köln, Nordrhein-Westfalen, 51105, Deutschland",
-    "timestamp": "2025-03-07T10:00:23.733Z"
-  },
-  {
-    "address": "Dünnwald, Köln (51069)",
-    "city": "Köln",
-    "lat": 51,
-    "lon": 7.038611,
-    "fullAddress": "Dünnwald, Mülheim, Köln, Nordrhein-Westfalen, Deutschland",
-    "timestamp": "2025-03-07T10:00:24.723Z"
-  },
-  {
-    "address": "Neustadt-Nord, Köln (50672)",
-    "city": "Köln",
-    "lat": 50.9479231,
-    "lon": 6.941060750330894,
-    "fullAddress": "Neustadt/Nord, Innenstadt, Köln, Nordrhein-Westfalen, Deutschland",
-    "timestamp": "2025-03-07T10:00:25.726Z"
-  },
-  {
-    "address": "Altstadt-Süd, Köln (50676)",
-    "city": "Köln",
-    "lat": 50.929181150000005,
-    "lon": 6.955329090575393,
-    "fullAddress": "Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, Deutschland",
-    "timestamp": "2025-03-07T10:00:26.760Z"
-  },
-  {
-    "address": "Marienburg, Köln (50968)",
-    "city": "Köln",
-    "lat": 50.9014892,
-    "lon": 6.9774565,
-    "fullAddress": "Marienburg, Rodenkirchen, Köln, Nordrhein-Westfalen, 50968, Deutschland",
-    "timestamp": "2025-03-07T10:00:27.748Z"
-  },
-  {
-    "address": "Sülz, Köln (50935)",
-    "city": "Köln",
-    "lat": 50.9189277,
-    "lon": 6.9240929,
-    "fullAddress": "Sülz, Lindenthal, Köln, Nordrhein-Westfalen, 50937, Deutschland",
-    "timestamp": "2025-03-07T10:00:28.745Z"
-  },
-  {
-    "address": "Neustadt-Süd, Köln (50674)",
-    "city": "Köln",
-    "lat": 50.92655975,
-    "lon": 6.9404063381425605,
-    "fullAddress": "Neustadt/Süd, Innenstadt, Köln, Nordrhein-Westfalen, Deutschland",
-    "timestamp": "2025-03-07T10:00:29.721Z"
-  },
-  {
-    "address": "Herkulesstraße, Neuehrenfeld, Köln (50823)",
-    "city": "Köln",
-    "lat": 50.954049655373375,
-    "lon": 6.931192277949348,
-    "fullAddress": "Herkulesstraße, Neuehrenfeld, Ehrenfeld, Köln, Nordrhein-Westfalen, 50823, Deutschland",
-    "timestamp": "2025-03-07T10:00:30.774Z"
-  },
-  {
-    "address": "Deutz-Kalker Straße, Deutz, Köln (50679)",
-    "city": "Köln",
-    "lat": 50.93706598906254,
-    "lon": 6.984174416654277,
-    "fullAddress": "Deutz-Kalker Straße, Deutz, Innenstadt, Köln, Nordrhein-Westfalen, 50679, Deutschland",
-    "timestamp": "2025-03-07T10:00:31.776Z"
-  },
-  {
-    "address": "Niehl, Köln (50735)",
-    "city": "Köln",
-    "lat": 50.9898292,
-    "lon": 6.9627066,
-    "fullAddress": "Niehl, Nippes, Köln, Nordrhein-Westfalen, 50735, Deutschland",
-    "timestamp": "2025-03-07T10:00:32.726Z"
-  },
-  {
-<<<<<<< HEAD
-=======
-    "address": "Straßburger Straße 7, Prenzlauer Berg, Berlin-Prenzlauer Berg (10405)",
-    "city": "Berlin-Prenzlauer Berg",
-    "lat": 52.5287062,
-    "lon": 13.4141294,
-    "fullAddress": "7, Straßburger Straße, Prenzlauer Berg, Pankow, Berlin, 10405, Deutschland",
-    "timestamp": "2025-03-11T08:02:22.996Z"
-  },
-  {
-    "address": "Saarbrücker Straße 34A, Prenzlauer Berg, Berlin-Prenzlauer Berg (10405)",
-    "city": "Berlin-Prenzlauer Berg",
-    "lat": 52.529091449999996,
-    "lon": 13.415022520668014,
-    "fullAddress": "34a, Saarbrücker Straße, Winsviertel, Prenzlauer Berg, Pankow, Berlin, 10405, Deutschland",
-    "timestamp": "2025-03-11T08:02:24.018Z"
-  },
-  {
-    "address": "Hechelstraße 14, Reinickendorf, Berlin (10997)",
-    "city": "Berlin",
-    "lat": 52.5667826,
-    "lon": 13.3223998,
-    "fullAddress": "14, Hechelstraße, Reinickendorf, Berlin, Pankow, 13403, Deutschland",
-    "timestamp": "2025-03-11T08:02:24.963Z"
-  },
-  {
->>>>>>> 45a2e00aa247e3e4b5243d73994de441e3707c8e
-    "address": "Neptunstr. 25, Reinickendorf, Berlin (13409)",
-    "city": "Berlin",
-    "lat": 52.5625515,
-    "lon": 13.3750742,
-    "fullAddress": "25, Neptunstraße, Reinickendorf, Berlin, Pankow, 13409, Deutschland",
-<<<<<<< HEAD
-    "timestamp": "2025-03-09T15:14:29.063Z"
-  },
-  {
-    "address": "Langer-See-Str. 5, Haselhorst, Berlin (13599)",
-    "city": "Berlin",
-    "lat": 52.5582615,
-    "lon": 13.2261593,
-    "fullAddress": "5, Langer-See-Straße, Haselhorst, Spandau, Berlin, 13599, Deutschland",
-    "timestamp": "2025-03-09T15:14:30.090Z"
-  },
-  {
-    "address": "Neptunstr. 26, Reinickendorf, Berlin (13409)",
-    "city": "Berlin",
-    "lat": 52.562526,
-    "lon": 13.374752,
-    "fullAddress": "26, Neptunstraße, Reinickendorf, Berlin, Pankow, 13409, Deutschland",
-    "timestamp": "2025-03-09T15:14:31.062Z"
-  },
-  {
-    "address": "Friedenauer Höhe 10, Friedenau, Berlin (12159)",
-    "city": "Berlin",
-    "lat": 52.4777779,
-    "lon": 13.3393098,
-    "fullAddress": "10, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
-    "timestamp": "2025-03-24T19:23:35.053Z"
-  },
-  {
-    "address": "Schönhauser Allee 44, Prenzlauer Berg, Berlin (10435)",
-    "city": "Berlin",
-    "lat": 52.5404127,
-    "lon": 13.4125592,
-    "fullAddress": "44, Schönhauser Allee, Bremer Höhe, Prenzlauer Berg, Pankow, Berlin, 10435, Deutschland",
-    "timestamp": "2025-03-24T19:23:36.093Z"
-  },
-  {
-    "address": "Friedrichstraße 121, Mitte, Berlin (10117)",
-    "city": "Berlin",
-    "lat": 52.5264435,
-    "lon": 13.3870089,
-    "fullAddress": "121, Friedrichstraße, Mitte, Berlin, 10117, Deutschland",
-    "timestamp": "2025-03-24T19:23:37.137Z"
-  },
-  {
-    "address": "David-Friedländer-Weg 98, Falkenberg, Berlin (13057)",
-    "city": "Berlin",
-    "lat": 52.5728706,
-    "lon": 13.560950902935728,
-    "fullAddress": "98, David-Friedländer-Weg, Falkenberg, Lichtenberg, Berlin, 13057, Deutschland",
-    "timestamp": "2025-03-24T19:23:38.069Z"
-  },
-  {
-    "address": "Dolgenseestr. 8a, Friedrichsfelde, Berlin (10319)",
-    "city": "Berlin",
-    "lat": 52.4937841,
-    "lon": 13.507448,
-    "fullAddress": "Model Nails, 8a, Dolgenseestraße, Sewan-Viertel, Friedrichsfelde, Lichtenberg, Berlin, 10319, Deutschland",
-    "timestamp": "2025-03-24T19:23:39.132Z"
-  },
-  {
-    "address": "Bernhard-Weiß-Straße 1-3, Mitte, Berlin (10178)",
-    "city": "Berlin",
-    "lat": 52.52419335546003,
-    "lon": 13.417235345844785,
-    "fullAddress": "Bernhard-Weiß-Straße, Mitte, Berlin, 10178, Deutschland",
-    "timestamp": "2025-03-24T19:23:40.291Z"
-  },
-  {
-    "address": "Eisenacher Str. 19, Mariendorf, Berlin (12109)",
-    "city": "Berlin",
-    "lat": 52.4473698,
-    "lon": 13.392756683970099,
-    "fullAddress": "19, Eisenacher Straße, Mariendorf, Tempelhof-Schöneberg, Berlin, Teltow, 12109, Deutschland",
-    "timestamp": "2025-03-24T19:23:41.109Z"
-  },
-  {
-    "address": "Klara Franke Straße 12, Moabit, Berlin (10557)",
-    "city": "Berlin",
-    "lat": 52.5322553,
-    "lon": 13.361902377657099,
-    "fullAddress": "12, Klara-Franke-Straße, Europacity, Moabit, Mitte, Berlin, 10557, Deutschland",
-    "timestamp": "2025-03-24T19:23:42.183Z"
-  },
-  {
-    "address": "Otto-Suhr-Allee 129, Charlottenburg, Berlin (10585)",
-    "city": "Berlin",
-    "lat": 52.5181769,
-    "lon": 13.3032878,
-    "fullAddress": "129, Otto-Suhr-Allee, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10585, Deutschland",
-    "timestamp": "2025-03-24T19:23:43.087Z"
-=======
-    "timestamp": "2025-03-11T08:02:25.960Z"
->>>>>>> 45a2e00aa247e3e4b5243d73994de441e3707c8e
-  },
-  {
-    "address": "Nassauische Straße 35, Wilmersdorf, Berlin (10717)",
-    "city": "Berlin",
-    "lat": 52.49289126141122,
-    "lon": 13.32641091605624,
-    "fullAddress": "Nassauische Straße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10717, Deutschland",
-<<<<<<< HEAD
-    "timestamp": "2025-03-24T19:23:44.120Z"
-  },
-  {
-    "address": "Berliner Straße 45, Mülheim, Köln (51063)",
-    "city": "Köln",
-    "lat": 50.97097365,
-    "lon": 7.009153371525821,
-    "fullAddress": "45, Berliner Straße, Mülheim, Köln, Nordrhein-Westfalen, 51063, Deutschland",
-    "timestamp": "2025-03-24T19:26:41.889Z"
-  },
-  {
-    "address": "Gustav-Heinemann-Ufer 140, Bayenthal, Köln (50968)",
-    "city": "Köln",
-    "lat": 50.9080854,
-    "lon": 6.9752377,
-    "fullAddress": "140, Gustav-Heinemann-Ufer, Bayenthal, Rodenkirchen, Köln, Nordrhein-Westfalen, 50968, Deutschland",
-    "timestamp": "2025-03-24T19:26:42.770Z"
-  },
-  {
-    "address": "Vogelsanger Straße 202, Ehrenfeld, Köln (50825)",
-    "city": "Köln",
-    "lat": 50.95187383338992,
-    "lon": 6.902750007890446,
-    "fullAddress": "Vogelsanger Straße, Ehrenfeld, Köln, Nordrhein-Westfalen, 50825, Deutschland",
-    "timestamp": "2025-03-24T19:26:43.960Z"
-  },
-  {
-    "address": "Am Alten Güterbahnhof 12, Ehrenfeld, Köln (50825)",
-    "city": "Köln",
-    "lat": 50.950631388672505,
-    "lon": 6.898088844580113,
-    "fullAddress": "Am Alten Güterbahnhof, Ehrenfeld, Köln, Nordrhein-Westfalen, 50825, Deutschland",
-    "timestamp": "2025-03-24T19:26:44.885Z"
-  },
-  {
-    "address": "Nibelungenstr. Po 38, Lind, Köln (51147)",
-    "city": "Köln",
-    "lat": 50.851853419651825,
-    "lon": 7.099341370944455,
-    "fullAddress": "Nibelungenstraße, Lind, Porz, Köln, Nordrhein-Westfalen, 51147, Deutschland",
-    "timestamp": "2025-03-24T19:26:45.935Z"
-  },
-  {
-    "address": "Am Alten Güterbahnhof 8, Ehrenfeld, Köln (50825)",
-    "city": "Köln",
-    "lat": 50.950631388672505,
-    "lon": 6.898088844580113,
-    "fullAddress": "Am Alten Güterbahnhof, Ehrenfeld, Köln, Nordrhein-Westfalen, 50825, Deutschland",
-    "timestamp": "2025-03-24T19:26:46.870Z"
-  },
-  {
-    "address": "Bernhardstr., Bayenthal, Köln (50968)",
-    "city": "Köln",
-    "lat": 50.90674140013442,
-    "lon": 6.969091470294128,
-    "fullAddress": "Bernhardstraße, Bayenthal, Rodenkirchen, Köln, Nordrhein-Westfalen, 50968, Deutschland",
-    "timestamp": "2025-03-24T19:26:47.786Z"
-  },
-  {
-    "address": "Jülicher Straße, Neustadt-Süd, Köln (50674)",
-    "city": "Köln",
-    "lat": 50.93401030407299,
-    "lon": 6.935155017095299,
-    "fullAddress": "Jülicher Straße, Komponistenviertel, Rathenauviertel, Neustadt/Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50674, Deutschland",
-    "timestamp": "2025-03-24T19:26:48.760Z"
-  },
-  {
-    "address": "Clevischer Ring, Mülheim, Köln (51063)",
-    "city": "Köln",
-    "lat": 50.97264705860951,
-    "lon": 7.006542371969578,
-    "fullAddress": "Clevischer Ring, Mülheim, Köln, Nordrhein-Westfalen, 51063, Deutschland",
-    "timestamp": "2025-03-24T19:26:49.792Z"
-  },
-  {
-    "address": "Holzgasse, Altstadt-Süd, Köln (50676)",
-    "city": "Köln",
-    "lat": 50.9324167,
-    "lon": 6.96098405,
-    "fullAddress": "Holzgasse, Georgsviertel, Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50676, Deutschland",
-    "timestamp": "2025-03-24T19:26:50.767Z"
-  },
-  {
-    "address": "Mühlenbach, Altstadt-Süd, Köln (50676)",
-    "city": "Köln",
-    "lat": 50.93340932916173,
-    "lon": 6.958174492018837,
-    "fullAddress": "Mühlenbach, Kapitolviertel, Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50676, Deutschland",
-    "timestamp": "2025-03-24T19:26:51.812Z"
-  },
-  {
-    "address": "Vogelsanger Str. 296, Ehrenfeld, Köln (50825)",
-    "city": "Köln",
-    "lat": 50.9524241,
-    "lon": 6.900700525770189,
-    "fullAddress": "296, Vogelsanger Straße, Ehrenfeld, Köln, Nordrhein-Westfalen, 50825, Deutschland",
-    "timestamp": "2025-03-24T19:26:52.880Z"
-  },
-  {
-    "address": "Gaußstraße, Mülheim, Köln (51063)",
-    "city": "Köln",
-    "lat": 50.9512970389258,
-    "lon": 6.991247516895464,
-    "fullAddress": "Gaußstraße, Stegerwaldsiedlung, Mülheim, Köln, Nordrhein-Westfalen, 51063, Deutschland",
-    "timestamp": "2025-03-24T19:26:53.852Z"
-  },
-  {
-    "address": "Ensen, Köln (51149)",
-    "city": "Köln",
-    "lat": 50.8972015,
-    "lon": 7.0311515,
-    "fullAddress": "Ensen, Porz, Köln, Nordrhein-Westfalen, 51149, Deutschland",
-    "timestamp": "2025-03-24T19:26:54.909Z"
-  },
-  {
-    "address": "Weidenpesch, Köln (50739)",
-    "city": "Köln",
-    "lat": 50.9830002,
-    "lon": 6.9463407,
-    "fullAddress": "Weidenpesch, Nippes, Köln, Nordrhein-Westfalen, 50737, Deutschland",
-    "timestamp": "2025-03-24T19:26:55.749Z"
-  },
-  {
-    "address": "Rodenkirchen, Köln (50999)",
-    "city": "Köln",
-    "lat": 50.8928511,
-    "lon": 6.9944973,
-    "fullAddress": "Rodenkirchen, Köln, Nordrhein-Westfalen, 50996, Deutschland",
-    "timestamp": "2025-03-24T19:26:56.760Z"
-  },
-  {
-    "address": "Sülz, Köln (50937)",
-    "city": "Köln",
-    "lat": 50.9189277,
-    "lon": 6.9240929,
-    "fullAddress": "Sülz, Lindenthal, Köln, Nordrhein-Westfalen, 50937, Deutschland",
-    "timestamp": "2025-03-24T19:26:57.773Z"
-  },
-  {
-    "address": "Neustadt-Nord, Köln (50674)",
-    "city": "Köln",
-    "lat": 50.9479231,
-    "lon": 6.941060750330894,
-    "fullAddress": "Neustadt/Nord, Innenstadt, Köln, Nordrhein-Westfalen, Deutschland",
-    "timestamp": "2025-03-24T19:26:58.752Z"
-  },
-  {
-    "address": "Kartäuserhof, Altstadt-Süd, Köln (50678)",
-    "city": "Köln",
-    "lat": 50.9251035,
-    "lon": 6.9584538,
-    "fullAddress": "Kartäuserhof, Severinstraße, Severinsviertel, Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50678, Deutschland",
-    "timestamp": "2025-03-24T19:26:59.774Z"
-  },
-  {
-    "address": "Blaubach, Altstadt-Süd, Köln (50676)",
-    "city": "Köln",
-    "lat": 50.932062441023504,
-    "lon": 6.95474471238756,
-    "fullAddress": "Blaubach, Kapitolviertel, Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50676, Deutschland",
-    "timestamp": "2025-03-24T19:27:00.795Z"
-  },
-  {
-    "address": "Fraunhoferstraße 10, Ludwigsvorstadt-Isarvorstadt, München (80469)",
-    "city": "München",
-    "lat": 48.1304428,
-    "lon": 11.5722769,
-    "fullAddress": "10, Fraunhoferstraße, Isarvorstadt, Gärtnerplatz, Ludwigsvorstadt-Isarvorstadt, München, Bayern, 80469, Deutschland",
-    "timestamp": "2025-03-24T19:27:22.511Z"
-  },
-  {
-    "address": "Fallstraße, Sendling, München (81369)",
-    "city": "München",
-    "lat": 48.109324100145805,
-    "lon": 11.53855255600124,
-    "fullAddress": "Fallstraße, Mittersendling, Untersendling, Sendling, München, Bayern, 81369, Deutschland",
-    "timestamp": "2025-03-24T19:27:24.442Z"
-  },
-  {
-    "address": "Bogenhausen, München (81677)",
-    "city": "München",
-    "lat": 48.1452222,
-    "lon": 11.6149771,
-    "fullAddress": "Bogenhausen, Altbogenhausen, Bogenhausen, München, Bayern, 81679, Deutschland",
-    "timestamp": "2025-03-24T19:27:25.449Z"
-  },
-  {
-    "address": "Feldmoching-Hasenbergl, München (80995)",
-    "city": "München",
-    "lat": 48.21846185,
-    "lon": 11.520409083159603,
-    "fullAddress": "Feldmoching-Hasenbergl, München, Bayern, Deutschland",
-    "timestamp": "2025-03-24T19:27:26.469Z"
-  },
-  {
-    "address": "Bogenhausen, München (81927)",
-    "city": "München",
-    "lat": 48.1452222,
-    "lon": 11.6149771,
-    "fullAddress": "Bogenhausen, Altbogenhausen, Bogenhausen, München, Bayern, 81679, Deutschland",
-    "timestamp": "2025-03-24T19:27:27.449Z"
-  },
-  {
-    "address": "Bogenhausen, München (81925)",
-    "city": "München",
-    "lat": 48.1452222,
-    "lon": 11.6149771,
-    "fullAddress": "Bogenhausen, Altbogenhausen, Bogenhausen, München, Bayern, 81679, Deutschland",
-    "timestamp": "2025-03-24T19:27:28.756Z"
-  },
-  {
-    "address": "Sendling-Westpark, München (80686)",
-    "city": "München",
-    "lat": 48.11803085,
-    "lon": 11.519332770284128,
-    "fullAddress": "Sendling-Westpark, München, Bayern, Deutschland",
-    "timestamp": "2025-03-24T19:27:29.456Z"
-  },
-  {
-    "address": "Au-Haidhausen, München (81669)",
-    "city": "München",
-    "lat": 48.130273849999995,
-    "lon": 11.59833361534854,
-    "fullAddress": "Au-Haidhausen, München, Bayern, Deutschland",
-    "timestamp": "2025-03-24T19:27:30.444Z"
-  },
-  {
-    "address": "Sendling-Westpark, München (81379)",
-    "city": "München",
-    "lat": 48.11803085,
-    "lon": 11.519332770284128,
-    "fullAddress": "Sendling-Westpark, München, Bayern, Deutschland",
-    "timestamp": "2025-03-24T19:27:31.457Z"
-  },
-  {
-    "address": "Aubing-Lochhausen-Langwied, München (81243)",
-    "city": "München",
-    "lat": 48.16505875,
-    "lon": 11.40022147296721,
-    "fullAddress": "Aubing-Lochhausen-Langwied, München, Bayern, Deutschland",
-    "timestamp": "2025-03-24T19:27:32.462Z"
-  },
-  {
-    "address": "Fritz-Erler-Straße 26, Ramersdorf-Perlach, München (81737)",
-    "city": "München",
-    "lat": 48.0990221,
-    "lon": 11.647759,
-    "fullAddress": "26, Fritz-Erler-Straße, Neuperlach, Ramersdorf-Perlach, München, Bayern, 81737, Deutschland",
-    "timestamp": "2025-03-24T19:27:33.483Z"
-  },
-  {
-    "address": "Deisenhofener Straße 34, Obergiesing, München (81539)",
-    "city": "München",
-    "lat": 48.1135709,
-    "lon": 11.5844496,
-    "fullAddress": "34, Deisenhofener Straße, Parkviertel Giesing, Obergiesing, Obergiesing-Fasangarten, München, Bayern, 81539, Deutschland",
-    "timestamp": "2025-03-24T19:27:34.472Z"
-  },
-  {
-    "address": "Birkerstraße 32, Neuhausen-Nymphenburg, München (80636)",
-    "city": "München",
-    "lat": 48.146511000000004,
-    "lon": 11.538861491190417,
-    "fullAddress": "32, Birkerstraße, St. Vinzenz-Viertel, St. Vinzenz, Neuhausen-Nymphenburg, München, Bayern, 80636, Deutschland",
-    "timestamp": "2025-03-24T19:27:35.475Z"
-  },
-  {
-    "address": "Volksdorf, Hamburg (22359)",
-    "city": "Hamburg",
-    "lat": 53.6485554,
-    "lon": 10.1647514,
-    "fullAddress": "Volksdorf, Wandsbek, Hamburg, 22359, Deutschland",
-    "timestamp": "2025-03-24T20:28:55.543Z"
-  },
-  {
-    "address": "Altona-Altstadt, Hamburg (22767)",
-    "city": "Hamburg",
-    "lat": 53.5496598,
-    "lon": 9.945352,
-    "fullAddress": "Altona-Altstadt, Altona, Hamburg, 22767, Deutschland",
-    "timestamp": "2025-03-24T20:28:56.532Z"
-  },
-  {
-    "address": "Sydneystraße 32, Winterhude, Hamburg (22297)",
-    "city": "Hamburg",
-    "lat": 53.6038672,
-    "lon": 10.0164057,
-    "fullAddress": "32, Sydneystraße, Winterhude, Hamburg-Nord, Hamburg, 22297, Deutschland",
-    "timestamp": "2025-03-24T20:28:57.559Z"
-  },
-  {
-    "address": "Vereinsstraße, Eimsbüttel, Hamburg (20357)",
-    "city": "Hamburg",
-    "lat": 53.5672992,
-    "lon": 9.9613559,
-    "fullAddress": "Vereinsstraße, Eimsbüttel, Hamburg, 20357, Deutschland",
-    "timestamp": "2025-03-24T20:28:58.558Z"
-  },
-  {
-    "address": "Bellealliancestraße, Eimsbüttel, Hamburg (20259)",
-    "city": "Hamburg",
-    "lat": 53.56823010255147,
-    "lon": 9.960885367088109,
-    "fullAddress": "Bellealliancestraße, Eimsbüttel, Hamburg, 20259, Deutschland",
-    "timestamp": "2025-03-24T20:28:59.546Z"
-  },
-  {
-    "address": "HafenCity, HafenCity (20457)",
-    "city": "HafenCity",
-    "lat": 53.54028945,
-    "lon": 10.00488951198924,
-    "fullAddress": "HafenCity Universität Hamburg, 1, Überseeallee, Quartier Elbtorquartier, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
-    "timestamp": "2025-03-24T20:29:00.656Z"
-=======
-    "timestamp": "2025-03-11T08:02:27.098Z"
-  },
-  {
-    "address": "Steinkleeweg 5, Rosenthal, Berlin (13158)",
-    "city": "Berlin",
-    "lat": 52.59773545,
-    "lon": 13.3797142,
-    "fullAddress": "5, Steinkleeweg, Rosenthal, Pankow, Berlin, 13158, Deutschland",
-    "timestamp": "2025-03-13T10:05:25.991Z"
-  },
-  {
-    "address": "David-Friedländer-Weg 98, Falkenberg, Berlin (13057)",
-    "city": "Berlin",
-    "lat": 52.5728706,
-    "lon": 13.560950902935728,
-    "fullAddress": "98, David-Friedländer-Weg, Falkenberg, Lichtenberg, Berlin, 13057, Deutschland",
-    "timestamp": "2025-03-13T10:05:27.004Z"
-  },
-  {
-    "address": "Moosstraße 72, Niederschöneweide, Berlin (12439)",
-    "city": "Berlin",
-    "lat": 52.4498887,
-    "lon": 13.5272048,
-    "fullAddress": "72, Moosstraße, Niederschöneweide, Treptow-Köpenick, Berlin, 12439, Deutschland",
-    "timestamp": "2025-03-13T10:05:28.012Z"
-  },
-  {
-    "address": "Langer-See-Str. 5, Haselhorst, Berlin (13599)",
-    "city": "Berlin",
-    "lat": 52.5582615,
-    "lon": 13.2261593,
-    "fullAddress": "5, Langer-See-Straße, Haselhorst, Spandau, Berlin, 13599, Deutschland",
-    "timestamp": "2025-03-13T10:05:29.031Z"
+    "timestamp": "2025-03-24T20:59:04.490Z"
   },
   {
     "address": "Schönhauser Allee 44, Prenzlauer Berg, Berlin (10435)",
@@ -2271,23 +21,111 @@
     "lat": 52.540385,
     "lon": 13.4125645,
     "fullAddress": "mmaah Korean BBQ express, 44, Schönhauser Allee, Bremer Höhe, Prenzlauer Berg, Pankow, Berlin, 10435, Deutschland",
-    "timestamp": "2025-03-13T16:03:11.962Z"
+    "timestamp": "2025-03-24T20:59:05.527Z"
   },
   {
-    "address": "Am Eichenquast 58, Buckow, Berlin (12353)",
+    "address": "Friedenauer Höhe 19A, Friedenau, Berlin (12159)",
     "city": "Berlin",
-    "lat": 52.4187279,
-    "lon": 13.4484267,
-    "fullAddress": "58, Am Eichenquast, Buckow, Neukölln, Berlin, 12353, Deutschland",
-    "timestamp": "2025-03-13T16:03:12.968Z"
+    "lat": 52.4769821,
+    "lon": 13.3370458,
+    "fullAddress": "19A, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
+    "timestamp": "2025-03-24T20:59:06.557Z"
   },
   {
-    "address": "Dolgenseestr. 8c, Friedrichsfelde, Berlin (10319)",
+    "address": "Grünauer Straße 20, Altglienicke, Berlin (12524)",
     "city": "Berlin",
-    "lat": 52.4943304,
-    "lon": 13.5069969,
-    "fullAddress": "8c, Dolgenseestraße, Sewan-Viertel, Friedrichsfelde, Lichtenberg, Berlin, 10319, Deutschland",
-    "timestamp": "2025-03-13T16:03:13.951Z"
+    "lat": 52.419096,
+    "lon": 13.543449,
+    "fullAddress": "20, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
+    "timestamp": "2025-03-24T20:59:07.491Z"
+  },
+  {
+    "address": "Grünauer Straße 16, Altglienicke, Berlin (12524)",
+    "city": "Berlin",
+    "lat": 52.4192279,
+    "lon": 13.5423798,
+    "fullAddress": "16, Grünauer Straße, Altglienicke, Treptow-Köpenick, Berlin, 12524, Deutschland",
+    "timestamp": "2025-03-24T20:59:08.493Z"
+  },
+  {
+    "address": "Friedenauer Höhe 17, Friedenau, Berlin (12159)",
+    "city": "Berlin",
+    "lat": 52.4772558,
+    "lon": 13.3375332,
+    "fullAddress": "17, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
+    "timestamp": "2025-03-24T20:59:09.500Z"
+  },
+  {
+    "address": "Manfred-von-Richthofen-Str. 28, Tempelhof, Berlin (12101)",
+    "city": "Berlin",
+    "lat": 52.4821314,
+    "lon": 13.38020303119739,
+    "fullAddress": "28, Manfred-von-Richthofen-Straße, Gartenstadt Neu-Tempelhof, Tempelhof, Tempelhof-Schöneberg, Berlin, 12101, Deutschland",
+    "timestamp": "2025-03-24T20:59:10.528Z"
+  },
+  {
+    "address": "Beusselstraße 65, Moabit, Berlin (10553)",
+    "city": "Berlin",
+    "lat": 52.5291617,
+    "lon": 13.3284433,
+    "fullAddress": "65, Beusselstraße, Moabit, Mitte, Berlin, 10553, Deutschland",
+    "timestamp": "2025-03-24T20:59:11.510Z"
+  },
+  {
+    "address": "Eylauerstraße 13, Kreuzberg, Berlin (10965)",
+    "city": "Berlin",
+    "lat": 52.4855482,
+    "lon": 13.37434103404447,
+    "fullAddress": "13, Eylauer Straße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10965, Deutschland",
+    "timestamp": "2025-03-24T20:59:12.498Z"
+  },
+  {
+    "address": "Erich-Weinert-Straße 16, Prenzlauer Berg, Berlin (10439)",
+    "city": "Berlin",
+    "lat": 52.551539,
+    "lon": 13.4166711,
+    "fullAddress": "16, Erich-Weinert-Straße, Arnimkiez, Prenzlauer Berg, Pankow, Berlin, 10439, Deutschland",
+    "timestamp": "2025-03-24T20:59:13.530Z"
+  },
+  {
+    "address": "Pufendorfstraße 4, Friedrichshain, Berlin (10249)",
+    "city": "Berlin",
+    "lat": 52.5224094,
+    "lon": 13.4384357,
+    "fullAddress": "4, Pufendorfstraße, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10249, Deutschland",
+    "timestamp": "2025-03-24T20:59:14.467Z"
+  },
+  {
+    "address": "Friedrichstraße 121, Mitte, Berlin (10117)",
+    "city": "Berlin",
+    "lat": 52.5264159,
+    "lon": 13.3869841,
+    "fullAddress": "Sanku Maots'ai, 121, Friedrichstraße, Mitte, Berlin, 10117, Deutschland",
+    "timestamp": "2025-03-24T20:59:15.573Z"
+  },
+  {
+    "address": "Genthiner Strasse 49, Tiergarten, Berlin (10785)",
+    "city": "Berlin",
+    "lat": 52.5014452,
+    "lon": 13.3586291,
+    "fullAddress": "49, Genthiner Straße, Botschaftsviertel, Tiergarten, Mitte, Berlin, 10785, Deutschland",
+    "timestamp": "2025-03-24T20:59:16.486Z"
+  },
+  {
+    "address": "Am Köllnischen Park 11, Mitte, Berlin (10179)",
+    "city": "Berlin",
+    "lat": 52.5120026,
+    "lon": 13.4151284,
+    "fullAddress": "11, Am Köllnischen Park, Luisenstadt, Mitte, Berlin, 10179, Deutschland",
+    "timestamp": "2025-03-24T20:59:17.491Z"
+  },
+  {
+    "address": "David-Friedländer-Weg 98, Falkenberg, Berlin (13057)",
+    "city": "Berlin",
+    "lat": 52.5728706,
+    "lon": 13.560950902935728,
+    "fullAddress": "98, David-Friedländer-Weg, Falkenberg, Lichtenberg, Berlin, 13057, Deutschland",
+    "timestamp": "2025-03-24T20:59:18.515Z"
   },
   {
     "address": "Dolgenseestr. 8a, Friedrichsfelde, Berlin (10319)",
@@ -2295,7 +133,286 @@
     "lat": 52.4938077,
     "lon": 13.5073306,
     "fullAddress": "Dolgensee-Apotheke, 8a, Dolgenseestraße, Sewan-Viertel, Friedrichsfelde, Lichtenberg, Berlin, 10319, Deutschland",
-    "timestamp": "2025-03-13T16:03:14.990Z"
->>>>>>> 45a2e00aa247e3e4b5243d73994de441e3707c8e
+    "timestamp": "2025-03-24T20:59:19.600Z"
+  },
+  {
+    "address": "Adlershofer Straße 6, Köpenick, Berlin (12557)",
+    "city": "Berlin",
+    "lat": 52.4427394,
+    "lon": 13.5671227,
+    "fullAddress": "6, Adlershofer Straße, Spindlersfeld, Köpenick, Treptow-Köpenick, Berlin, 12557, Deutschland",
+    "timestamp": "2025-03-24T20:59:20.499Z"
+  },
+  {
+    "address": "Weidenweg 75, Friedrichshain, Berlin (10247)",
+    "city": "Berlin",
+    "lat": 52.51973445,
+    "lon": 13.457057913305613,
+    "fullAddress": "75, Weidenweg, Hausburgviertel, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10247, Deutschland",
+    "timestamp": "2025-03-24T20:59:21.542Z"
+  },
+  {
+    "address": "Bernhard-Weiß-Straße 1-3, Mitte, Berlin (10178)",
+    "city": "Berlin",
+    "lat": 52.52419335546003,
+    "lon": 13.417235345844785,
+    "fullAddress": "Bernhard-Weiß-Straße, Mitte, Berlin, 10178, Deutschland",
+    "timestamp": "2025-03-24T20:59:22.757Z"
+  },
+  {
+    "address": "Eisenacher Str. 19, Mariendorf, Berlin (12109)",
+    "city": "Berlin",
+    "lat": 52.4473698,
+    "lon": 13.392756683970099,
+    "fullAddress": "19, Eisenacher Straße, Mariendorf, Tempelhof-Schöneberg, Berlin, Teltow, 12109, Deutschland",
+    "timestamp": "2025-03-24T20:59:23.500Z"
+  },
+  {
+    "address": "Klara Franke Straße 12, Moabit, Berlin (10557)",
+    "city": "Berlin",
+    "lat": 52.5322553,
+    "lon": 13.361902377657099,
+    "fullAddress": "12, Klara-Franke-Straße, Europacity, Moabit, Mitte, Berlin, 10557, Deutschland",
+    "timestamp": "2025-03-24T20:59:24.499Z"
+  },
+  {
+    "address": "Otto-Suhr-Allee 129, Charlottenburg, Berlin (10585)",
+    "city": "Berlin",
+    "lat": 52.5181769,
+    "lon": 13.3032878,
+    "fullAddress": "129, Otto-Suhr-Allee, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10585, Deutschland",
+    "timestamp": "2025-03-24T20:59:25.514Z"
+  },
+  {
+    "address": "Stromstraße 36, Moabit, Berlin (10551)",
+    "city": "Berlin",
+    "lat": 52.531307999999996,
+    "lon": 13.342456296063677,
+    "fullAddress": "Habyt Co-Living Berlin, 36, Stromstraße, Moabit, Mitte, Berlin, 10551, Deutschland",
+    "timestamp": "2025-03-24T20:59:26.507Z"
+  },
+  {
+    "address": "Nassauische Straße 35, Wilmersdorf, Berlin (10717)",
+    "city": "Berlin",
+    "lat": 52.49289126141122,
+    "lon": 13.32641091605624,
+    "fullAddress": "Nassauische Straße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10717, Deutschland",
+    "timestamp": "2025-03-24T20:59:27.613Z"
+  },
+  {
+    "address": "Neugütlestraße 3, Sillenbuch, Stuttgart Sillenbuch (70619)",
+    "city": "Stuttgart Sillenbuch",
+    "lat": 48.748267299999995,
+    "lon": 9.213492550000002,
+    "fullAddress": "3, Neugütlestraße, Sillenbuch, Stuttgart, Baden-Württemberg, 70619, Deutschland",
+    "timestamp": "2025-03-24T21:02:04.096Z"
+  },
+  {
+    "address": "Aachener Straße 8, Bad Cannstatt, Stuttgart (70376)",
+    "city": "Stuttgart",
+    "lat": 48.806596,
+    "lon": 9.210719079508102,
+    "fullAddress": "8, Aachener Straße, Neckarvorstadt, Bad Cannstatt, Stuttgart, Baden-Württemberg, 70376, Deutschland",
+    "timestamp": "2025-03-24T21:02:05.137Z"
+  },
+  {
+    "address": "Immenhofer Straße, Süd, Stuttgart (70180)",
+    "city": "Stuttgart",
+    "lat": 48.76720816760281,
+    "lon": 9.17543058060322,
+    "fullAddress": "Immenhofer Straße, Lehen, Stuttgart-Süd, Stuttgart, Baden-Württemberg, 70180, Deutschland",
+    "timestamp": "2025-03-24T21:02:06.113Z"
+  },
+  {
+    "address": "Nord, Stuttgart / Feuerbach (70469)",
+    "city": "Stuttgart / Feuerbach",
+    "lat": 48.8111301,
+    "lon": 9.1778621,
+    "fullAddress": "ibis budget Stuttgart City Nord, 28, Siemensstraße, Feuerbach-Ost, Feuerbach, Stuttgart, Baden-Württemberg, 70469, Deutschland",
+    "timestamp": "2025-03-24T21:02:07.170Z"
+  },
+  {
+    "address": "Sonnenberg, Stuttgart (70597)",
+    "city": "Stuttgart",
+    "lat": 48.7415827,
+    "lon": 9.1525726,
+    "fullAddress": "Sonnenberg, Möhringen, Stuttgart, Baden-Württemberg, 70597, Deutschland",
+    "timestamp": "2025-03-24T21:02:08.119Z"
+  },
+  {
+    "address": "Nord, Stuttgart (70191)",
+    "city": "Stuttgart",
+    "lat": 48.798732650000005,
+    "lon": 9.189108225718751,
+    "fullAddress": "70191, Nordbahnhof, Stuttgart-Nord, Stuttgart, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-24T21:02:09.134Z"
+  },
+  {
+    "address": "Rohr, Stuttgart (70565)",
+    "city": "Stuttgart",
+    "lat": 48.7172,
+    "lon": 9.106,
+    "fullAddress": "Rohr, Vaihingen, Stuttgart, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-24T21:02:10.112Z"
+  },
+  {
+    "address": "Zuffenhausen, Stuttgart (70435)",
+    "city": "Stuttgart",
+    "lat": 48.8312987,
+    "lon": 9.1674403,
+    "fullAddress": "Zuffenhausen, Stuttgart, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-24T21:02:11.112Z"
+  },
+  {
+    "address": "Weilimdorf, Stuttgart (70469)",
+    "city": "Stuttgart",
+    "lat": 48.815276,
+    "lon": 9.112444,
+    "fullAddress": "Weilimdorf, Stuttgart, Baden-Württemberg, 70499, Deutschland",
+    "timestamp": "2025-03-24T21:02:12.093Z"
+  },
+  {
+    "address": "Botnang, Stuttgart (70195)",
+    "city": "Stuttgart",
+    "lat": 48.778495,
+    "lon": 9.1295324,
+    "fullAddress": "Botnang, Stuttgart, Baden-Württemberg, 70195, Deutschland",
+    "timestamp": "2025-03-24T21:02:13.091Z"
+  },
+  {
+    "address": "Plieningen, Stuttgart (70599)",
+    "city": "Stuttgart",
+    "lat": 48.7113947,
+    "lon": 9.198865088043112,
+    "fullAddress": "Plieningen, Stuttgart, Baden-Württemberg, 70599, Deutschland",
+    "timestamp": "2025-03-24T21:02:14.123Z"
+  },
+  {
+    "address": "West, Stuttgart (70197)",
+    "city": "Stuttgart",
+    "lat": 48.7743488,
+    "lon": 9.102470792720416,
+    "fullAddress": "70197, Wildpark, Stuttgart-West, Stuttgart, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-24T21:02:15.137Z"
+  },
+  {
+    "address": "West, Stuttgart (70176)",
+    "city": "Stuttgart",
+    "lat": 48.777793900000006,
+    "lon": 9.162043363706221,
+    "fullAddress": "70176, Rosenberg, Stuttgart-West, Stuttgart, Baden-Württemberg, Deutschland",
+    "timestamp": "2025-03-24T21:02:16.098Z"
+  },
+  {
+    "address": "Beim Eulenhof 2, Vaihingen, Stuttgart (70569)",
+    "city": "Stuttgart",
+    "lat": 48.744931550000004,
+    "lon": 9.109897850000007,
+    "fullAddress": "2, Beim Eulenhof, Dachswald, Vaihingen, Stuttgart, Baden-Württemberg, 70569, Deutschland",
+    "timestamp": "2025-03-24T21:02:17.105Z"
+  },
+  {
+    "address": "Wangener Straße 27, Ost, Stuttgart (70188)",
+    "city": "Stuttgart",
+    "lat": 48.7868311,
+    "lon": 9.218412903742205,
+    "fullAddress": "27, Wangener Straße, Gaisburg, Stuttgart-Ost, Stuttgart, Baden-Württemberg, 70188, Deutschland",
+    "timestamp": "2025-03-24T21:02:18.186Z"
+  },
+  {
+    "address": "König-Karl-Straße 84, Bad Cannstatt, Stuttgart (70372)",
+    "city": "Stuttgart",
+    "lat": 48.801021500000004,
+    "lon": 9.213052077408056,
+    "fullAddress": "84, König-Karl-Straße, Veielbrunnen, Bad Cannstatt, Stuttgart, Baden-Württemberg, 70372, Deutschland",
+    "timestamp": "2025-03-24T21:02:19.137Z"
+  },
+  {
+    "address": "Wielandstr. 8, West, Stuttgart (70193)",
+    "city": "Stuttgart",
+    "lat": 48.7762866,
+    "lon": 9.139289742950925,
+    "fullAddress": "8, Wielandstraße, Kräherwald, Stuttgart-West, Stuttgart, Baden-Württemberg, 70193, Deutschland",
+    "timestamp": "2025-03-24T21:02:20.179Z"
+  },
+  {
+    "address": "In der Schranne 39, Vaihingen, Stuttgart (70569)",
+    "city": "Stuttgart",
+    "lat": 48.741132050000004,
+    "lon": 9.10454245,
+    "fullAddress": "39, In der Schranne, Dachswald, Vaihingen, Stuttgart, Baden-Württemberg, 70569, Deutschland",
+    "timestamp": "2025-03-24T21:02:21.105Z"
+  },
+  {
+    "address": "Kernerstraße, Mitte, Stuttgart (70182)",
+    "city": "Stuttgart",
+    "lat": 48.77914338116308,
+    "lon": 9.190347594182477,
+    "fullAddress": "Kernerstraße, Diemershalde, Stuttgart-Mitte, Stuttgart, Baden-Württemberg, 70182, Deutschland",
+    "timestamp": "2025-03-24T21:02:22.107Z"
+  },
+  {
+    "address": "Wernerstraße, Feuerbach, Stuttgart (70469)",
+    "city": "Stuttgart",
+    "lat": 48.823732486861495,
+    "lon": 9.170457370011082,
+    "fullAddress": "Wernerstraße, Siegelberg, Feuerbach, Stuttgart, Baden-Württemberg, 70469, Deutschland",
+    "timestamp": "2025-03-24T21:02:23.107Z"
+  },
+  {
+    "address": "Werastraße, Mitte, Stuttgart (70190)",
+    "city": "Stuttgart",
+    "lat": 48.78717368305104,
+    "lon": 9.194892308639046,
+    "fullAddress": "Werastraße, Kernerviertel, Stuttgart-Mitte, Stuttgart-Ost, Stuttgart, Baden-Württemberg, 70190, Deutschland",
+    "timestamp": "2025-03-24T21:02:24.103Z"
+  },
+  {
+    "address": "Wallensteinstr. 29, Freiberg, Stuttgart (70437)",
+    "city": "Stuttgart",
+    "lat": 48.8385483,
+    "lon": 9.205416490759932,
+    "fullAddress": "29, Wallensteinstraße, Freiberg, Mühlhausen, Stuttgart, Baden-Württemberg, 70437, Deutschland",
+    "timestamp": "2025-03-24T21:02:25.099Z"
+  },
+  {
+    "address": "Fraubronnstraße, Plieningen, Stuttgart (70599)",
+    "city": "Stuttgart",
+    "lat": 48.70366819561291,
+    "lon": 9.203696266249269,
+    "fullAddress": "Fraubronnstraße, Plieningen, Stuttgart, Baden-Württemberg, 70599, Deutschland",
+    "timestamp": "2025-03-24T21:02:26.091Z"
+  },
+  {
+    "address": "Löwenstraße, Degerloch, Stuttgart (70597)",
+    "city": "Stuttgart",
+    "lat": 48.74869407745659,
+    "lon": 9.179416895597447,
+    "fullAddress": "Löwenstraße, Waldau, Degerloch, Stuttgart, Baden-Württemberg, 70597, Deutschland",
+    "timestamp": "2025-03-24T21:02:27.106Z"
+  },
+  {
+    "address": "Heimgartenstraße 43, Hedelfingen, Stuttgart (70329)",
+    "city": "Stuttgart",
+    "lat": 48.75655985,
+    "lon": 9.258410249999997,
+    "fullAddress": "43, Heimgartenstraße, Hedelfingen, Stuttgart, Baden-Württemberg, 70329, Deutschland",
+    "timestamp": "2025-03-24T21:02:28.098Z"
+  },
+  {
+    "address": "Möhringen, Stuttgart (70567)",
+    "city": "Stuttgart",
+    "lat": 48.7278158,
+    "lon": 9.1477922,
+    "fullAddress": "Möhringen, Stuttgart, Baden-Württemberg, 70567, Deutschland",
+    "timestamp": "2025-03-24T21:02:29.089Z"
+  },
+  {
+    "address": "Steckfeld, Stuttgart (70599)",
+    "city": "Stuttgart",
+    "lat": 48.7190461,
+    "lon": 9.1950895,
+    "fullAddress": "Steckfeld, Plieningen, Stuttgart, Baden-Württemberg, 70599, Deutschland",
+    "timestamp": "2025-03-24T21:02:30.092Z"
   }
 ]
