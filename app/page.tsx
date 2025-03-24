@@ -1,8 +1,14 @@
 "use client";
+
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { getUserId } from "@/utils/auth";
 
+/**
+ * Diese Seite dient als Einstiegspunkt der Anwendung. Beim ersten Laden
+ * wird mithilfe von getUserId() sichergestellt, dass eine eindeutige Benutzer-ID
+ * im localStorage vorhanden ist
+ */
 export default function Home() {
 
   useEffect(() => {
@@ -10,8 +16,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="relative h-screen bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/redHouses.png')" }}>
+    <div
+      className="relative h-screen bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/redHouses.png')" }}
+    >
+      {/* Dunkler Overlay für bessere Lesbarkeit */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
+      
+      {/* Zentrale Content-Box */}
       <div className="relative flex flex-col justify-center items-center h-full text-white text-center">
         <h1 className="pt-20 font-bold text-7xl">Immosearch-IQ</h1>
         <Link href="/home">

@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import {
   FaStar,
@@ -16,6 +17,9 @@ import { getUserId } from "@/utils/auth";
 import Navbar, { NavLink } from "@/components/Navbar";
 import Link from "next/link";
 
+/**
+ * Interface für ein Inserat
+ */
 interface Listing {
   title: string;
   price: number;
@@ -28,6 +32,9 @@ interface Listing {
   score: number;
 }
 
+/**
+ * Interface für die Nutzerdaten, die für Bewerbung und Favoriten genutzt werden.
+ */
 interface UserData {
   fullName: string;
   email: string;
@@ -40,11 +47,19 @@ interface UserData {
   hobbies: string[];
 }
 
+/**
+ * Hilfsfunktion, um den ersten Buchstaben eines Stadtnamens groß zu schreiben.
+ */
 const FirstLetterUpperCase = (city: string | null): string => {
   if (!city) return "";
   return city.charAt(0).toUpperCase() + city.slice(1);
 };
 
+/**
+ * Diese Seite zeigt die gecrawlten Inserate an. 
+ * Es werden auch die Favoriten des Nutzers geladen und die Möglichkeit geboten, 
+ * eine Bewerbung als Textdatei herunterzuladen oder die Bewerbung zu bearbeiten.
+ */
 export default function ResultsPage() {
   const [listings, setListings] = useState<Listing[]>([]);
   const [userData, setUserData] = useState<UserData | null>(null);
@@ -53,22 +68,26 @@ export default function ResultsPage() {
   const [city, setValue] = useState<string | null>(null);
   const [formattedCity, setFormattedCity] = useState<string>("");
 
+  // Beim ersten Rendern: Inserate, Stadtparameter, Nutzerdaten und Favoriten laden
   useEffect(() => {
     const userId = getUserId();
+    
+    // Inserate werden im localStorage unter "results" gespeichert
     const savedResults = localStorage.getItem("results");
     if (savedResults) {
       setListings(JSON.parse(savedResults));
     }
 
+    // Aus den URL-Parametern die Stadt auslesen und formatieren
     const params = new URLSearchParams(window.location.search);
     const cityParam = params.get("city");
     setValue(cityParam);
-
     if (cityParam) {
       const formatted = FirstLetterUpperCase(cityParam);
       setFormattedCity(formatted);
     }
 
+    // Funktion zum Abrufen der Nutzerdaten vom Backend
     const fetchUserData = async () => {
       try {
         const response = await fetch(`/api/user?userId=${userId}`);
@@ -81,11 +100,13 @@ export default function ResultsPage() {
       }
     };
 
+    // Funktion zum Abrufen der Favoriten des Nutzers
     const fetchFavorites = async () => {
       try {
         const response = await fetch(`/api/favorites?userId=${userId}`);
         const data = await response.json();
         if (data.success) {
+          // Erstelle ein Mapping, bei dem der Titel eines Inserats als Schlüssel dient
           const favoriteMap: { [key: string]: boolean } = {};
           data.favorites.forEach((fav: Listing) => {
             favoriteMap[fav.title] = true;
@@ -101,6 +122,10 @@ export default function ResultsPage() {
     fetchFavorites();
   }, []);
 
+  /**
+   * toggleFavorite: Schaltet den Favoriten-Status eines Inserats um.
+   * Es wird ein POST-Request an den favorites-Enpunkt der API geschickt und der lokale State aktualisiert.
+   */
   const toggleFavorite = async (listing: Listing) => {
     const userId = getUserId();
 
@@ -121,6 +146,10 @@ export default function ResultsPage() {
     }
   };
 
+  /**
+   * downloadApplication: Erstellt eine Bewerbung basierend auf den Inserats- und Nutzerdaten
+   * und startet den Download als .txt-Datei.
+   */
   const downloadApplication = async (listing: Listing) => {
     if (!userData) {
       alert("Benutzerdaten fehlen!");
@@ -128,6 +157,7 @@ export default function ResultsPage() {
     }
     setLoading(true);
     try {
+      // Sende Nutzerdaten und Inserat an die API, das die Bewerbung generiert
       const response = await fetch("/api/documents", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -139,6 +169,7 @@ export default function ResultsPage() {
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement("a");
       a.href = url;
+      // Dateiname wird anhand des Inseratstitels generiert
       a.download = `Bewerbung_${listing.title}.txt`;
       document.body.appendChild(a);
       a.click();
@@ -151,6 +182,7 @@ export default function ResultsPage() {
     }
   };
 
+  // Definiert die Navigationslinks für die Navbar
   const navLinks: NavLink[] = [
     {
       href: "/map",
@@ -176,6 +208,7 @@ export default function ResultsPage() {
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 min-h-screen">
+      {/* Anzeige der Navigationsleiste */}
       <Navbar navLinks={navLinks} />
 
       <div className="container mx-auto p-6">
@@ -183,11 +216,13 @@ export default function ResultsPage() {
           🏡 Wohnungsangebote für {formattedCity}
         </h1>
 
+        {/* Falls keine Inserate vorhanden sind */}
         {listings.length === 0 ? (
           <p className="text-center text-gray-600 dark:text-gray-400">
             Keine Angebote gefunden.
           </p>
         ) : (
+          // Grid-Layout zur Darstellung der Inserate
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {listings.map((listing, index) => (
               <motion.div
@@ -197,6 +232,7 @@ export default function ResultsPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
               >
+                {/* Inseratsbild, Platzhalter falls kein Bild vorhanden */}
                 <img
                   src={
                     listing.imgUrl && listing.imgUrl.trim() !== ""
@@ -231,11 +267,13 @@ export default function ResultsPage() {
                     🔗 Zum Inserat
                   </a>
                 </div>
+                {/* Bereich für Favoriten, Download und Bearbeitung */}
                 <div className="mt-auto flex justify-between items-center">
                   <p className="text-black dark:text-white font-bold">
                     {listing.score}
                   </p>
                   <div className="flex items-center gap-2">
+                    {/* Favoriten-Toggle */}
                     <button onClick={() => toggleFavorite(listing)}>
                       {favorites[listing.title] ? (
                         <FaStar className="w-5 h-5 text-yellow-500" />
@@ -243,14 +281,14 @@ export default function ResultsPage() {
                         <FaRegStar className="w-5 h-5 text-yellow-500" />
                       )}
                     </button>
-
+                    {/* Download-Button für die Bewerbung */}
                     <button
                       className="px-3 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
                       onClick={() => downloadApplication(listing)}
                     >
                       <FaDownload className="w-5 h-5" />
                     </button>
-
+                    {/* Link zur Seite "Bewerbung bearbeiten" */}
                     <Link
                       href={{
                         pathname: "/edit-application",

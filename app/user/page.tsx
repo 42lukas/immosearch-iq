@@ -1,21 +1,11 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import {
-  FiUser,
-  FiMail,
-  FiPhone,
-  FiCalendar,
-  FiMapPin,
-  FiBriefcase,
-  FiCheck,
-  FiUpload,
-  FiTrash,
-} from "react-icons/fi";
+import { FiUser, FiMail, FiPhone, FiCalendar, FiMapPin, FiBriefcase, FiCheck, FiUpload, FiTrash, } from "react-icons/fi";
 import { MdEuroSymbol } from "react-icons/md";
 import { getUserId } from "@/utils/auth";
 import Navbar, { NavLink } from "@/components/Navbar";
-import { FaMapMarkedAlt, FaHeart, FaInfoCircle, FaUserEdit } from "react-icons/fa";
+import { FaHeart, FaInfoCircle } from "react-icons/fa";
 
 export default function UserPage() {
   const [userId, setUserId] = useState<string | null>(null);
@@ -42,14 +32,16 @@ export default function UserPage() {
   const [salaryProofs, setSalaryProofs] = useState<File[]>([]);
   const [otherFiles, setOtherFiles] = useState<File[]>([]);
 
-  // Hobbies
   const hobbyOptions = ["Sport", "Kochen", "Lesen", "Reisen", "Musik", "Gaming"];
 
   useEffect(() => {
-    let userId = getUserId();
-    console.log("UserId: " + userId);
+    // userId im State speichern, damit sie bei allen API-Calls verwendet werden kann
+    const currentUserId = getUserId();
+    setUserId(currentUserId);
+    console.log("UserId: " + currentUserId);
 
-    fetch(`/api/user?userId=${userId}`)
+    // Lade User-Daten
+    fetch(`/api/user?userId=${currentUserId}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.success && data.userData) {
@@ -60,7 +52,8 @@ export default function UserPage() {
         console.error("Fehler beim Laden der User-Daten:", err);
       });
 
-    fetch(`/api/user/files?userId=${userId}`)
+    // Lade Liste der hochgeladenen Dateien
+    fetch(`/api/user/files?userId=${currentUserId}`)
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data.files)) {
@@ -120,6 +113,7 @@ export default function UserPage() {
     }
   };
 
+  // Handler zum Löschen einer Datei
   const handleDeleteFile = async (filename: string) => {
     try {
       const response = await fetch("/api/user/delete-files", {
@@ -166,7 +160,7 @@ export default function UserPage() {
     salaryProofs.forEach((file) => formDataFiles.append("files", file));
     otherFiles.forEach((file) => formDataFiles.append("files", file));
 
-    // **Hier wird die userId als Query-Parameter angehängt**
+    // Hier wird die userId als Query-Parameter angehängt
     await fetch(`/api/upload?userId=${currentUserId}`, {
       method: "POST",
       body: formDataFiles,
@@ -192,11 +186,10 @@ export default function UserPage() {
       href: "/about",
       label: "About",
       icon: FaInfoCircle,
-    }
+    },
   ];
 
   return (
-    // Hintergrundbild statt blauem Farbverlauf:
     <div className="flex flex-col min-h-screen bg-cover bg-center">
       <Navbar navLinks={navLinks} />
 
@@ -220,7 +213,7 @@ export default function UserPage() {
         </a>
       </header>
 
-      {/* Weißer Container mit dem Formular */}
+      {/* Container mit dem Formular */}
       <main
         id="formSection"
         className="bg-white rounded-t-3xl shadow-2xl -mt-8 p-8 md:p-12 max-w-4xl mx-auto w-full"

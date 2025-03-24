@@ -11,3 +11,6 @@ export class TransportScore implements ScoreComponent {
         return 0;
     }
 }
+
+
+// leider nicht mehr Zeitlich geschafft eine wirkliche Logik mit echten ÖPNV Stopps zu implementieren

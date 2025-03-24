@@ -1,3 +1,5 @@
+// verschiedene Kieze aus Berlin, z.B. Bergmannkiez oder Kreuzkölln
+
 export const kiezListe = [
     {
         name: "Bergmannkiez",

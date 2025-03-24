@@ -2,8 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "fs";
 import path from "path";
 
+/**
+ * POST zum Löschen einer Datei eines Nutzers.
+ * Erwartet wird ein JSON-Body mit "userId" und "filename".
+ */
 export async function POST(req: NextRequest) {
   try {
+    // Extrahiere userId und filename aus dem Request-Body
     const { userId, filename } = await req.json();
 
     if (!userId || !filename) {
@@ -15,6 +20,7 @@ export async function POST(req: NextRequest) {
 
     const filePath = path.join(process.cwd(), "public", "uploads", userId, filename);
 
+    // Prüfe, ob die Datei existiert
     if (!fs.existsSync(filePath)) {
       return NextResponse.json(
         { success: false, message: "Datei nicht gefunden." },
@@ -22,7 +28,9 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    fs.unlinkSync(filePath);
+    // Löschen der Datei
+    await fs.promises.unlink(filePath);
+
     return NextResponse.json({
       success: true,
       message: "Datei erfolgreich gelöscht.",
@@ -36,6 +44,10 @@ export async function POST(req: NextRequest) {
   }
 }
 
+// GET-Methode wird nicht unterstützt
 export function GET() {
-  return NextResponse.json({ success: false, message: "Method not allowed." }, { status: 405 });
+  return NextResponse.json(
+    { success: false, message: "Method not allowed." },
+    { status: 405 }
+  );
 }

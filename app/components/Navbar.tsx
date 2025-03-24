@@ -1,3 +1,4 @@
+// Eine Navbar, um redundanten Code in jeder einzelnen Datei zu verhindern
 import { motion } from "framer-motion";
 import Link from "next/link";
 

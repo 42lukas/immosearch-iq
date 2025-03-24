@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
@@ -6,6 +7,9 @@ import { getUserId } from "@/utils/auth";
 import Navbar, { NavLink } from "@/components/Navbar";
 import { FaMapMarkedAlt, FaHeart, FaInfoCircle, FaUserEdit } from "react-icons/fa";
 
+/**
+ * Interface für die Daten eines Inserats
+ */
 interface Listing {
   title: string;
   address: string;
@@ -15,6 +19,9 @@ interface Listing {
   city: string;
 }
 
+/**
+ * Interface für die Nutzerdaten, die für die Bewerbung verwendet werden
+ */
 interface UserData {
   fullName: string;
   email: string;
@@ -27,15 +34,22 @@ interface UserData {
   hobbies: string[];
 }
 
+/**
+ * Diese Seite erlaubt es dem Nutzer, eine vorgefertigte Bewerbung basierend auf 
+ * seinen hinterlegten Daten und den Angaben zum Inserat zu bearbeiten und als Textdatei herunterzuladen.
+ */
 export default function EditApplicationPage() {
   const [userData, setUserData] = useState<UserData | null>(null);
   const [listingData, setListingData] = useState<Listing | null>(null);
+  // State für den Bewerbungstext, der bearbeitet und heruntergeladen werden kann
   const [applicationText, setApplicationText] = useState<string>("");
 
   const searchParams = useSearchParams();
   const router = useRouter();
 
+  // useEffect zum Laden der Nutzerdaten und Listing-Daten aus URL-Parametern
   useEffect(() => {
+    // Funktion, um die Nutzerdaten anhand der userId abzurufen
     const fetchUserData = async () => {
       const userId = getUserId();
 
@@ -50,6 +64,7 @@ export default function EditApplicationPage() {
       }
     };
 
+    // Erstelle ein Listing-Objekt anhand der Query-Parameter
     const queryListing: Listing = {
       title: searchParams.get("title") || "",
       address: searchParams.get("address") || "",
@@ -60,9 +75,11 @@ export default function EditApplicationPage() {
     };
     setListingData(queryListing);
 
+    // Lade die Nutzerdaten vom Backend
     fetchUserData();
   }, [searchParams]);
 
+  // useEffect zum Generieren eines Standard-Bewerbungstextes, wenn sowohl Nutzerdaten als auch Listing-Daten vorliegen
   useEffect(() => {
     if (userData && listingData) {
       const defaultText = `
@@ -86,16 +103,22 @@ ${userData.fullName}
 Telefon: ${userData.phone}
 E-Mail: ${userData.email}
       `;
+      // Entfernt überflüssige Leerzeichen und Zeilenumbrüche am Anfang und Ende
       setApplicationText(defaultText.trim());
     }
   }, [userData, listingData]);
 
+  /**
+   * Handler zum Herunterladen des bearbeiteten Bewerbungstextes als .txt-Datei.
+   * Es wird ein Blob erstellt, der dann über einen temporären Link zum Download angeboten wird.
+   */
   const handleDownload = () => {
     if (!listingData) return;
     const blob = new Blob([applicationText], { type: "text/plain" });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
+    // Der Dateiname wird anhand des Inseratstitels generiert
     a.download = `Bewerbung_${listingData.title}.txt`;
     document.body.appendChild(a);
     a.click();
@@ -103,6 +126,7 @@ E-Mail: ${userData.email}
     window.URL.revokeObjectURL(url);
   };
 
+  // Definiert die Navigationslinks für die Navbar
   const navLinks: NavLink[] = [
     {
       href: "/map",
@@ -128,8 +152,10 @@ E-Mail: ${userData.email}
 
   return (
     <div className="bg-gray-100 dark:bg-gray-900 min-h-screen">
+      {/* Navbar mit definierten Navigationslinks */}
       <Navbar navLinks={navLinks} />
 
+      {/* Motion-Container für einen Einblendeffekt */}
       <motion.div
         className="mx-auto w-full max-w-5xl bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 mt-10"
         initial={{ y: 30, opacity: 0 }}
@@ -140,7 +166,7 @@ E-Mail: ${userData.email}
           <h1 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-white">
             Bewerbung bearbeiten
           </h1>
-          {/* Zurück zur Liste mit router.back() */}
+          {/* Button, der den Nutzer zur vorherigen Seite zurückführt */}
           <button
             onClick={() => router.back()}
             className="text-blue-600 dark:text-blue-400 hover:underline"
@@ -149,6 +175,7 @@ E-Mail: ${userData.email}
           </button>
         </div>
 
+        {/* Anzeige der Inseratsdaten */}
         {listingData && (
           <div className="mb-6 bg-gray-50 dark:bg-gray-700 p-4 rounded">
             <h2 className="text-lg font-semibold text-gray-800 dark:text-white">
@@ -175,6 +202,7 @@ E-Mail: ${userData.email}
           </div>
         )}
 
+        {/* Textarea zur Bearbeitung des Bewerbungstextes */}
         <div className="mb-6">
           <label
             htmlFor="applicationText"
@@ -201,6 +229,7 @@ E-Mail: ${userData.email}
           />
         </div>
 
+        {/* Buttons zum Herunterladen der Bewerbung oder zum Abbrechen */}
         <div className="flex items-center justify-end gap-4">
           <button
             className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition"
@@ -208,7 +237,6 @@ E-Mail: ${userData.email}
           >
             Bewerbung herunterladen
           </button>
-          {/* Abbrechen mit router.back() */}
           <button
             className="bg-gray-300 hover:bg-gray-400 text-gray-700 px-4 py-2 rounded transition"
             onClick={() => router.back()}

@@ -49,23 +49,24 @@ export default function Home() {
             body: JSON.stringify(formattedPreferences)
         });
 
-        setLoading(false);
+        
         
         if (response.ok) {
             const data = await response.json();
             localStorage.setItem('results', JSON.stringify(data));
             router.push(`/results?city=${preferences.city}`);
+            setLoading(false);
         } else {
             console.log('Fehler beim Starten des Crawlers!');
         }
     };
 
     return (
-        <div className="p-6 bg-gray-800 text-white">
+        <div className="bg-gray-800 text-white">
             {loading ? (
                 <LoadingAnimation />
             ) : (
-                <>
+                <div className='p-6'>
                     <h1 className="text-xl font-bold mb-4">🏡 Wohnungssuche starten</h1>
                     <form onSubmit={handleSubmit} className="flex flex-col gap-2">
                         {Object.entries(preferences).map(([key, value]) => (
@@ -83,7 +84,7 @@ export default function Home() {
                             🔍 Suche starten
                         </button>
                     </form>
-                </>
+                </div>
             )}
         </div>
     );

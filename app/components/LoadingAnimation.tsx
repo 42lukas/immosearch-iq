@@ -1,3 +1,4 @@
+// Eine Animation wenn der Web-Crawler immowelt durchsucht
 'use client';
 
 import { motion } from 'framer-motion';

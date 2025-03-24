@@ -1782,5 +1782,421 @@
     "lon": 6.9627066,
     "fullAddress": "Niehl, Nippes, Köln, Nordrhein-Westfalen, 50735, Deutschland",
     "timestamp": "2025-03-07T10:00:32.726Z"
+  },
+  {
+    "address": "Neptunstr. 25, Reinickendorf, Berlin (13409)",
+    "city": "Berlin",
+    "lat": 52.5625515,
+    "lon": 13.3750742,
+    "fullAddress": "25, Neptunstraße, Reinickendorf, Berlin, Pankow, 13409, Deutschland",
+    "timestamp": "2025-03-09T15:14:29.063Z"
+  },
+  {
+    "address": "Langer-See-Str. 5, Haselhorst, Berlin (13599)",
+    "city": "Berlin",
+    "lat": 52.5582615,
+    "lon": 13.2261593,
+    "fullAddress": "5, Langer-See-Straße, Haselhorst, Spandau, Berlin, 13599, Deutschland",
+    "timestamp": "2025-03-09T15:14:30.090Z"
+  },
+  {
+    "address": "Neptunstr. 26, Reinickendorf, Berlin (13409)",
+    "city": "Berlin",
+    "lat": 52.562526,
+    "lon": 13.374752,
+    "fullAddress": "26, Neptunstraße, Reinickendorf, Berlin, Pankow, 13409, Deutschland",
+    "timestamp": "2025-03-09T15:14:31.062Z"
+  },
+  {
+    "address": "Friedenauer Höhe 10, Friedenau, Berlin (12159)",
+    "city": "Berlin",
+    "lat": 52.4777779,
+    "lon": 13.3393098,
+    "fullAddress": "10, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
+    "timestamp": "2025-03-24T19:23:35.053Z"
+  },
+  {
+    "address": "Schönhauser Allee 44, Prenzlauer Berg, Berlin (10435)",
+    "city": "Berlin",
+    "lat": 52.5404127,
+    "lon": 13.4125592,
+    "fullAddress": "44, Schönhauser Allee, Bremer Höhe, Prenzlauer Berg, Pankow, Berlin, 10435, Deutschland",
+    "timestamp": "2025-03-24T19:23:36.093Z"
+  },
+  {
+    "address": "Friedrichstraße 121, Mitte, Berlin (10117)",
+    "city": "Berlin",
+    "lat": 52.5264435,
+    "lon": 13.3870089,
+    "fullAddress": "121, Friedrichstraße, Mitte, Berlin, 10117, Deutschland",
+    "timestamp": "2025-03-24T19:23:37.137Z"
+  },
+  {
+    "address": "David-Friedländer-Weg 98, Falkenberg, Berlin (13057)",
+    "city": "Berlin",
+    "lat": 52.5728706,
+    "lon": 13.560950902935728,
+    "fullAddress": "98, David-Friedländer-Weg, Falkenberg, Lichtenberg, Berlin, 13057, Deutschland",
+    "timestamp": "2025-03-24T19:23:38.069Z"
+  },
+  {
+    "address": "Dolgenseestr. 8a, Friedrichsfelde, Berlin (10319)",
+    "city": "Berlin",
+    "lat": 52.4937841,
+    "lon": 13.507448,
+    "fullAddress": "Model Nails, 8a, Dolgenseestraße, Sewan-Viertel, Friedrichsfelde, Lichtenberg, Berlin, 10319, Deutschland",
+    "timestamp": "2025-03-24T19:23:39.132Z"
+  },
+  {
+    "address": "Bernhard-Weiß-Straße 1-3, Mitte, Berlin (10178)",
+    "city": "Berlin",
+    "lat": 52.52419335546003,
+    "lon": 13.417235345844785,
+    "fullAddress": "Bernhard-Weiß-Straße, Mitte, Berlin, 10178, Deutschland",
+    "timestamp": "2025-03-24T19:23:40.291Z"
+  },
+  {
+    "address": "Eisenacher Str. 19, Mariendorf, Berlin (12109)",
+    "city": "Berlin",
+    "lat": 52.4473698,
+    "lon": 13.392756683970099,
+    "fullAddress": "19, Eisenacher Straße, Mariendorf, Tempelhof-Schöneberg, Berlin, Teltow, 12109, Deutschland",
+    "timestamp": "2025-03-24T19:23:41.109Z"
+  },
+  {
+    "address": "Klara Franke Straße 12, Moabit, Berlin (10557)",
+    "city": "Berlin",
+    "lat": 52.5322553,
+    "lon": 13.361902377657099,
+    "fullAddress": "12, Klara-Franke-Straße, Europacity, Moabit, Mitte, Berlin, 10557, Deutschland",
+    "timestamp": "2025-03-24T19:23:42.183Z"
+  },
+  {
+    "address": "Otto-Suhr-Allee 129, Charlottenburg, Berlin (10585)",
+    "city": "Berlin",
+    "lat": 52.5181769,
+    "lon": 13.3032878,
+    "fullAddress": "129, Otto-Suhr-Allee, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10585, Deutschland",
+    "timestamp": "2025-03-24T19:23:43.087Z"
+  },
+  {
+    "address": "Nassauische Straße 35, Wilmersdorf, Berlin (10717)",
+    "city": "Berlin",
+    "lat": 52.49289126141122,
+    "lon": 13.32641091605624,
+    "fullAddress": "Nassauische Straße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10717, Deutschland",
+    "timestamp": "2025-03-24T19:23:44.120Z"
+  },
+  {
+    "address": "Berliner Straße 45, Mülheim, Köln (51063)",
+    "city": "Köln",
+    "lat": 50.97097365,
+    "lon": 7.009153371525821,
+    "fullAddress": "45, Berliner Straße, Mülheim, Köln, Nordrhein-Westfalen, 51063, Deutschland",
+    "timestamp": "2025-03-24T19:26:41.889Z"
+  },
+  {
+    "address": "Gustav-Heinemann-Ufer 140, Bayenthal, Köln (50968)",
+    "city": "Köln",
+    "lat": 50.9080854,
+    "lon": 6.9752377,
+    "fullAddress": "140, Gustav-Heinemann-Ufer, Bayenthal, Rodenkirchen, Köln, Nordrhein-Westfalen, 50968, Deutschland",
+    "timestamp": "2025-03-24T19:26:42.770Z"
+  },
+  {
+    "address": "Vogelsanger Straße 202, Ehrenfeld, Köln (50825)",
+    "city": "Köln",
+    "lat": 50.95187383338992,
+    "lon": 6.902750007890446,
+    "fullAddress": "Vogelsanger Straße, Ehrenfeld, Köln, Nordrhein-Westfalen, 50825, Deutschland",
+    "timestamp": "2025-03-24T19:26:43.960Z"
+  },
+  {
+    "address": "Am Alten Güterbahnhof 12, Ehrenfeld, Köln (50825)",
+    "city": "Köln",
+    "lat": 50.950631388672505,
+    "lon": 6.898088844580113,
+    "fullAddress": "Am Alten Güterbahnhof, Ehrenfeld, Köln, Nordrhein-Westfalen, 50825, Deutschland",
+    "timestamp": "2025-03-24T19:26:44.885Z"
+  },
+  {
+    "address": "Nibelungenstr. Po 38, Lind, Köln (51147)",
+    "city": "Köln",
+    "lat": 50.851853419651825,
+    "lon": 7.099341370944455,
+    "fullAddress": "Nibelungenstraße, Lind, Porz, Köln, Nordrhein-Westfalen, 51147, Deutschland",
+    "timestamp": "2025-03-24T19:26:45.935Z"
+  },
+  {
+    "address": "Am Alten Güterbahnhof 8, Ehrenfeld, Köln (50825)",
+    "city": "Köln",
+    "lat": 50.950631388672505,
+    "lon": 6.898088844580113,
+    "fullAddress": "Am Alten Güterbahnhof, Ehrenfeld, Köln, Nordrhein-Westfalen, 50825, Deutschland",
+    "timestamp": "2025-03-24T19:26:46.870Z"
+  },
+  {
+    "address": "Bernhardstr., Bayenthal, Köln (50968)",
+    "city": "Köln",
+    "lat": 50.90674140013442,
+    "lon": 6.969091470294128,
+    "fullAddress": "Bernhardstraße, Bayenthal, Rodenkirchen, Köln, Nordrhein-Westfalen, 50968, Deutschland",
+    "timestamp": "2025-03-24T19:26:47.786Z"
+  },
+  {
+    "address": "Jülicher Straße, Neustadt-Süd, Köln (50674)",
+    "city": "Köln",
+    "lat": 50.93401030407299,
+    "lon": 6.935155017095299,
+    "fullAddress": "Jülicher Straße, Komponistenviertel, Rathenauviertel, Neustadt/Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50674, Deutschland",
+    "timestamp": "2025-03-24T19:26:48.760Z"
+  },
+  {
+    "address": "Clevischer Ring, Mülheim, Köln (51063)",
+    "city": "Köln",
+    "lat": 50.97264705860951,
+    "lon": 7.006542371969578,
+    "fullAddress": "Clevischer Ring, Mülheim, Köln, Nordrhein-Westfalen, 51063, Deutschland",
+    "timestamp": "2025-03-24T19:26:49.792Z"
+  },
+  {
+    "address": "Holzgasse, Altstadt-Süd, Köln (50676)",
+    "city": "Köln",
+    "lat": 50.9324167,
+    "lon": 6.96098405,
+    "fullAddress": "Holzgasse, Georgsviertel, Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50676, Deutschland",
+    "timestamp": "2025-03-24T19:26:50.767Z"
+  },
+  {
+    "address": "Mühlenbach, Altstadt-Süd, Köln (50676)",
+    "city": "Köln",
+    "lat": 50.93340932916173,
+    "lon": 6.958174492018837,
+    "fullAddress": "Mühlenbach, Kapitolviertel, Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50676, Deutschland",
+    "timestamp": "2025-03-24T19:26:51.812Z"
+  },
+  {
+    "address": "Vogelsanger Str. 296, Ehrenfeld, Köln (50825)",
+    "city": "Köln",
+    "lat": 50.9524241,
+    "lon": 6.900700525770189,
+    "fullAddress": "296, Vogelsanger Straße, Ehrenfeld, Köln, Nordrhein-Westfalen, 50825, Deutschland",
+    "timestamp": "2025-03-24T19:26:52.880Z"
+  },
+  {
+    "address": "Gaußstraße, Mülheim, Köln (51063)",
+    "city": "Köln",
+    "lat": 50.9512970389258,
+    "lon": 6.991247516895464,
+    "fullAddress": "Gaußstraße, Stegerwaldsiedlung, Mülheim, Köln, Nordrhein-Westfalen, 51063, Deutschland",
+    "timestamp": "2025-03-24T19:26:53.852Z"
+  },
+  {
+    "address": "Ensen, Köln (51149)",
+    "city": "Köln",
+    "lat": 50.8972015,
+    "lon": 7.0311515,
+    "fullAddress": "Ensen, Porz, Köln, Nordrhein-Westfalen, 51149, Deutschland",
+    "timestamp": "2025-03-24T19:26:54.909Z"
+  },
+  {
+    "address": "Weidenpesch, Köln (50739)",
+    "city": "Köln",
+    "lat": 50.9830002,
+    "lon": 6.9463407,
+    "fullAddress": "Weidenpesch, Nippes, Köln, Nordrhein-Westfalen, 50737, Deutschland",
+    "timestamp": "2025-03-24T19:26:55.749Z"
+  },
+  {
+    "address": "Rodenkirchen, Köln (50999)",
+    "city": "Köln",
+    "lat": 50.8928511,
+    "lon": 6.9944973,
+    "fullAddress": "Rodenkirchen, Köln, Nordrhein-Westfalen, 50996, Deutschland",
+    "timestamp": "2025-03-24T19:26:56.760Z"
+  },
+  {
+    "address": "Sülz, Köln (50937)",
+    "city": "Köln",
+    "lat": 50.9189277,
+    "lon": 6.9240929,
+    "fullAddress": "Sülz, Lindenthal, Köln, Nordrhein-Westfalen, 50937, Deutschland",
+    "timestamp": "2025-03-24T19:26:57.773Z"
+  },
+  {
+    "address": "Neustadt-Nord, Köln (50674)",
+    "city": "Köln",
+    "lat": 50.9479231,
+    "lon": 6.941060750330894,
+    "fullAddress": "Neustadt/Nord, Innenstadt, Köln, Nordrhein-Westfalen, Deutschland",
+    "timestamp": "2025-03-24T19:26:58.752Z"
+  },
+  {
+    "address": "Kartäuserhof, Altstadt-Süd, Köln (50678)",
+    "city": "Köln",
+    "lat": 50.9251035,
+    "lon": 6.9584538,
+    "fullAddress": "Kartäuserhof, Severinstraße, Severinsviertel, Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50678, Deutschland",
+    "timestamp": "2025-03-24T19:26:59.774Z"
+  },
+  {
+    "address": "Blaubach, Altstadt-Süd, Köln (50676)",
+    "city": "Köln",
+    "lat": 50.932062441023504,
+    "lon": 6.95474471238756,
+    "fullAddress": "Blaubach, Kapitolviertel, Altstadt-Süd, Innenstadt, Köln, Nordrhein-Westfalen, 50676, Deutschland",
+    "timestamp": "2025-03-24T19:27:00.795Z"
+  },
+  {
+    "address": "Fraunhoferstraße 10, Ludwigsvorstadt-Isarvorstadt, München (80469)",
+    "city": "München",
+    "lat": 48.1304428,
+    "lon": 11.5722769,
+    "fullAddress": "10, Fraunhoferstraße, Isarvorstadt, Gärtnerplatz, Ludwigsvorstadt-Isarvorstadt, München, Bayern, 80469, Deutschland",
+    "timestamp": "2025-03-24T19:27:22.511Z"
+  },
+  {
+    "address": "Fallstraße, Sendling, München (81369)",
+    "city": "München",
+    "lat": 48.109324100145805,
+    "lon": 11.53855255600124,
+    "fullAddress": "Fallstraße, Mittersendling, Untersendling, Sendling, München, Bayern, 81369, Deutschland",
+    "timestamp": "2025-03-24T19:27:24.442Z"
+  },
+  {
+    "address": "Bogenhausen, München (81677)",
+    "city": "München",
+    "lat": 48.1452222,
+    "lon": 11.6149771,
+    "fullAddress": "Bogenhausen, Altbogenhausen, Bogenhausen, München, Bayern, 81679, Deutschland",
+    "timestamp": "2025-03-24T19:27:25.449Z"
+  },
+  {
+    "address": "Feldmoching-Hasenbergl, München (80995)",
+    "city": "München",
+    "lat": 48.21846185,
+    "lon": 11.520409083159603,
+    "fullAddress": "Feldmoching-Hasenbergl, München, Bayern, Deutschland",
+    "timestamp": "2025-03-24T19:27:26.469Z"
+  },
+  {
+    "address": "Bogenhausen, München (81927)",
+    "city": "München",
+    "lat": 48.1452222,
+    "lon": 11.6149771,
+    "fullAddress": "Bogenhausen, Altbogenhausen, Bogenhausen, München, Bayern, 81679, Deutschland",
+    "timestamp": "2025-03-24T19:27:27.449Z"
+  },
+  {
+    "address": "Bogenhausen, München (81925)",
+    "city": "München",
+    "lat": 48.1452222,
+    "lon": 11.6149771,
+    "fullAddress": "Bogenhausen, Altbogenhausen, Bogenhausen, München, Bayern, 81679, Deutschland",
+    "timestamp": "2025-03-24T19:27:28.756Z"
+  },
+  {
+    "address": "Sendling-Westpark, München (80686)",
+    "city": "München",
+    "lat": 48.11803085,
+    "lon": 11.519332770284128,
+    "fullAddress": "Sendling-Westpark, München, Bayern, Deutschland",
+    "timestamp": "2025-03-24T19:27:29.456Z"
+  },
+  {
+    "address": "Au-Haidhausen, München (81669)",
+    "city": "München",
+    "lat": 48.130273849999995,
+    "lon": 11.59833361534854,
+    "fullAddress": "Au-Haidhausen, München, Bayern, Deutschland",
+    "timestamp": "2025-03-24T19:27:30.444Z"
+  },
+  {
+    "address": "Sendling-Westpark, München (81379)",
+    "city": "München",
+    "lat": 48.11803085,
+    "lon": 11.519332770284128,
+    "fullAddress": "Sendling-Westpark, München, Bayern, Deutschland",
+    "timestamp": "2025-03-24T19:27:31.457Z"
+  },
+  {
+    "address": "Aubing-Lochhausen-Langwied, München (81243)",
+    "city": "München",
+    "lat": 48.16505875,
+    "lon": 11.40022147296721,
+    "fullAddress": "Aubing-Lochhausen-Langwied, München, Bayern, Deutschland",
+    "timestamp": "2025-03-24T19:27:32.462Z"
+  },
+  {
+    "address": "Fritz-Erler-Straße 26, Ramersdorf-Perlach, München (81737)",
+    "city": "München",
+    "lat": 48.0990221,
+    "lon": 11.647759,
+    "fullAddress": "26, Fritz-Erler-Straße, Neuperlach, Ramersdorf-Perlach, München, Bayern, 81737, Deutschland",
+    "timestamp": "2025-03-24T19:27:33.483Z"
+  },
+  {
+    "address": "Deisenhofener Straße 34, Obergiesing, München (81539)",
+    "city": "München",
+    "lat": 48.1135709,
+    "lon": 11.5844496,
+    "fullAddress": "34, Deisenhofener Straße, Parkviertel Giesing, Obergiesing, Obergiesing-Fasangarten, München, Bayern, 81539, Deutschland",
+    "timestamp": "2025-03-24T19:27:34.472Z"
+  },
+  {
+    "address": "Birkerstraße 32, Neuhausen-Nymphenburg, München (80636)",
+    "city": "München",
+    "lat": 48.146511000000004,
+    "lon": 11.538861491190417,
+    "fullAddress": "32, Birkerstraße, St. Vinzenz-Viertel, St. Vinzenz, Neuhausen-Nymphenburg, München, Bayern, 80636, Deutschland",
+    "timestamp": "2025-03-24T19:27:35.475Z"
+  },
+  {
+    "address": "Volksdorf, Hamburg (22359)",
+    "city": "Hamburg",
+    "lat": 53.6485554,
+    "lon": 10.1647514,
+    "fullAddress": "Volksdorf, Wandsbek, Hamburg, 22359, Deutschland",
+    "timestamp": "2025-03-24T20:28:55.543Z"
+  },
+  {
+    "address": "Altona-Altstadt, Hamburg (22767)",
+    "city": "Hamburg",
+    "lat": 53.5496598,
+    "lon": 9.945352,
+    "fullAddress": "Altona-Altstadt, Altona, Hamburg, 22767, Deutschland",
+    "timestamp": "2025-03-24T20:28:56.532Z"
+  },
+  {
+    "address": "Sydneystraße 32, Winterhude, Hamburg (22297)",
+    "city": "Hamburg",
+    "lat": 53.6038672,
+    "lon": 10.0164057,
+    "fullAddress": "32, Sydneystraße, Winterhude, Hamburg-Nord, Hamburg, 22297, Deutschland",
+    "timestamp": "2025-03-24T20:28:57.559Z"
+  },
+  {
+    "address": "Vereinsstraße, Eimsbüttel, Hamburg (20357)",
+    "city": "Hamburg",
+    "lat": 53.5672992,
+    "lon": 9.9613559,
+    "fullAddress": "Vereinsstraße, Eimsbüttel, Hamburg, 20357, Deutschland",
+    "timestamp": "2025-03-24T20:28:58.558Z"
+  },
+  {
+    "address": "Bellealliancestraße, Eimsbüttel, Hamburg (20259)",
+    "city": "Hamburg",
+    "lat": 53.56823010255147,
+    "lon": 9.960885367088109,
+    "fullAddress": "Bellealliancestraße, Eimsbüttel, Hamburg, 20259, Deutschland",
+    "timestamp": "2025-03-24T20:28:59.546Z"
+  },
+  {
+    "address": "HafenCity, HafenCity (20457)",
+    "city": "HafenCity",
+    "lat": 53.54028945,
+    "lon": 10.00488951198924,
+    "fullAddress": "HafenCity Universität Hamburg, 1, Überseeallee, Quartier Elbtorquartier, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
+    "timestamp": "2025-03-24T20:29:00.656Z"
   }
 ]
