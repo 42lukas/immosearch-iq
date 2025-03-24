@@ -1,7 +1,7 @@
 "use client";
 
 import Navbar, { NavLink } from '@/components/Navbar';
-import { FaHeart, FaUserEdit } from 'react-icons/fa';
+import { FaQuestionCircle, FaHeart, FaUserEdit } from 'react-icons/fa';
 
 export default function About() {
   // Definiert die Navigationslinks für die Navbar
@@ -16,6 +16,11 @@ export default function About() {
       label: "User",
       icon: FaUserEdit,
     },
+    {
+      href: "/faq",
+      label: "FAQ",
+      icon: FaQuestionCircle,
+    }
   ];
 
   return (
@@ -65,6 +70,7 @@ export default function About() {
             Für Bugs, andere technische Probleme und Fragen melde dich gerne bei:{" "}
             <span className="font-bold">LukasEmail@gmail.com | NasserEmail@gmail.com</span>
           </p>
+          <span className='font-bold ps-3'>LukasEmail@gmail.com | NasserEmail@gmail.com</span>
         </div>
       </div>
 

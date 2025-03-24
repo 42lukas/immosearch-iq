@@ -1784,11 +1784,39 @@
     "timestamp": "2025-03-07T10:00:32.726Z"
   },
   {
+<<<<<<< HEAD
+=======
+    "address": "Straßburger Straße 7, Prenzlauer Berg, Berlin-Prenzlauer Berg (10405)",
+    "city": "Berlin-Prenzlauer Berg",
+    "lat": 52.5287062,
+    "lon": 13.4141294,
+    "fullAddress": "7, Straßburger Straße, Prenzlauer Berg, Pankow, Berlin, 10405, Deutschland",
+    "timestamp": "2025-03-11T08:02:22.996Z"
+  },
+  {
+    "address": "Saarbrücker Straße 34A, Prenzlauer Berg, Berlin-Prenzlauer Berg (10405)",
+    "city": "Berlin-Prenzlauer Berg",
+    "lat": 52.529091449999996,
+    "lon": 13.415022520668014,
+    "fullAddress": "34a, Saarbrücker Straße, Winsviertel, Prenzlauer Berg, Pankow, Berlin, 10405, Deutschland",
+    "timestamp": "2025-03-11T08:02:24.018Z"
+  },
+  {
+    "address": "Hechelstraße 14, Reinickendorf, Berlin (10997)",
+    "city": "Berlin",
+    "lat": 52.5667826,
+    "lon": 13.3223998,
+    "fullAddress": "14, Hechelstraße, Reinickendorf, Berlin, Pankow, 13403, Deutschland",
+    "timestamp": "2025-03-11T08:02:24.963Z"
+  },
+  {
+>>>>>>> 45a2e00aa247e3e4b5243d73994de441e3707c8e
     "address": "Neptunstr. 25, Reinickendorf, Berlin (13409)",
     "city": "Berlin",
     "lat": 52.5625515,
     "lon": 13.3750742,
     "fullAddress": "25, Neptunstraße, Reinickendorf, Berlin, Pankow, 13409, Deutschland",
+<<<<<<< HEAD
     "timestamp": "2025-03-09T15:14:29.063Z"
   },
   {
@@ -1878,6 +1906,9 @@
     "lon": 13.3032878,
     "fullAddress": "129, Otto-Suhr-Allee, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 10585, Deutschland",
     "timestamp": "2025-03-24T19:23:43.087Z"
+=======
+    "timestamp": "2025-03-11T08:02:25.960Z"
+>>>>>>> 45a2e00aa247e3e4b5243d73994de441e3707c8e
   },
   {
     "address": "Nassauische Straße 35, Wilmersdorf, Berlin (10717)",
@@ -1885,6 +1916,7 @@
     "lat": 52.49289126141122,
     "lon": 13.32641091605624,
     "fullAddress": "Nassauische Straße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10717, Deutschland",
+<<<<<<< HEAD
     "timestamp": "2025-03-24T19:23:44.120Z"
   },
   {
@@ -2198,5 +2230,72 @@
     "lon": 10.00488951198924,
     "fullAddress": "HafenCity Universität Hamburg, 1, Überseeallee, Quartier Elbtorquartier, HafenCity, Hamburg-Mitte, Hamburg, 20457, Deutschland",
     "timestamp": "2025-03-24T20:29:00.656Z"
+=======
+    "timestamp": "2025-03-11T08:02:27.098Z"
+  },
+  {
+    "address": "Steinkleeweg 5, Rosenthal, Berlin (13158)",
+    "city": "Berlin",
+    "lat": 52.59773545,
+    "lon": 13.3797142,
+    "fullAddress": "5, Steinkleeweg, Rosenthal, Pankow, Berlin, 13158, Deutschland",
+    "timestamp": "2025-03-13T10:05:25.991Z"
+  },
+  {
+    "address": "David-Friedländer-Weg 98, Falkenberg, Berlin (13057)",
+    "city": "Berlin",
+    "lat": 52.5728706,
+    "lon": 13.560950902935728,
+    "fullAddress": "98, David-Friedländer-Weg, Falkenberg, Lichtenberg, Berlin, 13057, Deutschland",
+    "timestamp": "2025-03-13T10:05:27.004Z"
+  },
+  {
+    "address": "Moosstraße 72, Niederschöneweide, Berlin (12439)",
+    "city": "Berlin",
+    "lat": 52.4498887,
+    "lon": 13.5272048,
+    "fullAddress": "72, Moosstraße, Niederschöneweide, Treptow-Köpenick, Berlin, 12439, Deutschland",
+    "timestamp": "2025-03-13T10:05:28.012Z"
+  },
+  {
+    "address": "Langer-See-Str. 5, Haselhorst, Berlin (13599)",
+    "city": "Berlin",
+    "lat": 52.5582615,
+    "lon": 13.2261593,
+    "fullAddress": "5, Langer-See-Straße, Haselhorst, Spandau, Berlin, 13599, Deutschland",
+    "timestamp": "2025-03-13T10:05:29.031Z"
+  },
+  {
+    "address": "Schönhauser Allee 44, Prenzlauer Berg, Berlin (10435)",
+    "city": "Berlin",
+    "lat": 52.540385,
+    "lon": 13.4125645,
+    "fullAddress": "mmaah Korean BBQ express, 44, Schönhauser Allee, Bremer Höhe, Prenzlauer Berg, Pankow, Berlin, 10435, Deutschland",
+    "timestamp": "2025-03-13T16:03:11.962Z"
+  },
+  {
+    "address": "Am Eichenquast 58, Buckow, Berlin (12353)",
+    "city": "Berlin",
+    "lat": 52.4187279,
+    "lon": 13.4484267,
+    "fullAddress": "58, Am Eichenquast, Buckow, Neukölln, Berlin, 12353, Deutschland",
+    "timestamp": "2025-03-13T16:03:12.968Z"
+  },
+  {
+    "address": "Dolgenseestr. 8c, Friedrichsfelde, Berlin (10319)",
+    "city": "Berlin",
+    "lat": 52.4943304,
+    "lon": 13.5069969,
+    "fullAddress": "8c, Dolgenseestraße, Sewan-Viertel, Friedrichsfelde, Lichtenberg, Berlin, 10319, Deutschland",
+    "timestamp": "2025-03-13T16:03:13.951Z"
+  },
+  {
+    "address": "Dolgenseestr. 8a, Friedrichsfelde, Berlin (10319)",
+    "city": "Berlin",
+    "lat": 52.4938077,
+    "lon": 13.5073306,
+    "fullAddress": "Dolgensee-Apotheke, 8a, Dolgenseestraße, Sewan-Viertel, Friedrichsfelde, Lichtenberg, Berlin, 10319, Deutschland",
+    "timestamp": "2025-03-13T16:03:14.990Z"
+>>>>>>> 45a2e00aa247e3e4b5243d73994de441e3707c8e
   }
 ]
