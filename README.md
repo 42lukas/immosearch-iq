@@ -56,11 +56,15 @@ npm run dev
 ## Nutzung
 
 1. Öffne die App im Browser: http://localhost:3000
-2. Gehe zur /user Page und trage deine Persönlichen Daten ein. Nur so kann eine passende Bewerbung erstellt werden!
-3. Trage deine Wohnungspräferenzen (Stadt, Preis, Zimmeranzahl, Größe) ein.
-4. Starte die Suche mit dem Button.
-5. Die Top-Wohnungen werden auf der Results-Seite angezeigt.
-6. Lade die generierten Bewerbungen direkt herunter oder passe sie gegenbenfalls noch vorher selber an.
+2. Von der Landing Page aus drückt man den Button in der Mitte
+3. Auf der /home Page gibt es dann oben rechts die Möglichkeit die Pages zu wechseln.
+4. Gehe zur /user Page und trage deine Persönlichen Daten ein. Nur so kann eine passende Bewerbung erstellt werden!
+5. Oben Links bei Immosearch-IQ kommt man zurück zu /home Page
+6. Trage deine Wohnungspräferenzen (Stadt, Preis, Zimmeranzahl, Größe) ein.
+7. Starte die Suche mit dem Button.
+8. Die Top-Wohnungen werden auf der Results-Seite angezeigt.
+9. Lade die generierten Bewerbungen direkt herunter oder passe sie gegenbenfalls noch vorher selber an.
+10. Gehe auf die Map, um eine Karten-Ansicht zu haben.
 
 ## 🐞 Fehlerbehebung
 
