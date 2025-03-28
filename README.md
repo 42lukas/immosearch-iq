@@ -48,19 +48,9 @@ npm install framer-motion
 ```
 
 ## Projekt starten 🚀
-**Entwicklungsmodus**
+
 ```bash
 npm run dev
-```
-
-**Build erstellen**
-```bash
-npm run build
-```
-
-**Produktion starten**
-```bash
-npm start
 ```
 
 ## Nutzung
