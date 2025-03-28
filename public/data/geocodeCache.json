@@ -486,5 +486,13 @@
     "lon": 13.3586479,
     "fullAddress": "District One, 151, Hauptstraße, Rote Insel, Schöneberg, Tempelhof-Schöneberg, Berlin, 10827, Deutschland",
     "timestamp": "2025-03-26T21:16:43.040Z"
+  },
+  {
+    "address": "Hedemannstr. 21, Kreuzberg, Berlin (10969)",
+    "city": "Berlin",
+    "lat": 52.503396,
+    "lon": 13.3905019,
+    "fullAddress": "21, Hedemannstraße, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Deutschland",
+    "timestamp": "2025-03-28T15:15:32.109Z"
   }
 ]

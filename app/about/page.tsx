@@ -67,10 +67,9 @@ export default function About() {
               https://github.com/42lukas/immosearch-iq
             </a>
           <p className="text-gray-300 w-4/6 mt-4">
-            Für Bugs, andere technische Probleme und Fragen melde dich gerne bei:{" "}
+            Für Bugs, andere technische Probleme und Fragen melde dich gerne bei: <br/>
             <span className="font-bold">LukasEmail@gmail.com | NasserEmail@gmail.com</span>
           </p>
-          <span className='font-bold ps-3'>LukasEmail@gmail.com | NasserEmail@gmail.com</span>
         </div>
       </div>
 

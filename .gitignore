@@ -44,6 +44,7 @@ next-env.d.ts
 public/uploads
 app/data/
 data/
+app/data/userData.json
 data/userData.json
 userData.json
 
