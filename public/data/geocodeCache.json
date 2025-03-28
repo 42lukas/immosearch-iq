@@ -414,5 +414,77 @@
     "lon": 9.1950895,
     "fullAddress": "Steckfeld, Plieningen, Stuttgart, Baden-Württemberg, 70599, Deutschland",
     "timestamp": "2025-03-24T21:02:30.092Z"
+  },
+  {
+    "address": "Friedenauer Höhe 17A, Friedenau, Berlin (12159)",
+    "city": "Berlin",
+    "lat": 52.4770123,
+    "lon": 13.3375171,
+    "fullAddress": "17A, Friedenauer Höhe, Friedenau, Tempelhof-Schöneberg, Berlin, 12159, Deutschland",
+    "timestamp": "2025-03-26T21:16:35.044Z"
+  },
+  {
+    "address": "Goebenstraße 15, Schöneberg, Berlin (10783)",
+    "city": "Berlin",
+    "lat": 52.493188,
+    "lon": 13.3668589,
+    "fullAddress": "Spätshop, 15, Goebenstraße, Schöneberg, Tempelhof-Schöneberg, Berlin, 10783, Deutschland",
+    "timestamp": "2025-03-26T21:16:35.993Z"
+  },
+  {
+    "address": "Tempelhofer Ufer 12, Kreuzberg, Berlin (10963)",
+    "city": "Berlin",
+    "lat": 52.4983138,
+    "lon": 13.385544,
+    "fullAddress": "12, Tempelhofer Ufer, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Deutschland",
+    "timestamp": "2025-03-26T21:16:37.004Z"
+  },
+  {
+    "address": "Simon-Dach-Straße 13, Friedrichshain, Berlin (10245)",
+    "city": "Berlin",
+    "lat": 52.51041625,
+    "lon": 13.45574865265288,
+    "fullAddress": "13, Simon-Dach-Straße, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Deutschland",
+    "timestamp": "2025-03-26T21:16:38.014Z"
+  },
+  {
+    "address": "Immanuelkirchstraße 23, Prenzlauer Berg, Berlin (10405)",
+    "city": "Berlin",
+    "lat": 52.53220855,
+    "lon": 13.425897327158339,
+    "fullAddress": "23, Immanuelkirchstraße, Winsviertel, Prenzlauer Berg, Pankow, Berlin, 10405, Deutschland",
+    "timestamp": "2025-03-26T21:16:38.997Z"
+  },
+  {
+    "address": "Düsseldorfer Str. 49, Wilmersdorf, Berlin (10707)",
+    "city": "Berlin",
+    "lat": 52.49671385,
+    "lon": 13.313010543544905,
+    "fullAddress": "49, Düsseldorfer Straße, Wilmersdorf, Charlottenburg-Wilmersdorf, Berlin, 10707, Deutschland",
+    "timestamp": "2025-03-26T21:16:40.021Z"
+  },
+  {
+    "address": "Stralauer Allee 17, Friedrichshain, Berlin (10245)",
+    "city": "Berlin",
+    "lat": 52.4976757,
+    "lon": 13.4643529,
+    "fullAddress": "17, Stralauer Allee, Rudolfkiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Deutschland",
+    "timestamp": "2025-03-26T21:16:41.018Z"
+  },
+  {
+    "address": "Stralauer Allee 13, Friedrichshain, Berlin (10245)",
+    "city": "Berlin",
+    "lat": 52.498064299999996,
+    "lon": 13.460927666125375,
+    "fullAddress": "13, Stralauer Allee, Rudolfkiez, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10245, Deutschland",
+    "timestamp": "2025-03-26T21:16:41.997Z"
+  },
+  {
+    "address": "Hauptstraße 151, Schöneberg, Berlin (10827)",
+    "city": "Berlin",
+    "lat": 52.4882188,
+    "lon": 13.3586479,
+    "fullAddress": "District One, 151, Hauptstraße, Rote Insel, Schöneberg, Tempelhof-Schöneberg, Berlin, 10827, Deutschland",
+    "timestamp": "2025-03-26T21:16:43.040Z"
   }
 ]
