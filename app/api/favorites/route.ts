@@ -6,16 +6,23 @@ const dataFilePath = path.resolve(process.cwd(), "app/data/favorites.json");
 
 /**
  * Lädt die Favoriten aus der JSON-Datei.
- * Falls die Datei nicht existiert, wird sie als leeres Objekt initialisiert.
+ * Falls die Datei oder das Verzeichnis nicht existiert, wird beides initialisiert.
  */
 const loadFavorites = () => {
   try {
-    // Falls die Datei nicht existiert, initialisiere sie als leeres Objekt
+    // Verzeichnis anlegen, falls nicht vorhanden
+    const dirPath = path.dirname(dataFilePath);
+    if (!fs.existsSync(dirPath)) {
+      fs.mkdirSync(dirPath, { recursive: true });
+    }
+
+    // JSON-Datei anlegen, falls nicht vorhanden
     if (!fs.existsSync(dataFilePath)) {
       fs.writeFileSync(dataFilePath, JSON.stringify({}), "utf-8");
     }
+
+    // Datei lesen und Inhalt parsen (falls nicht leer)
     const rawData = fs.readFileSync(dataFilePath, "utf-8");
-    // Wenn die Datei nicht leer ist, parse den Inhalt als JSON
     return rawData.trim() ? JSON.parse(rawData) : {};
   } catch (error) {
     console.error("❌ Fehler beim Laden der Favoriten:", error);
@@ -29,7 +36,6 @@ const loadFavorites = () => {
  */
 export async function GET(req: NextRequest) {
   try {
-    // Extrahiere den Query-Parameter "userId" aus der URL
     const { searchParams } = new URL(req.url);
     const userId = searchParams.get("userId");
 
@@ -41,7 +47,6 @@ export async function GET(req: NextRequest) {
     }
 
     const favorites = loadFavorites();
-    // Gibt die Favoriten des entsprechenden Benutzers zurück, oder ein leeres Array, wenn keine vorhanden sind
     return NextResponse.json({ success: true, favorites: favorites[userId] || [] });
   } catch (error) {
     console.error("❌ Fehler beim Abrufen der Favoriten:", error);
